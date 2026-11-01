@@ -1,0 +1,24 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "python_executable": "/Users/asriel/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+  "os": "macOS-27.2-arm64-arm-64bit",
+  "kernel": "27.2.0",
+  "machine": "arm64",
+  "logical_cpus": 10,
+  "packages": {
+    "reportlab": "4.4.9",
+    "pillow": "12.3.0",
+    "pdftoppm": "pdftoppm version 26.04.0"
+  },
+  "source_commit": "832d536f5d381d428a887e59ceeacc90a40e3b7e",
+  "files_sha256": {
+    "reference/paper_baselines.json": "be1b7725ecd5e4d3b8931bc66fe7be76b2f39da24c5d70861e444d4b0a94abf9",
+    "scripts/run_stage.py": "299c3a2e167a2abe81351fd86565df08f7c1779702b2865feeb4503d0903225e",
+    "src/osdefects/__init__.py": "6e572b77c62453389a62e70e9f967016ed484c856cb2b11a2e2b1e38bcfc398a",
+    "src/osdefects/common.py": "f78cc450b36869eb0ab6df46490dad098d22bd6386907d06a50a3df4b0edb88c",
+    "src/osdefects/data.py": "ad4e5665a561a7febc35044c5efa598c6c2827f53f2a0fa60ddccae4eb23b322",
+    "src/osdefects/plots.py": "d2db3c63a28b06f1429f9e7e15706510a12227303114b797904e594782e6989a",
+    "src/osdefects/runner.py": "2de2ba9f3e0755b4f5637cdccca61222a56d2304af5c9669a6daea338bf3aa87",
+    "src/osdefects/univariate.py": "343e08b1c1feebf40a9253d786976a6f15cd818dc7d8af2cc6f653d2dc78528f"
+  }
+}
