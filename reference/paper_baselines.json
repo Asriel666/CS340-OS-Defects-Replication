@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "paper": {
+    "title": "Toward Understanding Operating System Defects",
+    "arxiv_id": "2608.20643v1",
+    "version_date": "2026-08-21"
+  },
+  "sources": {
+    "abstract": "https://arxiv.org/abs/2608.20643v1",
+    "html": "https://arxiv.org/html/2608.20643v1",
+    "pdf": "https://arxiv.org/pdf/2608.20643v1",
+    "author_data": "https://zuohongyao.github.io/"
+  },
+  "provenance": {
+    "kind": "manually_transcribed_published_aggregate_reference",
+    "not_replication_results": true,
+    "note": "Reference values are separated from independently recomputed dataset results. Blank cells in Tables III-V denote zero, as stated by the captions. Published percentages are in percentage points, not fractions."
+  },
+  "dataset": {
+    "per_os_n": 500,
+    "total_n": 1500,
+    "table_i": {
+      "Linux": {
+        "time_range": [
+          "2023-04",
+          "2025-06"
+        ],
+        "initial_bug_reports": 32249,
+        "final_bugs": 500
+      },
+      "HarmonyOS": {
+        "time_range": [
+          "2023-05",
+          "2025-06"
+        ],
+        "initial_bug_reports": 712,
+        "final_bugs": 500
+      },
+      "Android": {
+        "time_range": [
+          "2023-05",
+          "2025-12"
+        ],
+        "initial_bug_reports": 1750,
+        "final_bugs": 500
+      }
+    },
+    "selection": [
+      "Deduplicate by defect ID",
+      "Exclude reports without open-source patch diffs",
+      "Exclude fixes exceeding 500 changed lines",
+      "Split combined reports into individual defects for HarmonyOS/Linux",
+      "Select latest 500 valid instances per OS"
+    ],
+    "sources_by_os": {
+      "Android": "Android Security Bulletins",
+      "Linux": "Launchpad, status Fix Released, newest first; Ubuntu ecosystem, not kernel-only",
+      "HarmonyOS": "OpenHarmony Gitee security disclosures"
+    }
+  },
+  "dimensions": {
+    "os_layer": {
+      "categories": [
+        "Kernel",
+        "SystemLib",
+        "RuntimeVM",
+        "Framework",
+        "SystemService",
+        "Application"
+      ],
+      "multilabel": false,
+      "table_ii_percent": {
+        "Android": [
+          6,
+          20.2,
+          0.4,
+          18,
+          38.8,
+          16.6
+        ],
+        "Linux": [
+          15.8,
+          18.8,
+          0.2,
+          3.6,
+          7.4,
+          54.2
+        ],
+        "HarmonyOS": [
+          71.8,
+          6.8,
+          8.8,
+          2.8,
+          4.8,
+          5
+        ]
+      },
+      "denominator": "All 500 defect instances of the corresponding OS; not the number of code labels.",
+      "source": "Table II, printed page 9",
+      "paper_labels": [
+        "Kernel",
+        "SystemLib",
+        "RuntimeVM",
+        "Framework",
+        "SystemService",
+        "Application"
+      ]
+    }
+  }
+}

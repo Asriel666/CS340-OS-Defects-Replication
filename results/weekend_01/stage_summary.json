@@ -1,0 +1,114 @@
+{
+  "stage": 1,
+  "run_count": 3,
+  "status": "computationally_complete",
+  "results": {
+    "univariate": {
+      "cell_count": 18,
+      "matched_cells": 18,
+      "mismatches": [],
+      "dimensions": {
+        "os_layer": {
+          "Android": {
+            "n": 500,
+            "categories": [
+              "Kernel",
+              "SystemLib",
+              "RuntimeVM",
+              "Framework",
+              "SystemService",
+              "Application"
+            ],
+            "counts": [
+              30,
+              101,
+              2,
+              90,
+              194,
+              83
+            ],
+            "percent": [
+              6.0,
+              20.2,
+              0.4,
+              18.0,
+              38.8,
+              16.6
+            ],
+            "dominant_categories": [
+              "SystemService"
+            ]
+          },
+          "Linux": {
+            "n": 500,
+            "categories": [
+              "Kernel",
+              "SystemLib",
+              "RuntimeVM",
+              "Framework",
+              "SystemService",
+              "Application"
+            ],
+            "counts": [
+              79,
+              94,
+              1,
+              18,
+              37,
+              271
+            ],
+            "percent": [
+              15.8,
+              18.8,
+              0.2,
+              3.6,
+              7.4,
+              54.2
+            ],
+            "dominant_categories": [
+              "Application"
+            ]
+          },
+          "HarmonyOS": {
+            "n": 500,
+            "categories": [
+              "Kernel",
+              "SystemLib",
+              "RuntimeVM",
+              "Framework",
+              "SystemService",
+              "Application"
+            ],
+            "counts": [
+              359,
+              34,
+              44,
+              14,
+              24,
+              25
+            ],
+            "percent": [
+              71.8,
+              6.8,
+              8.8,
+              2.8,
+              4.8,
+              5.0
+            ],
+            "dominant_categories": [
+              "Kernel"
+            ]
+          }
+        }
+      },
+      "scope": "Statistical recomputation from released labels; not independent reconstruction or reannotation."
+    }
+  },
+  "repeatability": {
+    "identical_semantic_outputs": true,
+    "semantic_result_sha256": "92b5c8bbc65c3fb3eccaf7735a25373b98d0b02918d4a65b142aaef9a5cbcce6",
+    "summary_rows": 18,
+    "meaning": "Repeated deterministic calculation verifies execution stability, not annotation validity or sampling uncertainty."
+  },
+  "human_review": "30-record dual-review template is unfilled; no human reannotation or student contribution claimed."
+}
