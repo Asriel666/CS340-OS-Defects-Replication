@@ -1,0 +1,733 @@
+{
+  "schema_version": 1,
+  "paper": {
+    "title": "Toward Understanding Operating System Defects",
+    "arxiv_id": "2608.20643v1"
+  },
+  "provenance": {
+    "kind": "extracted_published_html_aggregate_reference",
+    "not_replication_results": true,
+    "source_url": "https://arxiv.org/html/2608.20643v1",
+    "source_html_sha256": "d4e6fbfe6fea5d222d6f7e5ae1aaa7221a73de597e27d7cfcb83705d6ee87743",
+    "retrieved_at_utc": "2026-11-05T20:50:46+00:00",
+    "extraction": "Read each HTML td/th in Tables III-V, retain blank cells, map OS spans and category labels, then reorder both axes to canonical dataset labels. No dataset counts are used to construct these reference values.",
+    "blank_cell_policy": "Zero; each published table caption explicitly says zero values are omitted.",
+    "denominator": "All 500 defects of each OS; no row normalization."
+  },
+  "per_os_n": 500,
+  "os_order": [
+    "Android",
+    "Linux",
+    "HarmonyOS"
+  ],
+  "tables": {
+    "table_iii": {
+      "row_field": "os_layer",
+      "column_field": "affected_function",
+      "row_categories": [
+        "Kernel",
+        "SystemLib",
+        "RuntimeVM",
+        "Framework",
+        "SystemService",
+        "Application"
+      ],
+      "column_categories": [
+        "Mem/Res Mng",
+        "Pro/Tas Sch",
+        "Sto Mng",
+        "Dev/Drv",
+        "Net/Com",
+        "Com/Adp",
+        "Sec/Perm",
+        "Gra/Ren"
+      ],
+      "paper_row_order": [
+        "Application",
+        "Framework",
+        "Kernel",
+        "RuntimeVM",
+        "SystemLib",
+        "SystemService"
+      ],
+      "paper_column_order": [
+        "Com/Adp",
+        "Dev/Drv",
+        "Gra/Ren",
+        "Mem/Res Mng",
+        "Net/Com",
+        "Pro/Tas Sch",
+        "Sec/Perm",
+        "Sto Mng"
+      ],
+      "paper_percent": {
+        "Android": [
+          [
+            2.0,
+            0.0,
+            0.0,
+            1.6,
+            0.8,
+            0.2,
+            1.4,
+            0.0
+          ],
+          [
+            7.6,
+            0.2,
+            0.6,
+            4.2,
+            1.2,
+            0.4,
+            3.8,
+            2.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.4,
+            0.0
+          ],
+          [
+            0.8,
+            0.4,
+            0.6,
+            0.6,
+            0.6,
+            1.0,
+            12.2,
+            1.8
+          ],
+          [
+            2.0,
+            3.6,
+            2.0,
+            0.6,
+            0.6,
+            0.8,
+            28.6,
+            0.6
+          ],
+          [
+            0.0,
+            0.6,
+            0.4,
+            0.2,
+            0.0,
+            0.6,
+            13.6,
+            1.2
+          ]
+        ],
+        "Linux": [
+          [
+            0.0,
+            0.0,
+            2.0,
+            6.8,
+            0.4,
+            5.2,
+            0.4,
+            1.0
+          ],
+          [
+            0.2,
+            0.8,
+            2.6,
+            2.8,
+            1.2,
+            8.2,
+            2.4,
+            0.6
+          ],
+          [
+            0.0,
+            0.2,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.2,
+            0.0,
+            0.8,
+            0.2,
+            2.4
+          ],
+          [
+            0.2,
+            0.4,
+            0.8,
+            2.8,
+            0.6,
+            1.4,
+            1.2,
+            0.0
+          ],
+          [
+            1.6,
+            2.2,
+            3.0,
+            4.6,
+            4.4,
+            25.6,
+            9.8,
+            3.0
+          ]
+        ],
+        "HarmonyOS": [
+          [
+            11.4,
+            4.8,
+            13.2,
+            13.6,
+            18.2,
+            1.4,
+            8.2,
+            1.0
+          ],
+          [
+            1.6,
+            0.0,
+            0.0,
+            0.0,
+            0.4,
+            0.0,
+            4.2,
+            0.6
+          ],
+          [
+            8.4,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.4,
+            0.0,
+            0.0
+          ],
+          [
+            0.4,
+            0.0,
+            0.0,
+            0.0,
+            0.4,
+            0.2,
+            0.6,
+            1.2
+          ],
+          [
+            0.4,
+            0.0,
+            0.2,
+            0.0,
+            0.8,
+            0.4,
+            2.8,
+            0.2
+          ],
+          [
+            0.6,
+            0.8,
+            0.4,
+            0.0,
+            0.2,
+            0.0,
+            2.2,
+            0.8
+          ]
+        ]
+      },
+      "source_url": "https://arxiv.org/html/2608.20643v1#S4.T3",
+      "blank_cell_count": 43
+    },
+    "table_iv": {
+      "row_field": "os_layer",
+      "column_field": "trigger_scenario",
+      "row_categories": [
+        "Kernel",
+        "SystemLib",
+        "RuntimeVM",
+        "Framework",
+        "SystemService",
+        "Application"
+      ],
+      "column_categories": [
+        "Per/Ide Dep",
+        "Reg Ope",
+        "Bor Con",
+        "Con/Mul Thr",
+        "Sta Dep",
+        "Env Dep",
+        "Mul/Loc Dep"
+      ],
+      "paper_row_order": [
+        "Application",
+        "Framework",
+        "Kernel",
+        "RuntimeVM",
+        "SystemLib",
+        "SystemService"
+      ],
+      "paper_column_order": [
+        "Bor Con",
+        "Con/Mul Thr",
+        "Env Dep",
+        "Mul/Loc Dep",
+        "Per/Ide Dep",
+        "Reg Ope",
+        "Sta Dep"
+      ],
+      "paper_percent": {
+        "Android": [
+          [
+            0.0,
+            0.6,
+            3.2,
+            1.4,
+            0.8,
+            0.0,
+            0.0
+          ],
+          [
+            0.2,
+            1.6,
+            13.4,
+            4.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.4,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            6.8,
+            2.8,
+            5.4,
+            0.0,
+            3.0,
+            0.0,
+            0.0
+          ],
+          [
+            16.0,
+            1.8,
+            12.6,
+            1.4,
+            6.4,
+            0.6,
+            0.0
+          ],
+          [
+            8.2,
+            1.6,
+            2.4,
+            0.4,
+            3.6,
+            0.4,
+            0.0
+          ]
+        ],
+        "Linux": [
+          [
+            0.0,
+            0.6,
+            0.6,
+            0.4,
+            0.2,
+            14.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.6,
+            3.6,
+            0.8,
+            1.2,
+            12.6,
+            0.0
+          ],
+          [
+            0.0,
+            0.2,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.4,
+            0.0,
+            0.6,
+            0.8,
+            1.8,
+            0.0
+          ],
+          [
+            0.2,
+            0.6,
+            2.2,
+            0.2,
+            0.4,
+            3.8,
+            0.0
+          ],
+          [
+            1.4,
+            6.6,
+            12.6,
+            1.0,
+            2.6,
+            29.8,
+            0.2
+          ]
+        ],
+        "HarmonyOS": [
+          [
+            0.4,
+            3.4,
+            39.6,
+            19.4,
+            6.4,
+            2.6,
+            0.0
+          ],
+          [
+            0.0,
+            0.2,
+            4.0,
+            1.2,
+            1.2,
+            0.2,
+            0.0
+          ],
+          [
+            0.0,
+            0.8,
+            5.4,
+            0.4,
+            2.2,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.8,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            2.4,
+            0.0,
+            1.0,
+            1.0,
+            0.4,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.4,
+            1.6,
+            1.0,
+            1.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "source_url": "https://arxiv.org/html/2608.20643v1#S4.T4",
+      "blank_cell_count": 46
+    },
+    "table_v": {
+      "row_field": "affected_function",
+      "column_field": "trigger_scenario",
+      "row_categories": [
+        "Mem/Res Mng",
+        "Pro/Tas Sch",
+        "Sto Mng",
+        "Dev/Drv",
+        "Net/Com",
+        "Com/Adp",
+        "Sec/Perm",
+        "Gra/Ren"
+      ],
+      "column_categories": [
+        "Per/Ide Dep",
+        "Reg Ope",
+        "Bor Con",
+        "Con/Mul Thr",
+        "Sta Dep",
+        "Env Dep",
+        "Mul/Loc Dep"
+      ],
+      "paper_row_order": [
+        "Com/Adp",
+        "Dev/Drv",
+        "Gra/Ren",
+        "Mem/Res Mng",
+        "Net/Com",
+        "Pro/Tas Sch",
+        "Sec/Perm",
+        "Sto Mng"
+      ],
+      "paper_column_order": [
+        "Bor Con",
+        "Con/Mul Thr",
+        "Env Dep",
+        "Mul/Loc Dep",
+        "Per/Ide Dep",
+        "Reg Ope",
+        "Sta Dep"
+      ],
+      "paper_percent": {
+        "Android": [
+          [
+            0.0,
+            0.2,
+            7.2,
+            4.6,
+            0.4,
+            0.0,
+            0.0
+          ],
+          [
+            0.2,
+            1.0,
+            1.0,
+            0.8,
+            1.6,
+            0.2,
+            0.0
+          ],
+          [
+            0.6,
+            0.8,
+            1.8,
+            0.0,
+            0.4,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.6,
+            5.4,
+            0.8,
+            0.4,
+            0.0,
+            0.0
+          ],
+          [
+            0.4,
+            0.4,
+            1.8,
+            0.2,
+            0.4,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.2,
+            1.4,
+            0.0,
+            1.2,
+            0.2,
+            0.0
+          ],
+          [
+            30.0,
+            4.8,
+            16.4,
+            0.4,
+            8.0,
+            0.4,
+            0.0
+          ],
+          [
+            0.0,
+            0.8,
+            2.0,
+            0.4,
+            2.4,
+            0.2,
+            0.0
+          ]
+        ],
+        "Linux": [
+          [
+            0.0,
+            0.4,
+            1.2,
+            0.2,
+            0.2,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.8,
+            0.4,
+            0.0,
+            1.4,
+            0.0
+          ],
+          [
+            0.0,
+            0.4,
+            4.4,
+            0.8,
+            0.6,
+            2.2,
+            0.0
+          ],
+          [
+            0.0,
+            1.6,
+            1.6,
+            0.2,
+            0.6,
+            13.2,
+            0.0
+          ],
+          [
+            0.0,
+            0.8,
+            1.8,
+            0.2,
+            1.2,
+            2.6,
+            0.0
+          ],
+          [
+            0.0,
+            1.6,
+            1.8,
+            0.2,
+            1.6,
+            35.8,
+            0.2
+          ],
+          [
+            1.6,
+            2.2,
+            5.8,
+            0.2,
+            0.2,
+            4.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            1.6,
+            0.8,
+            0.8,
+            2.8,
+            0.0
+          ]
+        ],
+        "HarmonyOS": [
+          [
+            0.0,
+            1.2,
+            14.4,
+            3.6,
+            3.2,
+            0.4,
+            0.0
+          ],
+          [
+            0.0,
+            0.6,
+            1.4,
+            2.6,
+            0.8,
+            0.2,
+            0.0
+          ],
+          [
+            0.0,
+            0.4,
+            7.0,
+            3.8,
+            2.0,
+            0.6,
+            0.0
+          ],
+          [
+            0.0,
+            0.4,
+            7.6,
+            3.6,
+            1.6,
+            0.4,
+            0.0
+          ],
+          [
+            0.0,
+            1.4,
+            10.0,
+            6.4,
+            1.6,
+            0.6,
+            0.0
+          ],
+          [
+            0.0,
+            0.2,
+            1.4,
+            0.2,
+            0.2,
+            0.4,
+            0.0
+          ],
+          [
+            2.8,
+            2.2,
+            9.8,
+            1.8,
+            1.4,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.2,
+            1.0,
+            2.0,
+            0.4,
+            0.2,
+            0.0
+          ]
+        ]
+      },
+      "source_url": "https://arxiv.org/html/2608.20643v1#S4.T5",
+      "blank_cell_count": 50
+    }
+  }
+}

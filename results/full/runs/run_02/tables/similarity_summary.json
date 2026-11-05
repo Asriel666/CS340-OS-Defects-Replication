@@ -1,0 +1,504 @@
+{
+  "cell_count": 9,
+  "matched_cells": 8,
+  "unconfirmed_cells": 0,
+  "mismatches": [
+    {
+      "dimension": "trigger_scenario",
+      "os_a": "Android",
+      "os_b": "HarmonyOS",
+      "paper_rho": 0.38,
+      "ours_rho": 0.6126374746329801,
+      "difference": 0.23263747463298012,
+      "matches_to_2dp": false,
+      "status": "mismatch",
+      "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-c.png"
+    }
+  ],
+  "unconfirmed": [],
+  "dimensions": {
+    "os_layer": {
+      "os_order": [
+        "Android",
+        "Linux",
+        "HarmonyOS"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.2571428571428571,
+          -0.6571428571428571
+        ],
+        [
+          0.2571428571428571,
+          1.0,
+          0.08571428571428572
+        ],
+        [
+          -0.6571428571428571,
+          0.08571428571428572,
+          1.0
+        ]
+      ],
+      "paper_matrix": [
+        [
+          1.0,
+          0.26,
+          -0.66
+        ],
+        [
+          0.26,
+          1.0,
+          0.09
+        ],
+        [
+          -0.66,
+          0.09,
+          1.0
+        ]
+      ],
+      "categories": [
+        "Kernel",
+        "SystemLib",
+        "RuntimeVM",
+        "Framework",
+        "SystemService",
+        "Application"
+      ],
+      "counts": {
+        "Android": [
+          30,
+          101,
+          2,
+          90,
+          194,
+          83
+        ],
+        "Linux": [
+          79,
+          94,
+          1,
+          18,
+          37,
+          271
+        ],
+        "HarmonyOS": [
+          359,
+          34,
+          44,
+          14,
+          24,
+          25
+        ]
+      },
+      "percent_vectors": {
+        "Android": [
+          6.0,
+          20.2,
+          0.4,
+          18.0,
+          38.8,
+          16.6
+        ],
+        "Linux": [
+          15.8,
+          18.8,
+          0.2,
+          3.6,
+          7.4,
+          54.2
+        ],
+        "HarmonyOS": [
+          71.8,
+          6.8,
+          8.8,
+          2.8,
+          4.8,
+          5.0
+        ]
+      },
+      "average_ranks": {
+        "Android": [
+          2.0,
+          5.0,
+          1.0,
+          4.0,
+          6.0,
+          3.0
+        ],
+        "Linux": [
+          4.0,
+          5.0,
+          1.0,
+          2.0,
+          3.0,
+          6.0
+        ],
+        "HarmonyOS": [
+          6.0,
+          4.0,
+          5.0,
+          1.0,
+          2.0,
+          3.0
+        ]
+      },
+      "n_by_os": {
+        "Android": 500,
+        "Linux": 500,
+        "HarmonyOS": 500
+      },
+      "paper_axis_order": [
+        "Android",
+        "HarmonyOS",
+        "Linux"
+      ],
+      "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-a.png"
+    },
+    "affected_function": {
+      "os_order": [
+        "Android",
+        "Linux",
+        "HarmonyOS"
+      ],
+      "matrix": [
+        [
+          1.0,
+          -0.19047619047619047,
+          0.42857142857142855
+        ],
+        [
+          -0.19047619047619047,
+          1.0,
+          -0.5238095238095238
+        ],
+        [
+          0.42857142857142855,
+          -0.5238095238095238,
+          1.0
+        ]
+      ],
+      "paper_matrix": [
+        [
+          1.0,
+          -0.19,
+          0.43
+        ],
+        [
+          -0.19,
+          1.0,
+          -0.52
+        ],
+        [
+          0.43,
+          -0.52,
+          1.0
+        ]
+      ],
+      "categories": [
+        "Mem/Res Mng",
+        "Pro/Tas Sch",
+        "Sto Mng",
+        "Dev/Drv",
+        "Net/Com",
+        "Com/Adp",
+        "Sec/Perm",
+        "Gra/Ren"
+      ],
+      "counts": {
+        "Android": [
+          62,
+          24,
+          18,
+          36,
+          16,
+          15,
+          300,
+          29
+        ],
+        "Linux": [
+          10,
+          18,
+          42,
+          86,
+          33,
+          206,
+          70,
+          35
+        ],
+        "HarmonyOS": [
+          114,
+          28,
+          69,
+          68,
+          100,
+          12,
+          90,
+          19
+        ]
+      },
+      "percent_vectors": {
+        "Android": [
+          12.4,
+          4.8,
+          3.6,
+          7.2,
+          3.2,
+          3.0,
+          60.0,
+          5.8
+        ],
+        "Linux": [
+          2.0,
+          3.6,
+          8.4,
+          17.2,
+          6.6,
+          41.2,
+          14.0,
+          7.0
+        ],
+        "HarmonyOS": [
+          22.8,
+          5.6,
+          13.8,
+          13.6,
+          20.0,
+          2.4,
+          18.0,
+          3.8
+        ]
+      },
+      "average_ranks": {
+        "Android": [
+          7.0,
+          4.0,
+          3.0,
+          6.0,
+          2.0,
+          1.0,
+          8.0,
+          5.0
+        ],
+        "Linux": [
+          1.0,
+          2.0,
+          5.0,
+          7.0,
+          3.0,
+          8.0,
+          6.0,
+          4.0
+        ],
+        "HarmonyOS": [
+          8.0,
+          3.0,
+          5.0,
+          4.0,
+          7.0,
+          1.0,
+          6.0,
+          2.0
+        ]
+      },
+      "n_by_os": {
+        "Android": 500,
+        "Linux": 500,
+        "HarmonyOS": 500
+      },
+      "paper_axis_order": [
+        "Android",
+        "HarmonyOS",
+        "Linux"
+      ],
+      "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-b.png"
+    },
+    "trigger_scenario": {
+      "os_order": [
+        "Android",
+        "Linux",
+        "HarmonyOS"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.21428571428571427,
+          0.6126374746329801
+        ],
+        [
+          0.21428571428571427,
+          1.0,
+          0.41443123283995714
+        ],
+        [
+          0.6126374746329801,
+          0.41443123283995714,
+          1.0
+        ]
+      ],
+      "paper_matrix": [
+        [
+          1.0,
+          0.21,
+          0.38
+        ],
+        [
+          0.21,
+          1.0,
+          0.41
+        ],
+        [
+          0.38,
+          0.41,
+          1.0
+        ]
+      ],
+      "categories": [
+        "Per/Ide Dep",
+        "Reg Ope",
+        "Bor Con",
+        "Con/Mul Thr",
+        "Sta Dep",
+        "Env Dep",
+        "Mul/Loc Dep"
+      ],
+      "counts": {
+        "Android": [
+          156,
+          44,
+          185,
+          36,
+          74,
+          5,
+          0
+        ],
+        "Linux": [
+          8,
+          45,
+          95,
+          15,
+          26,
+          310,
+          1
+        ],
+        "HarmonyOS": [
+          14,
+          33,
+          263,
+          120,
+          56,
+          14,
+          0
+        ]
+      },
+      "percent_vectors": {
+        "Android": [
+          31.2,
+          8.8,
+          37.0,
+          7.2,
+          14.8,
+          1.0,
+          0.0
+        ],
+        "Linux": [
+          1.6,
+          9.0,
+          19.0,
+          3.0,
+          5.2,
+          62.0,
+          0.2
+        ],
+        "HarmonyOS": [
+          2.8,
+          6.6,
+          52.6,
+          24.0,
+          11.2,
+          2.8,
+          0.0
+        ]
+      },
+      "average_ranks": {
+        "Android": [
+          6.0,
+          4.0,
+          7.0,
+          3.0,
+          5.0,
+          2.0,
+          1.0
+        ],
+        "Linux": [
+          2.0,
+          5.0,
+          6.0,
+          3.0,
+          4.0,
+          7.0,
+          1.0
+        ],
+        "HarmonyOS": [
+          2.5,
+          4.0,
+          7.0,
+          6.0,
+          5.0,
+          2.5,
+          1.0
+        ]
+      },
+      "n_by_os": {
+        "Android": 500,
+        "Linux": 500,
+        "HarmonyOS": 500
+      },
+      "paper_axis_order": [
+        "Android",
+        "HarmonyOS",
+        "Linux"
+      ],
+      "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-c.png"
+    }
+  },
+  "method": {
+    "coefficient": "Spearman: Pearson correlation of ascending average ranks",
+    "input": "Category count vectors aligned in CANONICAL_CATEGORIES order, including zero counts",
+    "ties": "Equal values receive the average of their one-based ranks",
+    "constant_vector": "Undefined (JSON null / blank CSV); status unconfirmed",
+    "comparison": "Nine independent off-diagonal pairs; compare after rounding to two decimal places",
+    "precision": "Full float precision retained for coefficients, differences and input evidence",
+    "normalization": "Within each OS, counts and percentages have identical ranks"
+  },
+  "excluded": {
+    "overall": {
+      "status": "unconfirmed",
+      "figure": "4(d)",
+      "source_url": "https://arxiv.org/html/2608.20643v1/heatmap-d.png",
+      "reason": "The paper does not sufficiently define how the dimensions are combined into an overall input vector. Its prose assigns -0.11 to Linux/Android, while the figure places -0.11 at HarmonyOS/Android. No aggregation rule is invented, so Overall is excluded from the nine core comparisons.",
+      "os_order": [
+        "Android",
+        "HarmonyOS",
+        "Linux"
+      ],
+      "published_lower_triangle": [
+        [
+          1.0
+        ],
+        [
+          -0.11,
+          1.0
+        ],
+        [
+          0.05,
+          -0.04,
+          1.0
+        ]
+      ]
+    },
+    "severity": "Excluded by the paper because severity labeling schemes vary across systems.",
+    "code_level": "Not among the three RQ3 dimensions examined in Figure 4(a-c)."
+  },
+  "scope": "Statistical recomputation from released labels; not independent reconstruction or reannotation."
+}

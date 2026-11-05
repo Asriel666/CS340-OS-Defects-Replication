@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "paper": {
+    "title": "Toward Understanding Operating System Defects",
+    "arxiv_id": "2608.20643v1",
+    "source_url": "https://arxiv.org/html/2608.20643v1#S4.SS3",
+    "pdf_url": "https://arxiv.org/pdf/2608.20643v1",
+    "pdf_page": 12
+  },
+  "provenance": {
+    "kind": "manually_transcribed_published_aggregate_reference",
+    "not_replication_results": true,
+    "source": "Figure 4(a-c), visually checked against each original PNG and cross-checked with extracted PDF page 12 text",
+    "transcription_date": "2026-11-06",
+    "axis_order": ["Android", "HarmonyOS", "Linux"],
+    "note": "Original figures show a lower triangle. Off-diagonal values are mirrored only to store a symmetric matrix; the diagonal and mirrored values are not counted as independent comparisons. Published coefficients are never replaced by recalculated values."
+  },
+  "dimensions": {
+    "os_layer": {
+      "figure": "4(a)",
+      "source_url": "https://arxiv.org/html/2608.20643v1/heatmap-a.png",
+      "categories": ["Kernel", "SystemLib", "RuntimeVM", "Framework", "SystemService", "Application"],
+      "os_order": ["Android", "HarmonyOS", "Linux"],
+      "paper_matrix": [[1.0, -0.66, 0.26], [-0.66, 1.0, 0.09], [0.26, 0.09, 1.0]]
+    },
+    "affected_function": {
+      "figure": "4(b)",
+      "source_url": "https://arxiv.org/html/2608.20643v1/heatmap-b.png",
+      "categories": ["Mem/Res Mng", "Pro/Tas Sch", "Sto Mng", "Dev/Drv", "Net/Com", "Com/Adp", "Sec/Perm", "Gra/Ren"],
+      "os_order": ["Android", "HarmonyOS", "Linux"],
+      "paper_matrix": [[1.0, 0.43, -0.19], [0.43, 1.0, -0.52], [-0.19, -0.52, 1.0]]
+    },
+    "trigger_scenario": {
+      "figure": "4(c)",
+      "source_url": "https://arxiv.org/html/2608.20643v1/heatmap-c.png",
+      "categories": ["Per/Ide Dep", "Reg Ope", "Bor Con", "Con/Mul Thr", "Sta Dep", "Env Dep", "Mul/Loc Dep"],
+      "os_order": ["Android", "HarmonyOS", "Linux"],
+      "paper_matrix": [[1.0, 0.38, 0.21], [0.38, 1.0, 0.41], [0.21, 0.41, 1.0]]
+    }
+  },
+  "excluded": {
+    "overall": {
+      "status": "unconfirmed",
+      "figure": "4(d)",
+      "source_url": "https://arxiv.org/html/2608.20643v1/heatmap-d.png",
+      "reason": "The paper does not sufficiently define how the dimensions are combined into an overall input vector. Its prose assigns -0.11 to Linux/Android, while the figure places -0.11 at HarmonyOS/Android. No aggregation rule is invented, so Overall is excluded from the nine core comparisons.",
+      "os_order": ["Android", "HarmonyOS", "Linux"],
+      "published_lower_triangle": [[1.0], [-0.11, 1.0], [0.05, -0.04, 1.0]]
+    },
+    "severity": "Excluded by the paper because severity labeling schemes vary across systems.",
+    "code_level": "Not among the three RQ3 dimensions examined in Figure 4(a-c)."
+  }
+}

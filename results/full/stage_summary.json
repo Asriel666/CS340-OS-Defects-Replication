@@ -1,0 +1,2655 @@
+{
+  "stage": 1,
+  "analysis": "all",
+  "run_count": 3,
+  "status": "computationally_complete",
+  "active_runs": [
+    "runs/run_01",
+    "runs/run_02",
+    "runs/run_03"
+  ],
+  "comparisons": {
+    "univariate": {
+      "cell_count": 114,
+      "matched_cells": 114,
+      "unconfirmed_cells": 0,
+      "mismatched_cells": 0
+    },
+    "joint": {
+      "cell_count": 438,
+      "matched_cells": 438,
+      "unconfirmed_cells": 0,
+      "mismatched_cells": 0
+    },
+    "similarity": {
+      "cell_count": 9,
+      "matched_cells": 8,
+      "unconfirmed_cells": 0,
+      "mismatched_cells": 1
+    }
+  },
+  "results": {
+    "univariate": {
+      "cell_count": 114,
+      "matched_cells": 114,
+      "mismatches": [],
+      "dimensions": {
+        "os_layer": {
+          "Android": {
+            "n": 500,
+            "categories": [
+              "Kernel",
+              "SystemLib",
+              "RuntimeVM",
+              "Framework",
+              "SystemService",
+              "Application"
+            ],
+            "counts": [
+              30,
+              101,
+              2,
+              90,
+              194,
+              83
+            ],
+            "percent": [
+              6.0,
+              20.2,
+              0.4,
+              18.0,
+              38.8,
+              16.6
+            ],
+            "dominant_categories": [
+              "SystemService"
+            ]
+          },
+          "Linux": {
+            "n": 500,
+            "categories": [
+              "Kernel",
+              "SystemLib",
+              "RuntimeVM",
+              "Framework",
+              "SystemService",
+              "Application"
+            ],
+            "counts": [
+              79,
+              94,
+              1,
+              18,
+              37,
+              271
+            ],
+            "percent": [
+              15.8,
+              18.8,
+              0.2,
+              3.6,
+              7.4,
+              54.2
+            ],
+            "dominant_categories": [
+              "Application"
+            ]
+          },
+          "HarmonyOS": {
+            "n": 500,
+            "categories": [
+              "Kernel",
+              "SystemLib",
+              "RuntimeVM",
+              "Framework",
+              "SystemService",
+              "Application"
+            ],
+            "counts": [
+              359,
+              34,
+              44,
+              14,
+              24,
+              25
+            ],
+            "percent": [
+              71.8,
+              6.8,
+              8.8,
+              2.8,
+              4.8,
+              5.0
+            ],
+            "dominant_categories": [
+              "Kernel"
+            ]
+          }
+        },
+        "affected_function": {
+          "Android": {
+            "n": 500,
+            "categories": [
+              "Mem/Res Mng",
+              "Pro/Tas Sch",
+              "Sto Mng",
+              "Dev/Drv",
+              "Net/Com",
+              "Com/Adp",
+              "Sec/Perm",
+              "Gra/Ren"
+            ],
+            "counts": [
+              62,
+              24,
+              18,
+              36,
+              16,
+              15,
+              300,
+              29
+            ],
+            "percent": [
+              12.4,
+              4.8,
+              3.6,
+              7.2,
+              3.2,
+              3.0,
+              60.0,
+              5.8
+            ],
+            "dominant_categories": [
+              "Sec/Perm"
+            ]
+          },
+          "Linux": {
+            "n": 500,
+            "categories": [
+              "Mem/Res Mng",
+              "Pro/Tas Sch",
+              "Sto Mng",
+              "Dev/Drv",
+              "Net/Com",
+              "Com/Adp",
+              "Sec/Perm",
+              "Gra/Ren"
+            ],
+            "counts": [
+              10,
+              18,
+              42,
+              86,
+              33,
+              206,
+              70,
+              35
+            ],
+            "percent": [
+              2.0,
+              3.6,
+              8.4,
+              17.2,
+              6.6,
+              41.2,
+              14.0,
+              7.0
+            ],
+            "dominant_categories": [
+              "Com/Adp"
+            ]
+          },
+          "HarmonyOS": {
+            "n": 500,
+            "categories": [
+              "Mem/Res Mng",
+              "Pro/Tas Sch",
+              "Sto Mng",
+              "Dev/Drv",
+              "Net/Com",
+              "Com/Adp",
+              "Sec/Perm",
+              "Gra/Ren"
+            ],
+            "counts": [
+              114,
+              28,
+              69,
+              68,
+              100,
+              12,
+              90,
+              19
+            ],
+            "percent": [
+              22.8,
+              5.6,
+              13.8,
+              13.6,
+              20.0,
+              2.4,
+              18.0,
+              3.8
+            ],
+            "dominant_categories": [
+              "Mem/Res Mng"
+            ]
+          }
+        },
+        "trigger_scenario": {
+          "Android": {
+            "n": 500,
+            "categories": [
+              "Per/Ide Dep",
+              "Reg Ope",
+              "Bor Con",
+              "Con/Mul Thr",
+              "Sta Dep",
+              "Env Dep",
+              "Mul/Loc Dep"
+            ],
+            "counts": [
+              156,
+              44,
+              185,
+              36,
+              74,
+              5,
+              0
+            ],
+            "percent": [
+              31.2,
+              8.8,
+              37.0,
+              7.2,
+              14.8,
+              1.0,
+              0.0
+            ],
+            "dominant_categories": [
+              "Bor Con"
+            ]
+          },
+          "Linux": {
+            "n": 500,
+            "categories": [
+              "Per/Ide Dep",
+              "Reg Ope",
+              "Bor Con",
+              "Con/Mul Thr",
+              "Sta Dep",
+              "Env Dep",
+              "Mul/Loc Dep"
+            ],
+            "counts": [
+              8,
+              45,
+              95,
+              15,
+              26,
+              310,
+              1
+            ],
+            "percent": [
+              1.6,
+              9.0,
+              19.0,
+              3.0,
+              5.2,
+              62.0,
+              0.2
+            ],
+            "dominant_categories": [
+              "Env Dep"
+            ]
+          },
+          "HarmonyOS": {
+            "n": 500,
+            "categories": [
+              "Per/Ide Dep",
+              "Reg Ope",
+              "Bor Con",
+              "Con/Mul Thr",
+              "Sta Dep",
+              "Env Dep",
+              "Mul/Loc Dep"
+            ],
+            "counts": [
+              14,
+              33,
+              263,
+              120,
+              56,
+              14,
+              0
+            ],
+            "percent": [
+              2.8,
+              6.6,
+              52.6,
+              24.0,
+              11.2,
+              2.8,
+              0.0
+            ],
+            "dominant_categories": [
+              "Bor Con"
+            ]
+          }
+        },
+        "severity": {
+          "Android": {
+            "n": 500,
+            "categories": [
+              "Critical",
+              "High",
+              "Medium",
+              "Low",
+              "Undecided"
+            ],
+            "counts": [
+              43,
+              455,
+              2,
+              0,
+              0
+            ],
+            "percent": [
+              8.6,
+              91.0,
+              0.4,
+              0.0,
+              0.0
+            ],
+            "dominant_categories": [
+              "High"
+            ]
+          },
+          "Linux": {
+            "n": 500,
+            "categories": [
+              "Critical",
+              "High",
+              "Medium",
+              "Low",
+              "Undecided"
+            ],
+            "counts": [
+              13,
+              93,
+              57,
+              11,
+              326
+            ],
+            "percent": [
+              2.6,
+              18.6,
+              11.4,
+              2.2,
+              65.2
+            ],
+            "dominant_categories": [
+              "Undecided"
+            ]
+          },
+          "HarmonyOS": {
+            "n": 500,
+            "categories": [
+              "Critical",
+              "High",
+              "Medium",
+              "Low",
+              "Undecided"
+            ],
+            "counts": [
+              1,
+              112,
+              257,
+              124,
+              6
+            ],
+            "percent": [
+              0.2,
+              22.4,
+              51.4,
+              24.8,
+              1.2
+            ],
+            "dominant_categories": [
+              "Medium"
+            ]
+          }
+        },
+        "code_level": {
+          "Android": {
+            "n": 500,
+            "categories": [
+              "Class",
+              "Function",
+              "Signature",
+              "Loop",
+              "If",
+              "Exception",
+              "Call",
+              "Assignment",
+              "Return",
+              "Condition",
+              "Object",
+              "Variable"
+            ],
+            "counts": [
+              16,
+              178,
+              78,
+              19,
+              265,
+              41,
+              317,
+              142,
+              77,
+              94,
+              13,
+              238
+            ],
+            "percent": [
+              3.2,
+              35.6,
+              15.6,
+              3.8,
+              53.0,
+              8.2,
+              63.4,
+              28.4,
+              15.4,
+              18.8,
+              2.6,
+              47.6
+            ],
+            "dominant_categories": [
+              "Call"
+            ]
+          },
+          "Linux": {
+            "n": 500,
+            "categories": [
+              "Class",
+              "Function",
+              "Signature",
+              "Loop",
+              "If",
+              "Exception",
+              "Call",
+              "Assignment",
+              "Return",
+              "Condition",
+              "Object",
+              "Variable"
+            ],
+            "counts": [
+              11,
+              77,
+              61,
+              21,
+              187,
+              11,
+              244,
+              272,
+              22,
+              119,
+              19,
+              234
+            ],
+            "percent": [
+              2.2,
+              15.4,
+              12.2,
+              4.2,
+              37.4,
+              2.2,
+              48.8,
+              54.4,
+              4.4,
+              23.8,
+              3.8,
+              46.8
+            ],
+            "dominant_categories": [
+              "Assignment"
+            ]
+          },
+          "HarmonyOS": {
+            "n": 500,
+            "categories": [
+              "Class",
+              "Function",
+              "Signature",
+              "Loop",
+              "If",
+              "Exception",
+              "Call",
+              "Assignment",
+              "Return",
+              "Condition",
+              "Object",
+              "Variable"
+            ],
+            "counts": [
+              7,
+              68,
+              38,
+              15,
+              230,
+              1,
+              309,
+              159,
+              101,
+              106,
+              2,
+              191
+            ],
+            "percent": [
+              1.4,
+              13.6,
+              7.6,
+              3.0,
+              46.0,
+              0.2,
+              61.8,
+              31.8,
+              20.2,
+              21.2,
+              0.4,
+              38.2
+            ],
+            "dominant_categories": [
+              "Call"
+            ]
+          }
+        }
+      },
+      "scope": "Statistical recomputation from released labels; not independent reconstruction or reannotation."
+    },
+    "joint": {
+      "cell_count": 438,
+      "matched_cells": 438,
+      "mismatched_cells": 0,
+      "mismatches": [],
+      "unconfirmed_cells": 0,
+      "unconfirmed": [],
+      "tables": {
+        "table_iii": {
+          "row_field": "os_layer",
+          "column_field": "affected_function",
+          "matrices": {
+            "Android": {
+              "row_categories": [
+                "Kernel",
+                "SystemLib",
+                "RuntimeVM",
+                "Framework",
+                "SystemService",
+                "Application"
+              ],
+              "column_categories": [
+                "Mem/Res Mng",
+                "Pro/Tas Sch",
+                "Sto Mng",
+                "Dev/Drv",
+                "Net/Com",
+                "Com/Adp",
+                "Sec/Perm",
+                "Gra/Ren"
+              ],
+              "counts": [
+                [
+                  10,
+                  0,
+                  0,
+                  8,
+                  4,
+                  1,
+                  7,
+                  0
+                ],
+                [
+                  38,
+                  1,
+                  3,
+                  21,
+                  6,
+                  2,
+                  19,
+                  11
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  2,
+                  0
+                ],
+                [
+                  4,
+                  2,
+                  3,
+                  3,
+                  3,
+                  5,
+                  61,
+                  9
+                ],
+                [
+                  10,
+                  18,
+                  10,
+                  3,
+                  3,
+                  4,
+                  143,
+                  3
+                ],
+                [
+                  0,
+                  3,
+                  2,
+                  1,
+                  0,
+                  3,
+                  68,
+                  6
+                ]
+              ],
+              "percent": [
+                [
+                  2.0,
+                  0.0,
+                  0.0,
+                  1.6,
+                  0.8,
+                  0.2,
+                  1.4,
+                  0.0
+                ],
+                [
+                  7.6,
+                  0.2,
+                  0.6,
+                  4.2,
+                  1.2,
+                  0.4,
+                  3.8,
+                  2.2
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.4,
+                  0.0
+                ],
+                [
+                  0.8,
+                  0.4,
+                  0.6,
+                  0.6,
+                  0.6,
+                  1.0,
+                  12.2,
+                  1.8
+                ],
+                [
+                  2.0,
+                  3.6,
+                  2.0,
+                  0.6,
+                  0.6,
+                  0.8,
+                  28.6,
+                  0.6
+                ],
+                [
+                  0.0,
+                  0.6,
+                  0.4,
+                  0.2,
+                  0.0,
+                  0.6,
+                  13.6,
+                  1.2
+                ]
+              ],
+              "n": 500,
+              "row_marginal_counts": [
+                30,
+                101,
+                2,
+                90,
+                194,
+                83
+              ],
+              "column_marginal_counts": [
+                62,
+                24,
+                18,
+                36,
+                16,
+                15,
+                300,
+                29
+              ],
+              "marginals_valid": true
+            },
+            "Linux": {
+              "row_categories": [
+                "Kernel",
+                "SystemLib",
+                "RuntimeVM",
+                "Framework",
+                "SystemService",
+                "Application"
+              ],
+              "column_categories": [
+                "Mem/Res Mng",
+                "Pro/Tas Sch",
+                "Sto Mng",
+                "Dev/Drv",
+                "Net/Com",
+                "Com/Adp",
+                "Sec/Perm",
+                "Gra/Ren"
+              ],
+              "counts": [
+                [
+                  0,
+                  0,
+                  10,
+                  34,
+                  2,
+                  26,
+                  2,
+                  5
+                ],
+                [
+                  1,
+                  4,
+                  13,
+                  14,
+                  6,
+                  41,
+                  12,
+                  3
+                ],
+                [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  4,
+                  1,
+                  12
+                ],
+                [
+                  1,
+                  2,
+                  4,
+                  14,
+                  3,
+                  7,
+                  6,
+                  0
+                ],
+                [
+                  8,
+                  11,
+                  15,
+                  23,
+                  22,
+                  128,
+                  49,
+                  15
+                ]
+              ],
+              "percent": [
+                [
+                  0.0,
+                  0.0,
+                  2.0,
+                  6.8,
+                  0.4,
+                  5.2,
+                  0.4,
+                  1.0
+                ],
+                [
+                  0.2,
+                  0.8,
+                  2.6,
+                  2.8,
+                  1.2,
+                  8.2,
+                  2.4,
+                  0.6
+                ],
+                [
+                  0.0,
+                  0.2,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.2,
+                  0.0,
+                  0.8,
+                  0.2,
+                  2.4
+                ],
+                [
+                  0.2,
+                  0.4,
+                  0.8,
+                  2.8,
+                  0.6,
+                  1.4,
+                  1.2,
+                  0.0
+                ],
+                [
+                  1.6,
+                  2.2,
+                  3.0,
+                  4.6,
+                  4.4,
+                  25.6,
+                  9.8,
+                  3.0
+                ]
+              ],
+              "n": 500,
+              "row_marginal_counts": [
+                79,
+                94,
+                1,
+                18,
+                37,
+                271
+              ],
+              "column_marginal_counts": [
+                10,
+                18,
+                42,
+                86,
+                33,
+                206,
+                70,
+                35
+              ],
+              "marginals_valid": true
+            },
+            "HarmonyOS": {
+              "row_categories": [
+                "Kernel",
+                "SystemLib",
+                "RuntimeVM",
+                "Framework",
+                "SystemService",
+                "Application"
+              ],
+              "column_categories": [
+                "Mem/Res Mng",
+                "Pro/Tas Sch",
+                "Sto Mng",
+                "Dev/Drv",
+                "Net/Com",
+                "Com/Adp",
+                "Sec/Perm",
+                "Gra/Ren"
+              ],
+              "counts": [
+                [
+                  57,
+                  24,
+                  66,
+                  68,
+                  91,
+                  7,
+                  41,
+                  5
+                ],
+                [
+                  8,
+                  0,
+                  0,
+                  0,
+                  2,
+                  0,
+                  21,
+                  3
+                ],
+                [
+                  42,
+                  0,
+                  0,
+                  0,
+                  0,
+                  2,
+                  0,
+                  0
+                ],
+                [
+                  2,
+                  0,
+                  0,
+                  0,
+                  2,
+                  1,
+                  3,
+                  6
+                ],
+                [
+                  2,
+                  0,
+                  1,
+                  0,
+                  4,
+                  2,
+                  14,
+                  1
+                ],
+                [
+                  3,
+                  4,
+                  2,
+                  0,
+                  1,
+                  0,
+                  11,
+                  4
+                ]
+              ],
+              "percent": [
+                [
+                  11.4,
+                  4.8,
+                  13.2,
+                  13.6,
+                  18.2,
+                  1.4,
+                  8.2,
+                  1.0
+                ],
+                [
+                  1.6,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.4,
+                  0.0,
+                  4.2,
+                  0.6
+                ],
+                [
+                  8.4,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.4,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.4,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.4,
+                  0.2,
+                  0.6,
+                  1.2
+                ],
+                [
+                  0.4,
+                  0.0,
+                  0.2,
+                  0.0,
+                  0.8,
+                  0.4,
+                  2.8,
+                  0.2
+                ],
+                [
+                  0.6,
+                  0.8,
+                  0.4,
+                  0.0,
+                  0.2,
+                  0.0,
+                  2.2,
+                  0.8
+                ]
+              ],
+              "n": 500,
+              "row_marginal_counts": [
+                359,
+                34,
+                44,
+                14,
+                24,
+                25
+              ],
+              "column_marginal_counts": [
+                114,
+                28,
+                69,
+                68,
+                100,
+                12,
+                90,
+                19
+              ],
+              "marginals_valid": true
+            }
+          },
+          "cell_count": 144,
+          "matched_cells": 144,
+          "mismatched_cells": 0,
+          "unconfirmed_cells": 0,
+          "paper_source": "https://arxiv.org/html/2608.20643v1#S4.T3"
+        },
+        "table_iv": {
+          "row_field": "os_layer",
+          "column_field": "trigger_scenario",
+          "matrices": {
+            "Android": {
+              "row_categories": [
+                "Kernel",
+                "SystemLib",
+                "RuntimeVM",
+                "Framework",
+                "SystemService",
+                "Application"
+              ],
+              "column_categories": [
+                "Per/Ide Dep",
+                "Reg Ope",
+                "Bor Con",
+                "Con/Mul Thr",
+                "Sta Dep",
+                "Env Dep",
+                "Mul/Loc Dep"
+              ],
+              "counts": [
+                [
+                  0,
+                  3,
+                  16,
+                  7,
+                  4,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  8,
+                  67,
+                  20,
+                  5,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  34,
+                  14,
+                  27,
+                  0,
+                  15,
+                  0,
+                  0
+                ],
+                [
+                  80,
+                  9,
+                  63,
+                  7,
+                  32,
+                  3,
+                  0
+                ],
+                [
+                  41,
+                  8,
+                  12,
+                  2,
+                  18,
+                  2,
+                  0
+                ]
+              ],
+              "percent": [
+                [
+                  0.0,
+                  0.6,
+                  3.2,
+                  1.4,
+                  0.8,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.2,
+                  1.6,
+                  13.4,
+                  4.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.4,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  6.8,
+                  2.8,
+                  5.4,
+                  0.0,
+                  3.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  16.0,
+                  1.8,
+                  12.6,
+                  1.4,
+                  6.4,
+                  0.6,
+                  0.0
+                ],
+                [
+                  8.2,
+                  1.6,
+                  2.4,
+                  0.4,
+                  3.6,
+                  0.4,
+                  0.0
+                ]
+              ],
+              "n": 500,
+              "row_marginal_counts": [
+                30,
+                101,
+                2,
+                90,
+                194,
+                83
+              ],
+              "column_marginal_counts": [
+                156,
+                44,
+                185,
+                36,
+                74,
+                5,
+                0
+              ],
+              "marginals_valid": true
+            },
+            "Linux": {
+              "row_categories": [
+                "Kernel",
+                "SystemLib",
+                "RuntimeVM",
+                "Framework",
+                "SystemService",
+                "Application"
+              ],
+              "column_categories": [
+                "Per/Ide Dep",
+                "Reg Ope",
+                "Bor Con",
+                "Con/Mul Thr",
+                "Sta Dep",
+                "Env Dep",
+                "Mul/Loc Dep"
+              ],
+              "counts": [
+                [
+                  0,
+                  3,
+                  3,
+                  2,
+                  1,
+                  70,
+                  0
+                ],
+                [
+                  0,
+                  3,
+                  18,
+                  4,
+                  6,
+                  63,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  2,
+                  0,
+                  3,
+                  4,
+                  9,
+                  0
+                ],
+                [
+                  1,
+                  3,
+                  11,
+                  1,
+                  2,
+                  19,
+                  0
+                ],
+                [
+                  7,
+                  33,
+                  63,
+                  5,
+                  13,
+                  149,
+                  1
+                ]
+              ],
+              "percent": [
+                [
+                  0.0,
+                  0.6,
+                  0.6,
+                  0.4,
+                  0.2,
+                  14.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.6,
+                  3.6,
+                  0.8,
+                  1.2,
+                  12.6,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.2,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.4,
+                  0.0,
+                  0.6,
+                  0.8,
+                  1.8,
+                  0.0
+                ],
+                [
+                  0.2,
+                  0.6,
+                  2.2,
+                  0.2,
+                  0.4,
+                  3.8,
+                  0.0
+                ],
+                [
+                  1.4,
+                  6.6,
+                  12.6,
+                  1.0,
+                  2.6,
+                  29.8,
+                  0.2
+                ]
+              ],
+              "n": 500,
+              "row_marginal_counts": [
+                79,
+                94,
+                1,
+                18,
+                37,
+                271
+              ],
+              "column_marginal_counts": [
+                8,
+                45,
+                95,
+                15,
+                26,
+                310,
+                1
+              ],
+              "marginals_valid": true
+            },
+            "HarmonyOS": {
+              "row_categories": [
+                "Kernel",
+                "SystemLib",
+                "RuntimeVM",
+                "Framework",
+                "SystemService",
+                "Application"
+              ],
+              "column_categories": [
+                "Per/Ide Dep",
+                "Reg Ope",
+                "Bor Con",
+                "Con/Mul Thr",
+                "Sta Dep",
+                "Env Dep",
+                "Mul/Loc Dep"
+              ],
+              "counts": [
+                [
+                  2,
+                  17,
+                  198,
+                  97,
+                  32,
+                  13,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  20,
+                  6,
+                  6,
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  4,
+                  27,
+                  2,
+                  11,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  4,
+                  5,
+                  5,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  12,
+                  0,
+                  5,
+                  5,
+                  2,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  7,
+                  8,
+                  5,
+                  5,
+                  0,
+                  0
+                ]
+              ],
+              "percent": [
+                [
+                  0.4,
+                  3.4,
+                  39.6,
+                  19.4,
+                  6.4,
+                  2.6,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.2,
+                  4.0,
+                  1.2,
+                  1.2,
+                  0.2,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.8,
+                  5.4,
+                  0.4,
+                  2.2,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.8,
+                  1.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  2.4,
+                  0.0,
+                  1.0,
+                  1.0,
+                  0.4,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.4,
+                  1.6,
+                  1.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "n": 500,
+              "row_marginal_counts": [
+                359,
+                34,
+                44,
+                14,
+                24,
+                25
+              ],
+              "column_marginal_counts": [
+                14,
+                33,
+                263,
+                120,
+                56,
+                14,
+                0
+              ],
+              "marginals_valid": true
+            }
+          },
+          "cell_count": 126,
+          "matched_cells": 126,
+          "mismatched_cells": 0,
+          "unconfirmed_cells": 0,
+          "paper_source": "https://arxiv.org/html/2608.20643v1#S4.T4"
+        },
+        "table_v": {
+          "row_field": "affected_function",
+          "column_field": "trigger_scenario",
+          "matrices": {
+            "Android": {
+              "row_categories": [
+                "Mem/Res Mng",
+                "Pro/Tas Sch",
+                "Sto Mng",
+                "Dev/Drv",
+                "Net/Com",
+                "Com/Adp",
+                "Sec/Perm",
+                "Gra/Ren"
+              ],
+              "column_categories": [
+                "Per/Ide Dep",
+                "Reg Ope",
+                "Bor Con",
+                "Con/Mul Thr",
+                "Sta Dep",
+                "Env Dep",
+                "Mul/Loc Dep"
+              ],
+              "counts": [
+                [
+                  0,
+                  1,
+                  36,
+                  23,
+                  2,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  5,
+                  5,
+                  4,
+                  8,
+                  1,
+                  0
+                ],
+                [
+                  3,
+                  4,
+                  9,
+                  0,
+                  2,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  3,
+                  27,
+                  4,
+                  2,
+                  0,
+                  0
+                ],
+                [
+                  2,
+                  2,
+                  9,
+                  1,
+                  2,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  7,
+                  0,
+                  6,
+                  1,
+                  0
+                ],
+                [
+                  150,
+                  24,
+                  82,
+                  2,
+                  40,
+                  2,
+                  0
+                ],
+                [
+                  0,
+                  4,
+                  10,
+                  2,
+                  12,
+                  1,
+                  0
+                ]
+              ],
+              "percent": [
+                [
+                  0.0,
+                  0.2,
+                  7.2,
+                  4.6,
+                  0.4,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.2,
+                  1.0,
+                  1.0,
+                  0.8,
+                  1.6,
+                  0.2,
+                  0.0
+                ],
+                [
+                  0.6,
+                  0.8,
+                  1.8,
+                  0.0,
+                  0.4,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.6,
+                  5.4,
+                  0.8,
+                  0.4,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.4,
+                  0.4,
+                  1.8,
+                  0.2,
+                  0.4,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.2,
+                  1.4,
+                  0.0,
+                  1.2,
+                  0.2,
+                  0.0
+                ],
+                [
+                  30.0,
+                  4.8,
+                  16.4,
+                  0.4,
+                  8.0,
+                  0.4,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.8,
+                  2.0,
+                  0.4,
+                  2.4,
+                  0.2,
+                  0.0
+                ]
+              ],
+              "n": 500,
+              "row_marginal_counts": [
+                62,
+                24,
+                18,
+                36,
+                16,
+                15,
+                300,
+                29
+              ],
+              "column_marginal_counts": [
+                156,
+                44,
+                185,
+                36,
+                74,
+                5,
+                0
+              ],
+              "marginals_valid": true
+            },
+            "Linux": {
+              "row_categories": [
+                "Mem/Res Mng",
+                "Pro/Tas Sch",
+                "Sto Mng",
+                "Dev/Drv",
+                "Net/Com",
+                "Com/Adp",
+                "Sec/Perm",
+                "Gra/Ren"
+              ],
+              "column_categories": [
+                "Per/Ide Dep",
+                "Reg Ope",
+                "Bor Con",
+                "Con/Mul Thr",
+                "Sta Dep",
+                "Env Dep",
+                "Mul/Loc Dep"
+              ],
+              "counts": [
+                [
+                  0,
+                  2,
+                  6,
+                  1,
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  5,
+                  4,
+                  2,
+                  0,
+                  7,
+                  0
+                ],
+                [
+                  0,
+                  2,
+                  22,
+                  4,
+                  3,
+                  11,
+                  0
+                ],
+                [
+                  0,
+                  8,
+                  8,
+                  1,
+                  3,
+                  66,
+                  0
+                ],
+                [
+                  0,
+                  4,
+                  9,
+                  1,
+                  6,
+                  13,
+                  0
+                ],
+                [
+                  0,
+                  8,
+                  9,
+                  1,
+                  8,
+                  179,
+                  1
+                ],
+                [
+                  8,
+                  11,
+                  29,
+                  1,
+                  1,
+                  20,
+                  0
+                ],
+                [
+                  0,
+                  5,
+                  8,
+                  4,
+                  4,
+                  14,
+                  0
+                ]
+              ],
+              "percent": [
+                [
+                  0.0,
+                  0.4,
+                  1.2,
+                  0.2,
+                  0.2,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.8,
+                  0.4,
+                  0.0,
+                  1.4,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.4,
+                  4.4,
+                  0.8,
+                  0.6,
+                  2.2,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.6,
+                  1.6,
+                  0.2,
+                  0.6,
+                  13.2,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.8,
+                  1.8,
+                  0.2,
+                  1.2,
+                  2.6,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.6,
+                  1.8,
+                  0.2,
+                  1.6,
+                  35.8,
+                  0.2
+                ],
+                [
+                  1.6,
+                  2.2,
+                  5.8,
+                  0.2,
+                  0.2,
+                  4.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  1.6,
+                  0.8,
+                  0.8,
+                  2.8,
+                  0.0
+                ]
+              ],
+              "n": 500,
+              "row_marginal_counts": [
+                10,
+                18,
+                42,
+                86,
+                33,
+                206,
+                70,
+                35
+              ],
+              "column_marginal_counts": [
+                8,
+                45,
+                95,
+                15,
+                26,
+                310,
+                1
+              ],
+              "marginals_valid": true
+            },
+            "HarmonyOS": {
+              "row_categories": [
+                "Mem/Res Mng",
+                "Pro/Tas Sch",
+                "Sto Mng",
+                "Dev/Drv",
+                "Net/Com",
+                "Com/Adp",
+                "Sec/Perm",
+                "Gra/Ren"
+              ],
+              "column_categories": [
+                "Per/Ide Dep",
+                "Reg Ope",
+                "Bor Con",
+                "Con/Mul Thr",
+                "Sta Dep",
+                "Env Dep",
+                "Mul/Loc Dep"
+              ],
+              "counts": [
+                [
+                  0,
+                  6,
+                  72,
+                  18,
+                  16,
+                  2,
+                  0
+                ],
+                [
+                  0,
+                  3,
+                  7,
+                  13,
+                  4,
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  2,
+                  35,
+                  19,
+                  10,
+                  3,
+                  0
+                ],
+                [
+                  0,
+                  2,
+                  38,
+                  18,
+                  8,
+                  2,
+                  0
+                ],
+                [
+                  0,
+                  7,
+                  50,
+                  32,
+                  8,
+                  3,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  7,
+                  1,
+                  1,
+                  2,
+                  0
+                ],
+                [
+                  14,
+                  11,
+                  49,
+                  9,
+                  7,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  5,
+                  10,
+                  2,
+                  1,
+                  0
+                ]
+              ],
+              "percent": [
+                [
+                  0.0,
+                  1.2,
+                  14.4,
+                  3.6,
+                  3.2,
+                  0.4,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.6,
+                  1.4,
+                  2.6,
+                  0.8,
+                  0.2,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.4,
+                  7.0,
+                  3.8,
+                  2.0,
+                  0.6,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.4,
+                  7.6,
+                  3.6,
+                  1.6,
+                  0.4,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.4,
+                  10.0,
+                  6.4,
+                  1.6,
+                  0.6,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.2,
+                  1.4,
+                  0.2,
+                  0.2,
+                  0.4,
+                  0.0
+                ],
+                [
+                  2.8,
+                  2.2,
+                  9.8,
+                  1.8,
+                  1.4,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.2,
+                  1.0,
+                  2.0,
+                  0.4,
+                  0.2,
+                  0.0
+                ]
+              ],
+              "n": 500,
+              "row_marginal_counts": [
+                114,
+                28,
+                69,
+                68,
+                100,
+                12,
+                90,
+                19
+              ],
+              "column_marginal_counts": [
+                14,
+                33,
+                263,
+                120,
+                56,
+                14,
+                0
+              ],
+              "marginals_valid": true
+            }
+          },
+          "cell_count": 168,
+          "matched_cells": 168,
+          "mismatched_cells": 0,
+          "unconfirmed_cells": 0,
+          "paper_source": "https://arxiv.org/html/2608.20643v1#S4.T5"
+        }
+      },
+      "denominator": "All 500 defects of each OS; no row normalization.",
+      "scope": "Statistical recomputation from released labels; not independent reconstruction or reannotation."
+    },
+    "similarity": {
+      "cell_count": 9,
+      "matched_cells": 8,
+      "unconfirmed_cells": 0,
+      "mismatches": [
+        {
+          "dimension": "trigger_scenario",
+          "os_a": "Android",
+          "os_b": "HarmonyOS",
+          "paper_rho": 0.38,
+          "ours_rho": 0.6126374746329801,
+          "difference": 0.23263747463298012,
+          "matches_to_2dp": false,
+          "status": "mismatch",
+          "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-c.png"
+        }
+      ],
+      "unconfirmed": [],
+      "dimensions": {
+        "os_layer": {
+          "os_order": [
+            "Android",
+            "Linux",
+            "HarmonyOS"
+          ],
+          "matrix": [
+            [
+              1.0,
+              0.2571428571428571,
+              -0.6571428571428571
+            ],
+            [
+              0.2571428571428571,
+              1.0,
+              0.08571428571428572
+            ],
+            [
+              -0.6571428571428571,
+              0.08571428571428572,
+              1.0
+            ]
+          ],
+          "paper_matrix": [
+            [
+              1.0,
+              0.26,
+              -0.66
+            ],
+            [
+              0.26,
+              1.0,
+              0.09
+            ],
+            [
+              -0.66,
+              0.09,
+              1.0
+            ]
+          ],
+          "categories": [
+            "Kernel",
+            "SystemLib",
+            "RuntimeVM",
+            "Framework",
+            "SystemService",
+            "Application"
+          ],
+          "counts": {
+            "Android": [
+              30,
+              101,
+              2,
+              90,
+              194,
+              83
+            ],
+            "Linux": [
+              79,
+              94,
+              1,
+              18,
+              37,
+              271
+            ],
+            "HarmonyOS": [
+              359,
+              34,
+              44,
+              14,
+              24,
+              25
+            ]
+          },
+          "percent_vectors": {
+            "Android": [
+              6.0,
+              20.2,
+              0.4,
+              18.0,
+              38.8,
+              16.6
+            ],
+            "Linux": [
+              15.8,
+              18.8,
+              0.2,
+              3.6,
+              7.4,
+              54.2
+            ],
+            "HarmonyOS": [
+              71.8,
+              6.8,
+              8.8,
+              2.8,
+              4.8,
+              5.0
+            ]
+          },
+          "average_ranks": {
+            "Android": [
+              2.0,
+              5.0,
+              1.0,
+              4.0,
+              6.0,
+              3.0
+            ],
+            "Linux": [
+              4.0,
+              5.0,
+              1.0,
+              2.0,
+              3.0,
+              6.0
+            ],
+            "HarmonyOS": [
+              6.0,
+              4.0,
+              5.0,
+              1.0,
+              2.0,
+              3.0
+            ]
+          },
+          "n_by_os": {
+            "Android": 500,
+            "Linux": 500,
+            "HarmonyOS": 500
+          },
+          "paper_axis_order": [
+            "Android",
+            "HarmonyOS",
+            "Linux"
+          ],
+          "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-a.png"
+        },
+        "affected_function": {
+          "os_order": [
+            "Android",
+            "Linux",
+            "HarmonyOS"
+          ],
+          "matrix": [
+            [
+              1.0,
+              -0.19047619047619047,
+              0.42857142857142855
+            ],
+            [
+              -0.19047619047619047,
+              1.0,
+              -0.5238095238095238
+            ],
+            [
+              0.42857142857142855,
+              -0.5238095238095238,
+              1.0
+            ]
+          ],
+          "paper_matrix": [
+            [
+              1.0,
+              -0.19,
+              0.43
+            ],
+            [
+              -0.19,
+              1.0,
+              -0.52
+            ],
+            [
+              0.43,
+              -0.52,
+              1.0
+            ]
+          ],
+          "categories": [
+            "Mem/Res Mng",
+            "Pro/Tas Sch",
+            "Sto Mng",
+            "Dev/Drv",
+            "Net/Com",
+            "Com/Adp",
+            "Sec/Perm",
+            "Gra/Ren"
+          ],
+          "counts": {
+            "Android": [
+              62,
+              24,
+              18,
+              36,
+              16,
+              15,
+              300,
+              29
+            ],
+            "Linux": [
+              10,
+              18,
+              42,
+              86,
+              33,
+              206,
+              70,
+              35
+            ],
+            "HarmonyOS": [
+              114,
+              28,
+              69,
+              68,
+              100,
+              12,
+              90,
+              19
+            ]
+          },
+          "percent_vectors": {
+            "Android": [
+              12.4,
+              4.8,
+              3.6,
+              7.2,
+              3.2,
+              3.0,
+              60.0,
+              5.8
+            ],
+            "Linux": [
+              2.0,
+              3.6,
+              8.4,
+              17.2,
+              6.6,
+              41.2,
+              14.0,
+              7.0
+            ],
+            "HarmonyOS": [
+              22.8,
+              5.6,
+              13.8,
+              13.6,
+              20.0,
+              2.4,
+              18.0,
+              3.8
+            ]
+          },
+          "average_ranks": {
+            "Android": [
+              7.0,
+              4.0,
+              3.0,
+              6.0,
+              2.0,
+              1.0,
+              8.0,
+              5.0
+            ],
+            "Linux": [
+              1.0,
+              2.0,
+              5.0,
+              7.0,
+              3.0,
+              8.0,
+              6.0,
+              4.0
+            ],
+            "HarmonyOS": [
+              8.0,
+              3.0,
+              5.0,
+              4.0,
+              7.0,
+              1.0,
+              6.0,
+              2.0
+            ]
+          },
+          "n_by_os": {
+            "Android": 500,
+            "Linux": 500,
+            "HarmonyOS": 500
+          },
+          "paper_axis_order": [
+            "Android",
+            "HarmonyOS",
+            "Linux"
+          ],
+          "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-b.png"
+        },
+        "trigger_scenario": {
+          "os_order": [
+            "Android",
+            "Linux",
+            "HarmonyOS"
+          ],
+          "matrix": [
+            [
+              1.0,
+              0.21428571428571427,
+              0.6126374746329801
+            ],
+            [
+              0.21428571428571427,
+              1.0,
+              0.41443123283995714
+            ],
+            [
+              0.6126374746329801,
+              0.41443123283995714,
+              1.0
+            ]
+          ],
+          "paper_matrix": [
+            [
+              1.0,
+              0.21,
+              0.38
+            ],
+            [
+              0.21,
+              1.0,
+              0.41
+            ],
+            [
+              0.38,
+              0.41,
+              1.0
+            ]
+          ],
+          "categories": [
+            "Per/Ide Dep",
+            "Reg Ope",
+            "Bor Con",
+            "Con/Mul Thr",
+            "Sta Dep",
+            "Env Dep",
+            "Mul/Loc Dep"
+          ],
+          "counts": {
+            "Android": [
+              156,
+              44,
+              185,
+              36,
+              74,
+              5,
+              0
+            ],
+            "Linux": [
+              8,
+              45,
+              95,
+              15,
+              26,
+              310,
+              1
+            ],
+            "HarmonyOS": [
+              14,
+              33,
+              263,
+              120,
+              56,
+              14,
+              0
+            ]
+          },
+          "percent_vectors": {
+            "Android": [
+              31.2,
+              8.8,
+              37.0,
+              7.2,
+              14.8,
+              1.0,
+              0.0
+            ],
+            "Linux": [
+              1.6,
+              9.0,
+              19.0,
+              3.0,
+              5.2,
+              62.0,
+              0.2
+            ],
+            "HarmonyOS": [
+              2.8,
+              6.6,
+              52.6,
+              24.0,
+              11.2,
+              2.8,
+              0.0
+            ]
+          },
+          "average_ranks": {
+            "Android": [
+              6.0,
+              4.0,
+              7.0,
+              3.0,
+              5.0,
+              2.0,
+              1.0
+            ],
+            "Linux": [
+              2.0,
+              5.0,
+              6.0,
+              3.0,
+              4.0,
+              7.0,
+              1.0
+            ],
+            "HarmonyOS": [
+              2.5,
+              4.0,
+              7.0,
+              6.0,
+              5.0,
+              2.5,
+              1.0
+            ]
+          },
+          "n_by_os": {
+            "Android": 500,
+            "Linux": 500,
+            "HarmonyOS": 500
+          },
+          "paper_axis_order": [
+            "Android",
+            "HarmonyOS",
+            "Linux"
+          ],
+          "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-c.png"
+        }
+      },
+      "method": {
+        "coefficient": "Spearman: Pearson correlation of ascending average ranks",
+        "input": "Category count vectors aligned in CANONICAL_CATEGORIES order, including zero counts",
+        "ties": "Equal values receive the average of their one-based ranks",
+        "constant_vector": "Undefined (JSON null / blank CSV); status unconfirmed",
+        "comparison": "Nine independent off-diagonal pairs; compare after rounding to two decimal places",
+        "precision": "Full float precision retained for coefficients, differences and input evidence",
+        "normalization": "Within each OS, counts and percentages have identical ranks"
+      },
+      "excluded": {
+        "overall": {
+          "status": "unconfirmed",
+          "figure": "4(d)",
+          "source_url": "https://arxiv.org/html/2608.20643v1/heatmap-d.png",
+          "reason": "The paper does not sufficiently define how the dimensions are combined into an overall input vector. Its prose assigns -0.11 to Linux/Android, while the figure places -0.11 at HarmonyOS/Android. No aggregation rule is invented, so Overall is excluded from the nine core comparisons.",
+          "os_order": [
+            "Android",
+            "HarmonyOS",
+            "Linux"
+          ],
+          "published_lower_triangle": [
+            [
+              1.0
+            ],
+            [
+              -0.11,
+              1.0
+            ],
+            [
+              0.05,
+              -0.04,
+              1.0
+            ]
+          ]
+        },
+        "severity": "Excluded by the paper because severity labeling schemes vary across systems.",
+        "code_level": "Not among the three RQ3 dimensions examined in Figure 4(a-c)."
+      },
+      "scope": "Statistical recomputation from released labels; not independent reconstruction or reannotation."
+    }
+  },
+  "repeatability": {
+    "identical_semantic_outputs": true,
+    "semantic_result_sha256": "c01513f203a35529ddac2067c417b70e0786ea2d55203dfa07ec74caa138ac69",
+    "summary_rows": 561,
+    "meaning": "Repeated deterministic calculation verifies execution stability, not annotation validity or sampling uncertainty."
+  },
+  "human_review": {
+    "status": "pending_human_review",
+    "sample_size": 12,
+    "per_os": 4,
+    "seed": 340,
+    "template": "data/review/rq123_label_review.csv",
+    "meaning": "Blank template created only when missing. No human review or individual coding contribution is certified."
+  },
+  "submission": {
+    "student_id": "1230037310",
+    "name": "钟峻瀚",
+    "role": "提交人",
+    "assistance": "Codex assisted with implementation, computation, verification and documentation.",
+    "human_review": "Pending; automated checks do not certify independent human annotation or individual contributions."
+  }
+}

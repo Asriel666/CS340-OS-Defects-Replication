@@ -60,11 +60,13 @@ def heatmap(title, row_labels, col_labels, matrix, path, subtitle, correlation=F
     drawing = _canvas(title, subtitle, width=1120, height=730)
     x0, y0, width, height = 190, 180, 875, 420
     cw, ch = width/len(col_labels), height/len(row_labels)
-    maximum = 1.0 if correlation else max(max(row) for row in matrix) or 1
+    maximum = 1.0 if correlation else max((value for row in matrix for value in row if value is not None), default=1) or 1
     for i, row in enumerate(matrix):
         for j, value in enumerate(row):
             x, y = x0+j*cw, y0+(len(row_labels)-i-1)*ch
-            if correlation:
+            if value is None:
+                strength, rgb = 0, (1, 1, 1)
+            elif correlation:
                 strength = abs(value)
                 rgb = (0.75, 0.25, 0.25) if value < 0 else (0.13, 0.38, 0.64)
             else:
@@ -72,7 +74,7 @@ def heatmap(title, row_labels, col_labels, matrix, path, subtitle, correlation=F
                 rgb = (0.13, 0.38, 0.64)
             fill = colors.Color(*(1-strength*(1-c) for c in rgb))
             drawing.add(Rect(x, y, cw, ch, fillColor=fill, strokeColor=colors.white, strokeWidth=1))
-            label = f"{value:.3f}" if correlation else f"{value:.1f}"
+            label = "N/A" if value is None else (f"{value:.3f}" if correlation else f"{value:.1f}")
             drawing.add(String(x+cw/2, y+ch/2-4, label, textAnchor="middle", fontSize=12,
                                fillColor=colors.white if strength>.62 else colors.HexColor("#203344")))
     for i, label in enumerate(row_labels):
@@ -135,8 +137,9 @@ def make_plots(results, outdir):
     for table_name, table in results.get("joint", {}).get("tables", {}).items():
         for os_name, matrix in table["matrices"].items():
             path = outdir/f"{table_name}_{os_name}.png"
-            heatmap(f"RQ2: {table_name.replace('_',' ').title()} / {os_name}", matrix["row_categories"], matrix["column_categories"], matrix["percent"], path,
-                    "Joint percentages recomputed from individual labels; N=500")
+            label = "Table " + table_name.removeprefix("table_").upper()
+            heatmap(f"RQ2: {label} / {os_name}", matrix["row_categories"], matrix["column_categories"], matrix["percent"], path,
+                    "Joint percentages; N=500. Colors scale to the maximum within each panel.")
             paths.append(str(path))
     for dimension, summary in results.get("similarity", {}).get("dimensions", {}).items():
         if dimension == "overall": continue
