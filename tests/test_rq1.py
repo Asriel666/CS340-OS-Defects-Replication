@@ -243,7 +243,7 @@ class CommandLineTests(unittest.TestCase):
 
     def test_invalid_or_ambiguous_scope_fails_before_any_run(self):
         for arguments in (
-            ("--analysis", "rq2"),
+            ("--analysis", "rq4"),
             ("--analysis", "rq1", "--runs", "0"),
             ("--analysis", "rq1", "--stage", "1"),
         ):

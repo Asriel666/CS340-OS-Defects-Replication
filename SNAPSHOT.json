@@ -1,6 +1,6 @@
 {
   "max_stage": 1,
-  "scope": "RQ1: all five Table II dimensions; legacy stage 1 remains OS Layer only",
-  "analyses": ["rq1"],
+  "scope": "RQ1 Table II, RQ2 Tables III-V, RQ3 Figure 4(a-c); legacy stage 1 remains OS Layer only",
+  "analyses": ["rq1", "rq2", "rq3", "all"],
   "legacy_stage_1": "OS Layer Table II block"
 }

@@ -1,0 +1,10 @@
+dimension,os_a,os_b,paper_rho,ours_rho,difference,matches_to_2dp,status,paper_source
+os_layer,Android,Linux,0.26,0.2571428571428571,-0.0028571428571428914,True,match,https://arxiv.org/html/2608.20643v1/heatmap-a.png
+os_layer,Android,HarmonyOS,-0.66,-0.6571428571428571,0.0028571428571428914,True,match,https://arxiv.org/html/2608.20643v1/heatmap-a.png
+os_layer,Linux,HarmonyOS,0.09,0.08571428571428572,-0.004285714285714282,True,match,https://arxiv.org/html/2608.20643v1/heatmap-a.png
+affected_function,Android,Linux,-0.19,-0.19047619047619047,-0.0004761904761904634,True,match,https://arxiv.org/html/2608.20643v1/heatmap-b.png
+affected_function,Android,HarmonyOS,0.43,0.42857142857142855,-0.0014285714285714457,True,match,https://arxiv.org/html/2608.20643v1/heatmap-b.png
+affected_function,Linux,HarmonyOS,-0.52,-0.5238095238095238,-0.003809523809523818,True,match,https://arxiv.org/html/2608.20643v1/heatmap-b.png
+trigger_scenario,Android,Linux,0.21,0.21428571428571427,0.004285714285714282,True,match,https://arxiv.org/html/2608.20643v1/heatmap-c.png
+trigger_scenario,Android,HarmonyOS,0.38,0.6126374746329801,0.23263747463298012,False,mismatch,https://arxiv.org/html/2608.20643v1/heatmap-c.png
+trigger_scenario,Linux,HarmonyOS,0.41,0.41443123283995714,0.0044312328399571665,True,match,https://arxiv.org/html/2608.20643v1/heatmap-c.png

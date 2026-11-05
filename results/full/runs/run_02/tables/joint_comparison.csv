@@ -1,0 +1,439 @@
+table,os,row_category,column_category,count,n,paper_percent,ours_percent,difference_pp,matches_to_2dp,status,paper_source
+table_iii,Android,Kernel,Mem/Res Mng,10,500,2.0,2.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,Kernel,Pro/Tas Sch,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,Kernel,Sto Mng,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,Kernel,Dev/Drv,8,500,1.6,1.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,Kernel,Net/Com,4,500,0.8,0.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,Kernel,Com/Adp,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,Kernel,Sec/Perm,7,500,1.4,1.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,Kernel,Gra/Ren,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,SystemLib,Mem/Res Mng,38,500,7.6,7.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,SystemLib,Pro/Tas Sch,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,SystemLib,Sto Mng,3,500,0.6,0.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,SystemLib,Dev/Drv,21,500,4.2,4.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,SystemLib,Net/Com,6,500,1.2,1.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,SystemLib,Com/Adp,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,SystemLib,Sec/Perm,19,500,3.8,3.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,SystemLib,Gra/Ren,11,500,2.2,2.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,RuntimeVM,Mem/Res Mng,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,RuntimeVM,Pro/Tas Sch,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,RuntimeVM,Sto Mng,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,RuntimeVM,Dev/Drv,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,RuntimeVM,Net/Com,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,RuntimeVM,Com/Adp,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,RuntimeVM,Sec/Perm,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,RuntimeVM,Gra/Ren,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,Framework,Mem/Res Mng,4,500,0.8,0.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,Framework,Pro/Tas Sch,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,Framework,Sto Mng,3,500,0.6,0.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,Framework,Dev/Drv,3,500,0.6,0.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,Framework,Net/Com,3,500,0.6,0.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,Framework,Com/Adp,5,500,1.0,1.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,Framework,Sec/Perm,61,500,12.2,12.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,Framework,Gra/Ren,9,500,1.8,1.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,SystemService,Mem/Res Mng,10,500,2.0,2.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,SystemService,Pro/Tas Sch,18,500,3.6,3.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,SystemService,Sto Mng,10,500,2.0,2.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,SystemService,Dev/Drv,3,500,0.6,0.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,SystemService,Net/Com,3,500,0.6,0.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,SystemService,Com/Adp,4,500,0.8,0.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,SystemService,Sec/Perm,143,500,28.6,28.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,SystemService,Gra/Ren,3,500,0.6,0.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,Application,Mem/Res Mng,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,Application,Pro/Tas Sch,3,500,0.6,0.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,Application,Sto Mng,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,Application,Dev/Drv,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,Application,Net/Com,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,Application,Com/Adp,3,500,0.6,0.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,Application,Sec/Perm,68,500,13.6,13.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Android,Application,Gra/Ren,6,500,1.2,1.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,Kernel,Mem/Res Mng,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,Kernel,Pro/Tas Sch,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,Kernel,Sto Mng,10,500,2.0,2.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,Kernel,Dev/Drv,34,500,6.8,6.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,Kernel,Net/Com,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,Kernel,Com/Adp,26,500,5.2,5.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,Kernel,Sec/Perm,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,Kernel,Gra/Ren,5,500,1.0,1.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,SystemLib,Mem/Res Mng,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,SystemLib,Pro/Tas Sch,4,500,0.8,0.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,SystemLib,Sto Mng,13,500,2.6,2.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,SystemLib,Dev/Drv,14,500,2.8,2.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,SystemLib,Net/Com,6,500,1.2,1.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,SystemLib,Com/Adp,41,500,8.2,8.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,SystemLib,Sec/Perm,12,500,2.4,2.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,SystemLib,Gra/Ren,3,500,0.6,0.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,RuntimeVM,Mem/Res Mng,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,RuntimeVM,Pro/Tas Sch,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,RuntimeVM,Sto Mng,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,RuntimeVM,Dev/Drv,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,RuntimeVM,Net/Com,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,RuntimeVM,Com/Adp,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,RuntimeVM,Sec/Perm,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,RuntimeVM,Gra/Ren,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,Framework,Mem/Res Mng,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,Framework,Pro/Tas Sch,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,Framework,Sto Mng,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,Framework,Dev/Drv,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,Framework,Net/Com,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,Framework,Com/Adp,4,500,0.8,0.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,Framework,Sec/Perm,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,Framework,Gra/Ren,12,500,2.4,2.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,SystemService,Mem/Res Mng,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,SystemService,Pro/Tas Sch,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,SystemService,Sto Mng,4,500,0.8,0.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,SystemService,Dev/Drv,14,500,2.8,2.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,SystemService,Net/Com,3,500,0.6,0.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,SystemService,Com/Adp,7,500,1.4,1.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,SystemService,Sec/Perm,6,500,1.2,1.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,SystemService,Gra/Ren,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,Application,Mem/Res Mng,8,500,1.6,1.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,Application,Pro/Tas Sch,11,500,2.2,2.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,Application,Sto Mng,15,500,3.0,3.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,Application,Dev/Drv,23,500,4.6,4.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,Application,Net/Com,22,500,4.4,4.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,Application,Com/Adp,128,500,25.6,25.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,Application,Sec/Perm,49,500,9.8,9.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,Linux,Application,Gra/Ren,15,500,3.0,3.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,Kernel,Mem/Res Mng,57,500,11.4,11.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,Kernel,Pro/Tas Sch,24,500,4.8,4.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,Kernel,Sto Mng,66,500,13.2,13.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,Kernel,Dev/Drv,68,500,13.6,13.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,Kernel,Net/Com,91,500,18.2,18.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,Kernel,Com/Adp,7,500,1.4,1.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,Kernel,Sec/Perm,41,500,8.2,8.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,Kernel,Gra/Ren,5,500,1.0,1.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,SystemLib,Mem/Res Mng,8,500,1.6,1.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,SystemLib,Pro/Tas Sch,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,SystemLib,Sto Mng,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,SystemLib,Dev/Drv,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,SystemLib,Net/Com,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,SystemLib,Com/Adp,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,SystemLib,Sec/Perm,21,500,4.2,4.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,SystemLib,Gra/Ren,3,500,0.6,0.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,RuntimeVM,Mem/Res Mng,42,500,8.4,8.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,RuntimeVM,Pro/Tas Sch,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,RuntimeVM,Sto Mng,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,RuntimeVM,Dev/Drv,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,RuntimeVM,Net/Com,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,RuntimeVM,Com/Adp,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,RuntimeVM,Sec/Perm,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,RuntimeVM,Gra/Ren,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,Framework,Mem/Res Mng,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,Framework,Pro/Tas Sch,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,Framework,Sto Mng,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,Framework,Dev/Drv,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,Framework,Net/Com,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,Framework,Com/Adp,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,Framework,Sec/Perm,3,500,0.6,0.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,Framework,Gra/Ren,6,500,1.2,1.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,SystemService,Mem/Res Mng,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,SystemService,Pro/Tas Sch,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,SystemService,Sto Mng,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,SystemService,Dev/Drv,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,SystemService,Net/Com,4,500,0.8,0.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,SystemService,Com/Adp,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,SystemService,Sec/Perm,14,500,2.8,2.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,SystemService,Gra/Ren,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,Application,Mem/Res Mng,3,500,0.6,0.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,Application,Pro/Tas Sch,4,500,0.8,0.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,Application,Sto Mng,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,Application,Dev/Drv,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,Application,Net/Com,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,Application,Com/Adp,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,Application,Sec/Perm,11,500,2.2,2.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iii,HarmonyOS,Application,Gra/Ren,4,500,0.8,0.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T3
+table_iv,Android,Kernel,Per/Ide Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,Kernel,Reg Ope,3,500,0.6,0.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,Kernel,Bor Con,16,500,3.2,3.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,Kernel,Con/Mul Thr,7,500,1.4,1.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,Kernel,Sta Dep,4,500,0.8,0.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,Kernel,Env Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,Kernel,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,SystemLib,Per/Ide Dep,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,SystemLib,Reg Ope,8,500,1.6,1.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,SystemLib,Bor Con,67,500,13.4,13.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,SystemLib,Con/Mul Thr,20,500,4.0,4.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,SystemLib,Sta Dep,5,500,1.0,1.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,SystemLib,Env Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,SystemLib,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,RuntimeVM,Per/Ide Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,RuntimeVM,Reg Ope,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,RuntimeVM,Bor Con,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,RuntimeVM,Con/Mul Thr,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,RuntimeVM,Sta Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,RuntimeVM,Env Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,RuntimeVM,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,Framework,Per/Ide Dep,34,500,6.8,6.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,Framework,Reg Ope,14,500,2.8,2.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,Framework,Bor Con,27,500,5.4,5.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,Framework,Con/Mul Thr,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,Framework,Sta Dep,15,500,3.0,3.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,Framework,Env Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,Framework,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,SystemService,Per/Ide Dep,80,500,16.0,16.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,SystemService,Reg Ope,9,500,1.8,1.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,SystemService,Bor Con,63,500,12.6,12.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,SystemService,Con/Mul Thr,7,500,1.4,1.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,SystemService,Sta Dep,32,500,6.4,6.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,SystemService,Env Dep,3,500,0.6,0.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,SystemService,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,Application,Per/Ide Dep,41,500,8.2,8.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,Application,Reg Ope,8,500,1.6,1.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,Application,Bor Con,12,500,2.4,2.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,Application,Con/Mul Thr,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,Application,Sta Dep,18,500,3.6,3.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,Application,Env Dep,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Android,Application,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,Kernel,Per/Ide Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,Kernel,Reg Ope,3,500,0.6,0.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,Kernel,Bor Con,3,500,0.6,0.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,Kernel,Con/Mul Thr,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,Kernel,Sta Dep,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,Kernel,Env Dep,70,500,14.0,14.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,Kernel,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,SystemLib,Per/Ide Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,SystemLib,Reg Ope,3,500,0.6,0.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,SystemLib,Bor Con,18,500,3.6,3.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,SystemLib,Con/Mul Thr,4,500,0.8,0.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,SystemLib,Sta Dep,6,500,1.2,1.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,SystemLib,Env Dep,63,500,12.6,12.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,SystemLib,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,RuntimeVM,Per/Ide Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,RuntimeVM,Reg Ope,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,RuntimeVM,Bor Con,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,RuntimeVM,Con/Mul Thr,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,RuntimeVM,Sta Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,RuntimeVM,Env Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,RuntimeVM,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,Framework,Per/Ide Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,Framework,Reg Ope,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,Framework,Bor Con,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,Framework,Con/Mul Thr,3,500,0.6,0.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,Framework,Sta Dep,4,500,0.8,0.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,Framework,Env Dep,9,500,1.8,1.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,Framework,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,SystemService,Per/Ide Dep,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,SystemService,Reg Ope,3,500,0.6,0.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,SystemService,Bor Con,11,500,2.2,2.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,SystemService,Con/Mul Thr,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,SystemService,Sta Dep,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,SystemService,Env Dep,19,500,3.8,3.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,SystemService,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,Application,Per/Ide Dep,7,500,1.4,1.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,Application,Reg Ope,33,500,6.6,6.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,Application,Bor Con,63,500,12.6,12.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,Application,Con/Mul Thr,5,500,1.0,1.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,Application,Sta Dep,13,500,2.6,2.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,Application,Env Dep,149,500,29.8,29.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,Linux,Application,Mul/Loc Dep,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,Kernel,Per/Ide Dep,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,Kernel,Reg Ope,17,500,3.4,3.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,Kernel,Bor Con,198,500,39.6,39.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,Kernel,Con/Mul Thr,97,500,19.4,19.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,Kernel,Sta Dep,32,500,6.4,6.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,Kernel,Env Dep,13,500,2.6,2.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,Kernel,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,SystemLib,Per/Ide Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,SystemLib,Reg Ope,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,SystemLib,Bor Con,20,500,4.0,4.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,SystemLib,Con/Mul Thr,6,500,1.2,1.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,SystemLib,Sta Dep,6,500,1.2,1.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,SystemLib,Env Dep,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,SystemLib,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,RuntimeVM,Per/Ide Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,RuntimeVM,Reg Ope,4,500,0.8,0.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,RuntimeVM,Bor Con,27,500,5.4,5.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,RuntimeVM,Con/Mul Thr,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,RuntimeVM,Sta Dep,11,500,2.2,2.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,RuntimeVM,Env Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,RuntimeVM,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,Framework,Per/Ide Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,Framework,Reg Ope,4,500,0.8,0.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,Framework,Bor Con,5,500,1.0,1.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,Framework,Con/Mul Thr,5,500,1.0,1.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,Framework,Sta Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,Framework,Env Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,Framework,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,SystemService,Per/Ide Dep,12,500,2.4,2.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,SystemService,Reg Ope,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,SystemService,Bor Con,5,500,1.0,1.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,SystemService,Con/Mul Thr,5,500,1.0,1.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,SystemService,Sta Dep,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,SystemService,Env Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,SystemService,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,Application,Per/Ide Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,Application,Reg Ope,7,500,1.4,1.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,Application,Bor Con,8,500,1.6,1.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,Application,Con/Mul Thr,5,500,1.0,1.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,Application,Sta Dep,5,500,1.0,1.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,Application,Env Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_iv,HarmonyOS,Application,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T4
+table_v,Android,Mem/Res Mng,Per/Ide Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Mem/Res Mng,Reg Ope,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Mem/Res Mng,Bor Con,36,500,7.2,7.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Mem/Res Mng,Con/Mul Thr,23,500,4.6,4.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Mem/Res Mng,Sta Dep,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Mem/Res Mng,Env Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Mem/Res Mng,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Pro/Tas Sch,Per/Ide Dep,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Pro/Tas Sch,Reg Ope,5,500,1.0,1.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Pro/Tas Sch,Bor Con,5,500,1.0,1.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Pro/Tas Sch,Con/Mul Thr,4,500,0.8,0.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Pro/Tas Sch,Sta Dep,8,500,1.6,1.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Pro/Tas Sch,Env Dep,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Pro/Tas Sch,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Sto Mng,Per/Ide Dep,3,500,0.6,0.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Sto Mng,Reg Ope,4,500,0.8,0.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Sto Mng,Bor Con,9,500,1.8,1.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Sto Mng,Con/Mul Thr,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Sto Mng,Sta Dep,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Sto Mng,Env Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Sto Mng,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Dev/Drv,Per/Ide Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Dev/Drv,Reg Ope,3,500,0.6,0.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Dev/Drv,Bor Con,27,500,5.4,5.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Dev/Drv,Con/Mul Thr,4,500,0.8,0.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Dev/Drv,Sta Dep,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Dev/Drv,Env Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Dev/Drv,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Net/Com,Per/Ide Dep,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Net/Com,Reg Ope,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Net/Com,Bor Con,9,500,1.8,1.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Net/Com,Con/Mul Thr,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Net/Com,Sta Dep,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Net/Com,Env Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Net/Com,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Com/Adp,Per/Ide Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Com/Adp,Reg Ope,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Com/Adp,Bor Con,7,500,1.4,1.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Com/Adp,Con/Mul Thr,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Com/Adp,Sta Dep,6,500,1.2,1.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Com/Adp,Env Dep,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Com/Adp,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Sec/Perm,Per/Ide Dep,150,500,30.0,30.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Sec/Perm,Reg Ope,24,500,4.8,4.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Sec/Perm,Bor Con,82,500,16.4,16.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Sec/Perm,Con/Mul Thr,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Sec/Perm,Sta Dep,40,500,8.0,8.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Sec/Perm,Env Dep,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Sec/Perm,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Gra/Ren,Per/Ide Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Gra/Ren,Reg Ope,4,500,0.8,0.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Gra/Ren,Bor Con,10,500,2.0,2.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Gra/Ren,Con/Mul Thr,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Gra/Ren,Sta Dep,12,500,2.4,2.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Gra/Ren,Env Dep,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Android,Gra/Ren,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Mem/Res Mng,Per/Ide Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Mem/Res Mng,Reg Ope,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Mem/Res Mng,Bor Con,6,500,1.2,1.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Mem/Res Mng,Con/Mul Thr,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Mem/Res Mng,Sta Dep,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Mem/Res Mng,Env Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Mem/Res Mng,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Pro/Tas Sch,Per/Ide Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Pro/Tas Sch,Reg Ope,5,500,1.0,1.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Pro/Tas Sch,Bor Con,4,500,0.8,0.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Pro/Tas Sch,Con/Mul Thr,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Pro/Tas Sch,Sta Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Pro/Tas Sch,Env Dep,7,500,1.4,1.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Pro/Tas Sch,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Sto Mng,Per/Ide Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Sto Mng,Reg Ope,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Sto Mng,Bor Con,22,500,4.4,4.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Sto Mng,Con/Mul Thr,4,500,0.8,0.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Sto Mng,Sta Dep,3,500,0.6,0.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Sto Mng,Env Dep,11,500,2.2,2.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Sto Mng,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Dev/Drv,Per/Ide Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Dev/Drv,Reg Ope,8,500,1.6,1.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Dev/Drv,Bor Con,8,500,1.6,1.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Dev/Drv,Con/Mul Thr,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Dev/Drv,Sta Dep,3,500,0.6,0.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Dev/Drv,Env Dep,66,500,13.2,13.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Dev/Drv,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Net/Com,Per/Ide Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Net/Com,Reg Ope,4,500,0.8,0.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Net/Com,Bor Con,9,500,1.8,1.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Net/Com,Con/Mul Thr,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Net/Com,Sta Dep,6,500,1.2,1.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Net/Com,Env Dep,13,500,2.6,2.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Net/Com,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Com/Adp,Per/Ide Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Com/Adp,Reg Ope,8,500,1.6,1.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Com/Adp,Bor Con,9,500,1.8,1.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Com/Adp,Con/Mul Thr,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Com/Adp,Sta Dep,8,500,1.6,1.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Com/Adp,Env Dep,179,500,35.8,35.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Com/Adp,Mul/Loc Dep,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Sec/Perm,Per/Ide Dep,8,500,1.6,1.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Sec/Perm,Reg Ope,11,500,2.2,2.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Sec/Perm,Bor Con,29,500,5.8,5.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Sec/Perm,Con/Mul Thr,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Sec/Perm,Sta Dep,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Sec/Perm,Env Dep,20,500,4.0,4.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Sec/Perm,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Gra/Ren,Per/Ide Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Gra/Ren,Reg Ope,5,500,1.0,1.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Gra/Ren,Bor Con,8,500,1.6,1.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Gra/Ren,Con/Mul Thr,4,500,0.8,0.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Gra/Ren,Sta Dep,4,500,0.8,0.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Gra/Ren,Env Dep,14,500,2.8,2.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,Linux,Gra/Ren,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Mem/Res Mng,Per/Ide Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Mem/Res Mng,Reg Ope,6,500,1.2,1.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Mem/Res Mng,Bor Con,72,500,14.4,14.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Mem/Res Mng,Con/Mul Thr,18,500,3.6,3.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Mem/Res Mng,Sta Dep,16,500,3.2,3.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Mem/Res Mng,Env Dep,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Mem/Res Mng,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Pro/Tas Sch,Per/Ide Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Pro/Tas Sch,Reg Ope,3,500,0.6,0.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Pro/Tas Sch,Bor Con,7,500,1.4,1.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Pro/Tas Sch,Con/Mul Thr,13,500,2.6,2.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Pro/Tas Sch,Sta Dep,4,500,0.8,0.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Pro/Tas Sch,Env Dep,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Pro/Tas Sch,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Sto Mng,Per/Ide Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Sto Mng,Reg Ope,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Sto Mng,Bor Con,35,500,7.0,7.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Sto Mng,Con/Mul Thr,19,500,3.8,3.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Sto Mng,Sta Dep,10,500,2.0,2.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Sto Mng,Env Dep,3,500,0.6,0.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Sto Mng,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Dev/Drv,Per/Ide Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Dev/Drv,Reg Ope,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Dev/Drv,Bor Con,38,500,7.6,7.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Dev/Drv,Con/Mul Thr,18,500,3.6,3.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Dev/Drv,Sta Dep,8,500,1.6,1.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Dev/Drv,Env Dep,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Dev/Drv,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Net/Com,Per/Ide Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Net/Com,Reg Ope,7,500,1.4,1.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Net/Com,Bor Con,50,500,10.0,10.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Net/Com,Con/Mul Thr,32,500,6.4,6.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Net/Com,Sta Dep,8,500,1.6,1.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Net/Com,Env Dep,3,500,0.6,0.6,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Net/Com,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Com/Adp,Per/Ide Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Com/Adp,Reg Ope,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Com/Adp,Bor Con,7,500,1.4,1.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Com/Adp,Con/Mul Thr,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Com/Adp,Sta Dep,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Com/Adp,Env Dep,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Com/Adp,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Sec/Perm,Per/Ide Dep,14,500,2.8,2.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Sec/Perm,Reg Ope,11,500,2.2,2.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Sec/Perm,Bor Con,49,500,9.8,9.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Sec/Perm,Con/Mul Thr,9,500,1.8,1.8,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Sec/Perm,Sta Dep,7,500,1.4,1.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Sec/Perm,Env Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Sec/Perm,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Gra/Ren,Per/Ide Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Gra/Ren,Reg Ope,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Gra/Ren,Bor Con,5,500,1.0,1.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Gra/Ren,Con/Mul Thr,10,500,2.0,2.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Gra/Ren,Sta Dep,2,500,0.4,0.4,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Gra/Ren,Env Dep,1,500,0.2,0.2,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5
+table_v,HarmonyOS,Gra/Ren,Mul/Loc Dep,0,500,0.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T5

@@ -1,0 +1,19 @@
+[
+  "figures/rq1_os_layer.png",
+  "figures/rq1_affected_function.png",
+  "figures/rq1_trigger_scenario.png",
+  "figures/rq1_severity.png",
+  "figures/rq1_code_level.png",
+  "figures/table_iii_Android.png",
+  "figures/table_iii_Linux.png",
+  "figures/table_iii_HarmonyOS.png",
+  "figures/table_iv_Android.png",
+  "figures/table_iv_Linux.png",
+  "figures/table_iv_HarmonyOS.png",
+  "figures/table_v_Android.png",
+  "figures/table_v_Linux.png",
+  "figures/table_v_HarmonyOS.png",
+  "figures/rq3_os_layer.png",
+  "figures/rq3_affected_function.png",
+  "figures/rq3_trigger_scenario.png"
+]
