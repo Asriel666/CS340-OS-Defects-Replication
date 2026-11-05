@@ -1,0 +1,555 @@
+{
+  "stage": 1,
+  "analysis": "rq1",
+  "run_count": 3,
+  "status": "computationally_complete",
+  "results": {
+    "univariate": {
+      "cell_count": 114,
+      "matched_cells": 114,
+      "mismatches": [],
+      "dimensions": {
+        "os_layer": {
+          "Android": {
+            "n": 500,
+            "categories": [
+              "Kernel",
+              "SystemLib",
+              "RuntimeVM",
+              "Framework",
+              "SystemService",
+              "Application"
+            ],
+            "counts": [
+              30,
+              101,
+              2,
+              90,
+              194,
+              83
+            ],
+            "percent": [
+              6.0,
+              20.2,
+              0.4,
+              18.0,
+              38.8,
+              16.6
+            ],
+            "dominant_categories": [
+              "SystemService"
+            ]
+          },
+          "Linux": {
+            "n": 500,
+            "categories": [
+              "Kernel",
+              "SystemLib",
+              "RuntimeVM",
+              "Framework",
+              "SystemService",
+              "Application"
+            ],
+            "counts": [
+              79,
+              94,
+              1,
+              18,
+              37,
+              271
+            ],
+            "percent": [
+              15.8,
+              18.8,
+              0.2,
+              3.6,
+              7.4,
+              54.2
+            ],
+            "dominant_categories": [
+              "Application"
+            ]
+          },
+          "HarmonyOS": {
+            "n": 500,
+            "categories": [
+              "Kernel",
+              "SystemLib",
+              "RuntimeVM",
+              "Framework",
+              "SystemService",
+              "Application"
+            ],
+            "counts": [
+              359,
+              34,
+              44,
+              14,
+              24,
+              25
+            ],
+            "percent": [
+              71.8,
+              6.8,
+              8.8,
+              2.8,
+              4.8,
+              5.0
+            ],
+            "dominant_categories": [
+              "Kernel"
+            ]
+          }
+        },
+        "affected_function": {
+          "Android": {
+            "n": 500,
+            "categories": [
+              "Mem/Res Mng",
+              "Pro/Tas Sch",
+              "Sto Mng",
+              "Dev/Drv",
+              "Net/Com",
+              "Com/Adp",
+              "Sec/Perm",
+              "Gra/Ren"
+            ],
+            "counts": [
+              62,
+              24,
+              18,
+              36,
+              16,
+              15,
+              300,
+              29
+            ],
+            "percent": [
+              12.4,
+              4.8,
+              3.6,
+              7.2,
+              3.2,
+              3.0,
+              60.0,
+              5.8
+            ],
+            "dominant_categories": [
+              "Sec/Perm"
+            ]
+          },
+          "Linux": {
+            "n": 500,
+            "categories": [
+              "Mem/Res Mng",
+              "Pro/Tas Sch",
+              "Sto Mng",
+              "Dev/Drv",
+              "Net/Com",
+              "Com/Adp",
+              "Sec/Perm",
+              "Gra/Ren"
+            ],
+            "counts": [
+              10,
+              18,
+              42,
+              86,
+              33,
+              206,
+              70,
+              35
+            ],
+            "percent": [
+              2.0,
+              3.6,
+              8.4,
+              17.2,
+              6.6,
+              41.2,
+              14.0,
+              7.0
+            ],
+            "dominant_categories": [
+              "Com/Adp"
+            ]
+          },
+          "HarmonyOS": {
+            "n": 500,
+            "categories": [
+              "Mem/Res Mng",
+              "Pro/Tas Sch",
+              "Sto Mng",
+              "Dev/Drv",
+              "Net/Com",
+              "Com/Adp",
+              "Sec/Perm",
+              "Gra/Ren"
+            ],
+            "counts": [
+              114,
+              28,
+              69,
+              68,
+              100,
+              12,
+              90,
+              19
+            ],
+            "percent": [
+              22.8,
+              5.6,
+              13.8,
+              13.6,
+              20.0,
+              2.4,
+              18.0,
+              3.8
+            ],
+            "dominant_categories": [
+              "Mem/Res Mng"
+            ]
+          }
+        },
+        "trigger_scenario": {
+          "Android": {
+            "n": 500,
+            "categories": [
+              "Per/Ide Dep",
+              "Reg Ope",
+              "Bor Con",
+              "Con/Mul Thr",
+              "Sta Dep",
+              "Env Dep",
+              "Mul/Loc Dep"
+            ],
+            "counts": [
+              156,
+              44,
+              185,
+              36,
+              74,
+              5,
+              0
+            ],
+            "percent": [
+              31.2,
+              8.8,
+              37.0,
+              7.2,
+              14.8,
+              1.0,
+              0.0
+            ],
+            "dominant_categories": [
+              "Bor Con"
+            ]
+          },
+          "Linux": {
+            "n": 500,
+            "categories": [
+              "Per/Ide Dep",
+              "Reg Ope",
+              "Bor Con",
+              "Con/Mul Thr",
+              "Sta Dep",
+              "Env Dep",
+              "Mul/Loc Dep"
+            ],
+            "counts": [
+              8,
+              45,
+              95,
+              15,
+              26,
+              310,
+              1
+            ],
+            "percent": [
+              1.6,
+              9.0,
+              19.0,
+              3.0,
+              5.2,
+              62.0,
+              0.2
+            ],
+            "dominant_categories": [
+              "Env Dep"
+            ]
+          },
+          "HarmonyOS": {
+            "n": 500,
+            "categories": [
+              "Per/Ide Dep",
+              "Reg Ope",
+              "Bor Con",
+              "Con/Mul Thr",
+              "Sta Dep",
+              "Env Dep",
+              "Mul/Loc Dep"
+            ],
+            "counts": [
+              14,
+              33,
+              263,
+              120,
+              56,
+              14,
+              0
+            ],
+            "percent": [
+              2.8,
+              6.6,
+              52.6,
+              24.0,
+              11.2,
+              2.8,
+              0.0
+            ],
+            "dominant_categories": [
+              "Bor Con"
+            ]
+          }
+        },
+        "severity": {
+          "Android": {
+            "n": 500,
+            "categories": [
+              "Critical",
+              "High",
+              "Medium",
+              "Low",
+              "Undecided"
+            ],
+            "counts": [
+              43,
+              455,
+              2,
+              0,
+              0
+            ],
+            "percent": [
+              8.6,
+              91.0,
+              0.4,
+              0.0,
+              0.0
+            ],
+            "dominant_categories": [
+              "High"
+            ]
+          },
+          "Linux": {
+            "n": 500,
+            "categories": [
+              "Critical",
+              "High",
+              "Medium",
+              "Low",
+              "Undecided"
+            ],
+            "counts": [
+              13,
+              93,
+              57,
+              11,
+              326
+            ],
+            "percent": [
+              2.6,
+              18.6,
+              11.4,
+              2.2,
+              65.2
+            ],
+            "dominant_categories": [
+              "Undecided"
+            ]
+          },
+          "HarmonyOS": {
+            "n": 500,
+            "categories": [
+              "Critical",
+              "High",
+              "Medium",
+              "Low",
+              "Undecided"
+            ],
+            "counts": [
+              1,
+              112,
+              257,
+              124,
+              6
+            ],
+            "percent": [
+              0.2,
+              22.4,
+              51.4,
+              24.8,
+              1.2
+            ],
+            "dominant_categories": [
+              "Medium"
+            ]
+          }
+        },
+        "code_level": {
+          "Android": {
+            "n": 500,
+            "categories": [
+              "Class",
+              "Function",
+              "Signature",
+              "Loop",
+              "If",
+              "Exception",
+              "Call",
+              "Assignment",
+              "Return",
+              "Condition",
+              "Object",
+              "Variable"
+            ],
+            "counts": [
+              16,
+              178,
+              78,
+              19,
+              265,
+              41,
+              317,
+              142,
+              77,
+              94,
+              13,
+              238
+            ],
+            "percent": [
+              3.2,
+              35.6,
+              15.6,
+              3.8,
+              53.0,
+              8.2,
+              63.4,
+              28.4,
+              15.4,
+              18.8,
+              2.6,
+              47.6
+            ],
+            "dominant_categories": [
+              "Call"
+            ]
+          },
+          "Linux": {
+            "n": 500,
+            "categories": [
+              "Class",
+              "Function",
+              "Signature",
+              "Loop",
+              "If",
+              "Exception",
+              "Call",
+              "Assignment",
+              "Return",
+              "Condition",
+              "Object",
+              "Variable"
+            ],
+            "counts": [
+              11,
+              77,
+              61,
+              21,
+              187,
+              11,
+              244,
+              272,
+              22,
+              119,
+              19,
+              234
+            ],
+            "percent": [
+              2.2,
+              15.4,
+              12.2,
+              4.2,
+              37.4,
+              2.2,
+              48.8,
+              54.4,
+              4.4,
+              23.8,
+              3.8,
+              46.8
+            ],
+            "dominant_categories": [
+              "Assignment"
+            ]
+          },
+          "HarmonyOS": {
+            "n": 500,
+            "categories": [
+              "Class",
+              "Function",
+              "Signature",
+              "Loop",
+              "If",
+              "Exception",
+              "Call",
+              "Assignment",
+              "Return",
+              "Condition",
+              "Object",
+              "Variable"
+            ],
+            "counts": [
+              7,
+              68,
+              38,
+              15,
+              230,
+              1,
+              309,
+              159,
+              101,
+              106,
+              2,
+              191
+            ],
+            "percent": [
+              1.4,
+              13.6,
+              7.6,
+              3.0,
+              46.0,
+              0.2,
+              61.8,
+              31.8,
+              20.2,
+              21.2,
+              0.4,
+              38.2
+            ],
+            "dominant_categories": [
+              "Call"
+            ]
+          }
+        }
+      },
+      "scope": "Statistical recomputation from released labels; not independent reconstruction or reannotation."
+    }
+  },
+  "repeatability": {
+    "identical_semantic_outputs": true,
+    "semantic_result_sha256": "8bd0ab1c6ca57612b1143b24201f4ade48ee398153aa5f23444c9910cd6d3dd5",
+    "summary_rows": 114,
+    "meaning": "Repeated deterministic calculation verifies execution stability, not annotation validity or sampling uncertainty."
+  },
+  "human_review": "30-record dual-review template is unfilled; no human reannotation or student contribution claimed."
+}

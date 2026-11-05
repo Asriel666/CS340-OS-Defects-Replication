@@ -1,81 +1,84 @@
-# OS Defects Replication: Phase 1
+# OS Defects Replication: RQ1
 
-Reproduction of the **OS Layer block of Table II** in Hongyao Zuo, Jiali Li and Jiajun Jiang, *Toward Understanding Operating System Defects*, arXiv:2608.20643v1.
+复现 *Toward Understanding Operating System Defects*（arXiv:2608.20643v1）Table II 的完整五维统计，使用作者发布的 1,500 条标签，Android、Linux、HarmonyOS 各 500 条。
 
-## Objective and method
+**本次周五检查：2026-11-06。** 从原来的系统层次 18 项扩展为五个维度的 **114 项对比**，并修复首次下载的校验问题。本次范围为 RQ1 / Table II；RQ2、RQ3 和修复规模 Figures 2/3 留待后续。
 
-Recompute six OS-layer categories from the authors' released labels for 1,500 defects: 500 each for Android, Linux and HarmonyOS. Each defect has exactly one OS-layer label. Percentage = category count / 500 x 100.
+- [本周进展与结果说明](docs/weekly/2026-11-06.md)
+- [114 项逐格对比](results/rq1/tables/table_ii.csv)
+- [三次运行统计](results/rq1/tables/repeated_run_statistics.csv)
+- [汇总](results/rq1/stage_summary.json)、[环境](results/rq1/environment.json)、[输入来源](results/rq1/source_provenance.json)
+- [隔离验证：首次下载、离线缓存、原有入口与测试](results/rq1/verification.json)
 
-The pipeline fixes the input revision and checksum, extracts JSON arrays without executing JavaScript, validates record counts and unique IDs, normalizes category labels, computes the distributions and compares all 18 cells with the paper. Source anomalies are retained and disclosed in the run logs rather than silently corrected.
+## 结果
 
-## Results
-
-Each cell reports count / percentage; percentages also equal the mean across three deterministic runs.
-
-| OS layer | Android | Linux | HarmonyOS |
+| 维度 | 类别数 | 对比项数 | 匹配项数 |
 |---|---:|---:|---:|
-| Kernel | 30 / 6.00% | 79 / 15.80% | 359 / 71.80% |
-| SystemLib | 101 / 20.20% | 94 / 18.80% | 34 / 6.80% |
-| RuntimeVM | 2 / 0.40% | 1 / 0.20% | 44 / 8.80% |
-| Framework | 90 / 18.00% | 18 / 3.60% | 14 / 2.80% |
-| SystemService | 194 / 38.80% | 37 / 7.40% | 24 / 4.80% |
-| Application | 83 / 16.60% | 271 / 54.20% | 25 / 5.00% |
-| Total | 500 / 100.00% | 500 / 100.00% | 500 / 100.00% |
+| 系统层次 OS Layer | 6 | 18 | 18 |
+| 受影响功能 Affected Function | 8 | 24 | 24 |
+| 触发场景 Trigger Scenario | 7 | 21 | 21 |
+| 严重性 Severity | 5 | 15 | 15 |
+| 修复代码元素 Code Level | 12 | 36 | 36 |
+| 合计 | 38 | 114 | **114** |
 
-**18/18 cells match the paper; maximum absolute gap = 0.00 percentage points.** All three runs give identical numerical results and semantic hashes; the sample standard deviation of each repeated percentage is 0.00.
+最大绝对差为 **0.00 个百分点**，三次计算的语义摘要一致。CSV 保留论文值、计算值、差值、match/mismatch 状态及来源。前四维为单标签；代码元素为多标签，各类别均以缺陷数 500 为分母，比例合计可以超过 100%。
 
-Android is dominated by SystemService (38.80%), Linux by Application (54.20%) and HarmonyOS by Kernel (71.80%).
+![OS-layer distribution](results/rq1/figures/rq1_os_layer.png)
 
-![OS-layer distributions](results/weekend_01/figures/rq1_os_layer.png)
+其他图：[功能](results/rq1/figures/rq1_affected_function.png)、[触发场景](results/rq1/figures/rq1_trigger_scenario.png)、[严重性](results/rq1/figures/rq1_severity.png)、[代码元素](results/rq1/figures/rq1_code_level.png)。
 
-- [Paper vs. Ours: all 18 cells](results/weekend_01/tables/table_ii.csv)
-- [Three-run means and sample standard deviations](results/weekend_01/tables/repeated_run_statistics.csv)
-- [Environment and code/input-reference hashes](results/weekend_01/environment.json)
-- [Input provenance](results/weekend_01/source_provenance.json)
-- Individual run outputs and logs: `results/weekend_01/runs/run_01/`, `run_02/`, `run_03/`.
+## 运行
 
-## Reproduce
+本次验证使用 Windows、Python 3.11.9、ReportLab 5.1.0、Pillow 12.3.0。绘图需要 Poppler 的 `pdftoppm` 在 PATH 中；实际版本见 environment.json。计数和测试只使用标准库，`--no-plots` 可跳过绘图依赖。
 
-Tested with Python 3.12.14, ReportLab 4.4.9, Pillow 13.0.0 and Poppler/pdftoppm 26.04.0. Exact hardware, OS and kernel are recorded in environment.json. The core counting code uses the Python standard library; additional dependencies render the figure.
+在仓库根目录执行，无需创建虚拟环境：
 
-```sh
-# macOS; on Linux install poppler-utils with the system package manager.
-brew install poppler
-sh scripts/setup_venv.sh
+```powershell
+# 仅在缺少绘图依赖时安装；Poppler 需单独安装并加入 PATH。
+py -3.11 -m pip install -r requirements.txt
 
-# First run after cloning: download and checksum-validate the pinned input.
-.venv/bin/python scripts/run_stage.py --stage 1 --runs 3
+# 首次运行：下载固定输入、严格校验、计算三次并生成五张图。
+py -3.11 scripts/run_stage.py --analysis rq1 --runs 3
 
-# After a verified source cache exists:
-.venv/bin/python scripts/run_stage.py --stage 1 --runs 3 --offline
+# 离线复核另存结果，保留已提交的记录。
+py -3.11 scripts/run_stage.py --analysis rq1 --runs 3 --offline --output-dir work/offline_check
+
+# 无绘图依赖时，仍可完成全部数值计算。
+py -3.11 scripts/run_stage.py --analysis rq1 --runs 3 --no-plots --output-dir work/counts_only
+
+# 离线单元测试；第二条另需联网并已完成一次完整 RQ1 运行。
+py -3.11 -m unittest discover -s tests -v
+py -3.11 scripts/verify_reproduction.py
 ```
 
-The pipeline creates its local `data/` directories automatically. The raw input, derived datasets and optional review sheet are ignored by Git. First-run input acquisition requires network access. If blocked, save the fixed source below as `data/raw/index.html` and rerun with `--offline`; its checksum must match. Runtime is usually seconds to under a minute with installed dependencies; actual calculation times are saved in each run log, not compared with paper performance.
+macOS/Linux 可将 `py -3.11` 替换为 `python3.11`，通过系统包管理器安装 Poppler。首次下载需要网络；没有缓存时 `--offline` 明确失败。旧的 `scripts/setup_venv.sh` 是历史可选辅助脚本，本次不使用。
 
-Input source: https://raw.githubusercontent.com/zuohongyao/zuohongyao.github.io/832d536f5d381d428a887e59ceeacc90a40e3b7e/index.html
+旧入口 `--stage 1`（或不指定范围）继续计算系统层次 18 项，默认输出到 `results/weekend_01/`；`--all` 是该单一编号阶段的兼容入口。新增 `--analysis rq1` 输出到 `results/rq1/`。二者不可混用，`--runs` 至少为 3。后续未实现的分析不会出现在参数选项中。
 
-Source revision: `832d536f5d381d428a887e59ceeacc90a40e3b7e`.
+## 输入与校验修复
 
-SHA-256 after CRLF/CR-to-LF normalization: `c617aa2478fea265b61c6b18ac158234ad1f2f4c4b3d0c8abbb7760f75e26a56`.
+固定来源：[作者数据](https://raw.githubusercontent.com/zuohongyao/zuohongyao.github.io/832d536f5d381d428a887e59ceeacc90a40e3b7e/index.html)。
 
-## Files
+- Commit：`832d536f5d381d428a887e59ceeacc90a40e3b7e`。
+- CRLF/CR 统一为 LF 后：766,561 字节。
+- SHA-256：`3794ff8c39e975ff457f264cb863f6e191297614dc0273f04c09ac654962eed5`。
 
-- `src/`: data extraction, validation, counts, plotting and run logging.
-- `scripts/`: environment setup and project-relative run entry point.
-- `reference/`: the paper's OS-layer reference values, separate from computed results.
-- `results/weekend_01/`: comparison CSVs, figure, environment, provenance and all three real run logs.
-- `requirements.txt`, `Makefile`, `.gitignore`: dependencies, run target and local-cache exclusions.
-- `SNAPSHOT.json`: restricts this snapshot to phase 1; keep it with the runner.
+旧摘要对应额外补一个末尾换行的文件；本次修正为真实固定文件的摘要，继续严格校验。若旧缓存校验失败，先保留备份，再下载固定文件到新的缓存位置，或移走旧缓存后重新运行。不要跳过校验，也不要用编辑器改变原始字节来凑摘要。
 
-## Interpretation and limitations
+`data/` 下的原始缓存、派生数据和人工审查表均不提交 Git。数据异常保留在[审计文件](results/rq1/data_validation.json)中，不为匹配论文静默修正。
 
-**Verdict: the released-label OS-layer statistics are reproduced.** This does not independently validate original collection, filtering or manual labeling. A zero repeated-run SD indicates stable deterministic execution, not annotation accuracy or sample representativeness. Linux is the sampled Launchpad/Ubuntu ecosystem, not exclusively kernel defects. This milestone makes no claim to reproduce other dimensions, causal explanations or the full paper. Human reannotation remains pending.
+## 文件与范围
 
-## Sources, attribution and AI assistance
+- `src/osdefects/`：读取、校验、计数、绘图和日志。
+- `reference/paper_baselines.json`：单独从论文转录的基准，与计算结果分开。
+- `tests/`：摘要、类别、记录、多标签分母、参考表结构和 CLI 回归测试。
+- `results/rq1/`：本次证据。原 `results/weekend_01/` 保留历史结果，其旧摘要和环境不代表本次运行。
+- `docs/weekly/`：每次检查的阶段报告。
 
-- [Paper: arXiv:2608.20643v1](https://arxiv.org/abs/2608.20643v1)
-- [Author data at the fixed source revision](https://github.com/zuohongyao/zuohongyao.github.io/tree/832d536f5d381d428a887e59ceeacc90a40e3b7e)
+结论是**作者发布标签的 Table II 统计得到复算验证**。重复执行不能证明标签正确或样本具有代表性。Linux 是 Launchpad/Ubuntu 生态样本，不能视为纯内核缺陷；不同来源的比例不能直接用于系统质量排名。人工复核尚未完成，生成审查模板不等于完成标注。
 
-The author dashboard supplies the curated labels; the statistical pipeline is newly implemented. No upstream license statement was found at inspection; this project does not assign a license to upstream material. ReportLab, Pillow and Poppler retain their own upstream licenses.
+## 来源与贡献
 
-Codex assisted in preparing the code, calculation and documentation. Recorded executions were performed during preparation. This is a merged technical result, not certification of individual students' contributions or completed human labeling. Contribution and AI statements in the final course submission should reflect actual work.
+[论文原文](https://arxiv.org/html/2608.20643v1)、[Table II](https://arxiv.org/html/2608.20643v1#S4.T2)、[作者数据固定版本](https://github.com/zuohongyao/zuohongyao.github.io/tree/832d536f5d381d428a887e59ceeacc90a40e3b7e)。
+
+源数据及标签来自作者，本仓库实现重新计算和对比。上游授权遵循原作者声明，本项目未给上游材料另行指定许可证。Codex 协助代码、计算、基准核对和文档；自动核验不代表第二位学生的操作或人工重新标注，个人贡献应据实填写。

@@ -1,8 +1,9 @@
-"""Cumulative, auditable weekend-stage orchestration."""
+"""Auditable RQ1 execution with the legacy OS-layer entry point preserved."""
 from pathlib import Path
 from datetime import datetime, timezone
 import argparse
 import csv
+import hashlib
 import importlib.metadata
 import json
 import os
@@ -12,12 +13,12 @@ import statistics
 import subprocess
 import sys
 import time
-from .common import semantic_digest, sha256, write_csv, write_json
-from .data import fetch_source, load_records, validate_records, write_dataset, SOURCE_COMMIT
-from .univariate import analyze_univariate
+from .common import semantic_digest, write_csv, write_json
+from .data import fetch_source, load_records, validate_records, write_dataset, SOURCE_COMMIT, CANONICAL_CATEGORIES
+from .univariate import analyze_univariate, validate_reference
 
 
-def environment(root, stage=5):
+def environment(root, stage=1):
     versions = {}
     for package in ("reportlab", "pillow"):
         try: versions[package] = importlib.metadata.version(package)
@@ -27,38 +28,26 @@ def environment(root, stage=5):
         versions["pdftoppm"] = (version.stderr or version.stdout).splitlines()[0]
     except (OSError, subprocess.CalledProcessError):
         versions["pdftoppm"] = "not installed"
-    sources = sorted([*Path(root).glob("src/**/*.py"), *Path(root).glob("scripts/*.py"), *Path(root).glob("reference/*.json")])
-    introduced={"repair.py":2,"joint.py":3,"similarity.py":4,"extension.py":4,
-                "report.py":5,"package_stages.py":5}
-    sources=[p for p in sources if introduced.get(p.name,1)<=stage]
+    sources = sorted([*Path(root).glob("src/**/*.py"), *Path(root).glob("scripts/*.py"),
+                      *Path(root).glob("reference/*.json"), *Path(root).glob("tests/*.py")])
     return {"python": sys.version, "python_executable": sys.executable, "os": platform.platform(),
             "kernel": platform.release(), "machine": platform.machine(), "logical_cpus": os.cpu_count(),
             "packages": versions, "source_commit": SOURCE_COMMIT,
-            "files_sha256": {str(p.relative_to(root)): sha256(p) for p in sources}}
+            "source_file_hash_policy": "UTF-8 text with CRLF/CR normalized to LF",
+            "files_sha256": {p.relative_to(root).as_posix(): hashlib.sha256(p.read_text(encoding="utf-8").encode("utf-8")).hexdigest() for p in sources}}
 
 
-def run_analyses(records, reference, stage, outdir):
-    result = {"univariate": analyze_univariate(records, reference, outdir,
-                                               ["os_layer"] if stage==1 else None)}
-    if stage >= 2:
-        from .repair import analyze_repairs
-        result["repairs"] = analyze_repairs(records, outdir)
-    if stage >= 3:
-        from .joint import analyze_joint
-        result["joint"] = analyze_joint(records, reference, outdir)
-    if stage >= 4:
-        from .similarity import analyze_similarity
-        from .extension import run_extension
-        result["similarity"] = analyze_similarity(records, reference, outdir)
-        result["extension"] = run_extension(records, reference, outdir)
-    return result
+def run_analyses(records, reference, stage, outdir, analysis=None):
+    if stage != 1 or analysis not in (None, "rq1"):
+        raise ValueError("Supported scope: legacy stage 1 or --analysis rq1")
+    return {"univariate": analyze_univariate(records, reference, outdir,
+                                             None if analysis == "rq1" else ["os_layer"])}
 
 
 def repeated_statistics(stage_dir, runs):
     """Summarize actual repeated table values, retaining all raw run outputs."""
     rows = []
-    for filename, metric in (("table_ii.csv", "ours_percent"), ("joint_comparison.csv", "ours_percent"),
-                             ("similarity_comparison.csv", "ours_rho")):
+    for filename, metric in (("table_ii.csv", "ours_percent"),):
         paths = [stage_dir/"runs"/f"run_{i:02d}"/"tables"/filename for i in range(1, runs+1)]
         if not paths[0].exists(): continue
         tables = []
@@ -91,15 +80,21 @@ def create_review_template(records, path):
     write_csv(path,rows)
 
 
-def run_stage(root, stage, runs=3, offline=False, plots=True):
+def run_stage(root, stage, runs=3, offline=False, plots=True, analysis=None, output_dir=None):
     if runs < 3: raise ValueError("This project records at least three actual runs per stage")
+    if stage != 1 or analysis not in (None, "rq1"):
+        raise ValueError("Supported scope: legacy stage 1 or --analysis rq1")
     root = Path(root).resolve()
-    stage_dir = root/"results"/f"weekend_{stage:02d}"
-    stage_dir.mkdir(parents=True,exist_ok=True)
+    stage_dir = Path(output_dir).resolve() if output_dir is not None else root/"results"/("rq1" if analysis else "weekend_01")
+    reference = json.loads((root/"reference"/"paper_baselines.json").read_text(encoding="utf-8"))
+    validate_reference(reference, list(CANONICAL_CATEGORIES) if analysis else ["os_layer"])
+    env = environment(root,stage)
+    if plots and any(value == "not installed" for value in env["packages"].values()):
+        raise RuntimeError("Plot dependencies are missing. Install requirements.txt and Poppler, or use --no-plots.")
     source = root/"data"/"raw"/"index.html"
     provenance = fetch_source(source,offline=offline)
-    reference = json.loads((root/"reference"/"paper_baselines.json").read_text(encoding="utf-8"))
-    env = environment(root,stage)
+    stage_dir.mkdir(parents=True,exist_ok=True)
+    write_json(stage_dir/"stage_summary.json", {"status":"running", "analysis":analysis or "os_layer", "run_count":runs})
     write_json(stage_dir/"environment.json",env)
     write_json(stage_dir/"source_provenance.json",provenance)
     results, run_logs = [], []
@@ -109,10 +104,10 @@ def run_stage(root, stage, runs=3, offline=False, plots=True):
         records = load_records(source)
         validation = validate_records(records)
         destination = stage_dir/"runs"/f"run_{index:02d}"
-        result = run_analyses(records,reference,stage,destination/"tables")
+        result = run_analyses(records,reference,stage,destination/"tables",analysis)
         write_json(destination/"results.json",result)
         log = {"started_at_utc":started,"elapsed_seconds":time.perf_counter()-tick,
-               "stage":stage,"run":index,"records":len(records), "source_sha256_lf":provenance.get("sha256_lf_normalized",provenance.get("source_sha256_lf", "see source_provenance.json")),
+               "stage":stage,"analysis":analysis or "os_layer","run":index,"records":len(records), "source_sha256_lf":provenance["source_sha256_lf"],
                "semantic_result_sha256":semantic_digest(result),"status":"success",
                "invocation":sys.argv,"data_validation":validation,"environment_file":"../../environment.json"}
         write_json(destination/"run_log.json",log)
@@ -125,40 +120,40 @@ def run_stage(root, stage, runs=3, offline=False, plots=True):
     # Stage-local data make each stage auditable; canonical inputs stay in data/processed.
     write_dataset(records,root/"data"/"processed")
     create_review_template(records,root/"data"/"review"/"manual_label_review.csv")
-    summary = {"stage":stage,"run_count":runs,"status":"computationally_complete",
+    write_json(stage_dir/"data_validation.json",validation)
+    summary = {"stage":stage,"analysis":analysis or "os_layer","run_count":runs,"status":"computationally_complete",
                "results":results[0],"repeatability":{"identical_semantic_outputs":True,
                "semantic_result_sha256":run_logs[0]["semantic_result_sha256"],
                "summary_rows":len(repeat),"meaning":"Repeated deterministic calculation verifies execution stability, not annotation validity or sampling uncertainty."},
                "human_review":"30-record dual-review template is unfilled; no human reannotation or student contribution claimed."}
-    write_json(stage_dir/"stage_summary.json",summary)
+    paths = []
     if plots:
         from .plots import make_plots
         paths=make_plots(results[0],stage_dir/"figures")
-        write_json(stage_dir/"figure_manifest.json",[str(Path(p).relative_to(stage_dir)) for p in paths])
-    if stage == 5:
-        from .report import build_report
-        build_report(root,stage_dir,summary)
-    return {"stage":stage,"directory":str(stage_dir),"runs":runs,
+    write_json(stage_dir/"figure_manifest.json",[Path(p).relative_to(stage_dir).as_posix() for p in paths])
+    write_json(stage_dir/"stage_summary.json",summary)
+    return {"stage":stage,"analysis":analysis or "os_layer","directory":str(stage_dir),"runs":runs,
             "table_ii_matches":results[0]["univariate"]["matched_cells"],
             "table_ii_cells":results[0]["univariate"]["cell_count"],
             "repeatable":True}
 
 
 def main():
-    parser=argparse.ArgumentParser(description="Run a cumulative weekend-stage reproduction")
-    parser.add_argument("--stage",type=int,choices=range(1,6),default=1)
-    parser.add_argument("--all",action="store_true",help="Run stages 1 through 5 now; does not schedule future runs")
+    parser=argparse.ArgumentParser(description="Recompute Table II from the pinned author labels")
+    scope=parser.add_mutually_exclusive_group()
+    scope.add_argument("--analysis",choices=["rq1"],help="All five Table II dimensions (114 cells)")
+    scope.add_argument("--stage",type=int,choices=[1],help="Legacy OS-layer-only analysis (18 cells; default)")
+    scope.add_argument("--all",action="store_true",help="Legacy alias for the only available numbered stage (1)")
     parser.add_argument("--runs",type=int,default=3)
     parser.add_argument("--offline",action="store_true")
     parser.add_argument("--no-plots",action="store_true")
     parser.add_argument("--root",type=Path,default=Path(__file__).resolve().parents[2])
+    parser.add_argument("--output-dir",type=Path,help="Separate output directory for verification runs")
     args=parser.parse_args()
-    snapshot_config=args.root/"SNAPSHOT.json"
-    maximum=json.loads(snapshot_config.read_text())["max_stage"] if snapshot_config.exists() else 5
-    if not args.all and args.stage>maximum:
-        parser.error(f"This snapshot supports stages 1-{maximum}; use the next cumulative package")
-    for stage in range(1,maximum+1) if args.all else [args.stage]:
-        print(json.dumps(run_stage(args.root,stage,args.runs,args.offline,not args.no_plots),ensure_ascii=False),flush=True)
+    if args.runs < 3:
+        parser.error("--runs must be at least 3")
+    result=run_stage(args.root,1,args.runs,args.offline,not args.no_plots,args.analysis,args.output_dir)
+    print(json.dumps(result,ensure_ascii=False),flush=True)
 
 
 if __name__=="__main__": main()

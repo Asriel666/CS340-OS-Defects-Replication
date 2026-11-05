@@ -1,0 +1,27 @@
+{
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "python_executable": "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+  "os": "Windows-10-10.0.22631-SP0",
+  "kernel": "10",
+  "machine": "AMD64",
+  "logical_cpus": 16,
+  "packages": {
+    "reportlab": "5.1.0",
+    "pillow": "12.3.0",
+    "pdftoppm": "pdftoppm version 26.07.0"
+  },
+  "source_commit": "832d536f5d381d428a887e59ceeacc90a40e3b7e",
+  "source_file_hash_policy": "UTF-8 text with CRLF/CR normalized to LF",
+  "files_sha256": {
+    "reference/paper_baselines.json": "b1dbd66e9bbc8f0edc25fb1c0d331f452f332a259d6b8892ece4d3ce5f1ec1c7",
+    "scripts/run_stage.py": "299c3a2e167a2abe81351fd86565df08f7c1779702b2865feeb4503d0903225e",
+    "scripts/verify_reproduction.py": "1df233bc847a69b3bfa541267b2c168cbbcb927d3cf79ee8535537dc42622fcd",
+    "src/osdefects/__init__.py": "6e572b77c62453389a62e70e9f967016ed484c856cb2b11a2e2b1e38bcfc398a",
+    "src/osdefects/common.py": "f78cc450b36869eb0ab6df46490dad098d22bd6386907d06a50a3df4b0edb88c",
+    "src/osdefects/data.py": "fc74037cbd6bf6d958516507ebe05e2b6c5a56d41507eddd15be6b24eb2e82fc",
+    "src/osdefects/plots.py": "d2db3c63a28b06f1429f9e7e15706510a12227303114b797904e594782e6989a",
+    "src/osdefects/runner.py": "58db6a4f2fbc5e81f725dbd9c6eb8004f35640f362530ee72b3ac54c17913fb5",
+    "src/osdefects/univariate.py": "952d29ba6ac7e7557a49a6c07ae6478e48bc453706e243d78b9c3c701434a9f1",
+    "tests/test_rq1.py": "28ed9ebff9d1870077555e6736ddb7c347dd857ba8784713860c3b51b75fddb2"
+  }
+}
