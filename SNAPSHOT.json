@@ -1,5 +1,6 @@
 {
   "max_stage": 1,
-  "scope": "Phase 1 only: OS Layer Table II block",
-  "prepared_at_utc": "2026-11-01T14:27:50+00:00"
+  "scope": "RQ1: all five Table II dimensions; legacy stage 1 remains OS Layer only",
+  "analyses": ["rq1"],
+  "legacy_stage_1": "OS Layer Table II block"
 }

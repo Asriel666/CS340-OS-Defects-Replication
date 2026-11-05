@@ -1,0 +1,903 @@
+{
+  "started_at_utc": "2026-11-05T20:43:31+00:00",
+  "elapsed_seconds": 0.06049769999935961,
+  "stage": 1,
+  "analysis": "rq1",
+  "run": 1,
+  "records": 1500,
+  "source_sha256_lf": "3794ff8c39e975ff457f264cb863f6e191297614dc0273f04c09ac654962eed5",
+  "semantic_result_sha256": "8bd0ab1c6ca57612b1143b24201f4ade48ee398153aa5f23444c9910cd6d3dd5",
+  "status": "success",
+  "invocation": [
+    "scripts/run_stage.py",
+    "--analysis",
+    "rq1",
+    "--runs",
+    "3",
+    "--offline"
+  ],
+  "data_validation": {
+    "valid": true,
+    "record_count": 1500,
+    "counts_by_os": {
+      "Android": 500,
+      "Linux": 500,
+      "HarmonyOS": 500
+    },
+    "unique_os_bug_ids": 1500,
+    "categories": {
+      "os_layer": [
+        "Kernel",
+        "SystemLib",
+        "RuntimeVM",
+        "Framework",
+        "SystemService",
+        "Application"
+      ],
+      "affected_function": [
+        "Mem/Res Mng",
+        "Pro/Tas Sch",
+        "Sto Mng",
+        "Dev/Drv",
+        "Net/Com",
+        "Com/Adp",
+        "Sec/Perm",
+        "Gra/Ren"
+      ],
+      "trigger_scenario": [
+        "Per/Ide Dep",
+        "Reg Ope",
+        "Bor Con",
+        "Con/Mul Thr",
+        "Sta Dep",
+        "Env Dep",
+        "Mul/Loc Dep"
+      ],
+      "severity": [
+        "Critical",
+        "High",
+        "Medium",
+        "Low",
+        "Undecided"
+      ],
+      "code_level": [
+        "Class",
+        "Function",
+        "Signature",
+        "Loop",
+        "If",
+        "Exception",
+        "Call",
+        "Assignment",
+        "Return",
+        "Condition",
+        "Object",
+        "Variable"
+      ]
+    },
+    "warnings": {
+      "line_change_sum_mismatches": [
+        {
+          "os": "Linux",
+          "bug_id": "2044216",
+          "line_deletions": 331,
+          "line_additions": 28,
+          "line_changes": 349
+        }
+      ],
+      "censored_function_counts": [
+        {
+          "os": "HarmonyOS",
+          "bug_id": "CVE-2024-22180",
+          "fields": [
+            "involved_functions"
+          ],
+          "raw_involved_functions": "20+"
+        },
+        {
+          "os": "HarmonyOS",
+          "bug_id": "CVE-2024-22092",
+          "fields": [
+            "involved_functions"
+          ],
+          "raw_involved_functions": "10+"
+        },
+        {
+          "os": "HarmonyOS",
+          "bug_id": "CVE-2024-28226",
+          "fields": [
+            "involved_functions"
+          ],
+          "raw_involved_functions": "10+"
+        },
+        {
+          "os": "HarmonyOS",
+          "bug_id": "CVE-2023-46708",
+          "fields": [
+            "involved_functions"
+          ],
+          "raw_involved_functions": "30+"
+        },
+        {
+          "os": "HarmonyOS",
+          "bug_id": "CVE-2023-49602",
+          "fields": [
+            "involved_functions"
+          ],
+          "raw_involved_functions": "20+"
+        },
+        {
+          "os": "HarmonyOS",
+          "bug_id": "CVE-2023-49135",
+          "fields": [
+            "involved_functions"
+          ],
+          "raw_involved_functions": "30+"
+        },
+        {
+          "os": "HarmonyOS",
+          "bug_id": "CVE-2024-38386",
+          "fields": [
+            "involved_functions"
+          ],
+          "raw_involved_functions": "10+"
+        }
+      ],
+      "severity_label_mappings": [
+        {
+          "os": "HarmonyOS",
+          "bug_id": "CVE-2024-42265",
+          "original": "Unknown",
+          "normalized": "Undecided"
+        },
+        {
+          "os": "HarmonyOS",
+          "bug_id": "CVE-2024-57931",
+          "original": "Unknown",
+          "normalized": "Undecided"
+        },
+        {
+          "os": "HarmonyOS",
+          "bug_id": "CVE-2024-57924",
+          "original": "Unknown",
+          "normalized": "Undecided"
+        },
+        {
+          "os": "HarmonyOS",
+          "bug_id": "CVE-2024-50035 (CVE-2024-49967)",
+          "original": "Unknown",
+          "normalized": "Undecided"
+        },
+        {
+          "os": "HarmonyOS",
+          "bug_id": "CVE-2024-50058 (CVE-2024-50018)",
+          "original": "Unknown",
+          "normalized": "Undecided"
+        },
+        {
+          "os": "HarmonyOS",
+          "bug_id": "CVE-2024-53125 (CVE-2024-53054)",
+          "original": "Unknown",
+          "normalized": "Undecided"
+        }
+      ],
+      "zero_involved_function_rows": [
+        {
+          "os": "Android",
+          "bug_id": "A-232799171"
+        },
+        {
+          "os": "Android",
+          "bug_id": "A-346797131"
+        },
+        {
+          "os": "Android",
+          "bug_id": "A-284989074"
+        },
+        {
+          "os": "Android",
+          "bug_id": "A-382775095"
+        },
+        {
+          "os": "Android",
+          "bug_id": "A-369103643"
+        },
+        {
+          "os": "Android",
+          "bug_id": "A-364026473"
+        },
+        {
+          "os": "Android",
+          "bug_id": "A-364027949"
+        },
+        {
+          "os": "Android",
+          "bug_id": "A-364027038"
+        },
+        {
+          "os": "Android",
+          "bug_id": "A-364025411"
+        },
+        {
+          "os": "Android",
+          "bug_id": "A-2515141702"
+        },
+        {
+          "os": "Android",
+          "bug_id": "A-329701910"
+        },
+        {
+          "os": "Android",
+          "bug_id": "A-304280682"
+        },
+        {
+          "os": "Android",
+          "bug_id": "A-3243211472"
+        },
+        {
+          "os": "Android",
+          "bug_id": "A-293199910"
+        },
+        {
+          "os": "Android",
+          "bug_id": "A-298057702"
+        },
+        {
+          "os": "Android",
+          "bug_id": "A-279766766"
+        },
+        {
+          "os": "Android",
+          "bug_id": "A-261723753"
+        },
+        {
+          "os": "Android",
+          "bug_id": "A-189942529"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2114712"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2113496"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2112315"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2112262"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2111789"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2108966"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2107596"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2106394"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2106338"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2106038"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2104942"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2104908"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2104307"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2104011"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2103890"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2102236"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2100930"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2100837"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2100732"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2100652"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2100583"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2099881"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2099698"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2095529"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2095464"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2092286"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2092139"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2091744"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2091439"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2091392"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2089696"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2089773"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2089722"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2089367"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2083754"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2088201"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2087816"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2086920"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2086110"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2086104"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2085067"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2084693"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2084094"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2083867"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2083855"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2083705"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2083435"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2083131"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2082160"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2056361"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2056080"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2081799"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2080622"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2080493"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2080358"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2078638"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2077929"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2077779"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2077334"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2076176"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2076151"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2075550"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2071468"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2074212"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2073688"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2073010"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2071891"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2071841"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2071678"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2070081"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2070057"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2069802"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2069647"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2068674"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2054343 (2)"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2067948"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2067785"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2067261"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2066148 (2)"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2065919"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2064959"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2064861"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2063510"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2063344"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2063079"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2062968"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2062414"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2062058"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2061815"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2061727"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2061637"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2061253"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2060848"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2060825"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2060628"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2060262"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2060214"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2060151"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2059756"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2059739"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2059550"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2059344"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2058758"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2058401"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2058193"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2058066 (1)"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2057965"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2048923"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2055783"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2055345"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2055055"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2055003"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2054782"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2054296"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2054091"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2053024"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2052801"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2052708"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2052578"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2051952"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2051288"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2048442"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2047862"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2047303"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2047298"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2046322"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2046150"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2046082"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2045844"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2045816"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2045621"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2045302"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2045290"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2045000"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2044546"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2044383"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2044369"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2044019"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2042710"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2042394"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2042106"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2041171"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2040082"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2039873"
+        },
+        {
+          "os": "Linux",
+          "bug_id": "2039611"
+        },
+        {
+          "os": "HarmonyOS",
+          "bug_id": "CVE-2025-27534 (10363)"
+        },
+        {
+          "os": "HarmonyOS",
+          "bug_id": "CVE-2024-53142 (CVE-2024-50258)"
+        },
+        {
+          "os": "HarmonyOS",
+          "bug_id": "CVE-2024-44949"
+        },
+        {
+          "os": "HarmonyOS",
+          "bug_id": "CVE-2024-46714"
+        },
+        {
+          "os": "HarmonyOS",
+          "bug_id": "CVE-2023-7010"
+        },
+        {
+          "os": "HarmonyOS",
+          "bug_id": "CVE-2024-7004"
+        },
+        {
+          "os": "HarmonyOS",
+          "bug_id": "CVE-2024-46798"
+        },
+        {
+          "os": "HarmonyOS",
+          "bug_id": "CVE-2024-42161"
+        },
+        {
+          "os": "HarmonyOS",
+          "bug_id": "CVE-2024-42154"
+        },
+        {
+          "os": "HarmonyOS",
+          "bug_id": "CVE-2024-41098 (CVE-2024-42106)"
+        },
+        {
+          "os": "HarmonyOS",
+          "bug_id": "CVE-2024-5843"
+        },
+        {
+          "os": "HarmonyOS",
+          "bug_id": "CVE-2024-3840"
+        },
+        {
+          "os": "HarmonyOS",
+          "bug_id": "CVE-2023-52845"
+        },
+        {
+          "os": "HarmonyOS",
+          "bug_id": "CVE-2023-52756"
+        }
+      ]
+    },
+    "normalization_policy": {
+      "severity": "Unknown -> Undecided, raw label retained",
+      "functions": "Numeric strings converted to integers; n+ becomes lower bound n with numeric_censored flag",
+      "line_counts": "All source values retained, including sum mismatch; no inferred repairs",
+      "code_level": "Multi-label list, percentages use defect count as denominator"
+    }
+  },
+  "environment_file": "../../environment.json"
+}

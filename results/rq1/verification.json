@@ -1,0 +1,125 @@
+{
+  "verified_at_utc": "2026-11-05T20:43:36+00:00",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "status": "passed",
+  "isolated_copy": true,
+  "unit_tests": {
+    "command": "python -m unittest discover -s tests -v",
+    "exit_code": 0,
+    "output": "test_help_exposes_rq1_and_retains_stage_entry (test_rq1.CommandLineTests.test_help_exposes_rq1_and_retains_stage_entry) ... ok\ntest_invalid_or_ambiguous_scope_fails_before_any_run (test_rq1.CommandLineTests.test_invalid_or_ambiguous_scope_fails_before_any_run) ... ok\ntest_ids_are_unique_within_each_os (test_rq1.DatasetValidationTests.test_ids_are_unique_within_each_os) ... ok\ntest_missing_os_record_is_rejected (test_rq1.DatasetValidationTests.test_missing_os_record_is_rejected) ... ok\ntest_unknown_single_and_multi_label_categories_are_rejected (test_rq1.DatasetValidationTests.test_unknown_single_and_multi_label_categories_are_rejected) ... ok\ntest_multilabel_denominator_is_defects_not_number_of_labels (test_rq1.DistributionTests.test_multilabel_denominator_is_defects_not_number_of_labels) ... ok\ntest_repeated_label_cannot_double_count_one_defect (test_rq1.DistributionTests.test_repeated_label_cannot_double_count_one_defect) ... ok\ntest_complete_reference_preserves_all_114_cells_including_zeroes (test_rq1.ReferenceValidationTests.test_complete_reference_preserves_all_114_cells_including_zeroes) ... ok\ntest_missing_os_vector_is_rejected (test_rq1.ReferenceValidationTests.test_missing_os_vector_is_rejected) ... ok\ntest_missing_unknown_and_reordered_categories_are_rejected (test_rq1.ReferenceValidationTests.test_missing_unknown_and_reordered_categories_are_rejected) ... ok\ntest_multilabel_policy_cannot_change_the_denominator_or_field_type (test_rq1.ReferenceValidationTests.test_multilabel_policy_cannot_change_the_denominator_or_field_type) ... ok\ntest_nonfinite_percentages_are_rejected (test_rq1.ReferenceValidationTests.test_nonfinite_percentages_are_rejected) ... ok\ntest_short_or_long_reference_vector_cannot_be_silently_truncated_by_zip (test_rq1.ReferenceValidationTests.test_short_or_long_reference_vector_cannot_be_silently_truncated_by_zip) ... ok\ntest_corruption_and_extra_trailing_newline_are_rejected_before_caching (test_rq1.SourceIntegrityTests.test_corruption_and_extra_trailing_newline_are_rejected_before_caching) ... ok\ntest_fresh_lf_and_crlf_downloads_have_the_same_verified_digest (test_rq1.SourceIntegrityTests.test_fresh_lf_and_crlf_downloads_have_the_same_verified_digest) ... ok\ntest_missing_offline_cache_never_attempts_a_download (test_rq1.SourceIntegrityTests.test_missing_offline_cache_never_attempts_a_download) ... ok\ntest_offline_cache_is_verified_without_inventing_a_download_timestamp (test_rq1.SourceIntegrityTests.test_offline_cache_is_verified_without_inventing_a_download_timestamp) ... ok\ntest_pinned_hash_is_for_the_unmodified_author_source (test_rq1.SourceIntegrityTests.test_pinned_hash_is_for_the_unmodified_author_source) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 0.706s\n\nOK\n"
+  },
+  "cases": [
+    {
+      "name": "fresh_download",
+      "command": [
+        "python",
+        "scripts/run_stage.py",
+        "--analysis",
+        "rq1",
+        "--runs",
+        "3",
+        "--no-plots",
+        "--output-dir",
+        "work\\fresh_download"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"stage\": 1, \"analysis\": \"rq1\", \"directory\": \"D:\\\\OSP\\\\work\\\\rq1-verification-w6a1_tp2\\\\work\\\\fresh_download\", \"runs\": 3, \"table_ii_matches\": 114, \"table_ii_cells\": 114, \"repeatable\": true}",
+      "matched_cells": 114,
+      "cell_count": 114,
+      "repeatability": {
+        "identical_semantic_outputs": true,
+        "semantic_result_sha256": "8bd0ab1c6ca57612b1143b24201f4ade48ee398153aa5f23444c9910cd6d3dd5",
+        "summary_rows": 114,
+        "meaning": "Repeated deterministic calculation verifies execution stability, not annotation validity or sampling uncertainty."
+      },
+      "source_provenance": {
+        "retrieved_at_utc": "2026-11-05T20:43:35+00:00",
+        "download_bytes_sha256": "93e57bce7ad332b254bd60da4417ae0efb6570448c2a0fa249edd4a6a20a17da",
+        "source_url": "https://raw.githubusercontent.com/zuohongyao/zuohongyao.github.io/832d536f5d381d428a887e59ceeacc90a40e3b7e/index.html",
+        "source_commit": "832d536f5d381d428a887e59ceeacc90a40e3b7e",
+        "source_sha256_lf": "3794ff8c39e975ff457f264cb863f6e191297614dc0273f04c09ac654962eed5",
+        "source_bytes_lf": 766561,
+        "line_ending_policy": "CRLF and CR normalized to LF for hash verification",
+        "inspected_at_utc": "2026-11-05T20:43:35+00:00",
+        "acquisition_mode": "downloaded",
+        "source_path": "D:\\OSP\\work\\rq1-verification-w6a1_tp2\\data\\raw\\index.html"
+      }
+    },
+    {
+      "name": "offline_cache",
+      "command": [
+        "python",
+        "scripts/run_stage.py",
+        "--analysis",
+        "rq1",
+        "--runs",
+        "3",
+        "--offline",
+        "--no-plots",
+        "--output-dir",
+        "work\\offline_cache"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"stage\": 1, \"analysis\": \"rq1\", \"directory\": \"D:\\\\OSP\\\\work\\\\rq1-verification-w6a1_tp2\\\\work\\\\offline_cache\", \"runs\": 3, \"table_ii_matches\": 114, \"table_ii_cells\": 114, \"repeatable\": true}",
+      "matched_cells": 114,
+      "cell_count": 114,
+      "repeatability": {
+        "identical_semantic_outputs": true,
+        "semantic_result_sha256": "8bd0ab1c6ca57612b1143b24201f4ade48ee398153aa5f23444c9910cd6d3dd5",
+        "summary_rows": 114,
+        "meaning": "Repeated deterministic calculation verifies execution stability, not annotation validity or sampling uncertainty."
+      },
+      "source_provenance": {
+        "retrieved_at_utc": "2026-11-05T20:43:35+00:00",
+        "download_bytes_sha256": "93e57bce7ad332b254bd60da4417ae0efb6570448c2a0fa249edd4a6a20a17da",
+        "source_url": "https://raw.githubusercontent.com/zuohongyao/zuohongyao.github.io/832d536f5d381d428a887e59ceeacc90a40e3b7e/index.html",
+        "source_commit": "832d536f5d381d428a887e59ceeacc90a40e3b7e",
+        "source_sha256_lf": "3794ff8c39e975ff457f264cb863f6e191297614dc0273f04c09ac654962eed5",
+        "source_bytes_lf": 766561,
+        "line_ending_policy": "CRLF and CR normalized to LF for hash verification",
+        "inspected_at_utc": "2026-11-05T20:43:35+00:00",
+        "acquisition_mode": "verified_cache",
+        "source_path": "D:\\OSP\\work\\rq1-verification-w6a1_tp2\\data\\raw\\index.html"
+      }
+    },
+    {
+      "name": "legacy_stage_1",
+      "command": [
+        "python",
+        "scripts/run_stage.py",
+        "--stage",
+        "1",
+        "--runs",
+        "3",
+        "--offline",
+        "--no-plots",
+        "--output-dir",
+        "work\\legacy_stage_1"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"stage\": 1, \"analysis\": \"os_layer\", \"directory\": \"D:\\\\OSP\\\\work\\\\rq1-verification-w6a1_tp2\\\\work\\\\legacy_stage_1\", \"runs\": 3, \"table_ii_matches\": 18, \"table_ii_cells\": 18, \"repeatable\": true}",
+      "matched_cells": 18,
+      "cell_count": 18,
+      "repeatability": {
+        "identical_semantic_outputs": true,
+        "semantic_result_sha256": "92b5c8bbc65c3fb3eccaf7735a25373b98d0b02918d4a65b142aaef9a5cbcce6",
+        "summary_rows": 18,
+        "meaning": "Repeated deterministic calculation verifies execution stability, not annotation validity or sampling uncertainty."
+      },
+      "source_provenance": {
+        "retrieved_at_utc": "2026-11-05T20:43:35+00:00",
+        "download_bytes_sha256": "93e57bce7ad332b254bd60da4417ae0efb6570448c2a0fa249edd4a6a20a17da",
+        "source_url": "https://raw.githubusercontent.com/zuohongyao/zuohongyao.github.io/832d536f5d381d428a887e59ceeacc90a40e3b7e/index.html",
+        "source_commit": "832d536f5d381d428a887e59ceeacc90a40e3b7e",
+        "source_sha256_lf": "3794ff8c39e975ff457f264cb863f6e191297614dc0273f04c09ac654962eed5",
+        "source_bytes_lf": 766561,
+        "line_ending_policy": "CRLF and CR normalized to LF for hash verification",
+        "inspected_at_utc": "2026-11-05T20:43:35+00:00",
+        "acquisition_mode": "verified_cache",
+        "source_path": "D:\\OSP\\work\\rq1-verification-w6a1_tp2\\data\\raw\\index.html"
+      }
+    }
+  ],
+  "matches_published_rq1": true,
+  "limitations": "Automated verification, not a student's independent execution or human label review. Plots are checked by the separate full run."
+}

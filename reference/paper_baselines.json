@@ -97,6 +97,7 @@
       },
       "denominator": "All 500 defect instances of the corresponding OS; not the number of code labels.",
       "source": "Table II, printed page 9",
+      "source_url": "https://arxiv.org/html/2608.20643v1#S4.T2",
       "paper_labels": [
         "Kernel",
         "SystemLib",
@@ -104,6 +105,119 @@
         "Framework",
         "SystemService",
         "Application"
+      ]
+    },
+    "affected_function": {
+      "categories": [
+        "Mem/Res Mng",
+        "Pro/Tas Sch",
+        "Sto Mng",
+        "Dev/Drv",
+        "Net/Com",
+        "Com/Adp",
+        "Sec/Perm",
+        "Gra/Ren"
+      ],
+      "multilabel": false,
+      "table_ii_percent": {
+        "Android": [12.4, 4.8, 3.6, 7.2, 3.2, 3.0, 60.0, 5.8],
+        "Linux": [2.0, 3.6, 8.4, 17.2, 6.6, 41.2, 14.0, 7.0],
+        "HarmonyOS": [22.8, 5.6, 13.8, 13.6, 20.0, 2.4, 18.0, 3.8]
+      },
+      "denominator": "All 500 defect instances of the corresponding OS.",
+      "source": "Table II, Affected Function block",
+      "source_url": "https://arxiv.org/html/2608.20643v1#S4.T2",
+      "paper_labels": [
+        "Mem/Res Mng",
+        "Pro/Tas Sch",
+        "Sto Mng",
+        "Dev/Drv",
+        "Net/Com",
+        "Com/Adp",
+        "Sec/Perm",
+        "Gra/Ren"
+      ]
+    },
+    "trigger_scenario": {
+      "categories": [
+        "Per/Ide Dep",
+        "Reg Ope",
+        "Bor Con",
+        "Con/Mul Thr",
+        "Sta Dep",
+        "Env Dep",
+        "Mul/Loc Dep"
+      ],
+      "multilabel": false,
+      "table_ii_percent": {
+        "Android": [31.2, 8.8, 37.0, 7.2, 14.8, 1.0, 0.0],
+        "Linux": [1.6, 9.0, 19.0, 3.0, 5.2, 62.0, 0.2],
+        "HarmonyOS": [2.8, 6.6, 52.6, 24.0, 11.2, 2.8, 0.0]
+      },
+      "denominator": "All 500 defect instances of the corresponding OS.",
+      "source": "Table II, Trigger Scenario block",
+      "source_url": "https://arxiv.org/html/2608.20643v1#S4.T2",
+      "paper_labels": [
+        "Per/Ide Dep",
+        "Reg Ope",
+        "Bor Con",
+        "Con/Mul Thr",
+        "Sta Dep",
+        "Env Dep",
+        "Mul/Loc Dep"
+      ]
+    },
+    "severity": {
+      "categories": ["Critical", "High", "Medium", "Low", "Undecided"],
+      "multilabel": false,
+      "table_ii_percent": {
+        "Android": [8.6, 91.0, 0.4, 0.0, 0.0],
+        "Linux": [2.6, 18.6, 11.4, 2.2, 65.2],
+        "HarmonyOS": [0.2, 22.4, 51.4, 24.8, 1.2]
+      },
+      "denominator": "All 500 defect instances of the corresponding OS, including Undecided.",
+      "source": "Table II, Severity block",
+      "source_url": "https://arxiv.org/html/2608.20643v1#S4.T2",
+      "paper_labels": ["Critical", "High", "Medium", "Low", "Undecided"]
+    },
+    "code_level": {
+      "categories": [
+        "Class",
+        "Function",
+        "Signature",
+        "Loop",
+        "If",
+        "Exception",
+        "Call",
+        "Assignment",
+        "Return",
+        "Condition",
+        "Object",
+        "Variable"
+      ],
+      "multilabel": true,
+      "table_ii_percent": {
+        "Android": [3.2, 35.6, 15.6, 3.8, 53.0, 8.2, 63.4, 28.4, 15.4, 18.8, 2.6, 47.6],
+        "Linux": [2.2, 15.4, 12.2, 4.2, 37.4, 2.2, 48.8, 54.4, 4.4, 23.8, 3.8, 46.8],
+        "HarmonyOS": [1.4, 13.6, 7.6, 3.0, 46.0, 0.2, 61.8, 31.8, 20.2, 21.2, 0.4, 38.2]
+      },
+      "denominator": "All 500 defect instances of the corresponding OS; each category counts defects carrying that label, not the total number of code labels. Categories are not mutually exclusive and their percentages need not sum to 100.",
+      "source": "Table II, Distribution of Repaired Code Elements block; Section III-C5 defines the multilabel classification.",
+      "source_url": "https://arxiv.org/html/2608.20643v1#S4.T2",
+      "paper_os_label_note": "The published code-element block labels the HarmonyOS row as Harmony; the canonical dataset OS key is HarmonyOS.",
+      "paper_labels": [
+        "Class",
+        "Function",
+        "Signature",
+        "Loop",
+        "If",
+        "Exception",
+        "Call",
+        "Assignment",
+        "Return",
+        "Condition",
+        "Object",
+        "Variable"
       ]
     }
   }

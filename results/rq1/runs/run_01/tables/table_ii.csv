@@ -1,0 +1,115 @@
+dimension,os,category,count,n,paper_percent,ours_percent,difference_pp,relative_error_percent,matches_to_2dp,status,paper_source
+os_layer,Android,Kernel,30,500,6,6.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+os_layer,Android,SystemLib,101,500,20.2,20.2,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+os_layer,Android,RuntimeVM,2,500,0.4,0.4,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+os_layer,Android,Framework,90,500,18,18.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+os_layer,Android,SystemService,194,500,38.8,38.8,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+os_layer,Android,Application,83,500,16.6,16.6,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+os_layer,Linux,Kernel,79,500,15.8,15.8,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+os_layer,Linux,SystemLib,94,500,18.8,18.8,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+os_layer,Linux,RuntimeVM,1,500,0.2,0.2,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+os_layer,Linux,Framework,18,500,3.6,3.6,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+os_layer,Linux,SystemService,37,500,7.4,7.4,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+os_layer,Linux,Application,271,500,54.2,54.2,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+os_layer,HarmonyOS,Kernel,359,500,71.8,71.8,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+os_layer,HarmonyOS,SystemLib,34,500,6.8,6.8,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+os_layer,HarmonyOS,RuntimeVM,44,500,8.8,8.8,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+os_layer,HarmonyOS,Framework,14,500,2.8,2.8,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+os_layer,HarmonyOS,SystemService,24,500,4.8,4.8,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+os_layer,HarmonyOS,Application,25,500,5,5.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+affected_function,Android,Mem/Res Mng,62,500,12.4,12.4,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+affected_function,Android,Pro/Tas Sch,24,500,4.8,4.8,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+affected_function,Android,Sto Mng,18,500,3.6,3.6,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+affected_function,Android,Dev/Drv,36,500,7.2,7.2,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+affected_function,Android,Net/Com,16,500,3.2,3.2,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+affected_function,Android,Com/Adp,15,500,3.0,3.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+affected_function,Android,Sec/Perm,300,500,60.0,60.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+affected_function,Android,Gra/Ren,29,500,5.8,5.8,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+affected_function,Linux,Mem/Res Mng,10,500,2.0,2.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+affected_function,Linux,Pro/Tas Sch,18,500,3.6,3.6,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+affected_function,Linux,Sto Mng,42,500,8.4,8.4,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+affected_function,Linux,Dev/Drv,86,500,17.2,17.2,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+affected_function,Linux,Net/Com,33,500,6.6,6.6,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+affected_function,Linux,Com/Adp,206,500,41.2,41.2,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+affected_function,Linux,Sec/Perm,70,500,14.0,14.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+affected_function,Linux,Gra/Ren,35,500,7.0,7.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+affected_function,HarmonyOS,Mem/Res Mng,114,500,22.8,22.8,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+affected_function,HarmonyOS,Pro/Tas Sch,28,500,5.6,5.6,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+affected_function,HarmonyOS,Sto Mng,69,500,13.8,13.8,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+affected_function,HarmonyOS,Dev/Drv,68,500,13.6,13.6,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+affected_function,HarmonyOS,Net/Com,100,500,20.0,20.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+affected_function,HarmonyOS,Com/Adp,12,500,2.4,2.4,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+affected_function,HarmonyOS,Sec/Perm,90,500,18.0,18.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+affected_function,HarmonyOS,Gra/Ren,19,500,3.8,3.8,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+trigger_scenario,Android,Per/Ide Dep,156,500,31.2,31.2,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+trigger_scenario,Android,Reg Ope,44,500,8.8,8.8,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+trigger_scenario,Android,Bor Con,185,500,37.0,37.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+trigger_scenario,Android,Con/Mul Thr,36,500,7.2,7.2,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+trigger_scenario,Android,Sta Dep,74,500,14.8,14.8,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+trigger_scenario,Android,Env Dep,5,500,1.0,1.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+trigger_scenario,Android,Mul/Loc Dep,0,500,0.0,0.0,0.0,,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+trigger_scenario,Linux,Per/Ide Dep,8,500,1.6,1.6,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+trigger_scenario,Linux,Reg Ope,45,500,9.0,9.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+trigger_scenario,Linux,Bor Con,95,500,19.0,19.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+trigger_scenario,Linux,Con/Mul Thr,15,500,3.0,3.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+trigger_scenario,Linux,Sta Dep,26,500,5.2,5.2,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+trigger_scenario,Linux,Env Dep,310,500,62.0,62.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+trigger_scenario,Linux,Mul/Loc Dep,1,500,0.2,0.2,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+trigger_scenario,HarmonyOS,Per/Ide Dep,14,500,2.8,2.8,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+trigger_scenario,HarmonyOS,Reg Ope,33,500,6.6,6.6,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+trigger_scenario,HarmonyOS,Bor Con,263,500,52.6,52.6,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+trigger_scenario,HarmonyOS,Con/Mul Thr,120,500,24.0,24.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+trigger_scenario,HarmonyOS,Sta Dep,56,500,11.2,11.2,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+trigger_scenario,HarmonyOS,Env Dep,14,500,2.8,2.8,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+trigger_scenario,HarmonyOS,Mul/Loc Dep,0,500,0.0,0.0,0.0,,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+severity,Android,Critical,43,500,8.6,8.6,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+severity,Android,High,455,500,91.0,91.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+severity,Android,Medium,2,500,0.4,0.4,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+severity,Android,Low,0,500,0.0,0.0,0.0,,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+severity,Android,Undecided,0,500,0.0,0.0,0.0,,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+severity,Linux,Critical,13,500,2.6,2.6,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+severity,Linux,High,93,500,18.6,18.6,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+severity,Linux,Medium,57,500,11.4,11.4,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+severity,Linux,Low,11,500,2.2,2.2,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+severity,Linux,Undecided,326,500,65.2,65.2,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+severity,HarmonyOS,Critical,1,500,0.2,0.2,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+severity,HarmonyOS,High,112,500,22.4,22.4,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+severity,HarmonyOS,Medium,257,500,51.4,51.4,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+severity,HarmonyOS,Low,124,500,24.8,24.8,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+severity,HarmonyOS,Undecided,6,500,1.2,1.2,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,Android,Class,16,500,3.2,3.2,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,Android,Function,178,500,35.6,35.6,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,Android,Signature,78,500,15.6,15.6,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,Android,Loop,19,500,3.8,3.8,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,Android,If,265,500,53.0,53.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,Android,Exception,41,500,8.2,8.2,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,Android,Call,317,500,63.4,63.4,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,Android,Assignment,142,500,28.4,28.4,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,Android,Return,77,500,15.4,15.4,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,Android,Condition,94,500,18.8,18.8,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,Android,Object,13,500,2.6,2.6,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,Android,Variable,238,500,47.6,47.6,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,Linux,Class,11,500,2.2,2.2,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,Linux,Function,77,500,15.4,15.4,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,Linux,Signature,61,500,12.2,12.2,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,Linux,Loop,21,500,4.2,4.2,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,Linux,If,187,500,37.4,37.4,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,Linux,Exception,11,500,2.2,2.2,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,Linux,Call,244,500,48.8,48.8,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,Linux,Assignment,272,500,54.4,54.4,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,Linux,Return,22,500,4.4,4.4,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,Linux,Condition,119,500,23.8,23.8,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,Linux,Object,19,500,3.8,3.8,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,Linux,Variable,234,500,46.8,46.8,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,HarmonyOS,Class,7,500,1.4,1.4,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,HarmonyOS,Function,68,500,13.6,13.6,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,HarmonyOS,Signature,38,500,7.6,7.6,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,HarmonyOS,Loop,15,500,3.0,3.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,HarmonyOS,If,230,500,46.0,46.0,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,HarmonyOS,Exception,1,500,0.2,0.2,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,HarmonyOS,Call,309,500,61.8,61.8,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,HarmonyOS,Assignment,159,500,31.8,31.8,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,HarmonyOS,Return,101,500,20.2,20.2,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,HarmonyOS,Condition,106,500,21.2,21.2,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,HarmonyOS,Object,2,500,0.4,0.4,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2
+code_level,HarmonyOS,Variable,191,500,38.2,38.2,0.0,0.0,True,match,https://arxiv.org/html/2608.20643v1#S4.T2

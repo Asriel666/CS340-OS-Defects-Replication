@@ -25,7 +25,9 @@ SOURCE_URL = (
     + "/index.html"
 )
 # Hash of the pinned UTF-8 source after CRLF/CR -> LF normalization.
-SOURCE_SHA256_LF = "c617aa2478fea265b61c6b18ac158234ad1f2f4c4b3d0c8abbb7760f75e26a56"
+# Git blob 4d004fd78d5edc0f6961424e4dc02ce9dd550f93 has no terminal newline.
+# Do not add one: the checksum authenticates the actual pinned file.
+SOURCE_SHA256_LF = "3794ff8c39e975ff457f264cb863f6e191297614dc0273f04c09ac654962eed5"
 OS_NAMES = {"android": "Android", "linux": "Linux", "harmony": "HarmonyOS"}
 LAYER_MAP = {
     "Kernel Layer": "Kernel",
@@ -133,7 +135,8 @@ def fetch_source(path: Path, offline: bool = False) -> dict:
     normalized.decode("utf-8", errors="strict")
     digest = hashlib.sha256(normalized).hexdigest()
     if digest != SOURCE_SHA256_LF:
-        raise ValueError("Pinned source checksum mismatch: expected " + SOURCE_SHA256_LF + ", got " + digest)
+        raise ValueError("Pinned source checksum mismatch: expected " + SOURCE_SHA256_LF + ", got " + digest
+                         + ". Preserve this file for inspection; fetch the pinned URL into a fresh cache. Do not edit the payload to match the hash.")
     if acquisition == "downloaded":
         path.parent.mkdir(parents=True, exist_ok=True)
         # Validate before replacing the cache, and replace it atomically.
