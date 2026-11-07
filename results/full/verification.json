@@ -1,6 +1,6 @@
 {
-  "verified_at_utc": "2026-11-05T20:59:30+00:00",
-  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "verified_at_utc": "2026-11-07T10:18:35+00:00",
+  "python": "3.13.14 (main, Jun 11 2026, 04:04:46) [MSC v.1944 64 bit (AMD64)]",
   "status": "passed",
   "isolated_copy": true,
   "unit_tests": {
@@ -15,7 +15,7 @@
       "-v"
     ],
     "exit_code": 0,
-    "output": "test_output_has_all_cells_and_explicit_unknowns (test_joint.JointAnalysisTests.test_output_has_all_cells_and_explicit_unknowns) ... ok\ntest_wrong_corpus_size_or_os_fails (test_joint.JointAnalysisTests.test_wrong_corpus_size_or_os_fails) ... ok\ntest_denominator_and_both_marginals (test_joint.JointDistributionTests.test_denominator_and_both_marginals) ... ok\ntest_small_corpus_preserves_empty_categories (test_joint.JointDistributionTests.test_small_corpus_preserves_empty_categories) ... ok\ntest_unknown_and_empty_inputs_fail (test_joint.JointDistributionTests.test_unknown_and_empty_inputs_fail) ... ok\ntest_invalid_percentages_and_totals_rejected (test_joint.JointReferenceTests.test_invalid_percentages_and_totals_rejected) ... ok\ntest_missing_source_and_wrong_denominator_rejected (test_joint.JointReferenceTests.test_missing_source_and_wrong_denominator_rejected) ... ok\ntest_missing_table_os_row_or_cell_rejected (test_joint.JointReferenceTests.test_missing_table_os_row_or_cell_rejected) ... ok\ntest_published_reference_has_438_cells_and_sources (test_joint.JointReferenceTests.test_published_reference_has_438_cells_and_sources) ... ok\ntest_reordered_axes_and_wrong_fields_rejected (test_joint.JointReferenceTests.test_reordered_axes_and_wrong_fields_rejected) ... ok\ntest_help_exposes_rq1_and_retains_stage_entry (test_rq1.CommandLineTests.test_help_exposes_rq1_and_retains_stage_entry) ... ok\ntest_invalid_or_ambiguous_scope_fails_before_any_run (test_rq1.CommandLineTests.test_invalid_or_ambiguous_scope_fails_before_any_run) ... ok\ntest_ids_are_unique_within_each_os (test_rq1.DatasetValidationTests.test_ids_are_unique_within_each_os) ... ok\ntest_missing_os_record_is_rejected (test_rq1.DatasetValidationTests.test_missing_os_record_is_rejected) ... ok\ntest_unknown_single_and_multi_label_categories_are_rejected (test_rq1.DatasetValidationTests.test_unknown_single_and_multi_label_categories_are_rejected) ... ok\ntest_multilabel_denominator_is_defects_not_number_of_labels (test_rq1.DistributionTests.test_multilabel_denominator_is_defects_not_number_of_labels) ... ok\ntest_repeated_label_cannot_double_count_one_defect (test_rq1.DistributionTests.test_repeated_label_cannot_double_count_one_defect) ... ok\ntest_complete_reference_preserves_all_114_cells_including_zeroes (test_rq1.ReferenceValidationTests.test_complete_reference_preserves_all_114_cells_including_zeroes) ... ok\ntest_missing_os_vector_is_rejected (test_rq1.ReferenceValidationTests.test_missing_os_vector_is_rejected) ... ok\ntest_missing_unknown_and_reordered_categories_are_rejected (test_rq1.ReferenceValidationTests.test_missing_unknown_and_reordered_categories_are_rejected) ... ok\ntest_multilabel_policy_cannot_change_the_denominator_or_field_type (test_rq1.ReferenceValidationTests.test_multilabel_policy_cannot_change_the_denominator_or_field_type) ... ok\ntest_nonfinite_percentages_are_rejected (test_rq1.ReferenceValidationTests.test_nonfinite_percentages_are_rejected) ... ok\ntest_short_or_long_reference_vector_cannot_be_silently_truncated_by_zip (test_rq1.ReferenceValidationTests.test_short_or_long_reference_vector_cannot_be_silently_truncated_by_zip) ... ok\ntest_corruption_and_extra_trailing_newline_are_rejected_before_caching (test_rq1.SourceIntegrityTests.test_corruption_and_extra_trailing_newline_are_rejected_before_caching) ... ok\ntest_fresh_lf_and_crlf_downloads_have_the_same_verified_digest (test_rq1.SourceIntegrityTests.test_fresh_lf_and_crlf_downloads_have_the_same_verified_digest) ... ok\ntest_missing_offline_cache_never_attempts_a_download (test_rq1.SourceIntegrityTests.test_missing_offline_cache_never_attempts_a_download) ... ok\ntest_offline_cache_is_verified_without_inventing_a_download_timestamp (test_rq1.SourceIntegrityTests.test_offline_cache_is_verified_without_inventing_a_download_timestamp) ... ok\ntest_pinned_hash_is_for_the_unmodified_author_source (test_rq1.SourceIntegrityTests.test_pinned_hash_is_for_the_unmodified_author_source) ... ok\ntest_each_scope_selects_only_the_requested_implemented_analyses (test_runner.AnalysisDispatchTests.test_each_scope_selects_only_the_requested_implemented_analyses) ... ok\ntest_unimplemented_stages_and_unknown_analysis_are_rejected_before_dispatch (test_runner.AnalysisDispatchTests.test_unimplemented_stages_and_unknown_analysis_are_rejected_before_dispatch) ... ok\ntest_disagreement_about_definedness_is_rejected (test_runner.RepeatedStatisticsTests.test_disagreement_about_definedness_is_rejected) ... ok\ntest_numeric_summary_uses_actual_repeated_values (test_runner.RepeatedStatisticsTests.test_numeric_summary_uses_actual_repeated_values) ... ok\ntest_same_row_count_with_different_comparison_keys_is_rejected (test_runner.RepeatedStatisticsTests.test_same_row_count_with_different_comparison_keys_is_rejected) ... ok\ntest_undefined_coefficients_remain_blank_in_exported_statistics (test_runner.RepeatedStatisticsTests.test_undefined_coefficients_remain_blank_in_exported_statistics) ... ok\ntest_rerun_preserves_existing_human_entries_byte_for_byte (test_runner.ReviewTemplateTests.test_rerun_preserves_existing_human_entries_byte_for_byte) ... ok\ntest_seed_340_selects_four_per_os_independent_of_input_order (test_runner.ReviewTemplateTests.test_seed_340_selects_four_per_os_independent_of_input_order) ... ok\ntest_average_ranks_preserve_original_order_and_ties (test_similarity.RankTests.test_average_ranks_preserve_original_order_and_ties) ... ok\ntest_bad_length_or_nonfinite_values_are_rejected (test_similarity.RankTests.test_bad_length_or_nonfinite_values_are_rejected) ... ok\ntest_constant_vector_is_undefined (test_similarity.RankTests.test_constant_vector_is_undefined) ... ok\ntest_monotonic_and_reverse_vectors (test_similarity.RankTests.test_monotonic_and_reverse_vectors) ... ok\ntest_ties_use_pearson_of_average_ranks (test_similarity.RankTests.test_ties_use_pearson_of_average_ranks) ... ok\ntest_all_nine_pairs_and_the_published_trigger_discrepancy (test_similarity.SimilarityAnalysisTests.test_all_nine_pairs_and_the_published_trigger_discrepancy) ... ok\ntest_constant_inputs_emit_null_and_unconfirmed_not_match (test_similarity.SimilarityAnalysisTests.test_constant_inputs_emit_null_and_unconfirmed_not_match) ... ok\ntest_missing_os_and_unknown_labels_fail (test_similarity.SimilarityAnalysisTests.test_missing_os_and_unknown_labels_fail) ... ok\ntest_asymmetric_nonfinite_and_out_of_range_references_are_rejected (test_similarity.SimilarityReferenceTests.test_asymmetric_nonfinite_and_out_of_range_references_are_rejected) ... ok\ntest_missing_dimension_pair_and_reordered_axes_are_rejected (test_similarity.SimilarityReferenceTests.test_missing_dimension_pair_and_reordered_axes_are_rejected) ... ok\ntest_published_matrix_axes_and_values_are_not_guessed (test_similarity.SimilarityReferenceTests.test_published_matrix_axes_and_values_are_not_guessed) ... ok\n\n----------------------------------------------------------------------\nRan 47 tests in 0.796s\n\nOK\n"
+    "output": "test_output_has_all_cells_and_explicit_unknowns (test_joint.JointAnalysisTests.test_output_has_all_cells_and_explicit_unknowns) ... ok\ntest_wrong_corpus_size_or_os_fails (test_joint.JointAnalysisTests.test_wrong_corpus_size_or_os_fails) ... ok\ntest_denominator_and_both_marginals (test_joint.JointDistributionTests.test_denominator_and_both_marginals) ... ok\ntest_small_corpus_preserves_empty_categories (test_joint.JointDistributionTests.test_small_corpus_preserves_empty_categories) ... ok\ntest_unknown_and_empty_inputs_fail (test_joint.JointDistributionTests.test_unknown_and_empty_inputs_fail) ... ok\ntest_invalid_percentages_and_totals_rejected (test_joint.JointReferenceTests.test_invalid_percentages_and_totals_rejected) ... ok\ntest_missing_source_and_wrong_denominator_rejected (test_joint.JointReferenceTests.test_missing_source_and_wrong_denominator_rejected) ... ok\ntest_missing_table_os_row_or_cell_rejected (test_joint.JointReferenceTests.test_missing_table_os_row_or_cell_rejected) ... ok\ntest_published_reference_has_438_cells_and_sources (test_joint.JointReferenceTests.test_published_reference_has_438_cells_and_sources) ... ok\ntest_reordered_axes_and_wrong_fields_rejected (test_joint.JointReferenceTests.test_reordered_axes_and_wrong_fields_rejected) ... ok\ntest_analysis_requires_exactly_500_records_per_os (test_repair_size.AnalyzeRepairSizeTests.test_analysis_requires_exactly_500_records_per_os) ... ok\ntest_boundary_value_distinguishes_conventions_end_to_end (test_repair_size.AnalyzeRepairSizeTests.test_boundary_value_distinguishes_conventions_end_to_end)\n500 defects per OS, all with value exactly 10; paper [0,100,0,0,0]. ... ok\ntest_empty_or_wrong_reference_is_rejected (test_repair_size.AnalyzeRepairSizeTests.test_empty_or_wrong_reference_is_rejected) ... ok\ntest_outputs_are_written_for_every_series_and_config (test_repair_size.AnalyzeRepairSizeTests.test_outputs_are_written_for_every_series_and_config) ... ok\ntest_reference_and_transcribed_totals_are_consistent (test_repair_size.AnalyzeRepairSizeTests.test_reference_and_transcribed_totals_are_consistent) ... ok\ntest_synthetic_interior_value_matches_under_both_conventions (test_repair_size.AnalyzeRepairSizeTests.test_synthetic_interior_value_matches_under_both_conventions)\n500 defects per OS, all with value 5; paper [100,0,0,0,0] matches both ... ok\ntest_boundary_value_goes_down_under_right_closed (test_repair_size.AssignBinTests.test_boundary_value_goes_down_under_right_closed) ... ok\ntest_boundary_value_goes_up_under_left_closed (test_repair_size.AssignBinTests.test_boundary_value_goes_up_under_left_closed) ... ok\ntest_final_bin_is_closed_on_both_ends (test_repair_size.AssignBinTests.test_final_bin_is_closed_on_both_ends) ... ok\ntest_first_edge_zero_excluded_under_right_closed (test_repair_size.AssignBinTests.test_first_edge_zero_excluded_under_right_closed) ... ok\ntest_unknown_convention_and_negative_value_are_rejected (test_repair_size.AssignBinTests.test_unknown_convention_and_negative_value_are_rejected) ... ok\ntest_values_above_last_edge_fall_outside (test_repair_size.AssignBinTests.test_values_above_last_edge_fall_outside) ... ok\ntest_bin_percent_uses_full_group_denominator (test_repair_size.BinDistributionTests.test_bin_percent_uses_full_group_denominator) ... ok\ntest_censored_unassigned_record_leaves_bins_but_not_denominator (test_repair_size.BinDistributionTests.test_censored_unassigned_record_leaves_bins_but_not_denominator) ... ok\ntest_zero_functions_outside_bins_only_under_right_closed (test_repair_size.BinDistributionTests.test_zero_functions_outside_bins_only_under_right_closed) ... ok\ntest_censored_metric_gets_both_policies_per_boundary (test_repair_size.ConventionConfigTests.test_censored_metric_gets_both_policies_per_boundary) ... ok\ntest_plain_metric_marks_censored_policy_not_applicable (test_repair_size.ConventionConfigTests.test_plain_metric_marks_censored_policy_not_applicable) ... ok\ntest_help_exposes_rq1_and_retains_stage_entry (test_rq1.CommandLineTests.test_help_exposes_rq1_and_retains_stage_entry) ... ok\ntest_invalid_or_ambiguous_scope_fails_before_any_run (test_rq1.CommandLineTests.test_invalid_or_ambiguous_scope_fails_before_any_run) ... ok\ntest_ids_are_unique_within_each_os (test_rq1.DatasetValidationTests.test_ids_are_unique_within_each_os) ... ok\ntest_missing_os_record_is_rejected (test_rq1.DatasetValidationTests.test_missing_os_record_is_rejected) ... ok\ntest_unknown_single_and_multi_label_categories_are_rejected (test_rq1.DatasetValidationTests.test_unknown_single_and_multi_label_categories_are_rejected) ... ok\ntest_multilabel_denominator_is_defects_not_number_of_labels (test_rq1.DistributionTests.test_multilabel_denominator_is_defects_not_number_of_labels) ... ok\ntest_repeated_label_cannot_double_count_one_defect (test_rq1.DistributionTests.test_repeated_label_cannot_double_count_one_defect) ... ok\ntest_complete_reference_preserves_all_114_cells_including_zeroes (test_rq1.ReferenceValidationTests.test_complete_reference_preserves_all_114_cells_including_zeroes) ... ok\ntest_missing_os_vector_is_rejected (test_rq1.ReferenceValidationTests.test_missing_os_vector_is_rejected) ... ok\ntest_missing_unknown_and_reordered_categories_are_rejected (test_rq1.ReferenceValidationTests.test_missing_unknown_and_reordered_categories_are_rejected) ... ok\ntest_multilabel_policy_cannot_change_the_denominator_or_field_type (test_rq1.ReferenceValidationTests.test_multilabel_policy_cannot_change_the_denominator_or_field_type) ... ok\ntest_nonfinite_percentages_are_rejected (test_rq1.ReferenceValidationTests.test_nonfinite_percentages_are_rejected) ... ok\ntest_short_or_long_reference_vector_cannot_be_silently_truncated_by_zip (test_rq1.ReferenceValidationTests.test_short_or_long_reference_vector_cannot_be_silently_truncated_by_zip) ... ok\ntest_corruption_and_extra_trailing_newline_are_rejected_before_caching (test_rq1.SourceIntegrityTests.test_corruption_and_extra_trailing_newline_are_rejected_before_caching) ... ok\ntest_fresh_lf_and_crlf_downloads_have_the_same_verified_digest (test_rq1.SourceIntegrityTests.test_fresh_lf_and_crlf_downloads_have_the_same_verified_digest) ... ok\ntest_missing_offline_cache_never_attempts_a_download (test_rq1.SourceIntegrityTests.test_missing_offline_cache_never_attempts_a_download) ... ok\ntest_offline_cache_is_verified_without_inventing_a_download_timestamp (test_rq1.SourceIntegrityTests.test_offline_cache_is_verified_without_inventing_a_download_timestamp) ... ok\ntest_pinned_hash_is_for_the_unmodified_author_source (test_rq1.SourceIntegrityTests.test_pinned_hash_is_for_the_unmodified_author_source) ... ok\ntest_each_scope_selects_only_the_requested_implemented_analyses (test_runner.AnalysisDispatchTests.test_each_scope_selects_only_the_requested_implemented_analyses) ... ok\ntest_unimplemented_stages_and_unknown_analysis_are_rejected_before_dispatch (test_runner.AnalysisDispatchTests.test_unimplemented_stages_and_unknown_analysis_are_rejected_before_dispatch) ... ok\ntest_disagreement_about_definedness_is_rejected (test_runner.RepeatedStatisticsTests.test_disagreement_about_definedness_is_rejected) ... ok\ntest_numeric_summary_uses_actual_repeated_values (test_runner.RepeatedStatisticsTests.test_numeric_summary_uses_actual_repeated_values) ... ok\ntest_same_row_count_with_different_comparison_keys_is_rejected (test_runner.RepeatedStatisticsTests.test_same_row_count_with_different_comparison_keys_is_rejected) ... ok\ntest_undefined_coefficients_remain_blank_in_exported_statistics (test_runner.RepeatedStatisticsTests.test_undefined_coefficients_remain_blank_in_exported_statistics) ... ok\ntest_rerun_preserves_existing_human_entries_byte_for_byte (test_runner.ReviewTemplateTests.test_rerun_preserves_existing_human_entries_byte_for_byte) ... ok\ntest_seed_340_selects_four_per_os_independent_of_input_order (test_runner.ReviewTemplateTests.test_seed_340_selects_four_per_os_independent_of_input_order) ... ok\ntest_average_ranks_preserve_original_order_and_ties (test_similarity.RankTests.test_average_ranks_preserve_original_order_and_ties) ... ok\ntest_bad_length_or_nonfinite_values_are_rejected (test_similarity.RankTests.test_bad_length_or_nonfinite_values_are_rejected) ... ok\ntest_constant_vector_is_undefined (test_similarity.RankTests.test_constant_vector_is_undefined) ... ok\ntest_monotonic_and_reverse_vectors (test_similarity.RankTests.test_monotonic_and_reverse_vectors) ... ok\ntest_ties_use_pearson_of_average_ranks (test_similarity.RankTests.test_ties_use_pearson_of_average_ranks) ... ok\ntest_all_nine_pairs_and_the_published_trigger_discrepancy (test_similarity.SimilarityAnalysisTests.test_all_nine_pairs_and_the_published_trigger_discrepancy) ... ok\ntest_constant_inputs_emit_null_and_unconfirmed_not_match (test_similarity.SimilarityAnalysisTests.test_constant_inputs_emit_null_and_unconfirmed_not_match) ... ok\ntest_missing_os_and_unknown_labels_fail (test_similarity.SimilarityAnalysisTests.test_missing_os_and_unknown_labels_fail) ... ok\ntest_asymmetric_nonfinite_and_out_of_range_references_are_rejected (test_similarity.SimilarityReferenceTests.test_asymmetric_nonfinite_and_out_of_range_references_are_rejected) ... ok\ntest_missing_dimension_pair_and_reordered_axes_are_rejected (test_similarity.SimilarityReferenceTests.test_missing_dimension_pair_and_reordered_axes_are_rejected) ... ok\ntest_published_matrix_axes_and_values_are_not_guessed (test_similarity.SimilarityReferenceTests.test_published_matrix_axes_and_values_are_not_guessed) ... ok\n\n----------------------------------------------------------------------\nRan 64 tests in 1.729s\n\nOK\n"
   },
   "cases": [
     {
@@ -33,7 +33,7 @@
         "work\\fresh_download"
       ],
       "exit_code": 0,
-      "stdout": "{\"stage\": 1, \"analysis\": \"all\", \"directory\": \"D:\\\\OSP\\\\work\\\\core-verification-gsefypss\\\\work\\\\fresh_download\", \"runs\": 3, \"table_ii_matches\": 114, \"table_ii_cells\": 114, \"comparisons\": {\"univariate\": {\"cell_count\": 114, \"matched_cells\": 114, \"unconfirmed_cells\": 0, \"mismatched_cells\": 0}, \"joint\": {\"cell_count\": 438, \"matched_cells\": 438, \"unconfirmed_cells\": 0, \"mismatched_cells\": 0}, \"similarity\": {\"cell_count\": 9, \"matched_cells\": 8, \"unconfirmed_cells\": 0, \"mismatched_cells\": 1}}, \"repeatable\": true}",
+      "stdout": "{\"stage\": 1, \"analysis\": \"all\", \"directory\": \"C:\\\\Users\\\\HXuan\\\\WorkBuddy\\\\2026-11-07-17-40-42\\\\CS340-OS-Defects-Replication\\\\work\\\\core-verification-rknb_e2u\\\\work\\\\fresh_download\", \"runs\": 3, \"table_ii_matches\": 114, \"table_ii_cells\": 114, \"comparisons\": {\"univariate\": {\"cell_count\": 114, \"matched_cells\": 114, \"unconfirmed_cells\": 0, \"mismatched_cells\": 0}, \"joint\": {\"cell_count\": 438, \"matched_cells\": 438, \"unconfirmed_cells\": 0, \"mismatched_cells\": 0}, \"similarity\": {\"cell_count\": 9, \"matched_cells\": 8, \"unconfirmed_cells\": 0, \"mismatched_cells\": 1}}, \"repeatable\": true}",
       "comparisons": {
         "univariate": {
           "cell_count": 114,
@@ -66,21 +66,21 @@
         "similarity": "49c2c80fb4e9f3d2c6df36087bdc9e9d3283adfd454f6c12a8cb7366634c2464"
       },
       "source_provenance": {
-        "retrieved_at_utc": "2026-11-05T20:59:27+00:00",
+        "retrieved_at_utc": "2026-11-07T10:18:28+00:00",
         "download_bytes_sha256": "93e57bce7ad332b254bd60da4417ae0efb6570448c2a0fa249edd4a6a20a17da",
         "source_url": "https://raw.githubusercontent.com/zuohongyao/zuohongyao.github.io/832d536f5d381d428a887e59ceeacc90a40e3b7e/index.html",
         "source_commit": "832d536f5d381d428a887e59ceeacc90a40e3b7e",
         "source_sha256_lf": "3794ff8c39e975ff457f264cb863f6e191297614dc0273f04c09ac654962eed5",
         "source_bytes_lf": 766561,
         "line_ending_policy": "CRLF and CR normalized to LF for hash verification",
-        "inspected_at_utc": "2026-11-05T20:59:27+00:00",
+        "inspected_at_utc": "2026-11-07T10:18:28+00:00",
         "acquisition_mode": "downloaded",
-        "source_path": "D:\\OSP\\work\\core-verification-gsefypss\\data\\raw\\index.html"
+        "source_path": "C:\\Users\\HXuan\\WorkBuddy\\2026-11-07-17-40-42\\CS340-OS-Defects-Replication\\work\\core-verification-rknb_e2u\\data\\raw\\index.html"
       },
       "run_logs": [
         {
-          "started_at_utc": "2026-11-05T20:59:27+00:00",
-          "elapsed_seconds": 0.07317940000029921,
+          "started_at_utc": "2026-11-07T10:18:28+00:00",
+          "elapsed_seconds": 0.18291199998930097,
           "stage": 1,
           "analysis": "all",
           "run": 1,
@@ -984,8 +984,8 @@
           "environment_file": "../../environment.json"
         },
         {
-          "started_at_utc": "2026-11-05T20:59:27+00:00",
-          "elapsed_seconds": 0.07326169999942067,
+          "started_at_utc": "2026-11-07T10:18:28+00:00",
+          "elapsed_seconds": 0.1123186000622809,
           "stage": 1,
           "analysis": "all",
           "run": 2,
@@ -1889,8 +1889,8 @@
           "environment_file": "../../environment.json"
         },
         {
-          "started_at_utc": "2026-11-05T20:59:27+00:00",
-          "elapsed_seconds": 0.0736207000009017,
+          "started_at_utc": "2026-11-07T10:18:28+00:00",
+          "elapsed_seconds": 0.1042286001611501,
           "stage": 1,
           "analysis": "all",
           "run": 3,
@@ -2811,7 +2811,7 @@
         "work\\offline_cache"
       ],
       "exit_code": 0,
-      "stdout": "{\"stage\": 1, \"analysis\": \"all\", \"directory\": \"D:\\\\OSP\\\\work\\\\core-verification-gsefypss\\\\work\\\\offline_cache\", \"runs\": 3, \"table_ii_matches\": 114, \"table_ii_cells\": 114, \"comparisons\": {\"univariate\": {\"cell_count\": 114, \"matched_cells\": 114, \"unconfirmed_cells\": 0, \"mismatched_cells\": 0}, \"joint\": {\"cell_count\": 438, \"matched_cells\": 438, \"unconfirmed_cells\": 0, \"mismatched_cells\": 0}, \"similarity\": {\"cell_count\": 9, \"matched_cells\": 8, \"unconfirmed_cells\": 0, \"mismatched_cells\": 1}}, \"repeatable\": true}",
+      "stdout": "{\"stage\": 1, \"analysis\": \"all\", \"directory\": \"C:\\\\Users\\\\HXuan\\\\WorkBuddy\\\\2026-11-07-17-40-42\\\\CS340-OS-Defects-Replication\\\\work\\\\core-verification-rknb_e2u\\\\work\\\\offline_cache\", \"runs\": 3, \"table_ii_matches\": 114, \"table_ii_cells\": 114, \"comparisons\": {\"univariate\": {\"cell_count\": 114, \"matched_cells\": 114, \"unconfirmed_cells\": 0, \"mismatched_cells\": 0}, \"joint\": {\"cell_count\": 438, \"matched_cells\": 438, \"unconfirmed_cells\": 0, \"mismatched_cells\": 0}, \"similarity\": {\"cell_count\": 9, \"matched_cells\": 8, \"unconfirmed_cells\": 0, \"mismatched_cells\": 1}}, \"repeatable\": true}",
       "comparisons": {
         "univariate": {
           "cell_count": 114,
@@ -2844,21 +2844,21 @@
         "similarity": "49c2c80fb4e9f3d2c6df36087bdc9e9d3283adfd454f6c12a8cb7366634c2464"
       },
       "source_provenance": {
-        "retrieved_at_utc": "2026-11-05T20:59:27+00:00",
+        "retrieved_at_utc": "2026-11-07T10:18:28+00:00",
         "download_bytes_sha256": "93e57bce7ad332b254bd60da4417ae0efb6570448c2a0fa249edd4a6a20a17da",
         "source_url": "https://raw.githubusercontent.com/zuohongyao/zuohongyao.github.io/832d536f5d381d428a887e59ceeacc90a40e3b7e/index.html",
         "source_commit": "832d536f5d381d428a887e59ceeacc90a40e3b7e",
         "source_sha256_lf": "3794ff8c39e975ff457f264cb863f6e191297614dc0273f04c09ac654962eed5",
         "source_bytes_lf": 766561,
         "line_ending_policy": "CRLF and CR normalized to LF for hash verification",
-        "inspected_at_utc": "2026-11-05T20:59:28+00:00",
+        "inspected_at_utc": "2026-11-07T10:18:29+00:00",
         "acquisition_mode": "verified_cache",
-        "source_path": "D:\\OSP\\work\\core-verification-gsefypss\\data\\raw\\index.html"
+        "source_path": "C:\\Users\\HXuan\\WorkBuddy\\2026-11-07-17-40-42\\CS340-OS-Defects-Replication\\work\\core-verification-rknb_e2u\\data\\raw\\index.html"
       },
       "run_logs": [
         {
-          "started_at_utc": "2026-11-05T20:59:28+00:00",
-          "elapsed_seconds": 0.07924370000000636,
+          "started_at_utc": "2026-11-07T10:18:29+00:00",
+          "elapsed_seconds": 0.14510830002836883,
           "stage": 1,
           "analysis": "all",
           "run": 1,
@@ -3763,8 +3763,8 @@
           "environment_file": "../../environment.json"
         },
         {
-          "started_at_utc": "2026-11-05T20:59:28+00:00",
-          "elapsed_seconds": 0.07824740000069141,
+          "started_at_utc": "2026-11-07T10:18:30+00:00",
+          "elapsed_seconds": 0.13718540011905134,
           "stage": 1,
           "analysis": "all",
           "run": 2,
@@ -4669,8 +4669,8 @@
           "environment_file": "../../environment.json"
         },
         {
-          "started_at_utc": "2026-11-05T20:59:28+00:00",
-          "elapsed_seconds": 0.07633239999995567,
+          "started_at_utc": "2026-11-07T10:18:30+00:00",
+          "elapsed_seconds": 0.14044139999896288,
           "stage": 1,
           "analysis": "all",
           "run": 3,
@@ -5592,7 +5592,7 @@
         "work\\rq1_selection"
       ],
       "exit_code": 0,
-      "stdout": "{\"stage\": 1, \"analysis\": \"rq1\", \"directory\": \"D:\\\\OSP\\\\work\\\\core-verification-gsefypss\\\\work\\\\rq1_selection\", \"runs\": 3, \"table_ii_matches\": 114, \"table_ii_cells\": 114, \"comparisons\": {\"univariate\": {\"cell_count\": 114, \"matched_cells\": 114, \"unconfirmed_cells\": 0, \"mismatched_cells\": 0}}, \"repeatable\": true}",
+      "stdout": "{\"stage\": 1, \"analysis\": \"rq1\", \"directory\": \"C:\\\\Users\\\\HXuan\\\\WorkBuddy\\\\2026-11-07-17-40-42\\\\CS340-OS-Defects-Replication\\\\work\\\\core-verification-rknb_e2u\\\\work\\\\rq1_selection\", \"runs\": 3, \"table_ii_matches\": 114, \"table_ii_cells\": 114, \"comparisons\": {\"univariate\": {\"cell_count\": 114, \"matched_cells\": 114, \"unconfirmed_cells\": 0, \"mismatched_cells\": 0}}, \"repeatable\": true}",
       "comparisons": {
         "univariate": {
           "cell_count": 114,
@@ -5611,21 +5611,21 @@
         "univariate": "8d11edd3b53a456bffecda772c8f0cd3be01dc7a79cebbb8b6324737cad25824"
       },
       "source_provenance": {
-        "retrieved_at_utc": "2026-11-05T20:59:27+00:00",
+        "retrieved_at_utc": "2026-11-07T10:18:28+00:00",
         "download_bytes_sha256": "93e57bce7ad332b254bd60da4417ae0efb6570448c2a0fa249edd4a6a20a17da",
         "source_url": "https://raw.githubusercontent.com/zuohongyao/zuohongyao.github.io/832d536f5d381d428a887e59ceeacc90a40e3b7e/index.html",
         "source_commit": "832d536f5d381d428a887e59ceeacc90a40e3b7e",
         "source_sha256_lf": "3794ff8c39e975ff457f264cb863f6e191297614dc0273f04c09ac654962eed5",
         "source_bytes_lf": 766561,
         "line_ending_policy": "CRLF and CR normalized to LF for hash verification",
-        "inspected_at_utc": "2026-11-05T20:59:28+00:00",
+        "inspected_at_utc": "2026-11-07T10:18:31+00:00",
         "acquisition_mode": "verified_cache",
-        "source_path": "D:\\OSP\\work\\core-verification-gsefypss\\data\\raw\\index.html"
+        "source_path": "C:\\Users\\HXuan\\WorkBuddy\\2026-11-07-17-40-42\\CS340-OS-Defects-Replication\\work\\core-verification-rknb_e2u\\data\\raw\\index.html"
       },
       "run_logs": [
         {
-          "started_at_utc": "2026-11-05T20:59:28+00:00",
-          "elapsed_seconds": 0.069359600000098,
+          "started_at_utc": "2026-11-07T10:18:31+00:00",
+          "elapsed_seconds": 0.12332869996316731,
           "stage": 1,
           "analysis": "rq1",
           "run": 1,
@@ -6530,8 +6530,8 @@
           "environment_file": "../../environment.json"
         },
         {
-          "started_at_utc": "2026-11-05T20:59:28+00:00",
-          "elapsed_seconds": 0.062283299999762676,
+          "started_at_utc": "2026-11-07T10:18:31+00:00",
+          "elapsed_seconds": 0.11258929991163313,
           "stage": 1,
           "analysis": "rq1",
           "run": 2,
@@ -7436,8 +7436,8 @@
           "environment_file": "../../environment.json"
         },
         {
-          "started_at_utc": "2026-11-05T20:59:28+00:00",
-          "elapsed_seconds": 0.06621049999921524,
+          "started_at_utc": "2026-11-07T10:18:31+00:00",
+          "elapsed_seconds": 0.12334930012002587,
           "stage": 1,
           "analysis": "rq1",
           "run": 3,
@@ -8359,7 +8359,7 @@
         "work\\rq2_selection"
       ],
       "exit_code": 0,
-      "stdout": "{\"stage\": 1, \"analysis\": \"rq2\", \"directory\": \"D:\\\\OSP\\\\work\\\\core-verification-gsefypss\\\\work\\\\rq2_selection\", \"runs\": 3, \"table_ii_matches\": 0, \"table_ii_cells\": 0, \"comparisons\": {\"joint\": {\"cell_count\": 438, \"matched_cells\": 438, \"unconfirmed_cells\": 0, \"mismatched_cells\": 0}}, \"repeatable\": true}",
+      "stdout": "{\"stage\": 1, \"analysis\": \"rq2\", \"directory\": \"C:\\\\Users\\\\HXuan\\\\WorkBuddy\\\\2026-11-07-17-40-42\\\\CS340-OS-Defects-Replication\\\\work\\\\core-verification-rknb_e2u\\\\work\\\\rq2_selection\", \"runs\": 3, \"table_ii_matches\": 0, \"table_ii_cells\": 0, \"comparisons\": {\"joint\": {\"cell_count\": 438, \"matched_cells\": 438, \"unconfirmed_cells\": 0, \"mismatched_cells\": 0}}, \"repeatable\": true}",
       "comparisons": {
         "joint": {
           "cell_count": 438,
@@ -8378,21 +8378,21 @@
         "joint": "078070a3a5b7869259cefe51328764f2489a91c209c362ca1bfda12031ceb39f"
       },
       "source_provenance": {
-        "retrieved_at_utc": "2026-11-05T20:59:27+00:00",
+        "retrieved_at_utc": "2026-11-07T10:18:28+00:00",
         "download_bytes_sha256": "93e57bce7ad332b254bd60da4417ae0efb6570448c2a0fa249edd4a6a20a17da",
         "source_url": "https://raw.githubusercontent.com/zuohongyao/zuohongyao.github.io/832d536f5d381d428a887e59ceeacc90a40e3b7e/index.html",
         "source_commit": "832d536f5d381d428a887e59ceeacc90a40e3b7e",
         "source_sha256_lf": "3794ff8c39e975ff457f264cb863f6e191297614dc0273f04c09ac654962eed5",
         "source_bytes_lf": 766561,
         "line_ending_policy": "CRLF and CR normalized to LF for hash verification",
-        "inspected_at_utc": "2026-11-05T20:59:29+00:00",
+        "inspected_at_utc": "2026-11-07T10:18:32+00:00",
         "acquisition_mode": "verified_cache",
-        "source_path": "D:\\OSP\\work\\core-verification-gsefypss\\data\\raw\\index.html"
+        "source_path": "C:\\Users\\HXuan\\WorkBuddy\\2026-11-07-17-40-42\\CS340-OS-Defects-Replication\\work\\core-verification-rknb_e2u\\data\\raw\\index.html"
       },
       "run_logs": [
         {
-          "started_at_utc": "2026-11-05T20:59:29+00:00",
-          "elapsed_seconds": 0.06852580000122543,
+          "started_at_utc": "2026-11-07T10:18:32+00:00",
+          "elapsed_seconds": 0.11387009988538921,
           "stage": 1,
           "analysis": "rq2",
           "run": 1,
@@ -9297,8 +9297,8 @@
           "environment_file": "../../environment.json"
         },
         {
-          "started_at_utc": "2026-11-05T20:59:29+00:00",
-          "elapsed_seconds": 0.06643939999958093,
+          "started_at_utc": "2026-11-07T10:18:32+00:00",
+          "elapsed_seconds": 0.1068053999915719,
           "stage": 1,
           "analysis": "rq2",
           "run": 2,
@@ -10203,8 +10203,8 @@
           "environment_file": "../../environment.json"
         },
         {
-          "started_at_utc": "2026-11-05T20:59:29+00:00",
-          "elapsed_seconds": 0.06813449999935983,
+          "started_at_utc": "2026-11-07T10:18:32+00:00",
+          "elapsed_seconds": 0.116073900135234,
           "stage": 1,
           "analysis": "rq2",
           "run": 3,
@@ -11126,7 +11126,7 @@
         "work\\rq3_selection"
       ],
       "exit_code": 0,
-      "stdout": "{\"stage\": 1, \"analysis\": \"rq3\", \"directory\": \"D:\\\\OSP\\\\work\\\\core-verification-gsefypss\\\\work\\\\rq3_selection\", \"runs\": 3, \"table_ii_matches\": 0, \"table_ii_cells\": 0, \"comparisons\": {\"similarity\": {\"cell_count\": 9, \"matched_cells\": 8, \"unconfirmed_cells\": 0, \"mismatched_cells\": 1}}, \"repeatable\": true}",
+      "stdout": "{\"stage\": 1, \"analysis\": \"rq3\", \"directory\": \"C:\\\\Users\\\\HXuan\\\\WorkBuddy\\\\2026-11-07-17-40-42\\\\CS340-OS-Defects-Replication\\\\work\\\\core-verification-rknb_e2u\\\\work\\\\rq3_selection\", \"runs\": 3, \"table_ii_matches\": 0, \"table_ii_cells\": 0, \"comparisons\": {\"similarity\": {\"cell_count\": 9, \"matched_cells\": 8, \"unconfirmed_cells\": 0, \"mismatched_cells\": 1}}, \"repeatable\": true}",
       "comparisons": {
         "similarity": {
           "cell_count": 9,
@@ -11145,21 +11145,21 @@
         "similarity": "49c2c80fb4e9f3d2c6df36087bdc9e9d3283adfd454f6c12a8cb7366634c2464"
       },
       "source_provenance": {
-        "retrieved_at_utc": "2026-11-05T20:59:27+00:00",
+        "retrieved_at_utc": "2026-11-07T10:18:28+00:00",
         "download_bytes_sha256": "93e57bce7ad332b254bd60da4417ae0efb6570448c2a0fa249edd4a6a20a17da",
         "source_url": "https://raw.githubusercontent.com/zuohongyao/zuohongyao.github.io/832d536f5d381d428a887e59ceeacc90a40e3b7e/index.html",
         "source_commit": "832d536f5d381d428a887e59ceeacc90a40e3b7e",
         "source_sha256_lf": "3794ff8c39e975ff457f264cb863f6e191297614dc0273f04c09ac654962eed5",
         "source_bytes_lf": 766561,
         "line_ending_policy": "CRLF and CR normalized to LF for hash verification",
-        "inspected_at_utc": "2026-11-05T20:59:29+00:00",
+        "inspected_at_utc": "2026-11-07T10:18:33+00:00",
         "acquisition_mode": "verified_cache",
-        "source_path": "D:\\OSP\\work\\core-verification-gsefypss\\data\\raw\\index.html"
+        "source_path": "C:\\Users\\HXuan\\WorkBuddy\\2026-11-07-17-40-42\\CS340-OS-Defects-Replication\\work\\core-verification-rknb_e2u\\data\\raw\\index.html"
       },
       "run_logs": [
         {
-          "started_at_utc": "2026-11-05T20:59:29+00:00",
-          "elapsed_seconds": 0.07032459999936691,
+          "started_at_utc": "2026-11-07T10:18:33+00:00",
+          "elapsed_seconds": 0.11255149985663593,
           "stage": 1,
           "analysis": "rq3",
           "run": 1,
@@ -12064,8 +12064,8 @@
           "environment_file": "../../environment.json"
         },
         {
-          "started_at_utc": "2026-11-05T20:59:29+00:00",
-          "elapsed_seconds": 0.06743370000003779,
+          "started_at_utc": "2026-11-07T10:18:33+00:00",
+          "elapsed_seconds": 0.11293089995160699,
           "stage": 1,
           "analysis": "rq3",
           "run": 2,
@@ -12970,8 +12970,8 @@
           "environment_file": "../../environment.json"
         },
         {
-          "started_at_utc": "2026-11-05T20:59:29+00:00",
-          "elapsed_seconds": 0.06193919999896025,
+          "started_at_utc": "2026-11-07T10:18:34+00:00",
+          "elapsed_seconds": 0.11409980012103915,
           "stage": 1,
           "analysis": "rq3",
           "run": 3,
@@ -13893,7 +13893,7 @@
         "work\\legacy_stage_1"
       ],
       "exit_code": 0,
-      "stdout": "{\"stage\": 1, \"analysis\": \"os_layer\", \"directory\": \"D:\\\\OSP\\\\work\\\\core-verification-gsefypss\\\\work\\\\legacy_stage_1\", \"runs\": 3, \"table_ii_matches\": 18, \"table_ii_cells\": 18, \"comparisons\": {\"univariate\": {\"cell_count\": 18, \"matched_cells\": 18, \"unconfirmed_cells\": 0, \"mismatched_cells\": 0}}, \"repeatable\": true}",
+      "stdout": "{\"stage\": 1, \"analysis\": \"os_layer\", \"directory\": \"C:\\\\Users\\\\HXuan\\\\WorkBuddy\\\\2026-11-07-17-40-42\\\\CS340-OS-Defects-Replication\\\\work\\\\core-verification-rknb_e2u\\\\work\\\\legacy_stage_1\", \"runs\": 3, \"table_ii_matches\": 18, \"table_ii_cells\": 18, \"comparisons\": {\"univariate\": {\"cell_count\": 18, \"matched_cells\": 18, \"unconfirmed_cells\": 0, \"mismatched_cells\": 0}}, \"repeatable\": true}",
       "comparisons": {
         "univariate": {
           "cell_count": 18,
@@ -13912,21 +13912,21 @@
         "univariate": "5553b785f7af5899a525a94d1442a5ea807ac8e3d41cb348f81b8ef99a0ea28a"
       },
       "source_provenance": {
-        "retrieved_at_utc": "2026-11-05T20:59:27+00:00",
+        "retrieved_at_utc": "2026-11-07T10:18:28+00:00",
         "download_bytes_sha256": "93e57bce7ad332b254bd60da4417ae0efb6570448c2a0fa249edd4a6a20a17da",
         "source_url": "https://raw.githubusercontent.com/zuohongyao/zuohongyao.github.io/832d536f5d381d428a887e59ceeacc90a40e3b7e/index.html",
         "source_commit": "832d536f5d381d428a887e59ceeacc90a40e3b7e",
         "source_sha256_lf": "3794ff8c39e975ff457f264cb863f6e191297614dc0273f04c09ac654962eed5",
         "source_bytes_lf": 766561,
         "line_ending_policy": "CRLF and CR normalized to LF for hash verification",
-        "inspected_at_utc": "2026-11-05T20:59:30+00:00",
+        "inspected_at_utc": "2026-11-07T10:18:34+00:00",
         "acquisition_mode": "verified_cache",
-        "source_path": "D:\\OSP\\work\\core-verification-gsefypss\\data\\raw\\index.html"
+        "source_path": "C:\\Users\\HXuan\\WorkBuddy\\2026-11-07-17-40-42\\CS340-OS-Defects-Replication\\work\\core-verification-rknb_e2u\\data\\raw\\index.html"
       },
       "run_logs": [
         {
-          "started_at_utc": "2026-11-05T20:59:30+00:00",
-          "elapsed_seconds": 0.0627184999993915,
+          "started_at_utc": "2026-11-07T10:18:34+00:00",
+          "elapsed_seconds": 0.10415200004354119,
           "stage": 1,
           "analysis": "os_layer",
           "run": 1,
@@ -14831,8 +14831,8 @@
           "environment_file": "../../environment.json"
         },
         {
-          "started_at_utc": "2026-11-05T20:59:30+00:00",
-          "elapsed_seconds": 0.06016190000082133,
+          "started_at_utc": "2026-11-07T10:18:35+00:00",
+          "elapsed_seconds": 0.10508060012944043,
           "stage": 1,
           "analysis": "os_layer",
           "run": 2,
@@ -15737,8 +15737,8 @@
           "environment_file": "../../environment.json"
         },
         {
-          "started_at_utc": "2026-11-05T20:59:30+00:00",
-          "elapsed_seconds": 0.060217500000362634,
+          "started_at_utc": "2026-11-07T10:18:35+00:00",
+          "elapsed_seconds": 0.08477409998886287,
           "stage": 1,
           "analysis": "os_layer",
           "run": 3,

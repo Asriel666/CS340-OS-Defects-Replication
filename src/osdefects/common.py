@@ -10,7 +10,9 @@ OS_ORDER = ("Android", "Linux", "HarmonyOS")
 def write_json(path, value):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False) + "\n", encoding="utf-8")
+    # newline="\n" keeps JSON byte-identical across platforms; the committed
+    # results use LF and .gitattributes (* text=auto eol=lf) expects that.
+    path.write_text(json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False) + "\n", encoding="utf-8", newline="\n")
 
 
 def write_csv(path, rows, fieldnames=None):
@@ -20,7 +22,7 @@ def write_csv(path, rows, fieldnames=None):
     if fieldnames is None:
         fieldnames = list(rows[0]) if rows else []
     with path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 

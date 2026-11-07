@@ -12,3 +12,7 @@ reproduce:
 
 test:
 	$(PYTHON) -m unittest discover -s tests -v
+
+.PHONY: repairs
+repairs:
+	$(PYTHON) scripts/run_repair_size.py

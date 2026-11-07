@@ -1,0 +1,40 @@
+{
+  "python": "3.13.14 (main, Jun 11 2026, 04:04:46) [MSC v.1944 64 bit (AMD64)]",
+  "python_executable": "C:\\Users\\HXuan\\.workbuddy\\binaries\\python\\envs\\default\\Scripts\\python.exe",
+  "os": "Windows-11-10.0.26200-SP0",
+  "kernel": "11",
+  "machine": "AMD64",
+  "logical_cpus": 16,
+  "packages": {
+    "reportlab": "5.1.0",
+    "pillow": "12.3.0",
+    "pdftoppm": "pdftoppm version 24.08.0"
+  },
+  "source_commit": "832d536f5d381d428a887e59ceeacc90a40e3b7e",
+  "source_file_hash_policy": "UTF-8 text with CRLF/CR normalized to LF",
+  "files_sha256": {
+    "reference/figure_baselines.json": "d45de7dca0cce607e4e97c2b57e8eb68842024441b7b4018c18a422dacb78b44",
+    "reference/joint_baselines.json": "a7f26385766f5c39c80f907e95a4e463de61324cd36130c76ec516eac642c65f",
+    "reference/paper_baselines.json": "b1dbd66e9bbc8f0edc25fb1c0d331f452f332a259d6b8892ece4d3ce5f1ec1c7",
+    "reference/similarity_baselines.json": "e261720d31281d085e71e1169f4a95684b1150e60fe7c1375f66219f0f3e0fcb",
+    "requirements.txt": "d5c888e34ee179e4cfbf1f613bdddb1b79ca4cd8f8d11b376b8a88d1e37378da",
+    "scripts/run_repair_size.py": "8e8b006ccd9c368df7cb5266b03eadcda1cb7aedaac3ba2e396a4fa02261a401",
+    "scripts/run_stage.py": "299c3a2e167a2abe81351fd86565df08f7c1779702b2865feeb4503d0903225e",
+    "scripts/verify_reproduction.py": "7169e3f563ad6f71f60ff7a66efe2e7144515e9bcb50ea7c4f4d9f745e6d5be3",
+    "src/osdefects/__init__.py": "6e572b77c62453389a62e70e9f967016ed484c856cb2b11a2e2b1e38bcfc398a",
+    "src/osdefects/common.py": "d49ba684792c1d12a8151178de2f163518e55183552c4cc5bf75b75dcbe24a3a",
+    "src/osdefects/data.py": "fc74037cbd6bf6d958516507ebe05e2b6c5a56d41507eddd15be6b24eb2e82fc",
+    "src/osdefects/joint.py": "e40ec51ad19b99753e93afe925c232eed686068d6c1f6dca85afc54d05af4f5d",
+    "src/osdefects/plots.py": "d7c11b3ca355bdbe5d01ee2f3bd54681bfba424bbf639d7718aa9d0e2ecc3d28",
+    "src/osdefects/repair_size.py": "89dfa3fa53fb2b00231bb9bf672b906e7390f6534f1e933aa78e12d82edaccbf",
+    "src/osdefects/runner.py": "9e885df580f6f4fedeee52d2113c0f9b87262fb9403351a1676e611f8d030e4d",
+    "src/osdefects/similarity.py": "443d1131b094199b9dc4d0a19cc4ed87b53f9737d3940f415d676f50aab93847",
+    "src/osdefects/univariate.py": "952d29ba6ac7e7557a49a6c07ae6478e48bc453706e243d78b9c3c701434a9f1",
+    "SUBMISSION.json": "425bb3f3f048bb9f22443686acb8ffa6efe35e7a2f89d0331283e810420c1417",
+    "tests/test_joint.py": "a84e44bd84391612e85bdaeb7991912103a78c43ebd89a32b2c50f3a645beebf",
+    "tests/test_repair_size.py": "82daafd756fdd5e67f2bac9ebb3b977b2d34e9cdd8e1d798782010b90b072e0d",
+    "tests/test_rq1.py": "6c1bed9c670f1ab731b4e8c6ea77d7dfc707442804191bc65d3858a7b12c295a",
+    "tests/test_runner.py": "e569defab4ed96bfb85341791c95515a8c3963d647fac2f5d10b58d6bde87d28",
+    "tests/test_similarity.py": "cc3a190bde3d133160536f4c737911842e32aa469873a9a9e20f8784977561eb"
+  }
+}

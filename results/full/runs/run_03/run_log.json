@@ -1,6 +1,6 @@
 {
-  "started_at_utc": "2026-11-05T20:59:20+00:00",
-  "elapsed_seconds": 0.07503290000022389,
+  "started_at_utc": "2026-11-07T10:18:15+00:00",
+  "elapsed_seconds": 0.10958830011077225,
   "stage": 1,
   "analysis": "all",
   "run": 3,
@@ -13,8 +13,7 @@
     "--analysis",
     "all",
     "--runs",
-    "3",
-    "--offline"
+    "3"
   ],
   "data_validation": {
     "valid": true,

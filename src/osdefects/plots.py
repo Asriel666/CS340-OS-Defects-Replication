@@ -56,6 +56,43 @@ def grouped_bars(title, categories, series, path, subtitle="Released labels; 500
     save_png(drawing, path)
 
 
+def multi_series_bars(title, categories, series_names, series_values, path, subtitle="", ymax=100):
+    """Grouped bars with explicit series names, e.g. paper labels vs recomputations.
+
+    Categories are shared by every series; series_values is a list aligned with
+    series_names. Used by the repair-size sensitivity analysis to overlay the
+    published bar labels and each boundary convention in one figure.
+    """
+    drawing = _canvas(title, subtitle)
+    chart = VerticalBarChart()
+    chart.x, chart.y, chart.width, chart.height = 82, 155, 985, 365
+    chart.data = [tuple(values) for values in series_values]
+    chart.categoryAxis.categoryNames = list(categories)
+    chart.categoryAxis.labels.angle = 32
+    chart.categoryAxis.labels.boxAnchor = "ne"
+    chart.categoryAxis.labels.dx, chart.categoryAxis.labels.dy = -2, -7
+    chart.categoryAxis.labels.fontSize = 9
+    chart.valueAxis.valueMin, chart.valueAxis.valueMax, chart.valueAxis.valueStep = 0, ymax, max(10, ymax/5)
+    chart.valueAxis.labels.fontSize = 11
+    chart.valueAxis.visibleGrid = True
+    chart.valueAxis.gridStrokeColor = colors.HexColor("#e4eaf0")
+    chart.barSpacing, chart.groupSpacing = 1, 8
+    palette = [colors.HexColor("#4a5560"), PALETTE[0], PALETTE[1]]
+    if len(series_values) > len(palette):
+        palette = palette + [PALETTE[2]] * (len(series_values) - len(palette))
+    for index, color in enumerate(palette[:len(series_values)]):
+        chart.bars[index].fillColor = color
+        chart.bars[index].strokeColor = None
+    drawing.add(chart)
+    drawing.add(String(20, 535, "%", fontSize=13))
+    for index, name in enumerate(series_names):
+        x = 110 + index*300
+        drawing.add(Rect(x, 558, 14, 11, fillColor=palette[index], strokeColor=None))
+        drawing.add(String(x+22, 558, name, fontSize=11))
+    drawing.add(String(38, 24, "Source: pinned author dataset; the paper series shows transcribed bar labels.", fontSize=10, fillColor=colors.HexColor("#536774")))
+    save_png(drawing, path)
+
+
 def heatmap(title, row_labels, col_labels, matrix, path, subtitle, correlation=False):
     drawing = _canvas(title, subtitle, width=1120, height=730)
     x0, y0, width, height = 190, 180, 875, 420
