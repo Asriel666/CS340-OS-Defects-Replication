@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "paper": {
+    "title": "Toward Understanding Operating System Defects",
+    "arxiv_id": "2608.20643",
+    "version": "v1"
+  },
+  "provenance": {
+    "kind": "transcribed_from_published_bar_labels",
+    "note": "Every bar in Figures 2 and 3 prints its exact percentage, so these baselines are transcribed values, not visual estimates of bar heights. Each series was read from the linked PNG and cross-checked for a 100% total per operating system. This file was written by hand with tool assistance and was not derived from any recomputation; re-verify against the linked images before relying on it.",
+    "transcribed_at": "2026-11-07",
+    "figure_images": {
+      "figure_2": "https://arxiv.org/html/2608.20643v1/photo/group_changes.png",
+      "figure_3": "https://arxiv.org/html/2608.20643v1/photo/group_funcs.png"
+    },
+    "not_replication_results": true
+  },
+  "boundary_caveat": "The paper never states whether a bin label such as 10-30 is [10,30) or (10,30], how zero involved-function records are placed, or where censored counts such as 10+ belong. This file therefore records only the published bar labels and the numeric edges they imply; the binning convention itself is deliberately left undefined and handled by the sensitivity analysis.",
+  "series": [
+    {
+      "series_id": "figure_2_line_changes",
+      "figure": "Figure 2",
+      "title": "Line Changes Distribution",
+      "metric": "line_changes",
+      "bin_labels": ["0-10", "10-30", "30-50", "50-100", "100-500"],
+      "bin_edges": [0, 10, 30, 50, 100, 500],
+      "paper_percent": {
+        "Android": [34.0, 30.8, 15.0, 12.4, 7.8],
+        "Linux": [45.6, 23.2, 10.2, 9.2, 11.8],
+        "HarmonyOS": [51.8, 25.8, 6.8, 9.2, 6.4]
+      }
+    },
+    {
+      "series_id": "figure_3_involved_functions",
+      "figure": "Figure 3",
+      "title": "Involved Functions Distribution",
+      "metric": "involved_functions",
+      "bin_labels": ["0-3", "3-5", "5-10", "10-50"],
+      "bin_edges": [0, 3, 5, 10, 50],
+      "paper_percent": {
+        "Android": [67.0, 16.8, 13.0, 3.2],
+        "Linux": [75.8, 9.4, 9.8, 5.0],
+        "HarmonyOS": [74.4, 13.8, 9.0, 2.8]
+      }
+    },
+    {
+      "series_id": "figure_3_modified_files",
+      "figure": "Figure 3",
+      "title": "Modified Files Distribution",
+      "metric": "modified_files",
+      "bin_labels": ["0-3", "3-5", "5-10", "10-50"],
+      "bin_edges": [0, 3, 5, 10, 50],
+      "paper_percent": {
+        "Android": [78.0, 13.6, 8.0, 0.4],
+        "Linux": [62.4, 21.8, 11.6, 4.2],
+        "HarmonyOS": [79.4, 12.2, 6.2, 2.2]
+      }
+    }
+  ]
+}

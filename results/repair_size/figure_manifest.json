@@ -1,0 +1,13 @@
+[
+  "figures/figure_2_line_changes_left_closed_not_applicable.png",
+  "figures/figure_2_line_changes_right_closed_not_applicable.png",
+  "figures/figure_3_involved_functions_left_closed_lower_bound.png",
+  "figures/figure_3_involved_functions_left_closed_unassigned.png",
+  "figures/figure_3_involved_functions_right_closed_lower_bound.png",
+  "figures/figure_3_involved_functions_right_closed_unassigned.png",
+  "figures/figure_3_modified_files_left_closed_not_applicable.png",
+  "figures/figure_3_modified_files_right_closed_not_applicable.png",
+  "figures/figure_2_line_changes_paper_vs_conventions.png",
+  "figures/figure_3_involved_functions_paper_vs_conventions.png",
+  "figures/figure_3_modified_files_paper_vs_conventions.png"
+]

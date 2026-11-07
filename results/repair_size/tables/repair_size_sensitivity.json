@@ -1,0 +1,2808 @@
+{
+  "scope": "Project-added sensitivity analysis of published Figure 2/3 binning conventions; not part of the 561 core comparisons.",
+  "series_count": 3,
+  "comparison_count": 102,
+  "matched_cells": 55,
+  "series": {
+    "figure_2_line_changes": {
+      "figure": "Figure 2",
+      "metric": "line_changes",
+      "bin_labels": [
+        "0-10",
+        "10-30",
+        "30-50",
+        "50-100",
+        "100-500"
+      ],
+      "bin_edges": [
+        0,
+        10,
+        30,
+        50,
+        100,
+        500
+      ],
+      "paper_percent": {
+        "Android": [
+          34.0,
+          30.8,
+          15.0,
+          12.4,
+          7.8
+        ],
+        "Linux": [
+          45.6,
+          23.2,
+          10.2,
+          9.2,
+          11.8
+        ],
+        "HarmonyOS": [
+          51.8,
+          25.8,
+          6.8,
+          9.2,
+          6.4
+        ]
+      },
+      "n_per_os": {
+        "Android": 500,
+        "Linux": 500,
+        "HarmonyOS": 500
+      },
+      "configurations": {
+        "left_closed/not_applicable": {
+          "boundary_convention": "left_closed",
+          "censored_policy": "not_applicable",
+          "cells": 15,
+          "matches": 15,
+          "records_outside_bins": 0,
+          "outside_records": [],
+          "per_os": {
+            "Android": {
+              "counts": [
+                170,
+                154,
+                75,
+                62,
+                39
+              ],
+              "percent": [
+                34.0,
+                30.8,
+                15.0,
+                12.4,
+                7.8
+              ],
+              "outside_bin_count": 0
+            },
+            "Linux": {
+              "counts": [
+                228,
+                116,
+                51,
+                46,
+                59
+              ],
+              "percent": [
+                45.6,
+                23.2,
+                10.2,
+                9.2,
+                11.8
+              ],
+              "outside_bin_count": 0
+            },
+            "HarmonyOS": {
+              "counts": [
+                259,
+                129,
+                34,
+                46,
+                32
+              ],
+              "percent": [
+                51.8,
+                25.8,
+                6.8,
+                9.2,
+                6.4
+              ],
+              "outside_bin_count": 0
+            }
+          }
+        },
+        "right_closed/not_applicable": {
+          "boundary_convention": "right_closed",
+          "censored_policy": "not_applicable",
+          "cells": 15,
+          "matches": 4,
+          "records_outside_bins": 0,
+          "outside_records": [],
+          "per_os": {
+            "Android": {
+              "counts": [
+                186,
+                148,
+                68,
+                60,
+                38
+              ],
+              "percent": [
+                37.2,
+                29.6,
+                13.6,
+                12.0,
+                7.6
+              ],
+              "outside_bin_count": 0
+            },
+            "Linux": {
+              "counts": [
+                243,
+                102,
+                51,
+                45,
+                59
+              ],
+              "percent": [
+                48.6,
+                20.4,
+                10.2,
+                9.0,
+                11.8
+              ],
+              "outside_bin_count": 0
+            },
+            "HarmonyOS": {
+              "counts": [
+                268,
+                122,
+                32,
+                46,
+                32
+              ],
+              "percent": [
+                53.6,
+                24.4,
+                6.4,
+                9.2,
+                6.4
+              ],
+              "outside_bin_count": 0
+            }
+          }
+        }
+      }
+    },
+    "figure_3_involved_functions": {
+      "figure": "Figure 3",
+      "metric": "involved_functions",
+      "bin_labels": [
+        "0-3",
+        "3-5",
+        "5-10",
+        "10-50"
+      ],
+      "bin_edges": [
+        0,
+        3,
+        5,
+        10,
+        50
+      ],
+      "paper_percent": {
+        "Android": [
+          67.0,
+          16.8,
+          13.0,
+          3.2
+        ],
+        "Linux": [
+          75.8,
+          9.4,
+          9.8,
+          5.0
+        ],
+        "HarmonyOS": [
+          74.4,
+          13.8,
+          9.0,
+          2.8
+        ]
+      },
+      "n_per_os": {
+        "Android": 500,
+        "Linux": 500,
+        "HarmonyOS": 500
+      },
+      "configurations": {
+        "left_closed/lower_bound": {
+          "boundary_convention": "left_closed",
+          "censored_policy": "lower_bound",
+          "cells": 12,
+          "matches": 12,
+          "records_outside_bins": 0,
+          "outside_records": [],
+          "per_os": {
+            "Android": {
+              "counts": [
+                335,
+                84,
+                65,
+                16
+              ],
+              "percent": [
+                67.0,
+                16.8,
+                13.0,
+                3.2
+              ],
+              "outside_bin_count": 0
+            },
+            "Linux": {
+              "counts": [
+                379,
+                47,
+                49,
+                25
+              ],
+              "percent": [
+                75.8,
+                9.4,
+                9.8,
+                5.0
+              ],
+              "outside_bin_count": 0
+            },
+            "HarmonyOS": {
+              "counts": [
+                372,
+                69,
+                45,
+                14
+              ],
+              "percent": [
+                74.4,
+                13.8,
+                9.0,
+                2.8
+              ],
+              "outside_bin_count": 0
+            }
+          }
+        },
+        "left_closed/unassigned": {
+          "boundary_convention": "left_closed",
+          "censored_policy": "unassigned",
+          "cells": 12,
+          "matches": 11,
+          "records_outside_bins": 7,
+          "outside_records": [
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2024-22180",
+              "value": 20,
+              "reason": "censored_count_left_unassigned"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2024-22092",
+              "value": 10,
+              "reason": "censored_count_left_unassigned"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2024-28226",
+              "value": 10,
+              "reason": "censored_count_left_unassigned"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2023-46708",
+              "value": 30,
+              "reason": "censored_count_left_unassigned"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2023-49602",
+              "value": 20,
+              "reason": "censored_count_left_unassigned"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2023-49135",
+              "value": 30,
+              "reason": "censored_count_left_unassigned"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2024-38386",
+              "value": 10,
+              "reason": "censored_count_left_unassigned"
+            }
+          ],
+          "per_os": {
+            "Android": {
+              "counts": [
+                335,
+                84,
+                65,
+                16
+              ],
+              "percent": [
+                67.0,
+                16.8,
+                13.0,
+                3.2
+              ],
+              "outside_bin_count": 0
+            },
+            "Linux": {
+              "counts": [
+                379,
+                47,
+                49,
+                25
+              ],
+              "percent": [
+                75.8,
+                9.4,
+                9.8,
+                5.0
+              ],
+              "outside_bin_count": 0
+            },
+            "HarmonyOS": {
+              "counts": [
+                372,
+                69,
+                45,
+                7
+              ],
+              "percent": [
+                74.4,
+                13.8,
+                9.0,
+                1.4
+              ],
+              "outside_bin_count": 7
+            }
+          }
+        },
+        "right_closed/lower_bound": {
+          "boundary_convention": "right_closed",
+          "censored_policy": "lower_bound",
+          "cells": 12,
+          "matches": 0,
+          "records_outside_bins": 177,
+          "outside_records": [
+            {
+              "os": "Android",
+              "bug_id": "A-232799171",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-346797131",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-284989074",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-382775095",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-369103643",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-364026473",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-364027949",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-364027038",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-364025411",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-2515141702",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-329701910",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-304280682",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-3243211472",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-293199910",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-298057702",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-279766766",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-261723753",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-189942529",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2114712",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2113496",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2112315",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2112262",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2111789",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2108966",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2107596",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2106394",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2106338",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2106038",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2104942",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2104908",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2104307",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2104011",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2103890",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2102236",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2100930",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2100837",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2100732",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2100652",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2100583",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2099881",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2099698",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2095529",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2095464",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2092286",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2092139",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2091744",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2091439",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2091392",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2089696",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2089773",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2089722",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2089367",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2083754",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2088201",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2087816",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2086920",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2086110",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2086104",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2085067",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2084693",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2084094",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2083867",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2083855",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2083705",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2083435",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2083131",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2082160",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2056361",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2056080",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2081799",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2080622",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2080493",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2080358",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2078638",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2077929",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2077779",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2077334",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2076176",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2076151",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2075550",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2071468",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2074212",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2073688",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2073010",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2071891",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2071841",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2071678",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2070081",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2070057",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2069802",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2069647",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2068674",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2054343 (2)",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2067948",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2067785",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2067261",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2066148 (2)",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2065919",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2064959",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2064861",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2063510",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2063344",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2063079",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2062968",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2062414",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2062058",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2061815",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2061727",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2061637",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2061253",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2060848",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2060825",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2060628",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2060262",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2060214",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2060151",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2059756",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2059739",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2059550",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2059344",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2058758",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2058401",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2058193",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2058066 (1)",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2057965",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2048923",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2055783",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2055345",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2055055",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2055003",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2054782",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2054296",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2054091",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2053024",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2052801",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2052708",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2052578",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2051952",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2051288",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2048442",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2047862",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2047303",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2047298",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2046322",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2046150",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2046082",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2045844",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2045816",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2045621",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2045302",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2045290",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2045000",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2044546",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2044383",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2044369",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2044019",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2042710",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2042394",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2042106",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2041171",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2040082",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2039873",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2039611",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2025-27534 (10363)",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2024-53142 (CVE-2024-50258)",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2024-44949",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2024-46714",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2023-7010",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2024-7004",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2024-46798",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2024-42161",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2024-42154",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2024-41098 (CVE-2024-42106)",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2024-5843",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2024-3840",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2023-52845",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2023-52756",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            }
+          ],
+          "per_os": {
+            "Android": {
+              "counts": [
+                368,
+                50,
+                57,
+                7
+              ],
+              "percent": [
+                73.6,
+                10.0,
+                11.4,
+                1.4
+              ],
+              "outside_bin_count": 18
+            },
+            "Linux": {
+              "counts": [
+                263,
+                35,
+                35,
+                22
+              ],
+              "percent": [
+                52.6,
+                7.0,
+                7.0,
+                4.4
+              ],
+              "outside_bin_count": 145
+            },
+            "HarmonyOS": {
+              "counts": [
+                403,
+                44,
+                30,
+                9
+              ],
+              "percent": [
+                80.6,
+                8.8,
+                6.0,
+                1.8
+              ],
+              "outside_bin_count": 14
+            }
+          }
+        },
+        "right_closed/unassigned": {
+          "boundary_convention": "right_closed",
+          "censored_policy": "unassigned",
+          "cells": 12,
+          "matches": 0,
+          "records_outside_bins": 184,
+          "outside_records": [
+            {
+              "os": "Android",
+              "bug_id": "A-232799171",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-346797131",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-284989074",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-382775095",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-369103643",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-364026473",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-364027949",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-364027038",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-364025411",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-2515141702",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-329701910",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-304280682",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-3243211472",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-293199910",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-298057702",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-279766766",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-261723753",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Android",
+              "bug_id": "A-189942529",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2114712",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2113496",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2112315",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2112262",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2111789",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2108966",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2107596",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2106394",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2106338",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2106038",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2104942",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2104908",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2104307",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2104011",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2103890",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2102236",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2100930",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2100837",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2100732",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2100652",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2100583",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2099881",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2099698",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2095529",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2095464",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2092286",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2092139",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2091744",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2091439",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2091392",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2089696",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2089773",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2089722",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2089367",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2083754",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2088201",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2087816",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2086920",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2086110",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2086104",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2085067",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2084693",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2084094",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2083867",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2083855",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2083705",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2083435",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2083131",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2082160",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2056361",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2056080",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2081799",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2080622",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2080493",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2080358",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2078638",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2077929",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2077779",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2077334",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2076176",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2076151",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2075550",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2071468",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2074212",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2073688",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2073010",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2071891",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2071841",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2071678",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2070081",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2070057",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2069802",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2069647",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2068674",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2054343 (2)",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2067948",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2067785",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2067261",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2066148 (2)",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2065919",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2064959",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2064861",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2063510",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2063344",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2063079",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2062968",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2062414",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2062058",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2061815",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2061727",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2061637",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2061253",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2060848",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2060825",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2060628",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2060262",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2060214",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2060151",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2059756",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2059739",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2059550",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2059344",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2058758",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2058401",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2058193",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2058066 (1)",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2057965",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2048923",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2055783",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2055345",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2055055",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2055003",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2054782",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2054296",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2054091",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2053024",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2052801",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2052708",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2052578",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2051952",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2051288",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2048442",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2047862",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2047303",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2047298",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2046322",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2046150",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2046082",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2045844",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2045816",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2045621",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2045302",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2045290",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2045000",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2044546",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2044383",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2044369",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2044019",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2042710",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2042394",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2042106",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2041171",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2040082",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2039873",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "Linux",
+              "bug_id": "2039611",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2024-22180",
+              "value": 20,
+              "reason": "censored_count_left_unassigned"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2024-22092",
+              "value": 10,
+              "reason": "censored_count_left_unassigned"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2024-28226",
+              "value": 10,
+              "reason": "censored_count_left_unassigned"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2023-46708",
+              "value": 30,
+              "reason": "censored_count_left_unassigned"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2023-49602",
+              "value": 20,
+              "reason": "censored_count_left_unassigned"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2023-49135",
+              "value": 30,
+              "reason": "censored_count_left_unassigned"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2025-27534 (10363)",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2024-38386",
+              "value": 10,
+              "reason": "censored_count_left_unassigned"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2024-53142 (CVE-2024-50258)",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2024-44949",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2024-46714",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2023-7010",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2024-7004",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2024-46798",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2024-42161",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2024-42154",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2024-41098 (CVE-2024-42106)",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2024-5843",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2024-3840",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2023-52845",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            },
+            {
+              "os": "HarmonyOS",
+              "bug_id": "CVE-2023-52756",
+              "value": 0,
+              "reason": "value_outside_all_bins_under_convention"
+            }
+          ],
+          "per_os": {
+            "Android": {
+              "counts": [
+                368,
+                50,
+                57,
+                7
+              ],
+              "percent": [
+                73.6,
+                10.0,
+                11.4,
+                1.4
+              ],
+              "outside_bin_count": 18
+            },
+            "Linux": {
+              "counts": [
+                263,
+                35,
+                35,
+                22
+              ],
+              "percent": [
+                52.6,
+                7.0,
+                7.0,
+                4.4
+              ],
+              "outside_bin_count": 145
+            },
+            "HarmonyOS": {
+              "counts": [
+                403,
+                44,
+                27,
+                5
+              ],
+              "percent": [
+                80.6,
+                8.8,
+                5.4,
+                1.0
+              ],
+              "outside_bin_count": 21
+            }
+          }
+        }
+      }
+    },
+    "figure_3_modified_files": {
+      "figure": "Figure 3",
+      "metric": "modified_files",
+      "bin_labels": [
+        "0-3",
+        "3-5",
+        "5-10",
+        "10-50"
+      ],
+      "bin_edges": [
+        0,
+        3,
+        5,
+        10,
+        50
+      ],
+      "paper_percent": {
+        "Android": [
+          78.0,
+          13.6,
+          8.0,
+          0.4
+        ],
+        "Linux": [
+          62.4,
+          21.8,
+          11.6,
+          4.2
+        ],
+        "HarmonyOS": [
+          79.4,
+          12.2,
+          6.2,
+          2.2
+        ]
+      },
+      "n_per_os": {
+        "Android": 500,
+        "Linux": 500,
+        "HarmonyOS": 500
+      },
+      "configurations": {
+        "left_closed/not_applicable": {
+          "boundary_convention": "left_closed",
+          "censored_policy": "not_applicable",
+          "cells": 12,
+          "matches": 12,
+          "records_outside_bins": 0,
+          "outside_records": [],
+          "per_os": {
+            "Android": {
+              "counts": [
+                390,
+                68,
+                40,
+                2
+              ],
+              "percent": [
+                78.0,
+                13.6,
+                8.0,
+                0.4
+              ],
+              "outside_bin_count": 0
+            },
+            "Linux": {
+              "counts": [
+                312,
+                109,
+                58,
+                21
+              ],
+              "percent": [
+                62.4,
+                21.8,
+                11.6,
+                4.2
+              ],
+              "outside_bin_count": 0
+            },
+            "HarmonyOS": {
+              "counts": [
+                397,
+                61,
+                31,
+                11
+              ],
+              "percent": [
+                79.4,
+                12.2,
+                6.2,
+                2.2
+              ],
+              "outside_bin_count": 0
+            }
+          }
+        },
+        "right_closed/not_applicable": {
+          "boundary_convention": "right_closed",
+          "censored_policy": "not_applicable",
+          "cells": 12,
+          "matches": 1,
+          "records_outside_bins": 0,
+          "outside_records": [],
+          "per_os": {
+            "Android": {
+              "counts": [
+                423,
+                48,
+                27,
+                2
+              ],
+              "percent": [
+                84.6,
+                9.6,
+                5.4,
+                0.4
+              ],
+              "outside_bin_count": 0
+            },
+            "Linux": {
+              "counts": [
+                384,
+                60,
+                37,
+                19
+              ],
+              "percent": [
+                76.8,
+                12.0,
+                7.4,
+                3.8
+              ],
+              "outside_bin_count": 0
+            },
+            "HarmonyOS": {
+              "counts": [
+                443,
+                32,
+                15,
+                10
+              ],
+              "percent": [
+                88.6,
+                6.4,
+                3.0,
+                2.0
+              ],
+              "outside_bin_count": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

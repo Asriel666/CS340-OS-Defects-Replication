@@ -1,0 +1,9 @@
+series_id,figure,metric,boundary_convention,censored_policy,cells,matches,mismatches,records_outside_bins
+figure_2_line_changes,Figure 2,line_changes,left_closed,not_applicable,15,15,0,0
+figure_2_line_changes,Figure 2,line_changes,right_closed,not_applicable,15,4,11,0
+figure_3_involved_functions,Figure 3,involved_functions,left_closed,lower_bound,12,12,0,0
+figure_3_involved_functions,Figure 3,involved_functions,left_closed,unassigned,12,11,1,7
+figure_3_involved_functions,Figure 3,involved_functions,right_closed,lower_bound,12,0,12,177
+figure_3_involved_functions,Figure 3,involved_functions,right_closed,unassigned,12,0,12,184
+figure_3_modified_files,Figure 3,modified_files,left_closed,not_applicable,12,12,0,0
+figure_3_modified_files,Figure 3,modified_files,right_closed,not_applicable,12,1,11,0

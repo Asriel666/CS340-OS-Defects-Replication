@@ -2,5 +2,14 @@
   "max_stage": 1,
   "scope": "RQ1 Table II, RQ2 Tables III-V, RQ3 Figure 4(a-c); legacy stage 1 remains OS Layer only",
   "analyses": ["rq1", "rq2", "rq3", "all"],
-  "legacy_stage_1": "OS Layer Table II block"
+  "legacy_stage_1": "OS Layer Table II block",
+  "project_added_analyses": [
+    {
+      "name": "Figure 2/3 repair-size binning sensitivity",
+      "entry": "scripts/run_repair_size.py",
+      "output": "results/repair_size/",
+      "status": "project-added analysis; not part of the 561 core comparisons and not a verified replication of Figures 2/3",
+      "detail": "Recomputes the published repair-size series under explicit binning conventions and compares each with the transcribed bar labels in reference/figure_baselines.json."
+    }
+  ]
 }
