@@ -2646,9 +2646,10 @@
     "meaning": "Blank template created only when missing. No human review or individual coding contribution is certified."
   },
   "submission": {
-    "student_id": "1230037310",
-    "name": "钟峻瀚",
+    "student_id": "1230036051",
+    "name": "GUO HAOXUAN",
     "role": "提交人",
+    "git_author": "HAOXUAN-stack <HAOXUAN-stack@users.noreply.github.com>",
     "assistance": "Codex assisted with implementation, computation, verification and documentation.",
     "human_review": "Pending; automated checks do not certify independent human annotation or individual contributions."
   }

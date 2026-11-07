@@ -1,6 +1,6 @@
 # OS Defects Replication: RQ1 / RQ2 / RQ3
 
-**提交人：1230037310 钟峻瀚** · 检查日期：2026-11-06；2026-11-07 增补 Figures 2/3 分箱约定敏感性分析
+**提交人：1230036051 GUO HAOXUAN** · 检查日期：2026-11-06；2026-11-07 增补 Figures 2/3 分箱约定敏感性分析
 
 复现 [*Toward Understanding Operating System Defects*（arXiv:2608.20643v1）](https://arxiv.org/html/2608.20643v1) 的核心统计，使用作者公开的 1,500 条标签，Android、Linux、HarmonyOS 各 500 条。本次已从 RQ1 扩展到 RQ2 和 RQ3，提供可运行代码、逐项对比、17 张核心图与 11 张敏感性分析图、实际运行记录和中文复现报告。
 

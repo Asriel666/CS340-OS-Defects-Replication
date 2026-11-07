@@ -1,6 +1,6 @@
 # 操作系统缺陷论文核心结果复现报告
 
-提交人：**1230037310 钟峻瀚**
+提交人：**1230036051 GUO HAOXUAN**
 
 论文：[Toward Understanding Operating System Defects，arXiv:2608.20643v1](https://arxiv.org/html/2608.20643v1)
 

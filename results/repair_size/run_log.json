@@ -3,9 +3,9 @@
   "verification_runs": 3,
   "semantic_result_sha256": "ce8865966fa9be41675be600a387022fefbb1ef5c1d975177b4941f09f204053",
   "elapsed_seconds_per_verification_run": [
-    0.0938,
-    0.1041,
-    0.0953
+    0.0744,
+    0.0695,
+    0.0635
   ],
   "source_sha256_lf": "3794ff8c39e975ff457f264cb863f6e191297614dc0273f04c09ac654962eed5",
   "status": "success",
@@ -13,5 +13,5 @@
   "invocation": [
     "scripts/run_repair_size.py"
   ],
-  "started_at_utc": "2026-11-07T10:18:21+00:00"
+  "started_at_utc": "2026-11-07T10:37:25+00:00"
 }

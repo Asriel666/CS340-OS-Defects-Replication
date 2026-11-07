@@ -30,7 +30,7 @@
     "src/osdefects/runner.py": "9e885df580f6f4fedeee52d2113c0f9b87262fb9403351a1676e611f8d030e4d",
     "src/osdefects/similarity.py": "443d1131b094199b9dc4d0a19cc4ed87b53f9737d3940f415d676f50aab93847",
     "src/osdefects/univariate.py": "952d29ba6ac7e7557a49a6c07ae6478e48bc453706e243d78b9c3c701434a9f1",
-    "SUBMISSION.json": "425bb3f3f048bb9f22443686acb8ffa6efe35e7a2f89d0331283e810420c1417",
+    "SUBMISSION.json": "1e121beddc698e89f79e88c0954581260f1973cf2cba4879a72b3a4d4e45029f",
     "tests/test_joint.py": "a84e44bd84391612e85bdaeb7991912103a78c43ebd89a32b2c50f3a645beebf",
     "tests/test_repair_size.py": "82daafd756fdd5e67f2bac9ebb3b977b2d34e9cdd8e1d798782010b90b072e0d",
     "tests/test_rq1.py": "6c1bed9c670f1ab731b4e8c6ea77d7dfc707442804191bc65d3858a7b12c295a",
