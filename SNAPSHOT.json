@@ -10,6 +10,13 @@
       "output": "results/repair_size/",
       "status": "project-added analysis; not part of the 561 core comparisons and not a verified replication of Figures 2/3",
       "detail": "Recomputes the published repair-size series under explicit binning conventions and compares each with the transcribed bar labels in reference/figure_baselines.json."
+    },
+    {
+      "name": "Figure 4 gap exploration and repair-size anomaly evidence",
+      "entry": "scripts/run_gap_analysis.py",
+      "output": "results/gap_analysis/",
+      "status": "project-added exploratory analysis; not part of the 561 core comparisons; all Figure 4(d) rows remain unconfirmed",
+      "detail": "Enumerates 144 coefficient conventions for the Figure 4(c) discrepancy, 42 candidate Overall definitions for Figure 4(d), and exports a 184-row structured evidence checklist for zero/censored function counts. No patch URLs are fetched and no author value is changed."
     }
   ]
 }
