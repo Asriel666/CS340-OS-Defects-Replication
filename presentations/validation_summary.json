@@ -1,0 +1,16 @@
+{
+  "artifact": "defense_2026-11-14_v2.pptx",
+  "sha256": "fb839b851d4ab7808adb9e86f551f57b7b858a223cd75393dc516ac816dd8491",
+  "bytes": 62424,
+  "slide_count": 10,
+  "package_status": "pass",
+  "layout_findings": 0,
+  "layout_warnings": 0,
+  "native_table_count": 6,
+  "first_party_import_passed": true,
+  "observed_fonts": [
+    "Microsoft YaHei"
+  ],
+  "visual_review": "All ten pages were imported from the final file, rendered and inspected by the presentation agent.",
+  "limitations": "Package and layout checks do not establish data correctness; six tables were not eligible for arithmetic validation. Desktop PowerPoint and native font rendering were not tested."
+}

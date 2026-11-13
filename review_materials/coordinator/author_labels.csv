@@ -1,0 +1,13 @@
+os,bug_id,os_layer,affected_function,trigger_scenario
+Android,A-297517712,SystemService,Pro/Tas Sch,Sta Dep
+Android,A-333681693,SystemService,Sec/Perm,Per/Ide Dep
+Android,A-260230151,SystemLib,Mem/Res Mng,Bor Con
+Android,A-323850943,SystemLib,Mem/Res Mng,Bor Con
+Linux,2063344,Kernel,Dev/Drv,Env Dep
+Linux,2076398,SystemLib,Net/Com,Sta Dep
+Linux,2044546,SystemLib,Com/Adp,Env Dep
+Linux,2072772,Framework,Gra/Ren,Env Dep
+HarmonyOS,CVE-2024-39475,Kernel,Dev/Drv,Bor Con
+HarmonyOS,CVE-2024-46740,Kernel,Sec/Perm,Bor Con
+HarmonyOS,CVE-2023-52756,Kernel,Dev/Drv,Bor Con
+HarmonyOS,CVE-2024-43882,Kernel,Sec/Perm,Con/Mul Thr

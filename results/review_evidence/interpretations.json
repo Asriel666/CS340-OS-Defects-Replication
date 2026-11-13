@@ -1,0 +1,42 @@
+{
+  "A-297517712": {
+    "decoded_sha256": "fa897f536baa3bea4518aa8b6133544a4bfc35a37fb8e56b1879189ce16ee116",
+    "reviewer_type": "AI-assisted source-content inspection; not independent human annotation",
+    "note_zh": "PackageManagerService 的两个方法变更：MIME group 更新后收集已安装用户 UID，并发送 package changed 广播。可见代码支持存在状态传播修复；三个分类标签仍待两位成员独立判断。"
+  },
+  "A-333681693": {
+    "decoded_sha256": "d6960aa7f12a104a60d42a1dd1ed0bafc8fdaae871c57f59ed3d89614878e986",
+    "reviewer_type": "AI-assisted source-content inspection; not independent human annotation",
+    "note_zh": "UninstallerActivity 调整跨用户卸载请求的用户/父用户校验，并整理 import。两个 hunk 不等于两个函数，未自动修订标签。"
+  },
+  "A-260230151": {
+    "decoded_sha256": "82a1679bd5bc878e540ab383583cf7698f374fe662aec81ffb15caaa73c9dd9c",
+    "reviewer_type": "AI-assisted source-content inspection; not independent human annotation",
+    "note_zh": "Bluetooth bta_av_aact.cc 中地址来源由消息字段换为 PeerAddress()。单个 hunk 未展示完整函数与漏洞触发条件，不能仅凭补丁确认边界触发标签。"
+  },
+  "A-323850943": {
+    "decoded_sha256": "9cae4841ccf3c57735566fa61a8cb9592077ade56fcb1ddc0a6f17a36717d79e",
+    "reviewer_type": "AI-assisted source-content inspection; not independent human annotation",
+    "note_zh": "eatt.h 增加 MTU 下界约束，gatt_sr.cc 增加 MTU 为零时的错误返回。公开数据计 1 个函数，而可见两个文件都有函数体代码变更，需核查作者的函数计数口径，未自动重标。"
+  },
+  "2063344": {
+    "decoded_sha256": "a298ab0898fe8d7d896510cfc6077382ac7f690c620bfde1d04bb535326c7a4d",
+    "reviewer_type": "AI-assisted source-content inspection; not independent human annotation",
+    "note_zh": "外层四个 Debian 包装文件；内层 smifb2/smi_drv.h 增加 Linux 6.8 条件宏，共四行，无可见函数体修改。源数据 0 函数有可见支持，但不推导其余 176 个零值均正确。"
+  },
+  "2076398": {
+    "decoded_sha256": "7ecdf1dc5a2ec11bd96f8abe50b30f97b8770030bcc034a6c51a8179fbd11f5d",
+    "reviewer_type": "AI-assisted source-content inspection; not independent human annotation",
+    "note_zh": "外层 changelog、patch 和 series；内层 pcap-linux.c 新增 VLAN offset helper，并更新切换链路类型/激活路径的调用。不能把包装层文件数直接当作源码文件数。"
+  },
+  "2044546": {
+    "decoded_sha256": "c4ed8f5b6b33299d962016b751bdacff48dc9e1d56b48da39d163c4e71c8d2b7",
+    "reviewer_type": "AI-assisted source-content inspection; not independent human annotation",
+    "note_zh": "外层三个 Debian 包装文件；内层 Modules/options.c 修改错误格式化调用参数，setup.py 增加 Python 版本标识。函数体中存在代码变化，源数据 0 函数需要澄清，不能解释为纯打包变更。"
+  },
+  "2072772": {
+    "decoded_sha256": "2d8434fd7812a22d4459400a0e22bb503f2e3c3a683fa45f97623a445789a652",
+    "reviewer_type": "AI-assisted source-content inspection; not independent human annotation",
+    "note_zh": "外层 series 与补丁文件；内层 cc-applications-panel.c 的九个 hunk 关闭 Malcontent 条件块，涉及 include、结构成员和多个函数上下文。九个 hunk 不等于九个函数。"
+  }
+}

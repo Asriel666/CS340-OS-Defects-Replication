@@ -1,0 +1,312 @@
+{
+  "library": "SciPy",
+  "version": "1.17.1",
+  "functions": [
+    "scipy.stats.spearmanr",
+    "scipy.stats.rankdata(method='average')"
+  ],
+  "checked_at_utc": "2026-11-13T19:57:30+00:00",
+  "semantic_result_sha256": "f6873aaeb7c8e68113de1145b358e0531806adbc576e442194b0c7284bebbded",
+  "absolute_tolerance": 1e-12,
+  "all_passed": true,
+  "comparisons": [
+    {
+      "policy": "fixed_all",
+      "dimension": "os_layer",
+      "os_a": "Android",
+      "os_b": "Linux",
+      "ours_rho": 0.2571428571428571,
+      "scipy_rho": 0.2571428571428572,
+      "absolute_difference": 5.551115123125783e-17,
+      "ranks_match": true,
+      "passed": true
+    },
+    {
+      "policy": "fixed_all",
+      "dimension": "os_layer",
+      "os_a": "Android",
+      "os_b": "HarmonyOS",
+      "ours_rho": -0.6571428571428571,
+      "scipy_rho": -0.6571428571428573,
+      "absolute_difference": 1.1102230246251565e-16,
+      "ranks_match": true,
+      "passed": true
+    },
+    {
+      "policy": "fixed_all",
+      "dimension": "os_layer",
+      "os_a": "Linux",
+      "os_b": "HarmonyOS",
+      "ours_rho": 0.08571428571428572,
+      "scipy_rho": 0.08571428571428573,
+      "absolute_difference": 1.3877787807814457e-17,
+      "ranks_match": true,
+      "passed": true
+    },
+    {
+      "policy": "global_nonzero",
+      "dimension": "os_layer",
+      "os_a": "Android",
+      "os_b": "Linux",
+      "ours_rho": 0.2571428571428571,
+      "scipy_rho": 0.2571428571428572,
+      "absolute_difference": 5.551115123125783e-17,
+      "ranks_match": true,
+      "passed": true
+    },
+    {
+      "policy": "global_nonzero",
+      "dimension": "os_layer",
+      "os_a": "Android",
+      "os_b": "HarmonyOS",
+      "ours_rho": -0.6571428571428571,
+      "scipy_rho": -0.6571428571428573,
+      "absolute_difference": 1.1102230246251565e-16,
+      "ranks_match": true,
+      "passed": true
+    },
+    {
+      "policy": "global_nonzero",
+      "dimension": "os_layer",
+      "os_a": "Linux",
+      "os_b": "HarmonyOS",
+      "ours_rho": 0.08571428571428572,
+      "scipy_rho": 0.08571428571428573,
+      "absolute_difference": 1.3877787807814457e-17,
+      "ranks_match": true,
+      "passed": true
+    },
+    {
+      "policy": "pairwise_nonzero",
+      "dimension": "os_layer",
+      "os_a": "Android",
+      "os_b": "Linux",
+      "ours_rho": 0.2571428571428571,
+      "scipy_rho": 0.2571428571428572,
+      "absolute_difference": 5.551115123125783e-17,
+      "ranks_match": true,
+      "passed": true
+    },
+    {
+      "policy": "pairwise_nonzero",
+      "dimension": "os_layer",
+      "os_a": "Android",
+      "os_b": "HarmonyOS",
+      "ours_rho": -0.6571428571428571,
+      "scipy_rho": -0.6571428571428573,
+      "absolute_difference": 1.1102230246251565e-16,
+      "ranks_match": true,
+      "passed": true
+    },
+    {
+      "policy": "pairwise_nonzero",
+      "dimension": "os_layer",
+      "os_a": "Linux",
+      "os_b": "HarmonyOS",
+      "ours_rho": 0.08571428571428572,
+      "scipy_rho": 0.08571428571428573,
+      "absolute_difference": 1.3877787807814457e-17,
+      "ranks_match": true,
+      "passed": true
+    },
+    {
+      "policy": "fixed_all",
+      "dimension": "affected_function",
+      "os_a": "Android",
+      "os_b": "Linux",
+      "ours_rho": -0.19047619047619047,
+      "scipy_rho": -0.19047619047619052,
+      "absolute_difference": 5.551115123125783e-17,
+      "ranks_match": true,
+      "passed": true
+    },
+    {
+      "policy": "fixed_all",
+      "dimension": "affected_function",
+      "os_a": "Android",
+      "os_b": "HarmonyOS",
+      "ours_rho": 0.42857142857142855,
+      "scipy_rho": 0.4285714285714286,
+      "absolute_difference": 5.551115123125783e-17,
+      "ranks_match": true,
+      "passed": true
+    },
+    {
+      "policy": "fixed_all",
+      "dimension": "affected_function",
+      "os_a": "Linux",
+      "os_b": "HarmonyOS",
+      "ours_rho": -0.5238095238095238,
+      "scipy_rho": -0.523809523809524,
+      "absolute_difference": 1.1102230246251565e-16,
+      "ranks_match": true,
+      "passed": true
+    },
+    {
+      "policy": "global_nonzero",
+      "dimension": "affected_function",
+      "os_a": "Android",
+      "os_b": "Linux",
+      "ours_rho": -0.19047619047619047,
+      "scipy_rho": -0.19047619047619052,
+      "absolute_difference": 5.551115123125783e-17,
+      "ranks_match": true,
+      "passed": true
+    },
+    {
+      "policy": "global_nonzero",
+      "dimension": "affected_function",
+      "os_a": "Android",
+      "os_b": "HarmonyOS",
+      "ours_rho": 0.42857142857142855,
+      "scipy_rho": 0.4285714285714286,
+      "absolute_difference": 5.551115123125783e-17,
+      "ranks_match": true,
+      "passed": true
+    },
+    {
+      "policy": "global_nonzero",
+      "dimension": "affected_function",
+      "os_a": "Linux",
+      "os_b": "HarmonyOS",
+      "ours_rho": -0.5238095238095238,
+      "scipy_rho": -0.523809523809524,
+      "absolute_difference": 1.1102230246251565e-16,
+      "ranks_match": true,
+      "passed": true
+    },
+    {
+      "policy": "pairwise_nonzero",
+      "dimension": "affected_function",
+      "os_a": "Android",
+      "os_b": "Linux",
+      "ours_rho": -0.19047619047619047,
+      "scipy_rho": -0.19047619047619052,
+      "absolute_difference": 5.551115123125783e-17,
+      "ranks_match": true,
+      "passed": true
+    },
+    {
+      "policy": "pairwise_nonzero",
+      "dimension": "affected_function",
+      "os_a": "Android",
+      "os_b": "HarmonyOS",
+      "ours_rho": 0.42857142857142855,
+      "scipy_rho": 0.4285714285714286,
+      "absolute_difference": 5.551115123125783e-17,
+      "ranks_match": true,
+      "passed": true
+    },
+    {
+      "policy": "pairwise_nonzero",
+      "dimension": "affected_function",
+      "os_a": "Linux",
+      "os_b": "HarmonyOS",
+      "ours_rho": -0.5238095238095238,
+      "scipy_rho": -0.523809523809524,
+      "absolute_difference": 1.1102230246251565e-16,
+      "ranks_match": true,
+      "passed": true
+    },
+    {
+      "policy": "fixed_all",
+      "dimension": "trigger_scenario",
+      "os_a": "Android",
+      "os_b": "Linux",
+      "ours_rho": 0.21428571428571427,
+      "scipy_rho": 0.21428571428571433,
+      "absolute_difference": 5.551115123125783e-17,
+      "ranks_match": true,
+      "passed": true
+    },
+    {
+      "policy": "fixed_all",
+      "dimension": "trigger_scenario",
+      "os_a": "Android",
+      "os_b": "HarmonyOS",
+      "ours_rho": 0.6126374746329801,
+      "scipy_rho": 0.6126374746329801,
+      "absolute_difference": 0.0,
+      "ranks_match": true,
+      "passed": true
+    },
+    {
+      "policy": "fixed_all",
+      "dimension": "trigger_scenario",
+      "os_a": "Linux",
+      "os_b": "HarmonyOS",
+      "ours_rho": 0.41443123283995714,
+      "scipy_rho": 0.41443123283995714,
+      "absolute_difference": 0.0,
+      "ranks_match": true,
+      "passed": true
+    },
+    {
+      "policy": "global_nonzero",
+      "dimension": "trigger_scenario",
+      "os_a": "Android",
+      "os_b": "Linux",
+      "ours_rho": 0.21428571428571427,
+      "scipy_rho": 0.21428571428571433,
+      "absolute_difference": 5.551115123125783e-17,
+      "ranks_match": true,
+      "passed": true
+    },
+    {
+      "policy": "global_nonzero",
+      "dimension": "trigger_scenario",
+      "os_a": "Android",
+      "os_b": "HarmonyOS",
+      "ours_rho": 0.6126374746329801,
+      "scipy_rho": 0.6126374746329801,
+      "absolute_difference": 0.0,
+      "ranks_match": true,
+      "passed": true
+    },
+    {
+      "policy": "global_nonzero",
+      "dimension": "trigger_scenario",
+      "os_a": "Linux",
+      "os_b": "HarmonyOS",
+      "ours_rho": 0.41443123283995714,
+      "scipy_rho": 0.41443123283995714,
+      "absolute_difference": 0.0,
+      "ranks_match": true,
+      "passed": true
+    },
+    {
+      "policy": "pairwise_nonzero",
+      "dimension": "trigger_scenario",
+      "os_a": "Android",
+      "os_b": "Linux",
+      "ours_rho": 0.21428571428571427,
+      "scipy_rho": 0.21428571428571433,
+      "absolute_difference": 5.551115123125783e-17,
+      "ranks_match": true,
+      "passed": true
+    },
+    {
+      "policy": "pairwise_nonzero",
+      "dimension": "trigger_scenario",
+      "os_a": "Android",
+      "os_b": "HarmonyOS",
+      "ours_rho": 0.3768511731740915,
+      "scipy_rho": 0.3768511731740915,
+      "absolute_difference": 0.0,
+      "ranks_match": true,
+      "passed": true
+    },
+    {
+      "policy": "pairwise_nonzero",
+      "dimension": "trigger_scenario",
+      "os_a": "Linux",
+      "os_b": "HarmonyOS",
+      "ours_rho": 0.41443123283995714,
+      "scipy_rho": 0.41443123283995714,
+      "absolute_difference": 0.0,
+      "ranks_match": true,
+      "passed": true
+    }
+  ],
+  "scope": "Independent numerical implementation on the recorded selected vectors; does not independently validate data labels, category selection, or author intent."
+}

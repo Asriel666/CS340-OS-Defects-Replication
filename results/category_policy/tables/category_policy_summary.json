@@ -1,0 +1,1842 @@
+{
+  "analysis": "category_set_sensitivity",
+  "schema_version": 1,
+  "policies": {
+    "fixed_all": "Retain every canonical category, including zero counts (unchanged core method).",
+    "global_nonzero": "Exclude a category only when its count is zero in all three systems.",
+    "pairwise_nonzero": "Exclude a category only when its count is zero in both systems in this pair."
+  },
+  "policy_summary": {
+    "fixed_all": {
+      "independent_pairs": 9,
+      "matched_pairs": 8,
+      "mismatched_pairs": 1,
+      "unconfirmed_pairs": 0,
+      "pairs_with_exclusions": 0
+    },
+    "global_nonzero": {
+      "independent_pairs": 9,
+      "matched_pairs": 8,
+      "mismatched_pairs": 1,
+      "unconfirmed_pairs": 0,
+      "pairs_with_exclusions": 0
+    },
+    "pairwise_nonzero": {
+      "independent_pairs": 9,
+      "matched_pairs": 9,
+      "mismatched_pairs": 0,
+      "unconfirmed_pairs": 0,
+      "pairs_with_exclusions": 1
+    }
+  },
+  "comparison_count": 27,
+  "unique_published_pairs": 9,
+  "inputs": {
+    "os_layer": {
+      "categories": [
+        "Kernel",
+        "SystemLib",
+        "RuntimeVM",
+        "Framework",
+        "SystemService",
+        "Application"
+      ],
+      "counts_by_os": {
+        "Android": {
+          "Kernel": 30,
+          "SystemLib": 101,
+          "RuntimeVM": 2,
+          "Framework": 90,
+          "SystemService": 194,
+          "Application": 83
+        },
+        "Linux": {
+          "Kernel": 79,
+          "SystemLib": 94,
+          "RuntimeVM": 1,
+          "Framework": 18,
+          "SystemService": 37,
+          "Application": 271
+        },
+        "HarmonyOS": {
+          "Kernel": 359,
+          "SystemLib": 34,
+          "RuntimeVM": 44,
+          "Framework": 14,
+          "SystemService": 24,
+          "Application": 25
+        }
+      }
+    },
+    "affected_function": {
+      "categories": [
+        "Mem/Res Mng",
+        "Pro/Tas Sch",
+        "Sto Mng",
+        "Dev/Drv",
+        "Net/Com",
+        "Com/Adp",
+        "Sec/Perm",
+        "Gra/Ren"
+      ],
+      "counts_by_os": {
+        "Android": {
+          "Mem/Res Mng": 62,
+          "Pro/Tas Sch": 24,
+          "Sto Mng": 18,
+          "Dev/Drv": 36,
+          "Net/Com": 16,
+          "Com/Adp": 15,
+          "Sec/Perm": 300,
+          "Gra/Ren": 29
+        },
+        "Linux": {
+          "Mem/Res Mng": 10,
+          "Pro/Tas Sch": 18,
+          "Sto Mng": 42,
+          "Dev/Drv": 86,
+          "Net/Com": 33,
+          "Com/Adp": 206,
+          "Sec/Perm": 70,
+          "Gra/Ren": 35
+        },
+        "HarmonyOS": {
+          "Mem/Res Mng": 114,
+          "Pro/Tas Sch": 28,
+          "Sto Mng": 69,
+          "Dev/Drv": 68,
+          "Net/Com": 100,
+          "Com/Adp": 12,
+          "Sec/Perm": 90,
+          "Gra/Ren": 19
+        }
+      }
+    },
+    "trigger_scenario": {
+      "categories": [
+        "Per/Ide Dep",
+        "Reg Ope",
+        "Bor Con",
+        "Con/Mul Thr",
+        "Sta Dep",
+        "Env Dep",
+        "Mul/Loc Dep"
+      ],
+      "counts_by_os": {
+        "Android": {
+          "Per/Ide Dep": 156,
+          "Reg Ope": 44,
+          "Bor Con": 185,
+          "Con/Mul Thr": 36,
+          "Sta Dep": 74,
+          "Env Dep": 5,
+          "Mul/Loc Dep": 0
+        },
+        "Linux": {
+          "Per/Ide Dep": 8,
+          "Reg Ope": 45,
+          "Bor Con": 95,
+          "Con/Mul Thr": 15,
+          "Sta Dep": 26,
+          "Env Dep": 310,
+          "Mul/Loc Dep": 1
+        },
+        "HarmonyOS": {
+          "Per/Ide Dep": 14,
+          "Reg Ope": 33,
+          "Bor Con": 263,
+          "Con/Mul Thr": 120,
+          "Sta Dep": 56,
+          "Env Dep": 14,
+          "Mul/Loc Dep": 0
+        }
+      }
+    }
+  },
+  "comparisons": [
+    {
+      "policy": "fixed_all",
+      "dimension": "os_layer",
+      "os_a": "Android",
+      "os_b": "Linux",
+      "retained_categories": [
+        "Kernel",
+        "SystemLib",
+        "RuntimeVM",
+        "Framework",
+        "SystemService",
+        "Application"
+      ],
+      "excluded_categories": [],
+      "retained_category_count": 6,
+      "counts_a": [
+        30,
+        101,
+        2,
+        90,
+        194,
+        83
+      ],
+      "counts_b": [
+        79,
+        94,
+        1,
+        18,
+        37,
+        271
+      ],
+      "average_ranks_a": [
+        2.0,
+        5.0,
+        1.0,
+        4.0,
+        6.0,
+        3.0
+      ],
+      "average_ranks_b": [
+        4.0,
+        5.0,
+        1.0,
+        2.0,
+        3.0,
+        6.0
+      ],
+      "ours_rho": 0.2571428571428571,
+      "undefined_reason": null,
+      "paper_rho": 0.26,
+      "difference": -0.0028571428571428914,
+      "matches_to_2dp": true,
+      "status": "match",
+      "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-a.png"
+    },
+    {
+      "policy": "fixed_all",
+      "dimension": "os_layer",
+      "os_a": "Android",
+      "os_b": "HarmonyOS",
+      "retained_categories": [
+        "Kernel",
+        "SystemLib",
+        "RuntimeVM",
+        "Framework",
+        "SystemService",
+        "Application"
+      ],
+      "excluded_categories": [],
+      "retained_category_count": 6,
+      "counts_a": [
+        30,
+        101,
+        2,
+        90,
+        194,
+        83
+      ],
+      "counts_b": [
+        359,
+        34,
+        44,
+        14,
+        24,
+        25
+      ],
+      "average_ranks_a": [
+        2.0,
+        5.0,
+        1.0,
+        4.0,
+        6.0,
+        3.0
+      ],
+      "average_ranks_b": [
+        6.0,
+        4.0,
+        5.0,
+        1.0,
+        2.0,
+        3.0
+      ],
+      "ours_rho": -0.6571428571428571,
+      "undefined_reason": null,
+      "paper_rho": -0.66,
+      "difference": 0.0028571428571428914,
+      "matches_to_2dp": true,
+      "status": "match",
+      "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-a.png"
+    },
+    {
+      "policy": "fixed_all",
+      "dimension": "os_layer",
+      "os_a": "Linux",
+      "os_b": "HarmonyOS",
+      "retained_categories": [
+        "Kernel",
+        "SystemLib",
+        "RuntimeVM",
+        "Framework",
+        "SystemService",
+        "Application"
+      ],
+      "excluded_categories": [],
+      "retained_category_count": 6,
+      "counts_a": [
+        79,
+        94,
+        1,
+        18,
+        37,
+        271
+      ],
+      "counts_b": [
+        359,
+        34,
+        44,
+        14,
+        24,
+        25
+      ],
+      "average_ranks_a": [
+        4.0,
+        5.0,
+        1.0,
+        2.0,
+        3.0,
+        6.0
+      ],
+      "average_ranks_b": [
+        6.0,
+        4.0,
+        5.0,
+        1.0,
+        2.0,
+        3.0
+      ],
+      "ours_rho": 0.08571428571428572,
+      "undefined_reason": null,
+      "paper_rho": 0.09,
+      "difference": -0.004285714285714282,
+      "matches_to_2dp": true,
+      "status": "match",
+      "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-a.png"
+    },
+    {
+      "policy": "global_nonzero",
+      "dimension": "os_layer",
+      "os_a": "Android",
+      "os_b": "Linux",
+      "retained_categories": [
+        "Kernel",
+        "SystemLib",
+        "RuntimeVM",
+        "Framework",
+        "SystemService",
+        "Application"
+      ],
+      "excluded_categories": [],
+      "retained_category_count": 6,
+      "counts_a": [
+        30,
+        101,
+        2,
+        90,
+        194,
+        83
+      ],
+      "counts_b": [
+        79,
+        94,
+        1,
+        18,
+        37,
+        271
+      ],
+      "average_ranks_a": [
+        2.0,
+        5.0,
+        1.0,
+        4.0,
+        6.0,
+        3.0
+      ],
+      "average_ranks_b": [
+        4.0,
+        5.0,
+        1.0,
+        2.0,
+        3.0,
+        6.0
+      ],
+      "ours_rho": 0.2571428571428571,
+      "undefined_reason": null,
+      "paper_rho": 0.26,
+      "difference": -0.0028571428571428914,
+      "matches_to_2dp": true,
+      "status": "match",
+      "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-a.png"
+    },
+    {
+      "policy": "global_nonzero",
+      "dimension": "os_layer",
+      "os_a": "Android",
+      "os_b": "HarmonyOS",
+      "retained_categories": [
+        "Kernel",
+        "SystemLib",
+        "RuntimeVM",
+        "Framework",
+        "SystemService",
+        "Application"
+      ],
+      "excluded_categories": [],
+      "retained_category_count": 6,
+      "counts_a": [
+        30,
+        101,
+        2,
+        90,
+        194,
+        83
+      ],
+      "counts_b": [
+        359,
+        34,
+        44,
+        14,
+        24,
+        25
+      ],
+      "average_ranks_a": [
+        2.0,
+        5.0,
+        1.0,
+        4.0,
+        6.0,
+        3.0
+      ],
+      "average_ranks_b": [
+        6.0,
+        4.0,
+        5.0,
+        1.0,
+        2.0,
+        3.0
+      ],
+      "ours_rho": -0.6571428571428571,
+      "undefined_reason": null,
+      "paper_rho": -0.66,
+      "difference": 0.0028571428571428914,
+      "matches_to_2dp": true,
+      "status": "match",
+      "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-a.png"
+    },
+    {
+      "policy": "global_nonzero",
+      "dimension": "os_layer",
+      "os_a": "Linux",
+      "os_b": "HarmonyOS",
+      "retained_categories": [
+        "Kernel",
+        "SystemLib",
+        "RuntimeVM",
+        "Framework",
+        "SystemService",
+        "Application"
+      ],
+      "excluded_categories": [],
+      "retained_category_count": 6,
+      "counts_a": [
+        79,
+        94,
+        1,
+        18,
+        37,
+        271
+      ],
+      "counts_b": [
+        359,
+        34,
+        44,
+        14,
+        24,
+        25
+      ],
+      "average_ranks_a": [
+        4.0,
+        5.0,
+        1.0,
+        2.0,
+        3.0,
+        6.0
+      ],
+      "average_ranks_b": [
+        6.0,
+        4.0,
+        5.0,
+        1.0,
+        2.0,
+        3.0
+      ],
+      "ours_rho": 0.08571428571428572,
+      "undefined_reason": null,
+      "paper_rho": 0.09,
+      "difference": -0.004285714285714282,
+      "matches_to_2dp": true,
+      "status": "match",
+      "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-a.png"
+    },
+    {
+      "policy": "pairwise_nonzero",
+      "dimension": "os_layer",
+      "os_a": "Android",
+      "os_b": "Linux",
+      "retained_categories": [
+        "Kernel",
+        "SystemLib",
+        "RuntimeVM",
+        "Framework",
+        "SystemService",
+        "Application"
+      ],
+      "excluded_categories": [],
+      "retained_category_count": 6,
+      "counts_a": [
+        30,
+        101,
+        2,
+        90,
+        194,
+        83
+      ],
+      "counts_b": [
+        79,
+        94,
+        1,
+        18,
+        37,
+        271
+      ],
+      "average_ranks_a": [
+        2.0,
+        5.0,
+        1.0,
+        4.0,
+        6.0,
+        3.0
+      ],
+      "average_ranks_b": [
+        4.0,
+        5.0,
+        1.0,
+        2.0,
+        3.0,
+        6.0
+      ],
+      "ours_rho": 0.2571428571428571,
+      "undefined_reason": null,
+      "paper_rho": 0.26,
+      "difference": -0.0028571428571428914,
+      "matches_to_2dp": true,
+      "status": "match",
+      "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-a.png"
+    },
+    {
+      "policy": "pairwise_nonzero",
+      "dimension": "os_layer",
+      "os_a": "Android",
+      "os_b": "HarmonyOS",
+      "retained_categories": [
+        "Kernel",
+        "SystemLib",
+        "RuntimeVM",
+        "Framework",
+        "SystemService",
+        "Application"
+      ],
+      "excluded_categories": [],
+      "retained_category_count": 6,
+      "counts_a": [
+        30,
+        101,
+        2,
+        90,
+        194,
+        83
+      ],
+      "counts_b": [
+        359,
+        34,
+        44,
+        14,
+        24,
+        25
+      ],
+      "average_ranks_a": [
+        2.0,
+        5.0,
+        1.0,
+        4.0,
+        6.0,
+        3.0
+      ],
+      "average_ranks_b": [
+        6.0,
+        4.0,
+        5.0,
+        1.0,
+        2.0,
+        3.0
+      ],
+      "ours_rho": -0.6571428571428571,
+      "undefined_reason": null,
+      "paper_rho": -0.66,
+      "difference": 0.0028571428571428914,
+      "matches_to_2dp": true,
+      "status": "match",
+      "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-a.png"
+    },
+    {
+      "policy": "pairwise_nonzero",
+      "dimension": "os_layer",
+      "os_a": "Linux",
+      "os_b": "HarmonyOS",
+      "retained_categories": [
+        "Kernel",
+        "SystemLib",
+        "RuntimeVM",
+        "Framework",
+        "SystemService",
+        "Application"
+      ],
+      "excluded_categories": [],
+      "retained_category_count": 6,
+      "counts_a": [
+        79,
+        94,
+        1,
+        18,
+        37,
+        271
+      ],
+      "counts_b": [
+        359,
+        34,
+        44,
+        14,
+        24,
+        25
+      ],
+      "average_ranks_a": [
+        4.0,
+        5.0,
+        1.0,
+        2.0,
+        3.0,
+        6.0
+      ],
+      "average_ranks_b": [
+        6.0,
+        4.0,
+        5.0,
+        1.0,
+        2.0,
+        3.0
+      ],
+      "ours_rho": 0.08571428571428572,
+      "undefined_reason": null,
+      "paper_rho": 0.09,
+      "difference": -0.004285714285714282,
+      "matches_to_2dp": true,
+      "status": "match",
+      "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-a.png"
+    },
+    {
+      "policy": "fixed_all",
+      "dimension": "affected_function",
+      "os_a": "Android",
+      "os_b": "Linux",
+      "retained_categories": [
+        "Mem/Res Mng",
+        "Pro/Tas Sch",
+        "Sto Mng",
+        "Dev/Drv",
+        "Net/Com",
+        "Com/Adp",
+        "Sec/Perm",
+        "Gra/Ren"
+      ],
+      "excluded_categories": [],
+      "retained_category_count": 8,
+      "counts_a": [
+        62,
+        24,
+        18,
+        36,
+        16,
+        15,
+        300,
+        29
+      ],
+      "counts_b": [
+        10,
+        18,
+        42,
+        86,
+        33,
+        206,
+        70,
+        35
+      ],
+      "average_ranks_a": [
+        7.0,
+        4.0,
+        3.0,
+        6.0,
+        2.0,
+        1.0,
+        8.0,
+        5.0
+      ],
+      "average_ranks_b": [
+        1.0,
+        2.0,
+        5.0,
+        7.0,
+        3.0,
+        8.0,
+        6.0,
+        4.0
+      ],
+      "ours_rho": -0.19047619047619047,
+      "undefined_reason": null,
+      "paper_rho": -0.19,
+      "difference": -0.0004761904761904634,
+      "matches_to_2dp": true,
+      "status": "match",
+      "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-b.png"
+    },
+    {
+      "policy": "fixed_all",
+      "dimension": "affected_function",
+      "os_a": "Android",
+      "os_b": "HarmonyOS",
+      "retained_categories": [
+        "Mem/Res Mng",
+        "Pro/Tas Sch",
+        "Sto Mng",
+        "Dev/Drv",
+        "Net/Com",
+        "Com/Adp",
+        "Sec/Perm",
+        "Gra/Ren"
+      ],
+      "excluded_categories": [],
+      "retained_category_count": 8,
+      "counts_a": [
+        62,
+        24,
+        18,
+        36,
+        16,
+        15,
+        300,
+        29
+      ],
+      "counts_b": [
+        114,
+        28,
+        69,
+        68,
+        100,
+        12,
+        90,
+        19
+      ],
+      "average_ranks_a": [
+        7.0,
+        4.0,
+        3.0,
+        6.0,
+        2.0,
+        1.0,
+        8.0,
+        5.0
+      ],
+      "average_ranks_b": [
+        8.0,
+        3.0,
+        5.0,
+        4.0,
+        7.0,
+        1.0,
+        6.0,
+        2.0
+      ],
+      "ours_rho": 0.42857142857142855,
+      "undefined_reason": null,
+      "paper_rho": 0.43,
+      "difference": -0.0014285714285714457,
+      "matches_to_2dp": true,
+      "status": "match",
+      "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-b.png"
+    },
+    {
+      "policy": "fixed_all",
+      "dimension": "affected_function",
+      "os_a": "Linux",
+      "os_b": "HarmonyOS",
+      "retained_categories": [
+        "Mem/Res Mng",
+        "Pro/Tas Sch",
+        "Sto Mng",
+        "Dev/Drv",
+        "Net/Com",
+        "Com/Adp",
+        "Sec/Perm",
+        "Gra/Ren"
+      ],
+      "excluded_categories": [],
+      "retained_category_count": 8,
+      "counts_a": [
+        10,
+        18,
+        42,
+        86,
+        33,
+        206,
+        70,
+        35
+      ],
+      "counts_b": [
+        114,
+        28,
+        69,
+        68,
+        100,
+        12,
+        90,
+        19
+      ],
+      "average_ranks_a": [
+        1.0,
+        2.0,
+        5.0,
+        7.0,
+        3.0,
+        8.0,
+        6.0,
+        4.0
+      ],
+      "average_ranks_b": [
+        8.0,
+        3.0,
+        5.0,
+        4.0,
+        7.0,
+        1.0,
+        6.0,
+        2.0
+      ],
+      "ours_rho": -0.5238095238095238,
+      "undefined_reason": null,
+      "paper_rho": -0.52,
+      "difference": -0.003809523809523818,
+      "matches_to_2dp": true,
+      "status": "match",
+      "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-b.png"
+    },
+    {
+      "policy": "global_nonzero",
+      "dimension": "affected_function",
+      "os_a": "Android",
+      "os_b": "Linux",
+      "retained_categories": [
+        "Mem/Res Mng",
+        "Pro/Tas Sch",
+        "Sto Mng",
+        "Dev/Drv",
+        "Net/Com",
+        "Com/Adp",
+        "Sec/Perm",
+        "Gra/Ren"
+      ],
+      "excluded_categories": [],
+      "retained_category_count": 8,
+      "counts_a": [
+        62,
+        24,
+        18,
+        36,
+        16,
+        15,
+        300,
+        29
+      ],
+      "counts_b": [
+        10,
+        18,
+        42,
+        86,
+        33,
+        206,
+        70,
+        35
+      ],
+      "average_ranks_a": [
+        7.0,
+        4.0,
+        3.0,
+        6.0,
+        2.0,
+        1.0,
+        8.0,
+        5.0
+      ],
+      "average_ranks_b": [
+        1.0,
+        2.0,
+        5.0,
+        7.0,
+        3.0,
+        8.0,
+        6.0,
+        4.0
+      ],
+      "ours_rho": -0.19047619047619047,
+      "undefined_reason": null,
+      "paper_rho": -0.19,
+      "difference": -0.0004761904761904634,
+      "matches_to_2dp": true,
+      "status": "match",
+      "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-b.png"
+    },
+    {
+      "policy": "global_nonzero",
+      "dimension": "affected_function",
+      "os_a": "Android",
+      "os_b": "HarmonyOS",
+      "retained_categories": [
+        "Mem/Res Mng",
+        "Pro/Tas Sch",
+        "Sto Mng",
+        "Dev/Drv",
+        "Net/Com",
+        "Com/Adp",
+        "Sec/Perm",
+        "Gra/Ren"
+      ],
+      "excluded_categories": [],
+      "retained_category_count": 8,
+      "counts_a": [
+        62,
+        24,
+        18,
+        36,
+        16,
+        15,
+        300,
+        29
+      ],
+      "counts_b": [
+        114,
+        28,
+        69,
+        68,
+        100,
+        12,
+        90,
+        19
+      ],
+      "average_ranks_a": [
+        7.0,
+        4.0,
+        3.0,
+        6.0,
+        2.0,
+        1.0,
+        8.0,
+        5.0
+      ],
+      "average_ranks_b": [
+        8.0,
+        3.0,
+        5.0,
+        4.0,
+        7.0,
+        1.0,
+        6.0,
+        2.0
+      ],
+      "ours_rho": 0.42857142857142855,
+      "undefined_reason": null,
+      "paper_rho": 0.43,
+      "difference": -0.0014285714285714457,
+      "matches_to_2dp": true,
+      "status": "match",
+      "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-b.png"
+    },
+    {
+      "policy": "global_nonzero",
+      "dimension": "affected_function",
+      "os_a": "Linux",
+      "os_b": "HarmonyOS",
+      "retained_categories": [
+        "Mem/Res Mng",
+        "Pro/Tas Sch",
+        "Sto Mng",
+        "Dev/Drv",
+        "Net/Com",
+        "Com/Adp",
+        "Sec/Perm",
+        "Gra/Ren"
+      ],
+      "excluded_categories": [],
+      "retained_category_count": 8,
+      "counts_a": [
+        10,
+        18,
+        42,
+        86,
+        33,
+        206,
+        70,
+        35
+      ],
+      "counts_b": [
+        114,
+        28,
+        69,
+        68,
+        100,
+        12,
+        90,
+        19
+      ],
+      "average_ranks_a": [
+        1.0,
+        2.0,
+        5.0,
+        7.0,
+        3.0,
+        8.0,
+        6.0,
+        4.0
+      ],
+      "average_ranks_b": [
+        8.0,
+        3.0,
+        5.0,
+        4.0,
+        7.0,
+        1.0,
+        6.0,
+        2.0
+      ],
+      "ours_rho": -0.5238095238095238,
+      "undefined_reason": null,
+      "paper_rho": -0.52,
+      "difference": -0.003809523809523818,
+      "matches_to_2dp": true,
+      "status": "match",
+      "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-b.png"
+    },
+    {
+      "policy": "pairwise_nonzero",
+      "dimension": "affected_function",
+      "os_a": "Android",
+      "os_b": "Linux",
+      "retained_categories": [
+        "Mem/Res Mng",
+        "Pro/Tas Sch",
+        "Sto Mng",
+        "Dev/Drv",
+        "Net/Com",
+        "Com/Adp",
+        "Sec/Perm",
+        "Gra/Ren"
+      ],
+      "excluded_categories": [],
+      "retained_category_count": 8,
+      "counts_a": [
+        62,
+        24,
+        18,
+        36,
+        16,
+        15,
+        300,
+        29
+      ],
+      "counts_b": [
+        10,
+        18,
+        42,
+        86,
+        33,
+        206,
+        70,
+        35
+      ],
+      "average_ranks_a": [
+        7.0,
+        4.0,
+        3.0,
+        6.0,
+        2.0,
+        1.0,
+        8.0,
+        5.0
+      ],
+      "average_ranks_b": [
+        1.0,
+        2.0,
+        5.0,
+        7.0,
+        3.0,
+        8.0,
+        6.0,
+        4.0
+      ],
+      "ours_rho": -0.19047619047619047,
+      "undefined_reason": null,
+      "paper_rho": -0.19,
+      "difference": -0.0004761904761904634,
+      "matches_to_2dp": true,
+      "status": "match",
+      "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-b.png"
+    },
+    {
+      "policy": "pairwise_nonzero",
+      "dimension": "affected_function",
+      "os_a": "Android",
+      "os_b": "HarmonyOS",
+      "retained_categories": [
+        "Mem/Res Mng",
+        "Pro/Tas Sch",
+        "Sto Mng",
+        "Dev/Drv",
+        "Net/Com",
+        "Com/Adp",
+        "Sec/Perm",
+        "Gra/Ren"
+      ],
+      "excluded_categories": [],
+      "retained_category_count": 8,
+      "counts_a": [
+        62,
+        24,
+        18,
+        36,
+        16,
+        15,
+        300,
+        29
+      ],
+      "counts_b": [
+        114,
+        28,
+        69,
+        68,
+        100,
+        12,
+        90,
+        19
+      ],
+      "average_ranks_a": [
+        7.0,
+        4.0,
+        3.0,
+        6.0,
+        2.0,
+        1.0,
+        8.0,
+        5.0
+      ],
+      "average_ranks_b": [
+        8.0,
+        3.0,
+        5.0,
+        4.0,
+        7.0,
+        1.0,
+        6.0,
+        2.0
+      ],
+      "ours_rho": 0.42857142857142855,
+      "undefined_reason": null,
+      "paper_rho": 0.43,
+      "difference": -0.0014285714285714457,
+      "matches_to_2dp": true,
+      "status": "match",
+      "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-b.png"
+    },
+    {
+      "policy": "pairwise_nonzero",
+      "dimension": "affected_function",
+      "os_a": "Linux",
+      "os_b": "HarmonyOS",
+      "retained_categories": [
+        "Mem/Res Mng",
+        "Pro/Tas Sch",
+        "Sto Mng",
+        "Dev/Drv",
+        "Net/Com",
+        "Com/Adp",
+        "Sec/Perm",
+        "Gra/Ren"
+      ],
+      "excluded_categories": [],
+      "retained_category_count": 8,
+      "counts_a": [
+        10,
+        18,
+        42,
+        86,
+        33,
+        206,
+        70,
+        35
+      ],
+      "counts_b": [
+        114,
+        28,
+        69,
+        68,
+        100,
+        12,
+        90,
+        19
+      ],
+      "average_ranks_a": [
+        1.0,
+        2.0,
+        5.0,
+        7.0,
+        3.0,
+        8.0,
+        6.0,
+        4.0
+      ],
+      "average_ranks_b": [
+        8.0,
+        3.0,
+        5.0,
+        4.0,
+        7.0,
+        1.0,
+        6.0,
+        2.0
+      ],
+      "ours_rho": -0.5238095238095238,
+      "undefined_reason": null,
+      "paper_rho": -0.52,
+      "difference": -0.003809523809523818,
+      "matches_to_2dp": true,
+      "status": "match",
+      "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-b.png"
+    },
+    {
+      "policy": "fixed_all",
+      "dimension": "trigger_scenario",
+      "os_a": "Android",
+      "os_b": "Linux",
+      "retained_categories": [
+        "Per/Ide Dep",
+        "Reg Ope",
+        "Bor Con",
+        "Con/Mul Thr",
+        "Sta Dep",
+        "Env Dep",
+        "Mul/Loc Dep"
+      ],
+      "excluded_categories": [],
+      "retained_category_count": 7,
+      "counts_a": [
+        156,
+        44,
+        185,
+        36,
+        74,
+        5,
+        0
+      ],
+      "counts_b": [
+        8,
+        45,
+        95,
+        15,
+        26,
+        310,
+        1
+      ],
+      "average_ranks_a": [
+        6.0,
+        4.0,
+        7.0,
+        3.0,
+        5.0,
+        2.0,
+        1.0
+      ],
+      "average_ranks_b": [
+        2.0,
+        5.0,
+        6.0,
+        3.0,
+        4.0,
+        7.0,
+        1.0
+      ],
+      "ours_rho": 0.21428571428571427,
+      "undefined_reason": null,
+      "paper_rho": 0.21,
+      "difference": 0.004285714285714282,
+      "matches_to_2dp": true,
+      "status": "match",
+      "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-c.png"
+    },
+    {
+      "policy": "fixed_all",
+      "dimension": "trigger_scenario",
+      "os_a": "Android",
+      "os_b": "HarmonyOS",
+      "retained_categories": [
+        "Per/Ide Dep",
+        "Reg Ope",
+        "Bor Con",
+        "Con/Mul Thr",
+        "Sta Dep",
+        "Env Dep",
+        "Mul/Loc Dep"
+      ],
+      "excluded_categories": [],
+      "retained_category_count": 7,
+      "counts_a": [
+        156,
+        44,
+        185,
+        36,
+        74,
+        5,
+        0
+      ],
+      "counts_b": [
+        14,
+        33,
+        263,
+        120,
+        56,
+        14,
+        0
+      ],
+      "average_ranks_a": [
+        6.0,
+        4.0,
+        7.0,
+        3.0,
+        5.0,
+        2.0,
+        1.0
+      ],
+      "average_ranks_b": [
+        2.5,
+        4.0,
+        7.0,
+        6.0,
+        5.0,
+        2.5,
+        1.0
+      ],
+      "ours_rho": 0.6126374746329801,
+      "undefined_reason": null,
+      "paper_rho": 0.38,
+      "difference": 0.23263747463298012,
+      "matches_to_2dp": false,
+      "status": "mismatch",
+      "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-c.png"
+    },
+    {
+      "policy": "fixed_all",
+      "dimension": "trigger_scenario",
+      "os_a": "Linux",
+      "os_b": "HarmonyOS",
+      "retained_categories": [
+        "Per/Ide Dep",
+        "Reg Ope",
+        "Bor Con",
+        "Con/Mul Thr",
+        "Sta Dep",
+        "Env Dep",
+        "Mul/Loc Dep"
+      ],
+      "excluded_categories": [],
+      "retained_category_count": 7,
+      "counts_a": [
+        8,
+        45,
+        95,
+        15,
+        26,
+        310,
+        1
+      ],
+      "counts_b": [
+        14,
+        33,
+        263,
+        120,
+        56,
+        14,
+        0
+      ],
+      "average_ranks_a": [
+        2.0,
+        5.0,
+        6.0,
+        3.0,
+        4.0,
+        7.0,
+        1.0
+      ],
+      "average_ranks_b": [
+        2.5,
+        4.0,
+        7.0,
+        6.0,
+        5.0,
+        2.5,
+        1.0
+      ],
+      "ours_rho": 0.41443123283995714,
+      "undefined_reason": null,
+      "paper_rho": 0.41,
+      "difference": 0.0044312328399571665,
+      "matches_to_2dp": true,
+      "status": "match",
+      "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-c.png"
+    },
+    {
+      "policy": "global_nonzero",
+      "dimension": "trigger_scenario",
+      "os_a": "Android",
+      "os_b": "Linux",
+      "retained_categories": [
+        "Per/Ide Dep",
+        "Reg Ope",
+        "Bor Con",
+        "Con/Mul Thr",
+        "Sta Dep",
+        "Env Dep",
+        "Mul/Loc Dep"
+      ],
+      "excluded_categories": [],
+      "retained_category_count": 7,
+      "counts_a": [
+        156,
+        44,
+        185,
+        36,
+        74,
+        5,
+        0
+      ],
+      "counts_b": [
+        8,
+        45,
+        95,
+        15,
+        26,
+        310,
+        1
+      ],
+      "average_ranks_a": [
+        6.0,
+        4.0,
+        7.0,
+        3.0,
+        5.0,
+        2.0,
+        1.0
+      ],
+      "average_ranks_b": [
+        2.0,
+        5.0,
+        6.0,
+        3.0,
+        4.0,
+        7.0,
+        1.0
+      ],
+      "ours_rho": 0.21428571428571427,
+      "undefined_reason": null,
+      "paper_rho": 0.21,
+      "difference": 0.004285714285714282,
+      "matches_to_2dp": true,
+      "status": "match",
+      "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-c.png"
+    },
+    {
+      "policy": "global_nonzero",
+      "dimension": "trigger_scenario",
+      "os_a": "Android",
+      "os_b": "HarmonyOS",
+      "retained_categories": [
+        "Per/Ide Dep",
+        "Reg Ope",
+        "Bor Con",
+        "Con/Mul Thr",
+        "Sta Dep",
+        "Env Dep",
+        "Mul/Loc Dep"
+      ],
+      "excluded_categories": [],
+      "retained_category_count": 7,
+      "counts_a": [
+        156,
+        44,
+        185,
+        36,
+        74,
+        5,
+        0
+      ],
+      "counts_b": [
+        14,
+        33,
+        263,
+        120,
+        56,
+        14,
+        0
+      ],
+      "average_ranks_a": [
+        6.0,
+        4.0,
+        7.0,
+        3.0,
+        5.0,
+        2.0,
+        1.0
+      ],
+      "average_ranks_b": [
+        2.5,
+        4.0,
+        7.0,
+        6.0,
+        5.0,
+        2.5,
+        1.0
+      ],
+      "ours_rho": 0.6126374746329801,
+      "undefined_reason": null,
+      "paper_rho": 0.38,
+      "difference": 0.23263747463298012,
+      "matches_to_2dp": false,
+      "status": "mismatch",
+      "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-c.png"
+    },
+    {
+      "policy": "global_nonzero",
+      "dimension": "trigger_scenario",
+      "os_a": "Linux",
+      "os_b": "HarmonyOS",
+      "retained_categories": [
+        "Per/Ide Dep",
+        "Reg Ope",
+        "Bor Con",
+        "Con/Mul Thr",
+        "Sta Dep",
+        "Env Dep",
+        "Mul/Loc Dep"
+      ],
+      "excluded_categories": [],
+      "retained_category_count": 7,
+      "counts_a": [
+        8,
+        45,
+        95,
+        15,
+        26,
+        310,
+        1
+      ],
+      "counts_b": [
+        14,
+        33,
+        263,
+        120,
+        56,
+        14,
+        0
+      ],
+      "average_ranks_a": [
+        2.0,
+        5.0,
+        6.0,
+        3.0,
+        4.0,
+        7.0,
+        1.0
+      ],
+      "average_ranks_b": [
+        2.5,
+        4.0,
+        7.0,
+        6.0,
+        5.0,
+        2.5,
+        1.0
+      ],
+      "ours_rho": 0.41443123283995714,
+      "undefined_reason": null,
+      "paper_rho": 0.41,
+      "difference": 0.0044312328399571665,
+      "matches_to_2dp": true,
+      "status": "match",
+      "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-c.png"
+    },
+    {
+      "policy": "pairwise_nonzero",
+      "dimension": "trigger_scenario",
+      "os_a": "Android",
+      "os_b": "Linux",
+      "retained_categories": [
+        "Per/Ide Dep",
+        "Reg Ope",
+        "Bor Con",
+        "Con/Mul Thr",
+        "Sta Dep",
+        "Env Dep",
+        "Mul/Loc Dep"
+      ],
+      "excluded_categories": [],
+      "retained_category_count": 7,
+      "counts_a": [
+        156,
+        44,
+        185,
+        36,
+        74,
+        5,
+        0
+      ],
+      "counts_b": [
+        8,
+        45,
+        95,
+        15,
+        26,
+        310,
+        1
+      ],
+      "average_ranks_a": [
+        6.0,
+        4.0,
+        7.0,
+        3.0,
+        5.0,
+        2.0,
+        1.0
+      ],
+      "average_ranks_b": [
+        2.0,
+        5.0,
+        6.0,
+        3.0,
+        4.0,
+        7.0,
+        1.0
+      ],
+      "ours_rho": 0.21428571428571427,
+      "undefined_reason": null,
+      "paper_rho": 0.21,
+      "difference": 0.004285714285714282,
+      "matches_to_2dp": true,
+      "status": "match",
+      "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-c.png"
+    },
+    {
+      "policy": "pairwise_nonzero",
+      "dimension": "trigger_scenario",
+      "os_a": "Android",
+      "os_b": "HarmonyOS",
+      "retained_categories": [
+        "Per/Ide Dep",
+        "Reg Ope",
+        "Bor Con",
+        "Con/Mul Thr",
+        "Sta Dep",
+        "Env Dep"
+      ],
+      "excluded_categories": [
+        "Mul/Loc Dep"
+      ],
+      "retained_category_count": 6,
+      "counts_a": [
+        156,
+        44,
+        185,
+        36,
+        74,
+        5
+      ],
+      "counts_b": [
+        14,
+        33,
+        263,
+        120,
+        56,
+        14
+      ],
+      "average_ranks_a": [
+        5.0,
+        3.0,
+        6.0,
+        2.0,
+        4.0,
+        1.0
+      ],
+      "average_ranks_b": [
+        1.5,
+        3.0,
+        6.0,
+        5.0,
+        4.0,
+        1.5
+      ],
+      "ours_rho": 0.3768511731740915,
+      "undefined_reason": null,
+      "paper_rho": 0.38,
+      "difference": -0.0031488268259085017,
+      "matches_to_2dp": true,
+      "status": "match",
+      "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-c.png"
+    },
+    {
+      "policy": "pairwise_nonzero",
+      "dimension": "trigger_scenario",
+      "os_a": "Linux",
+      "os_b": "HarmonyOS",
+      "retained_categories": [
+        "Per/Ide Dep",
+        "Reg Ope",
+        "Bor Con",
+        "Con/Mul Thr",
+        "Sta Dep",
+        "Env Dep",
+        "Mul/Loc Dep"
+      ],
+      "excluded_categories": [],
+      "retained_category_count": 7,
+      "counts_a": [
+        8,
+        45,
+        95,
+        15,
+        26,
+        310,
+        1
+      ],
+      "counts_b": [
+        14,
+        33,
+        263,
+        120,
+        56,
+        14,
+        0
+      ],
+      "average_ranks_a": [
+        2.0,
+        5.0,
+        6.0,
+        3.0,
+        4.0,
+        7.0,
+        1.0
+      ],
+      "average_ranks_b": [
+        2.5,
+        4.0,
+        7.0,
+        6.0,
+        5.0,
+        2.5,
+        1.0
+      ],
+      "ours_rho": 0.41443123283995714,
+      "undefined_reason": null,
+      "paper_rho": 0.41,
+      "difference": 0.0044312328399571665,
+      "matches_to_2dp": true,
+      "status": "match",
+      "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-c.png"
+    }
+  ],
+  "changed_from_fixed_all": [
+    {
+      "policy": "pairwise_nonzero",
+      "dimension": "trigger_scenario",
+      "os_a": "Android",
+      "os_b": "HarmonyOS",
+      "retained_categories": [
+        "Per/Ide Dep",
+        "Reg Ope",
+        "Bor Con",
+        "Con/Mul Thr",
+        "Sta Dep",
+        "Env Dep"
+      ],
+      "excluded_categories": [
+        "Mul/Loc Dep"
+      ],
+      "retained_category_count": 6,
+      "counts_a": [
+        156,
+        44,
+        185,
+        36,
+        74,
+        5
+      ],
+      "counts_b": [
+        14,
+        33,
+        263,
+        120,
+        56,
+        14
+      ],
+      "average_ranks_a": [
+        5.0,
+        3.0,
+        6.0,
+        2.0,
+        4.0,
+        1.0
+      ],
+      "average_ranks_b": [
+        1.5,
+        3.0,
+        6.0,
+        5.0,
+        4.0,
+        1.5
+      ],
+      "ours_rho": 0.3768511731740915,
+      "undefined_reason": null,
+      "paper_rho": 0.38,
+      "difference": -0.0031488268259085017,
+      "matches_to_2dp": true,
+      "status": "match",
+      "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-c.png"
+    }
+  ],
+  "method": {
+    "coefficient": "Existing similarity.spearman: Pearson correlation of ascending average ranks",
+    "ties": "Recompute average ranks after category selection",
+    "input": "Canonical category count vectors; policy changes only the shared category subset, never counts or algorithm",
+    "comparison": "Compare rounded-to-two-decimal values to the same independently transcribed Figure 4(a-c) reference",
+    "undefined": "Fewer than two retained categories or either retained vector constant: rho null, status unconfirmed"
+  },
+  "interpretation": "Exploratory category-set sensitivity, not an author-confirmed reconstruction. A matching candidate does not establish the authors' actual category policy. Core fixed_all results remain unchanged."
+}

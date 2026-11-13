@@ -13,9 +13,16 @@ reproduce:
 test:
 	$(PYTHON) -m unittest discover -s tests -v
 
-.PHONY: repairs gaps
+.PHONY: repairs gaps categories review
 repairs:
 	$(PYTHON) scripts/run_repair_size.py
 
 gaps:
 	$(PYTHON) scripts/run_gap_analysis.py
+
+categories:
+	$(PYTHON) scripts/run_category_policy.py
+
+review:
+	$(PYTHON) scripts/manage_review.py prepare
+	$(PYTHON) scripts/manage_review.py check

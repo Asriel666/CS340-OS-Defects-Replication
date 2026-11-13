@@ -1,0 +1,51 @@
+{
+  "analysis": "category_set_sensitivity",
+  "runs": 3,
+  "active_runs": [
+    "runs/run_01",
+    "runs/run_02",
+    "runs/run_03"
+  ],
+  "identical_semantic_outputs": true,
+  "semantic_result_sha256": "f6873aaeb7c8e68113de1145b358e0531806adbc576e442194b0c7284bebbded",
+  "source_sha256_lf": "3794ff8c39e975ff457f264cb863f6e191297614dc0273f04c09ac654962eed5",
+  "invocation": [
+    "scripts/run_category_policy.py",
+    "--runs",
+    "3",
+    "--offline",
+    "--cross-check-scipy"
+  ],
+  "policy_summary": {
+    "fixed_all": {
+      "independent_pairs": 9,
+      "matched_pairs": 8,
+      "mismatched_pairs": 1,
+      "unconfirmed_pairs": 0,
+      "pairs_with_exclusions": 0
+    },
+    "global_nonzero": {
+      "independent_pairs": 9,
+      "matched_pairs": 8,
+      "mismatched_pairs": 1,
+      "unconfirmed_pairs": 0,
+      "pairs_with_exclusions": 0
+    },
+    "pairwise_nonzero": {
+      "independent_pairs": 9,
+      "matched_pairs": 9,
+      "mismatched_pairs": 0,
+      "unconfirmed_pairs": 0,
+      "pairs_with_exclusions": 1
+    }
+  },
+  "independent_cross_check": {
+    "requested": true,
+    "status": "passed",
+    "evidence_file": "scipy_cross_check.json",
+    "scope": "Only evidence linked here belongs to this invocation; an existing unlinked SciPy file is historical.",
+    "semantic_result_sha256": "f6873aaeb7c8e68113de1145b358e0531806adbc576e442194b0c7284bebbded",
+    "checked_at_utc": "2026-11-13T19:57:30+00:00"
+  },
+  "meaning": "Actual repeated deterministic computations establish execution stability only; author methodology and original labels remain unconfirmed."
+}

@@ -1,0 +1,13 @@
+reviewer,os,bug_id,patch_url,reviewer_name,reviewed_on,your_os_layer,your_affected_function,your_trigger_scenario,evidence_urls,notes
+B,Android,A-297517712,https://android.googlesource.com/platform/frameworks/base/+/c8694bbccfb9c19aefed536ea710230107c935eb%5E%21/,,,,,,,
+B,Android,A-333681693,https://android.googlesource.com/platform/frameworks/base/+/4c269d7b0ec71951f773844b2a325e556f982a9c%5E%21/,,,,,,,
+B,Android,A-260230151,https://android.googlesource.com/platform/packages/modules/Bluetooth/+/655dbc919736f0a67c5d408e91b6c0a47fb7ccc3%5E%21/,,,,,,,
+B,Android,A-323850943,https://android.googlesource.com/platform/packages/modules/Bluetooth/+/bfe316cf9f026d5b48bcfb2f457685b537baa9a3%5E%21/,,,,,,,
+B,Linux,2063344,https://bugs.launchpad.net/ubuntu/+source/smifb2/+bug/2063344/+attachment/5770062/+files/smifb2_2.2.6.3.gbbd2e82-1ubuntu1.debdiff,,,,,,,
+B,Linux,2076398,https://bugs.launchpad.net/ubuntu/+source/libpcap/+bug/2076398/+attachment/5804032/+files/lp2076398-libpcap-focal.debdiff,,,,,,,
+B,Linux,2044546,https://bugs.launchpad.net/ubuntu/+source/python-ldap/+bug/2044546/+attachment/5723066/+files/python-ldap_python3.12-compat.diff,,,,,,,
+B,Linux,2072772,https://bugs.launchpad.net/ubuntu/+source/gnome-control-center/+bug/2072772/+attachment/5812777/+files/+parentcontrol-malcontent+apps.patch,,,,,,,
+B,HarmonyOS,CVE-2024-39475,https://gitee.com/openharmony/kernel_linux_5.10/commit/352581ba396aca7d9ac584a5faf7a1e917195130.patch,,,,,,,
+B,HarmonyOS,CVE-2024-46740,https://gitee.com/openharmony/kernel_linux_5.10/commit/60351db082d8.patch,,,,,,,
+B,HarmonyOS,CVE-2023-52756,https://gitee.com/openharmony/kernel_linux_5.10/commit/57898356796547b947e4d3fe59e13ed11e232773.patch,,,,,,,
+B,HarmonyOS,CVE-2024-43882,https://gitee.com/openharmony/kernel_linux_5.10/commit/20623a6b55297a37ba5b348450b7b369508ae0c3.patch,,,,,,,

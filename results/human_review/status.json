@@ -1,0 +1,38 @@
+{
+  "sample_size": 12,
+  "status": "pending_human_review",
+  "reviewers": {
+    "A": {
+      "declared_name": null,
+      "submitted_cases": 0,
+      "fully_confirmed_cases": 0,
+      "incomplete_cases": 12
+    },
+    "B": {
+      "declared_name": null,
+      "submitted_cases": 0,
+      "fully_confirmed_cases": 0,
+      "incomplete_cases": 12
+    }
+  },
+  "agreement": {
+    "os_layer": {
+      "eligible_pairs": 0,
+      "agreements": 0,
+      "agreement_fraction": null
+    },
+    "affected_function": {
+      "eligible_pairs": 0,
+      "agreements": 0,
+      "agreement_fraction": null
+    },
+    "trigger_scenario": {
+      "eligible_pairs": 0,
+      "agreements": 0,
+      "agreement_fraction": null
+    }
+  },
+  "disagreements": [],
+  "adjudication_complete": false,
+  "meaning": "Checks record structure and declared completion only. It cannot certify reviewer identity, independent work, or correctness. Unconfirmed labels are excluded from agreement denominators."
+}
