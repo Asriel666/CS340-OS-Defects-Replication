@@ -1,0 +1,17 @@
+{
+  "title": "Toward Understanding Operating System Defects",
+  "authors": [
+    "Hongyao Zuo",
+    "Jiali Li",
+    "Jiajun Jiang"
+  ],
+  "arxiv_id": "2608.20643v1",
+  "source_url": "https://arxiv.org/pdf/2608.20643v1",
+  "abstract_url": "https://arxiv.org/abs/2608.20643v1",
+  "verified_at_utc": "2026-11-13T20:19:01.434791+00:00",
+  "bytes": 1899566,
+  "sha256": "b3c607c0b5f6d3d31d3b2a2eac29a9a662fed2dd5aa7a766f5dc0e5c9923eb05",
+  "pages": 15,
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "original_file_modified": false
+}
