@@ -6,6 +6,7 @@
 
 ## 助教检查入口
 
+- [2026-11-13 周五检查：Figure 4 缺口补齐分析与抽查材料](docs/weekly/2026-11-13.md)
 - [2026-11-12 同步核验、文档修正与下一步安排](docs/weekly/2026-11-12.md)
 - [完整复现报告：方法、结果、差异、局限与贡献](docs/reproduction_report.md)
 - [运行汇总](results/full/stage_summary.json)、[实际环境与源文件摘要](results/full/environment.json)、[输入来源](results/full/source_provenance.json)
