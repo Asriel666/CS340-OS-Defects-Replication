@@ -1,0 +1,317 @@
+{
+  "scope": "Project-added exploratory analyses for the three remaining gaps; not a verified replication and not part of the 561 core comparisons.",
+  "figure_4c": {
+    "target_rho": 0.38,
+    "candidate_tolerance": 0.005,
+    "enumeration_count": 144,
+    "target_pair_variants": 16,
+    "candidates": [],
+    "closest_variants": [
+      {
+        "dimension": "trigger_scenario",
+        "category_set": "all_categories",
+        "categories_kept": 7,
+        "transform": "counts",
+        "coefficient": "spearman",
+        "os_a": "Android",
+        "os_b": "HarmonyOS",
+        "paper_rho": 0.38,
+        "target_rho_0_38": 0.38,
+        "ours_rho": 0.6126374746329801,
+        "abs_difference_from_target": 0.23263747463298012,
+        "matches_published_pair": false,
+        "is_android_harmony_trigger_pair": true,
+        "candidate_for_0_38": false,
+        "status": "exploratory_not_replication",
+        "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-c.png"
+      },
+      {
+        "dimension": "trigger_scenario",
+        "category_set": "all_categories",
+        "categories_kept": 7,
+        "transform": "proportions",
+        "coefficient": "spearman",
+        "os_a": "Android",
+        "os_b": "HarmonyOS",
+        "paper_rho": 0.38,
+        "target_rho_0_38": 0.38,
+        "ours_rho": 0.6126374746329801,
+        "abs_difference_from_target": 0.23263747463298012,
+        "matches_published_pair": false,
+        "is_android_harmony_trigger_pair": true,
+        "candidate_for_0_38": false,
+        "status": "exploratory_not_replication",
+        "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-c.png"
+      },
+      {
+        "dimension": "trigger_scenario",
+        "category_set": "all_categories",
+        "categories_kept": 7,
+        "transform": "log1p",
+        "coefficient": "spearman",
+        "os_a": "Android",
+        "os_b": "HarmonyOS",
+        "paper_rho": 0.38,
+        "target_rho_0_38": 0.38,
+        "ours_rho": 0.6126374746329801,
+        "abs_difference_from_target": 0.23263747463298012,
+        "matches_published_pair": false,
+        "is_android_harmony_trigger_pair": true,
+        "candidate_for_0_38": false,
+        "status": "exploratory_not_replication",
+        "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-c.png"
+      },
+      {
+        "dimension": "trigger_scenario",
+        "category_set": "drop_all_zero_categories",
+        "categories_kept": 7,
+        "transform": "counts",
+        "coefficient": "spearman",
+        "os_a": "Android",
+        "os_b": "HarmonyOS",
+        "paper_rho": 0.38,
+        "target_rho_0_38": 0.38,
+        "ours_rho": 0.6126374746329801,
+        "abs_difference_from_target": 0.23263747463298012,
+        "matches_published_pair": false,
+        "is_android_harmony_trigger_pair": true,
+        "candidate_for_0_38": false,
+        "status": "exploratory_not_replication",
+        "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-c.png"
+      },
+      {
+        "dimension": "trigger_scenario",
+        "category_set": "drop_all_zero_categories",
+        "categories_kept": 7,
+        "transform": "proportions",
+        "coefficient": "spearman",
+        "os_a": "Android",
+        "os_b": "HarmonyOS",
+        "paper_rho": 0.38,
+        "target_rho_0_38": 0.38,
+        "ours_rho": 0.6126374746329801,
+        "abs_difference_from_target": 0.23263747463298012,
+        "matches_published_pair": false,
+        "is_android_harmony_trigger_pair": true,
+        "candidate_for_0_38": false,
+        "status": "exploratory_not_replication",
+        "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-c.png"
+      }
+    ],
+    "closest_anywhere": [
+      {
+        "dimension": "affected_function",
+        "category_set": "all_categories",
+        "categories_kept": 8,
+        "transform": "counts",
+        "coefficient": "pearson",
+        "os_a": "Android",
+        "os_b": "HarmonyOS",
+        "paper_rho": 0.43,
+        "target_rho_0_38": 0.38,
+        "ours_rho": 0.36064354555135214,
+        "abs_difference_from_target": 0.019356454448647864,
+        "matches_published_pair": false,
+        "is_android_harmony_trigger_pair": false,
+        "candidate_for_0_38": false,
+        "status": "exploratory_not_replication",
+        "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-c.png"
+      },
+      {
+        "dimension": "affected_function",
+        "category_set": "drop_all_zero_categories",
+        "categories_kept": 8,
+        "transform": "counts",
+        "coefficient": "pearson",
+        "os_a": "Android",
+        "os_b": "HarmonyOS",
+        "paper_rho": 0.43,
+        "target_rho_0_38": 0.38,
+        "ours_rho": 0.36064354555135214,
+        "abs_difference_from_target": 0.019356454448647864,
+        "matches_published_pair": false,
+        "is_android_harmony_trigger_pair": false,
+        "candidate_for_0_38": false,
+        "status": "exploratory_not_replication",
+        "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-c.png"
+      },
+      {
+        "dimension": "affected_function",
+        "category_set": "all_categories",
+        "categories_kept": 8,
+        "transform": "proportions",
+        "coefficient": "pearson",
+        "os_a": "Android",
+        "os_b": "HarmonyOS",
+        "paper_rho": 0.43,
+        "target_rho_0_38": 0.38,
+        "ours_rho": 0.3606435455513521,
+        "abs_difference_from_target": 0.01935645444864792,
+        "matches_published_pair": false,
+        "is_android_harmony_trigger_pair": false,
+        "candidate_for_0_38": false,
+        "status": "exploratory_not_replication",
+        "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-c.png"
+      },
+      {
+        "dimension": "affected_function",
+        "category_set": "drop_all_zero_categories",
+        "categories_kept": 8,
+        "transform": "proportions",
+        "coefficient": "pearson",
+        "os_a": "Android",
+        "os_b": "HarmonyOS",
+        "paper_rho": 0.43,
+        "target_rho_0_38": 0.38,
+        "ours_rho": 0.3606435455513521,
+        "abs_difference_from_target": 0.01935645444864792,
+        "matches_published_pair": false,
+        "is_android_harmony_trigger_pair": false,
+        "candidate_for_0_38": false,
+        "status": "exploratory_not_replication",
+        "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-c.png"
+      },
+      {
+        "dimension": "trigger_scenario",
+        "category_set": "all_categories",
+        "categories_kept": 7,
+        "transform": "counts",
+        "coefficient": "spearman",
+        "os_a": "Linux",
+        "os_b": "HarmonyOS",
+        "paper_rho": 0.41,
+        "target_rho_0_38": 0.38,
+        "ours_rho": 0.41443123283995714,
+        "abs_difference_from_target": 0.03443123283995714,
+        "matches_published_pair": true,
+        "is_android_harmony_trigger_pair": false,
+        "candidate_for_0_38": false,
+        "status": "exploratory_not_replication",
+        "paper_source": "https://arxiv.org/html/2608.20643v1/heatmap-c.png"
+      }
+    ],
+    "candidates_anywhere": 0,
+    "note": "A matching variant is a compatibility observation only; it does not establish the authors' actual method. nearest_anywhere includes other dimensions and system pairs and is evidence about possible transcription errors, not a replication."
+  },
+  "figure_4d": {
+    "candidate_count": 42,
+    "ranked_definitions": [
+      {
+        "definition": "weighted_by_category_count",
+        "coefficient": "pearson",
+        "mean_abs_difference": 0.09297103342642928,
+        "pairs": 3
+      },
+      {
+        "definition": "mean_of_dimension_rho",
+        "coefficient": "mean_or_median_of_spearman",
+        "mean_abs_difference": 0.1045949357509613,
+        "pairs": 3
+      },
+      {
+        "definition": "concat_proportions",
+        "coefficient": "pearson",
+        "mean_abs_difference": 0.12426975959028995,
+        "pairs": 3
+      },
+      {
+        "definition": "concat_counts",
+        "coefficient": "pearson",
+        "mean_abs_difference": 0.12426975959028996,
+        "pairs": 3
+      },
+      {
+        "definition": "concat_per_dimension_ranks",
+        "coefficient": "spearman",
+        "mean_abs_difference": 0.141670175157127,
+        "pairs": 3
+      },
+      {
+        "definition": "concat_per_dimension_ranks",
+        "coefficient": "pearson",
+        "mean_abs_difference": 0.14792037557101398,
+        "pairs": 3
+      },
+      {
+        "definition": "concat_counts",
+        "coefficient": "spearman",
+        "mean_abs_difference": 0.17292452236176173,
+        "pairs": 3
+      },
+      {
+        "definition": "concat_proportions",
+        "coefficient": "spearman",
+        "mean_abs_difference": 0.17292452236176173,
+        "pairs": 3
+      },
+      {
+        "definition": "concat_log1p",
+        "coefficient": "spearman",
+        "mean_abs_difference": 0.17292452236176173,
+        "pairs": 3
+      },
+      {
+        "definition": "weighted_by_category_count",
+        "coefficient": "spearman",
+        "mean_abs_difference": 0.20436387823194113,
+        "pairs": 3
+      },
+      {
+        "definition": "median_of_dimension_rho",
+        "coefficient": "mean_or_median_of_spearman",
+        "mean_abs_difference": 0.27619047619047615,
+        "pairs": 3
+      },
+      {
+        "definition": "concat_log1p",
+        "coefficient": "pearson",
+        "mean_abs_difference": 0.41037610803973573,
+        "pairs": 3
+      }
+    ],
+    "closest_definition": {
+      "definition": "weighted_by_category_count",
+      "coefficient": "pearson",
+      "mean_abs_difference": 0.09297103342642928,
+      "pairs": 3
+    },
+    "note": "The paper never defines the Overall input vector, concatenation or weighting; prose also contradicts the figure. Every row stays unconfirmed and is excluded from the 561 core comparisons.",
+    "published_values": {
+      "Android-Linux": 0.05,
+      "Android-HarmonyOS": -0.11,
+      "Linux-HarmonyOS": -0.04
+    }
+  },
+  "repair_evidence": {
+    "statistics": {
+      "zero_function_records": 177,
+      "zero_records_with_multiple_modified_files": 81,
+      "zero_records_with_line_changes_ge_50": 10,
+      "zero_records_with_both_signals": 9,
+      "zero_records_by_os": {
+        "Android": 18,
+        "Linux": 145,
+        "HarmonyOS": 14
+      },
+      "censored_records": 7,
+      "censored_raw_labels": [
+        "10+",
+        "20+",
+        "30+"
+      ],
+      "censored_records_by_os": {
+        "Android": 0,
+        "Linux": 0,
+        "HarmonyOS": 7
+      },
+      "distinct_patch_hosts": [
+        "android.googlesource.com",
+        "bugs.launchpad.net",
+        "gitee.com"
+      ],
+      "interpretation": "Of the zero-function records, 81 involve multiple modified files and 10 change at least 50 lines (9 satisfy both). These subset signals are more consistent with unrecorded function counts than with genuine zero-function fixes, but the majority of zero records are single-file, smaller changes; the data cannot settle the question. No source value is changed and no patch content was fetched.",
+      "limitation": "An automated checklist is not patch review. Verifying actual function counts requires reading each linked patch and must be recorded by a human reviewer."
+    },
+    "row_count": 184
+  }
+}

@@ -115,7 +115,7 @@ def main():
             "limitations": "Automated clean-copy verification, not independent student execution or human label review. Numerical cases use --no-plots; the separate full run generates figures, whose PNG signatures are checked here."
         }
         (published_dir / "verification.json").write_text(
-            json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     print("Verified fresh download, offline cache, RQ1/RQ2/RQ3 selection, legacy stage 1, 17 figure files, and unit tests.")
 
 

@@ -9,10 +9,11 @@
 - [2026-11-12 同步核验、文档修正与下一步安排](docs/weekly/2026-11-12.md)
 - [完整复现报告：方法、结果、差异、局限与贡献](docs/reproduction_report.md)
 - [运行汇总](results/full/stage_summary.json)、[实际环境与源文件摘要](results/full/environment.json)、[输入来源](results/full/source_provenance.json)
-- [验证记录：64 项测试、全新下载、离线缓存、各 RQ 与旧入口](results/full/verification.json)
+- [验证记录：73 项测试、全新下载、离线缓存、各 RQ 与旧入口](results/full/verification.json)
 - [三次运行统计](results/full/tables/repeated_run_statistics.csv)、[17 张图清单](results/full/figure_manifest.json)
-- [方法附录：修复规模口径敏感性分析与 Overall 待确认问题](docs/methods_appendix.md)
+- [方法附录：修复规模口径敏感性、Figure 4 缺口补齐分析与 Overall 待确认问题](docs/methods_appendix.md)
 - [新增：Figures 2/3 分箱约定敏感性分析（逐柱对比与汇总）](results/repair_size/tables/convention_comparison.csv)
+- [新增：Figure 4(c)/(d) 缺口补齐分析与修复规模异常证据清单](results/gap_analysis/tables/gap_analysis_summary.json)
 - [前一阶段 RQ1 周报](docs/weekly/2026-11-06.md)、[提交人信息](SUBMISSION.json)
 
 ## 核心结果
@@ -44,6 +45,20 @@ py -3.11 scripts/run_repair_size.py
 ```
 
 输出到 `results/repair_size/`：逐柱对比 `tables/convention_comparison.csv`（含逐行论文出处）、各约定吻合汇总 `tables/config_match_summary.csv`、机器可读结果 `tables/repair_size_sensitivity.json`、数据校验与环境记录 `data_validation.json` / `environment.json`，以及 11 张对比图（8 张单约定重算图 + 3 张“论文基准 vs 两种约定”对比图）。
+
+## 新增分析：Figure 4 差异与修复规模证据补齐
+
+**以下全部是本项目新增的探索性分析，不是经验证的论文复现，不计入 561 项核心对比，也不改变任何作者原值。**
+
+```powershell
+py -3.11 scripts/run_gap_analysis.py
+```
+
+- **Figure 4(c)**：枚举 3 维度 × 2 类别集 × 4 值变换 × 2 系数 × 3 系统对共 **144 个口径**，Android–HarmonyOS 触发场景只得到 0.6126 / 0.6169 / 0.8048 / 1.0000 四类值，**没有任何口径接近论文 0.38（最小差 0.2326）**；全表最接近 0.38 的是另一维度的 0.3606，也不吻合两位小数。常见口径变换与简单的图表错位均无法解释差异，仍需作者原始输入与计算脚本。
+- **Figure 4(d)**：把未定义的 Overall 输入显式枚举为 **42 个候选**（6 种拼接向量 × 2 系数 + 2 种逐维聚合），与原图 `-0.11 / 0.05 / -0.04` 相比最好的三对平均绝对差仍有 **0.0930**。**没有任何候选能复现**，逐行状态保持 `unconfirmed_candidate`，需作者确认输入向量、拼接方式、权重与系统对标注。
+- **Figures 2/3 证据**：导出 177 条零函数 + 7 条删失记录共 **184 行**结构化清单（原始值、补丁 URL/域名、增删行数、修改文件数，预留人工核查四列）。其中 81 条涉及多个文件、10 条改动 ≥50 行、9 条两者兼具；这些信号更接近"未记录"而非真零，但不足以判定。项目未访问任何补丁 URL、未改动原值、未宣称人工复核完成。
+
+产物在 `results/gap_analysis/`：三个 CSV、机器可读汇总与环境/校验记录。详见[方法附录](docs/methods_appendix.md)。
 
 ## 一条命令复现
 
@@ -97,19 +112,19 @@ macOS/Linux 将 `py -3.11` 换为 `python3.11`，通过系统包管理器安装 
 
 早期摘要错误来自额外补入末尾换行，本项目已更正为固定源文件的真实摘要并保持严格校验。缓存损坏时先保留备份，再移走旧缓存重新下载；不要修改原始字节来凑摘要。
 
-47 项核心测试覆盖错误摘要、缺失离线缓存、重复 ID、未知标签、多标签分母、联合表边际、Spearman 并列秩和常量向量、参考数组缺项、分析范围、重复运行一致性及人工记录保护；敏感性分析另增 17 项测试（分箱边界、零值落箱、删失归属、基准校验及边界值端到端区分），合计 64 项全部通过。新目录验证实际运行六种场景，每种三次，结果与提交产物一致；全量三次运行的 561 项统计标准差均为零。验证的是执行稳定性，不是原始标注正确性或抽样误差。
+47 项核心测试覆盖错误摘要、缺失离线缓存、重复 ID、未知标签、多标签分母、联合表边际、Spearman 并列秩和常量向量、参考数组缺项、分析范围、重复运行一致性及人工记录保护；敏感性分析另增 17 项测试、缺口补齐分析另增 9 项测试（Pearson 常数向量、类别集收缩、候选定义未确认状态、证据清单空栏保护），合计 73 项全部通过。新目录验证实际运行六种场景，每种三次，结果与提交产物一致；全量三次运行的 561 项统计标准差均为零。验证的是执行稳定性，不是原始标注正确性或抽样误差。
 
 `data/` 原始缓存、派生数据和人工检查模板不提交 Git。原数据异常保留在[数据审计记录](results/full/data_validation.json)中，不为匹配论文静默修正。旧 `results/rq1/` 和 `results/weekend_01/` 保留阶段历史，**本次完整证据以 `results/full/` 为准**。
 
 ## 文件与复现边界
 
-- `src/osdefects/`：读取、校验、五维统计、联合分布、Spearman、修复规模敏感性分析、绘图和日志。
-- `reference/`：独立整理的论文基准与来源，不由重算结果反填；`figure_baselines.json` 为 Figure 2/3 柱标签的逐项转写。
+- `src/osdefects/`：读取、校验、五维统计、联合分布、Spearman、修复规模敏感性分析、Figure 4 缺口探索、绘图和日志。
+- `reference/`：独立整理的论文基准与来源，不由重算结果反填；`figure_baselines.json` 为 Figure 2/3 柱标签的逐项转写，Figure 4(d) 原图值在 `similarity_baselines.json` 的 `excluded.overall`。
 - `tests/`、`scripts/verify_reproduction.py`：单元测试与新目录复跑。
-- `results/full/`：本次核心结果、三次原始输出及验证证据；`results/repair_size/`：敏感性分析产物。
+- `results/full/`：本次核心结果、三次原始输出及验证证据；`results/repair_size/`：分箱敏感性产物；`results/gap_analysis/`：Figure 4 缺口补齐与异常证据清单。
 - `docs/`：报告、差异与方法附录。
 
-未完成项：12 条双人独立标签抽查、Figures 2/3 作者分箱脚本的确证（已测试候选中有一组逐柱吻合 39/39，仍需作者代码确认）、定义不清的 Overall、答辩 PPT 与演练。程序生成 `data/review/rq123_label_review.csv`，每系统抽 4 条、种子 340，预留两位检查者的独立判断和证据；已有填写内容不会被覆盖。模板生成不代表人工复核已经完成。
+未完成项：**需要作者信息**——Figures 2/3 的分箱脚本确证（已测试候选中有一组逐柱吻合 39/39，仍需作者代码确认）、Figure 4(c) 的实际输入与计算代码、Figure 4(d) 的 Overall 定义与系统对标注（三块的独立计算与证据清单已完成，但均不能宣称精确复现）；**需要真人**——12 条双人独立标签抽查、184 条异常记录逐条补丁核实、答辩 PPT 与演练。程序生成 `data/review/rq123_label_review.csv`，每系统抽 4 条、种子 340，预留两位检查者的独立判断和证据；已有填写内容不会被覆盖。模板生成不代表人工复核已经完成。
 
 结论是**作者发布标签的三个研究问题核心统计得到重算检验，并发现一项相关系数差异**。Linux 是 Launchpad/Ubuntu 生态样本，不是纯内核样本；不同来源的比例不能直接用于系统质量排名。
 

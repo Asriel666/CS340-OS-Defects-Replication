@@ -1,0 +1,17 @@
+{
+  "analysis": "figure_gap_exploration",
+  "verification_runs": 3,
+  "semantic_result_sha256": "d6a5eac967c67f64e593522aef0dcb31d19311a48f3d50541756298d73cfb3d3",
+  "elapsed_seconds_per_verification_run": [
+    0.2605,
+    0.2578,
+    0.3723
+  ],
+  "source_sha256_lf": "3794ff8c39e975ff457f264cb863f6e191297614dc0273f04c09ac654962eed5",
+  "status": "success",
+  "meaning": "Three deterministic runs verify execution stability only. All outputs are exploratory and remain excluded from the 561 core comparisons.",
+  "invocation": [
+    "scripts/run_gap_analysis.py"
+  ],
+  "started_at_utc": "2026-11-13T11:08:33+00:00"
+}
