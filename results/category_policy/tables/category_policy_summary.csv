@@ -1,0 +1,4 @@
+policy,independent_pairs,matched_pairs,mismatched_pairs,unconfirmed_pairs,pairs_with_exclusions
+fixed_all,9,8,1,0,0
+global_nonzero,9,8,1,0,0
+pairwise_nonzero,9,9,0,0,1

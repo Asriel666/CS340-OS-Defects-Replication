@@ -1,12 +1,12 @@
 {
-  "retrieved_at_utc": "2026-11-07T09:46:10+00:00",
+  "retrieved_at_utc": "2026-11-05T20:38:30+00:00",
   "download_bytes_sha256": "93e57bce7ad332b254bd60da4417ae0efb6570448c2a0fa249edd4a6a20a17da",
   "source_url": "https://raw.githubusercontent.com/zuohongyao/zuohongyao.github.io/832d536f5d381d428a887e59ceeacc90a40e3b7e/index.html",
   "source_commit": "832d536f5d381d428a887e59ceeacc90a40e3b7e",
   "source_sha256_lf": "3794ff8c39e975ff457f264cb863f6e191297614dc0273f04c09ac654962eed5",
   "source_bytes_lf": 766561,
   "line_ending_policy": "CRLF and CR normalized to LF for hash verification",
-  "inspected_at_utc": "2026-11-13T11:08:21+00:00",
+  "inspected_at_utc": "2026-11-13T19:57:28+00:00",
   "acquisition_mode": "verified_cache",
-  "source_path": "C:\\Users\\HXuan\\WorkBuddy\\2026-11-07-17-40-42\\CS340-OS-Defects-Replication\\data\\raw\\index.html"
+  "source_path": "D:\\OSP\\data\\raw\\index.html"
 }

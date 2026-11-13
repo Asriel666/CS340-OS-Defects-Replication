@@ -199,7 +199,7 @@
       {
         "definition": "weighted_by_category_count",
         "coefficient": "pearson",
-        "mean_abs_difference": 0.09297103342642928,
+        "mean_abs_difference": 0.0929710334264293,
         "pairs": 3
       },
       {
@@ -223,7 +223,7 @@
       {
         "definition": "concat_per_dimension_ranks",
         "coefficient": "spearman",
-        "mean_abs_difference": 0.141670175157127,
+        "mean_abs_difference": 0.14167017515712702,
         "pairs": 3
       },
       {
@@ -253,7 +253,7 @@
       {
         "definition": "weighted_by_category_count",
         "coefficient": "spearman",
-        "mean_abs_difference": 0.20436387823194113,
+        "mean_abs_difference": 0.2043638782319411,
         "pairs": 3
       },
       {
@@ -265,14 +265,14 @@
       {
         "definition": "concat_log1p",
         "coefficient": "pearson",
-        "mean_abs_difference": 0.41037610803973573,
+        "mean_abs_difference": 0.4103761080397357,
         "pairs": 3
       }
     ],
     "closest_definition": {
       "definition": "weighted_by_category_count",
       "coefficient": "pearson",
-      "mean_abs_difference": 0.09297103342642928,
+      "mean_abs_difference": 0.0929710334264293,
       "pairs": 3
     },
     "note": "The paper never defines the Overall input vector, concatenation or weighting; prose also contradicts the figure. Every row stays unconfirmed and is excluded from the 561 core comparisons.",

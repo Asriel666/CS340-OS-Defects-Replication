@@ -1,0 +1,8 @@
+{
+  "run": 3,
+  "started_at_utc": "2026-11-13T19:57:29.833910+00:00",
+  "elapsed_seconds": 0.06560710000121617,
+  "semantic_result_sha256": "f6873aaeb7c8e68113de1145b358e0531806adbc576e442194b0c7284bebbded",
+  "source_sha256_lf": "3794ff8c39e975ff457f264cb863f6e191297614dc0273f04c09ac654962eed5",
+  "status": "success"
+}

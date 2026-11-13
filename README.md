@@ -2,15 +2,22 @@
 
 **提交人：1230036051 GUO HAOXUAN** · 检查日期：2026-11-06；2026-11-07 增补 Figures 2/3 分箱约定敏感性分析
 
-复现 [*Toward Understanding Operating System Defects*（arXiv:2608.20643v1）](https://arxiv.org/html/2608.20643v1) 的核心统计，使用作者公开的 1,500 条标签，Android、Linux、HarmonyOS 各 500 条。本次已从 RQ1 扩展到 RQ2 和 RQ3，提供可运行代码、逐项对比、17 张核心图与 11 张敏感性分析图、实际运行记录和中文复现报告。
+**2026-11-14 更新与汇报：1230037310 钟峻瀚**。保留仓库现有提交人信息；本轮由 Codex 协助分析、实现和制作材料，实际人工核验与共同署名由成员据实确认。
+
+复现 [*Toward Understanding Operating System Defects*（arXiv:2608.20643v1）](https://arxiv.org/html/2608.20643v1) 的核心统计，使用作者公开的 1,500 条标签，Android、Linux、HarmonyOS 各 500 条。当前提供三个 RQ 的可运行代码、逐项对比、17 张核心图与 11 张敏感性分析图、实际运行记录、中文报告和 10 页可编辑答辩 PPT。
 
 ## 助教检查入口
 
+- [最新进展：2026-11-14 类别集合敏感性、补丁正文审计与答辩材料](docs/weekly/2026-11-14.md)
+- [10 页答辩 PPT](presentations/defense_2026-11-14_v2.pptx)、[逐页讲稿](presentations/speaker_notes.md)
+- [相关系数差异的候选解释：成对排除共同零类别](docs/category_policy_analysis.md)
+- [12 条补丁正文审计：8 条真实 diff、4 条登录页](docs/review_evidence_audit.md)
+- [A/B 独立待填表及说明](review_materials/blind/README.md)、[当前人工核验状态](results/human_review/status.json)
 - [2026-11-13 周五检查：Figure 4 缺口补齐分析与抽查材料](docs/weekly/2026-11-13.md)
 - [2026-11-12 同步核验、文档修正与下一步安排](docs/weekly/2026-11-12.md)
 - [完整复现报告：方法、结果、差异、局限与贡献](docs/reproduction_report.md)
 - [运行汇总](results/full/stage_summary.json)、[实际环境与源文件摘要](results/full/environment.json)、[输入来源](results/full/source_provenance.json)
-- [验证记录：73 项测试、全新下载、离线缓存、各 RQ 与旧入口](results/full/verification.json)
+- [验证记录：109 项测试、全新下载、离线缓存、各 RQ、类别集合与审核表入口](results/full/verification.json)
 - [三次运行统计](results/full/tables/repeated_run_statistics.csv)、[17 张图清单](results/full/figure_manifest.json)
 - [方法附录：修复规模口径敏感性、Figure 4 缺口补齐分析与 Overall 待确认问题](docs/methods_appendix.md)
 - [新增：Figures 2/3 分箱约定敏感性分析（逐柱对比与汇总）](results/repair_size/tables/convention_comparison.csv)
@@ -29,6 +36,8 @@
 CSV 保留论文值、计算值、差值、`match` / `mismatch` / `unconfirmed` 状态和具体出处。吻合按论文两位小数比较；表格最大绝对差为 0.00 个百分点，相关系数另保留完整精度。
 
 **唯一核心差异：** Android–HarmonyOS 的触发场景 Spearman 相关系数重算为 **0.6126374746329801**，而[论文 Figure 4(c)](https://arxiv.org/html/2608.20643v1/heatmap-c.png)为 **0.38**。输入向量、并列平均秩和结果均保存在[相似度汇总](results/full/tables/similarity_summary.json)，没有改动算法来追求吻合。差异原因仍需作者的实际计算输入或脚本确认。
+
+**本轮找到相容的候选解释：**对每一系统对排除双方计数都为零的类别后，这一系数变为 **0.3768511731740915 → 0.38**；同一规则使全部九对均按论文显示精度吻合。唯一被排除的是 Android–HarmonyOS 的 `Mul/Loc Dep`（0/0；Linux 为 1）。这是差异出现后开展的探索性分析，尚不能证明作者采用了该规则；原固定全类别核心结果仍保留 **8/9**。详见[完整输入、平均秩、27 项比较及 SciPy 核验](docs/category_policy_analysis.md)。
 
 ![Recomputed trigger-scenario correlations](results/full/figures/rq3_trigger_scenario.png)
 
@@ -55,11 +64,30 @@ py -3.11 scripts/run_repair_size.py
 py -3.11 scripts/run_gap_analysis.py
 ```
 
-- **Figure 4(c)**：枚举 3 维度 × 2 类别集 × 4 值变换 × 2 系数 × 3 系统对共 **144 个口径**，Android–HarmonyOS 触发场景只得到 0.6126 / 0.6169 / 0.8048 / 1.0000 四类值，**没有任何口径接近论文 0.38（最小差 0.2326）**；全表最接近 0.38 的是另一维度的 0.3606，也不吻合两位小数。常见口径变换与简单的图表错位均无法解释差异，仍需作者原始输入与计算脚本。
+- **Figure 4(c)**：原有 **144 个口径**仅比较完整类别与“三系统全为零才排除”的类别集，Android–HarmonyOS 触发场景所得值与 0.38 的最小差为 0.2326。它们**未覆盖成对排除共同零类别**，不能据此排除所有常见口径。本轮补做三种类别规则的 27 项比较，成对排除规则为 9/9 吻合；作者实际方法仍待确认。
 - **Figure 4(d)**：把未定义的 Overall 输入显式枚举为 **42 个候选**（6 种拼接向量 × 2 系数 + 2 种逐维聚合），与原图 `-0.11 / 0.05 / -0.04` 相比最好的三对平均绝对差仍有 **0.0930**。**没有任何候选能复现**，逐行状态保持 `unconfirmed_candidate`，需作者确认输入向量、拼接方式、权重与系统对标注。
-- **Figures 2/3 证据**：导出 177 条零函数 + 7 条删失记录共 **184 行**结构化清单（原始值、补丁 URL/域名、增删行数、修改文件数，预留人工核查四列）。其中 81 条涉及多个文件、10 条改动 ≥50 行、9 条两者兼具；这些信号更接近"未记录"而非真零，但不足以判定。项目未访问任何补丁 URL、未改动原值、未宣称人工复核完成。
+- **Figures 2/3 证据**：已有 177 条零函数 + 7 条删失记录共 **184 行**结构化清单。其中 81 条涉及多个文件、10 条改动 ≥50 行、9 条两者兼具；这些数量不能独自解释零值。本轮进一步读取固定 12 条样本的补丁，其中 8 条取得真实 diff、4 条返回登录页。Linux 2063344 的 0 有局部依据，2044546 的 0 与函数体修改并存，计数口径需要澄清；见[正文审计](docs/review_evidence_audit.md)。没有改动作者原值或填写 A/B 人工判断。
 
 产物在 `results/gap_analysis/`：三个 CSV、机器可读汇总与环境/校验记录。详见[方法附录](docs/methods_appendix.md)。
+
+## 本轮新增入口
+
+```powershell
+# 类别集合敏感性：三次实际计算，输出 27 项比较与 189 行类别证据。
+py -3.11 scripts/run_category_policy.py --runs 3 --offline
+
+# 可选：已有 SciPy 时，独立核对全部系数和平均秩。
+py -3.11 scripts/run_category_policy.py --runs 3 --offline --cross-check-scipy
+
+# 联网读取 12 条补丁正文；原始响应仅缓存在 work/，不执行补丁。
+py -3.11 scripts/audit_review_evidence.py
+
+# 生成分离作者答案的待填审核表；已有文件不会被覆盖。
+py -3.11 scripts/manage_review.py prepare
+py -3.11 scripts/manage_review.py check
+```
+
+新审核表在 `review_materials/blind/`，作者标签单独放在 `review_materials/coordinator/`。两位成员应先各自填写再对照答案，公开仓库无法技术上保证盲审。当前 A/B 均为 **0/12**；空白或未确认字段不会计为标签一致。内容审计和自动校验都不能替代两名学生的独立判断。
 
 ## 一条命令复现
 
@@ -113,20 +141,21 @@ macOS/Linux 将 `py -3.11` 换为 `python3.11`，通过系统包管理器安装 
 
 早期摘要错误来自额外补入末尾换行，本项目已更正为固定源文件的真实摘要并保持严格校验。缓存损坏时先保留备份，再移走旧缓存重新下载；不要修改原始字节来凑摘要。
 
-47 项核心测试覆盖错误摘要、缺失离线缓存、重复 ID、未知标签、多标签分母、联合表边际、Spearman 并列秩和常量向量、参考数组缺项、分析范围、重复运行一致性及人工记录保护；敏感性分析另增 17 项测试、缺口补齐分析另增 9 项测试（Pearson 常数向量、类别集收缩、候选定义未确认状态、证据清单空栏保护），合计 73 项全部通过。新目录验证实际运行六种场景，每种三次，结果与提交产物一致；全量三次运行的 561 项统计标准差均为零。验证的是执行稳定性，不是原始标注正确性或抽样误差。
+109 项测试全部通过，覆盖输入摘要、重复 ID、未知标签、多标签分母、联合表边际、平均秩、参考数组缺项、分箱边界、类别集合、补丁登录页假阳性及人工表保护等，日志见[验证记录](results/full/verification.json)。新目录验证运行六种核心场景及类别集合分析，每种三次，并验证从原抽样生成空白 A/B 表与其待审核状态；所有数值与提交产物一致。全量三次运行的 561 项统计标准差均为零。这验证执行稳定性，不代表原始标注正确或真人独立复跑已完成。
 
-`data/` 原始缓存、派生数据和人工检查模板不提交 Git。原数据异常保留在[数据审计记录](results/full/data_validation.json)中，不为匹配论文静默修正。旧 `results/rq1/` 和 `results/weekend_01/` 保留阶段历史，**本次完整证据以 `results/full/` 为准**。
+`data/` 原始缓存、派生数据与旧模板不提交 Git；本轮公开的空白 A/B 材料在 `review_materials/`。原数据异常保留在[数据审计记录](results/full/data_validation.json)中，不为匹配论文静默修正。旧 `results/rq1/` 和 `results/weekend_01/` 保留阶段历史，**本次核心证据以 `results/full/` 为准**。
 
 ## 文件与复现边界
 
 - `src/osdefects/`：读取、校验、五维统计、联合分布、Spearman、修复规模敏感性分析、Figure 4 缺口探索、绘图和日志。
 - `reference/`：独立整理的论文基准与来源，不由重算结果反填；`figure_baselines.json` 为 Figure 2/3 柱标签的逐项转写，Figure 4(d) 原图值在 `similarity_baselines.json` 的 `excluded.overall`。
 - `tests/`、`scripts/verify_reproduction.py`：单元测试与新目录复跑。
-- `results/full/`：本次核心结果、三次原始输出及验证证据；`results/repair_size/`：分箱敏感性产物；`results/gap_analysis/`：Figure 4 缺口补齐与异常证据清单。
+- `results/full/`：核心结果与验证；`results/repair_size/`：分箱敏感性；`results/gap_analysis/`：旧候选与异常清单；`results/category_policy/`：三类规则比较；`results/review_evidence/`：正文审计；`results/human_review/`：人工填写状态。
+- `presentations/`：10 页可编辑 PPT、逐页讲稿与制作说明。
 - `docs/`：报告、差异与方法附录。
 
-未完成项：**需要作者信息**——Figures 2/3 的分箱脚本确证（已测试候选中有一组逐柱吻合 39/39，仍需作者代码确认）、Figure 4(c) 的实际输入与计算代码、Figure 4(d) 的 Overall 定义与系统对标注（三块的独立计算与证据清单已完成，但均不能宣称精确复现）；**需要真人**——12 条双人独立标签抽查、184 条异常记录逐条补丁核实、答辩 PPT 与演练。程序生成 `data/review/rq123_label_review.csv`，每系统抽 4 条、种子 340，预留两位检查者的独立判断和证据；已有填写内容不会被覆盖。模板生成不代表人工复核已经完成。
+未完成项：**作者方法确认**——Figures 2/3 的分箱脚本、Figure 4(c) 是否按系统对排除共同零类别、Figure 4(d) 的 Overall 定义和系统对标注；[具体询问草稿](docs/author_questions.md)已写好但未发送。**人工与证据核验**——12 条双人独立标签抽查、4 条 Gitee 原补丁的可访问证据、184 条异常记录的进一步核实，以及真实成员按 README 独立复跑和答辩演练。10 页 PPT 与讲稿已完成，未把材料生成记作人工审核或演练。
 
-结论是**作者发布标签的三个研究问题核心统计得到重算检验，并发现一项相关系数差异**。Linux 是 Launchpad/Ubuntu 生态样本，不是纯内核样本；不同来源的比例不能直接用于系统质量排名。
+结论是**作者发布标签的核心统计得到重算检验；一项相关系数差异可由类别集合选择解释，但作者实际方法尚待确认**。Linux 是 Launchpad/Ubuntu 生态样本，不是纯内核样本；不同来源的比例不能直接用于系统质量排名。
 
 源数据与标签归原作者，上游材料遵循原作者授权声明。提交人信息见 [SUBMISSION.json](SUBMISSION.json)。Codex 协助实现、计算、基准核对与文档，实际人工检查和个人贡献应据实记录。

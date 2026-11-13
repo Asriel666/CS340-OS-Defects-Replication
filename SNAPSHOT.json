@@ -17,6 +17,20 @@
       "output": "results/gap_analysis/",
       "status": "project-added exploratory analysis; not part of the 561 core comparisons; all Figure 4(d) rows remain unconfirmed",
       "detail": "Enumerates 144 coefficient conventions for the Figure 4(c) discrepancy, 42 candidate Overall definitions for Figure 4(d), and exports a 184-row structured evidence checklist for zero/censored function counts. No patch URLs are fetched and no author value is changed."
+    },
+    {
+      "name": "Figure 4 category-set sensitivity",
+      "entry": "scripts/run_category_policy.py",
+      "output": "results/category_policy/",
+      "status": "exploratory candidate explanation; original fixed-category core remains unchanged",
+      "detail": "Compares fixed, global-nonzero and pairwise-nonzero category policies across all nine pairs; pairwise exclusion matches 9/9 to published precision but author methodology remains unconfirmed."
+    },
+    {
+      "name": "Sampled patch body evidence audit",
+      "entry": "scripts/audit_review_evidence.py",
+      "output": "results/review_evidence/",
+      "status": "automated retrieval and assisted interpretation; not independent human annotation",
+      "detail": "Inspects response content and redirects for the 12 sampled patches; binds interpretations to content hashes and keeps raw responses out of Git."
     }
   ]
 }
