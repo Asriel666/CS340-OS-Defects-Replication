@@ -8,6 +8,7 @@
 
 ## 助教检查入口
 
+- [原始论文 PDF（15 页，含来源与授权）](papers/README.md)、[中文阅读笔记与原文页码](docs/paper_reading_notes.md)
 - [最新进展：2026-11-14 类别集合敏感性、补丁正文审计与答辩材料](docs/weekly/2026-11-14.md)
 - [10 页答辩 PPT](presentations/defense_2026-11-14_v2.pptx)、[逐页讲稿](presentations/speaker_notes.md)
 - [相关系数差异的候选解释：成对排除共同零类别](docs/category_policy_analysis.md)
