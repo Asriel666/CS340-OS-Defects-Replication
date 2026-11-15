@@ -1,0 +1,13 @@
+os,check,count,n,ours_percent,paper_numeric_percent,interpretation
+Android,changed_lines_le10,186,500,37.2,not published in accessible text,Descriptive support only; original plot bin heights not independently verified.
+Android,changed_lines_lt30,324,500,64.8,not published in accessible text,Descriptive support only; original plot bin heights not independently verified.
+Linux,changed_lines_le10,243,500,48.6,not published in accessible text,Descriptive support only; original plot bin heights not independently verified.
+Linux,changed_lines_lt30,344,500,68.8,not published in accessible text,Descriptive support only; original plot bin heights not independently verified.
+HarmonyOS,changed_lines_le10,268,500,53.6,not published in accessible text,Descriptive support only; original plot bin heights not independently verified.
+HarmonyOS,changed_lines_lt30,388,500,77.6,not published in accessible text,Descriptive support only; original plot bin heights not independently verified.
+Android,involved_functions_between_1_and_3,368,500,73.6,not published in accessible text,Descriptive support only; original plot bin heights not independently verified.
+Linux,involved_functions_between_1_and_3,263,500,52.6,not published in accessible text,Descriptive support only; original plot bin heights not independently verified.
+HarmonyOS,involved_functions_between_1_and_3,403,500,80.6,not published in accessible text,Descriptive support only; original plot bin heights not independently verified.
+Android,modified_files_between_1_and_3,423,500,84.6,not published in accessible text,Descriptive support only; original plot bin heights not independently verified.
+Linux,modified_files_between_1_and_3,384,500,76.8,not published in accessible text,Descriptive support only; original plot bin heights not independently verified.
+HarmonyOS,modified_files_between_1_and_3,443,500,88.6,not published in accessible text,Descriptive support only; original plot bin heights not independently verified.
