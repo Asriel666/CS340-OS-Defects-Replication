@@ -8,8 +8,10 @@
 
 ## 助教检查入口
 
+- [最新进展：2026-11-18 第二周入口修复、实际复跑与最小收尾清单](docs/weekly/2026-11-18.md)
+- [第二周入口验证：112 项测试、全新下载、离线、错误缓存拒绝](results/weekend_02/verification.json)、[本轮结果](results/weekend_02/stage_summary.json)
 - [原始论文 PDF（15 页，含来源与授权）](papers/README.md)、[中文阅读笔记与原文页码](docs/paper_reading_notes.md)
-- [最新进展：2026-11-14 类别集合敏感性、补丁正文审计与答辩材料](docs/weekly/2026-11-14.md)
+- [2026-11-14 类别集合敏感性、补丁正文审计与答辩材料](docs/weekly/2026-11-14.md)
 - [10 页答辩 PPT](presentations/defense_2026-11-14_v2.pptx)、[逐页讲稿](presentations/speaker_notes.md)
 - [相关系数差异的候选解释：成对排除共同零类别](docs/category_policy_analysis.md)
 - [12 条补丁正文审计：8 条真实 diff、4 条登录页](docs/review_evidence_audit.md)
@@ -132,6 +134,21 @@ macOS/Linux 将 `py -3.11` 换为 `python3.11`，通过系统包管理器安装 
 
 **完整分析使用 `--analysis all`。** 旧 `--all` 保留原语义。范围选项不能混用，`--runs` 至少为 3；已有输出目录不可换成其他分析范围，另用 `--output-dir` 保存即可。
 
+## 第二周补充入口（2026-11-18 修复）
+
+11 月 15 日上传的根目录入口现已修复仓库和基准定位，支持从其他工作目录调用，沿用固定输入的严格 SHA-256 校验：
+
+```powershell
+py -3.11 run_weekend_02.py
+py -3.11 run_weekend_02.py --offline --no-plots --output-dir work/week2_check
+```
+
+默认输出 `results/weekend_02/`，连续实际计算三次，覆盖 Table II 的 114 个值及描述性修复规模分布，含 7 张图。`--output-dir` 的相对路径以调用者当前工作目录为准，`--runs` 不得小于 3。核心 RQ1/RQ2/RQ3 仍使用上方 `scripts/run_stage.py --analysis all` 入口。
+
+原根目录 `weekend_02/` 保留为历史产物；其输入摘要对应已校验原文件额外增加一个末尾 LF。本轮新结果使用正确固定摘要，114 个 Table II 值与原产物及核心结果全部一致。该入口的修复规模使用自定义分箱，不作 Figures 2/3 精确比较；原图逐柱敏感性分析仍见 `results/repair_size/`。
+
+本轮 [112 项测试及实际运行检查](results/weekend_02/verification.json)通过：含图离线、新目录空缓存联网、外部工作目录离线、错误摘要拒绝。成功场景均进行了三次实际计算。验证由 Codex 自动执行，不能代替另一成员亲自复跑或两人独立标签审核。
+
 ## 输入与验证
 
 固定[作者数据](https://raw.githubusercontent.com/zuohongyao/zuohongyao.github.io/832d536f5d381d428a887e59ceeacc90a40e3b7e/index.html)：
@@ -142,7 +159,7 @@ macOS/Linux 将 `py -3.11` 换为 `python3.11`，通过系统包管理器安装 
 
 早期摘要错误来自额外补入末尾换行，本项目已更正为固定源文件的真实摘要并保持严格校验。缓存损坏时先保留备份，再移走旧缓存重新下载；不要修改原始字节来凑摘要。
 
-109 项测试全部通过，覆盖输入摘要、重复 ID、未知标签、多标签分母、联合表边际、平均秩、参考数组缺项、分箱边界、类别集合、补丁登录页假阳性及人工表保护等，日志见[验证记录](results/full/verification.json)。新目录验证运行六种核心场景及类别集合分析，每种三次，并验证从原抽样生成空白 A/B 表与其待审核状态；所有数值与提交产物一致。全量三次运行的 561 项统计标准差均为零。这验证执行稳定性，不代表原始标注正确或真人独立复跑已完成。
+11 月 14 日的 109 项测试全部通过，覆盖输入摘要、重复 ID、未知标签、多标签分母、联合表边际、平均秩、参考数组缺项、分箱边界、类别集合、补丁登录页假阳性及人工表保护等，日志见[当时验证记录](results/full/verification.json)。11 月 18 日增加第二周入口的 3 项回归测试，当前共 112 项通过，见[最新记录](results/weekend_02/verification.json)。原新目录验证运行六种核心场景及类别集合分析，每种三次，并验证从原抽样生成空白 A/B 表与其待审核状态；所有数值与提交产物一致。全量三次运行的 561 项统计标准差均为零。这验证执行稳定性，不代表原始标注正确或真人独立复跑已完成。
 
 `data/` 原始缓存、派生数据与旧模板不提交 Git；本轮公开的空白 A/B 材料在 `review_materials/`。原数据异常保留在[数据审计记录](results/full/data_validation.json)中，不为匹配论文静默修正。旧 `results/rq1/` 和 `results/weekend_01/` 保留阶段历史，**本次核心证据以 `results/full/` 为准**。
 

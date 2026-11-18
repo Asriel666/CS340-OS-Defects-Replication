@@ -1,0 +1,13 @@
+os,check,count,n,ours_percent,paper_numeric_percent,interpretation
+Android,changed_lines_le10,186,500,37.2,not compared by this descriptive entry,"Project-specific descriptive thresholds, not exact Figure 2/3 replication. Censored function counts use their recorded lower bounds."
+Android,changed_lines_lt30,324,500,64.8,not compared by this descriptive entry,"Project-specific descriptive thresholds, not exact Figure 2/3 replication. Censored function counts use their recorded lower bounds."
+Linux,changed_lines_le10,243,500,48.6,not compared by this descriptive entry,"Project-specific descriptive thresholds, not exact Figure 2/3 replication. Censored function counts use their recorded lower bounds."
+Linux,changed_lines_lt30,344,500,68.8,not compared by this descriptive entry,"Project-specific descriptive thresholds, not exact Figure 2/3 replication. Censored function counts use their recorded lower bounds."
+HarmonyOS,changed_lines_le10,268,500,53.6,not compared by this descriptive entry,"Project-specific descriptive thresholds, not exact Figure 2/3 replication. Censored function counts use their recorded lower bounds."
+HarmonyOS,changed_lines_lt30,388,500,77.6,not compared by this descriptive entry,"Project-specific descriptive thresholds, not exact Figure 2/3 replication. Censored function counts use their recorded lower bounds."
+Android,involved_functions_between_1_and_3,368,500,73.6,not compared by this descriptive entry,"Project-specific descriptive thresholds, not exact Figure 2/3 replication. Censored function counts use their recorded lower bounds."
+Linux,involved_functions_between_1_and_3,263,500,52.6,not compared by this descriptive entry,"Project-specific descriptive thresholds, not exact Figure 2/3 replication. Censored function counts use their recorded lower bounds."
+HarmonyOS,involved_functions_between_1_and_3,403,500,80.6,not compared by this descriptive entry,"Project-specific descriptive thresholds, not exact Figure 2/3 replication. Censored function counts use their recorded lower bounds."
+Android,modified_files_between_1_and_3,423,500,84.6,not compared by this descriptive entry,"Project-specific descriptive thresholds, not exact Figure 2/3 replication. Censored function counts use their recorded lower bounds."
+Linux,modified_files_between_1_and_3,384,500,76.8,not compared by this descriptive entry,"Project-specific descriptive thresholds, not exact Figure 2/3 replication. Censored function counts use their recorded lower bounds."
+HarmonyOS,modified_files_between_1_and_3,443,500,88.6,not compared by this descriptive entry,"Project-specific descriptive thresholds, not exact Figure 2/3 replication. Censored function counts use their recorded lower bounds."

@@ -1,0 +1,17 @@
+{
+  "stage": 2,
+  "run": 1,
+  "started_at_utc": "2026-11-18T02:21:42+00:00",
+  "elapsed_seconds": 0.06155749999993532,
+  "records": 1500,
+  "source_sha256_lf": "3794ff8c39e975ff457f264cb863f6e191297614dc0273f04c09ac654962eed5",
+  "semantic_result_sha256": "de03e30dac9ac71ab6223a8387971eaf803d6ebe7b1c5db036ad1e2e8f6500e8",
+  "table_ii_cells": 114,
+  "table_ii_matches": 114,
+  "status": "success",
+  "invocation": [
+    "D:\\OSP\\run_weekend_02.py",
+    "--offline"
+  ],
+  "environment_file": "../../environment.json"
+}

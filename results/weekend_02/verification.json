@@ -1,0 +1,125 @@
+{
+  "verified_at_utc": "2026-11-18T02:21:41.833672+00:00",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "status": "passed",
+  "cases": [
+    {
+      "name": "local_offline_with_plots",
+      "command": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "D:\\OSP\\run_weekend_02.py",
+        "--offline"
+      ],
+      "cwd": "D:\\OSP",
+      "started_at_utc": "2026-11-18T02:21:41.834662+00:00",
+      "exit_code": 0,
+      "stdout": "{\"analysis\": \"weekend_02\", \"status\": \"computationally_complete\", \"table_ii_cells\": 114, \"table_ii_matches\": 114, \"runs\": 3, \"active_runs\": [\"runs/run_01\", \"runs/run_02\", \"runs/run_03\"], \"figures\": 7, \"reference_file\": \"paper_baselines_weekend_02.json\", \"source_sha256_lf\": \"3794ff8c39e975ff457f264cb863f6e191297614dc0273f04c09ac654962eed5\", \"repeatability\": {\"identical_semantic_outputs\": true, \"semantic_result_sha256\": \"de03e30dac9ac71ab6223a8387971eaf803d6ebe7b1c5db036ad1e2e8f6500e8\", \"meaning\": \"Repeated execution stability, not independent annotation validation.\"}, \"repair_scope\": \"Descriptive supplementary bins and thresholds; no exact Figure 2/3 comparison is performed by this entry.\"}",
+      "stderr": "",
+      "checks": {
+        "source_sha256_lf": "3794ff8c39e975ff457f264cb863f6e191297614dc0273f04c09ac654962eed5",
+        "table_ii_matches": 114,
+        "runs": 3,
+        "identical_semantic_outputs": true,
+        "semantic_result_sha256": "de03e30dac9ac71ab6223a8387971eaf803d6ebe7b1c5db036ad1e2e8f6500e8",
+        "figure_files": [
+          "repair_involved_functions.png",
+          "repair_line_changes.png",
+          "repair_modified_files.png",
+          "rq1_affected_function.png",
+          "rq1_code_level.png",
+          "rq1_severity.png",
+          "rq1_trigger_scenario.png"
+        ]
+      }
+    },
+    {
+      "name": "isolated_first_download",
+      "command": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "<isolated-workspace>\\repository\\run_weekend_02.py",
+        "--no-plots",
+        "--output-dir",
+        "isolated_first_download"
+      ],
+      "cwd": "<isolated-workspace>\\caller",
+      "started_at_utc": "2026-11-18T02:21:43.972938+00:00",
+      "exit_code": 0,
+      "stdout": "{\"analysis\": \"weekend_02\", \"status\": \"computationally_complete\", \"table_ii_cells\": 114, \"table_ii_matches\": 114, \"runs\": 3, \"active_runs\": [\"runs/run_01\", \"runs/run_02\", \"runs/run_03\"], \"figures\": 0, \"reference_file\": \"paper_baselines_weekend_02.json\", \"source_sha256_lf\": \"3794ff8c39e975ff457f264cb863f6e191297614dc0273f04c09ac654962eed5\", \"repeatability\": {\"identical_semantic_outputs\": true, \"semantic_result_sha256\": \"de03e30dac9ac71ab6223a8387971eaf803d6ebe7b1c5db036ad1e2e8f6500e8\", \"meaning\": \"Repeated execution stability, not independent annotation validation.\"}, \"repair_scope\": \"Descriptive supplementary bins and thresholds; no exact Figure 2/3 comparison is performed by this entry.\"}",
+      "stderr": "",
+      "checks": {
+        "source_sha256_lf": "3794ff8c39e975ff457f264cb863f6e191297614dc0273f04c09ac654962eed5",
+        "table_ii_matches": 114,
+        "runs": 3,
+        "identical_semantic_outputs": true,
+        "semantic_result_sha256": "de03e30dac9ac71ab6223a8387971eaf803d6ebe7b1c5db036ad1e2e8f6500e8",
+        "external_working_directory": true,
+        "relative_output_is_relative_to_caller": true
+      }
+    },
+    {
+      "name": "isolated_offline",
+      "command": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "<isolated-workspace>\\repository\\run_weekend_02.py",
+        "--no-plots",
+        "--output-dir",
+        "isolated_offline",
+        "--offline"
+      ],
+      "cwd": "<isolated-workspace>\\caller",
+      "started_at_utc": "2026-11-18T02:21:45.589221+00:00",
+      "exit_code": 0,
+      "stdout": "{\"analysis\": \"weekend_02\", \"status\": \"computationally_complete\", \"table_ii_cells\": 114, \"table_ii_matches\": 114, \"runs\": 3, \"active_runs\": [\"runs/run_01\", \"runs/run_02\", \"runs/run_03\"], \"figures\": 0, \"reference_file\": \"paper_baselines_weekend_02.json\", \"source_sha256_lf\": \"3794ff8c39e975ff457f264cb863f6e191297614dc0273f04c09ac654962eed5\", \"repeatability\": {\"identical_semantic_outputs\": true, \"semantic_result_sha256\": \"de03e30dac9ac71ab6223a8387971eaf803d6ebe7b1c5db036ad1e2e8f6500e8\", \"meaning\": \"Repeated execution stability, not independent annotation validation.\"}, \"repair_scope\": \"Descriptive supplementary bins and thresholds; no exact Figure 2/3 comparison is performed by this entry.\"}",
+      "stderr": "",
+      "checks": {
+        "source_sha256_lf": "3794ff8c39e975ff457f264cb863f6e191297614dc0273f04c09ac654962eed5",
+        "table_ii_matches": 114,
+        "runs": 3,
+        "identical_semantic_outputs": true,
+        "semantic_result_sha256": "de03e30dac9ac71ab6223a8387971eaf803d6ebe7b1c5db036ad1e2e8f6500e8",
+        "external_working_directory": true,
+        "relative_output_is_relative_to_caller": true
+      }
+    },
+    {
+      "name": "isolated_corrupt_cache_rejected",
+      "command": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "<isolated-workspace>\\repository\\run_weekend_02.py",
+        "--offline",
+        "--no-plots",
+        "--output-dir",
+        "<isolated-workspace>\\caller\\bad_cache"
+      ],
+      "cwd": "<isolated-workspace>\\caller",
+      "started_at_utc": "2026-11-18T02:21:46.005353+00:00",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<isolated-workspace>\\repository\\run_weekend_02.py\", line 153, in <module>\n    main()\n  File \"<isolated-workspace>\\repository\\run_weekend_02.py\", line 97, in main\n    provenance = fetch_source(source, offline=args.offline)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<isolated-workspace>\\repository\\src\\osdefects\\data.py\", line 138, in fetch_source\n    raise ValueError(\"Pinned source checksum mismatch: expected \" + SOURCE_SHA256_LF + \", got \" + digest\nValueError: Pinned source checksum mismatch: expected 3794ff8c39e975ff457f264cb863f6e191297614dc0273f04c09ac654962eed5, got c617aa2478fea265b61c6b18ac158234ad1f2f4c4b3d0c8abbb7760f75e26a56. Preserve this file for inspection; fetch the pinned URL into a fresh cache. Do not edit the payload to match the hash."
+    }
+  ],
+  "limitations": [
+    "Automated execution by Codex, not a student independent rerun or human annotation audit.",
+    "Repair bins are descriptive; this entry does not reproduce Figure 2/3 bin heights.",
+    "Historical root/weekend_02 outputs are retained, not rewritten as new runs."
+  ],
+  "unit_tests": {
+    "name": "unit_tests",
+    "command": [
+      "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-q"
+    ],
+    "cwd": "D:\\OSP",
+    "started_at_utc": "2026-11-18T02:21:46.196912+00:00",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "----------------------------------------------------------------------\nRan 112 tests in 1.819s\n\nOK"
+  },
+  "matches_published_core_table_ii": true,
+  "historical_table_ii_numerically_equal": true
+}

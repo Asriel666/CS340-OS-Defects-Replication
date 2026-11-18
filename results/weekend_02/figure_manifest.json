@@ -1,0 +1,9 @@
+[
+  "figures/rq1_affected_function.png",
+  "figures/rq1_trigger_scenario.png",
+  "figures/rq1_severity.png",
+  "figures/rq1_code_level.png",
+  "figures/repair_line_changes.png",
+  "figures/repair_involved_functions.png",
+  "figures/repair_modified_files.png"
+]
