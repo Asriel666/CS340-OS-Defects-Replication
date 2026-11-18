@@ -1,0 +1,21 @@
+{
+  "analysis": "weekend_02",
+  "status": "computationally_complete",
+  "table_ii_cells": 114,
+  "table_ii_matches": 114,
+  "runs": 3,
+  "active_runs": [
+    "runs/run_01",
+    "runs/run_02",
+    "runs/run_03"
+  ],
+  "figures": 7,
+  "reference_file": "paper_baselines_weekend_02.json",
+  "source_sha256_lf": "3794ff8c39e975ff457f264cb863f6e191297614dc0273f04c09ac654962eed5",
+  "repeatability": {
+    "identical_semantic_outputs": true,
+    "semantic_result_sha256": "de03e30dac9ac71ab6223a8387971eaf803d6ebe7b1c5db036ad1e2e8f6500e8",
+    "meaning": "Repeated execution stability, not independent annotation validation."
+  },
+  "repair_scope": "Descriptive supplementary bins and thresholds; no exact Figure 2/3 comparison is performed by this entry."
+}

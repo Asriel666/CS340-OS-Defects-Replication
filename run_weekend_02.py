@@ -1,21 +1,25 @@
+"""Recompute the Week 2 Table II deliverable and descriptive repair-size bins.
+
+This root-level compatibility entry keeps its historical supplementary bins;
+the dedicated repair-size sensitivity pipeline handles original Figures 2/3.
+"""
 import argparse
+import hashlib
 import json
 import shutil
 import sys
-import tempfile
 import time
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / 'src'))
 
 from osdefects.common import OS_ORDER, semantic_digest, write_csv, write_json
 from osdefects.data import fetch_source, load_records
-from osdefects.plots import make_plots
 from osdefects.runner import environment, repeated_statistics
-from osdefects.univariate import analyze_univariate
+from osdefects.univariate import analyze_univariate, validate_reference
 
 REPAIR_FIELDS = ('line_changes', 'involved_functions', 'modified_files')
 LINE_BINS = ('0', '1-10', '11-50', '51-100', '101-500', '501+')
@@ -58,22 +62,43 @@ def analyze_repairs(records):
             for name, count in thresholds:
                 checks.append({'os': os_name, 'check': name, 'count': count, 'n': n,
                                'ours_percent': 100 * count / n,
-                               'paper_numeric_percent': 'not published in accessible text',
-                               'interpretation': 'Descriptive support only; original plot bin heights not independently verified.'})
+                               'paper_numeric_percent': 'not compared by this descriptive entry',
+                               'interpretation': 'Project-specific descriptive thresholds, not exact Figure 2/3 replication. Censored function counts use their recorded lower bounds.'})
     return {'distributions': distributions, 'textual_claim_checks': checks}, rows, checks
 
 
+def make_weekend_plots(distribution, repairs, outdir):
+    # Keep optional rendering dependencies out of the --no-plots execution path.
+    from osdefects.plots import grouped_bars, make_plots
+    new_dimensions = {name: groups for name, groups in distribution['dimensions'].items() if name != 'os_layer'}
+    figures = make_plots({'univariate': {'dimensions': new_dimensions}}, outdir)
+    for field, groups in repairs['distributions'].items():
+        path = outdir / f'repair_{field}.png'
+        grouped_bars('Descriptive repair size: ' + field.replace('_', ' '), groups['Android']['bins'],
+                     {name: groups[name]['percent'] for name in OS_ORDER}, path,
+                     subtitle='Supplementary bins, not original Figures 2/3; censored function counts use lower bounds')
+        figures.append(str(path))
+    return figures
+
+
 def main():
-    parser = argparse.ArgumentParser(description='Reproduce Week 2 Table II and repair-size results')
+    parser = argparse.ArgumentParser(description='Recompute Week 2 Table II and descriptive repair-size results')
     parser.add_argument('--offline', action='store_true')
+    parser.add_argument('--runs', type=int, default=3, help='At least three actual recomputations')
+    parser.add_argument('--output-dir', type=Path, help='Separate output directory; defaults to results/weekend_02')
+    parser.add_argument('--no-plots', action='store_true', help='Skip figures and optional rendering dependencies')
     args = parser.parse_args()
+    if args.runs < 3:
+        parser.error('--runs must be at least 3')
     source = ROOT / 'data/raw/index.html'
-    reference = json.loads((ROOT / 'reference/paper_baselines_weekend_02.json').read_text(encoding='utf-8'))
+    reference_path = ROOT / 'paper_baselines_weekend_02.json'
+    reference = json.loads(reference_path.read_text(encoding='utf-8'))
+    validate_reference(reference, list(reference['dimensions']))
     provenance = fetch_source(source, offline=args.offline)
     provenance['source_path'] = source.relative_to(ROOT).as_posix()
-    stage_dir = ROOT / 'results/weekend_02'
+    stage_dir = args.output_dir.resolve() if args.output_dir is not None else ROOT / 'results/weekend_02'
     digests = set()
-    for index in range(1, 4):
+    for index in range(1, args.runs + 1):
         started = datetime.now(timezone.utc).isoformat(timespec='seconds')
         timer = time.perf_counter()
         records = load_records(source)
@@ -81,11 +106,12 @@ def main():
         run_dir = stage_dir / 'runs' / f'run_{index:02d}'
         run_tables = run_dir / 'tables'
         run_tables.mkdir(parents=True, exist_ok=True)
-        with tempfile.TemporaryDirectory(prefix='osdefects-week2-') as temporary:
-            scratch = Path(temporary)
-            distribution = analyze_univariate(records, reference, scratch)
-            shutil.copyfile(scratch / 'table_ii.csv', run_tables / 'table_ii.csv')
-        digest = semantic_digest({'univariate': distribution, 'repairs': repairs})
+        distribution = analyze_univariate(records, reference, run_tables)
+        write_csv(run_tables / 'repair_distributions.csv', repair_rows)
+        write_csv(run_tables / 'repair_claim_checks.csv', repair_checks)
+        result = {'univariate': distribution, 'repairs': repairs}
+        write_json(run_dir / 'results.json', result)
+        digest = semantic_digest(result)
         digests.add(digest)
         write_json(run_dir / 'run_log.json', {
             'stage': 2, 'run': index, 'started_at_utc': started,
@@ -95,22 +121,32 @@ def main():
             'status': 'success', 'invocation': sys.argv, 'environment_file': '../../environment.json',
         })
     if len(digests) != 1:
-        raise RuntimeError('Week 2 results differed across the three runs')
+        raise RuntimeError('Week 2 results differed across the actual runs')
 
     tables = stage_dir / 'tables'
     tables.mkdir(parents=True, exist_ok=True)
-    shutil.copyfile(stage_dir / 'runs/run_01/tables/table_ii.csv', tables / 'table_ii.csv')
-    write_csv(tables / 'repair_distributions.csv', repair_rows)
-    write_csv(tables / 'repair_claim_checks.csv', repair_checks)
-    repeated_statistics(stage_dir, 3)
-    new_dimensions = {name: groups for name, groups in distribution['dimensions'].items() if name != 'os_layer'}
-    figures = make_plots({'univariate': {'dimensions': new_dimensions}, 'repairs': repairs}, stage_dir / 'figures')
+    shutil.copytree(stage_dir / 'runs/run_01/tables', tables, dirs_exist_ok=True)
+    repeated_statistics(stage_dir, args.runs)
+    figures = [] if args.no_plots else make_weekend_plots(distribution, repairs, stage_dir / 'figures')
     env = environment(ROOT, stage=2)
     env.pop('python_executable', None)
+    # The shared helper hashes src/, scripts/ and reference/. These two legacy
+    # entry files live at the root and must also appear in this run's record.
+    for path in (Path(__file__).resolve(), reference_path):
+        env['files_sha256'][path.relative_to(ROOT).as_posix()] = hashlib.sha256(path.read_text(encoding='utf-8').encode('utf-8')).hexdigest()
     write_json(stage_dir / 'environment.json', env)
     write_json(stage_dir / 'source_provenance.json', provenance)
-    print(json.dumps({'table_ii_cells': distribution['cell_count'],
-                      'table_ii_matches': distribution['matched_cells'], 'runs': 3, 'figures': len(figures)}))
+    write_json(stage_dir / 'figure_manifest.json', [Path(path).relative_to(stage_dir).as_posix() for path in figures])
+    summary = {'analysis': 'weekend_02', 'status': 'computationally_complete',
+               'table_ii_cells': distribution['cell_count'], 'table_ii_matches': distribution['matched_cells'],
+               'runs': args.runs, 'active_runs': [f'runs/run_{index:02d}' for index in range(1, args.runs + 1)],
+               'figures': len(figures), 'reference_file': reference_path.relative_to(ROOT).as_posix(),
+               'source_sha256_lf': provenance['source_sha256_lf'],
+               'repeatability': {'identical_semantic_outputs': True, 'semantic_result_sha256': digest,
+                                 'meaning': 'Repeated execution stability, not independent annotation validation.'},
+               'repair_scope': 'Descriptive supplementary bins and thresholds; no exact Figure 2/3 comparison is performed by this entry.'}
+    write_json(stage_dir / 'stage_summary.json', summary)
+    print(json.dumps(summary))
 
 
 if __name__ == '__main__':
