@@ -1,0 +1,34 @@
+{
+  "checked_at_utc": "2026-11-22T06:26:38+00:00",
+  "actor": "Codex automated artifact checks and visual review",
+  "source_markdown": "docs/contributions/1230037310_钟峻瀚_2026-11-22.md",
+  "source_sha256": "602e5e0615edd1510c3029e57c60d27f556445e6978674067c0e4f8a431be530",
+  "pdf": "output/pdf/1230037310_zhong_junhan_progress_2026-11-22.pdf",
+  "pdf_sha256": "e3bf5b3592bf3692f95f48dc5ef3ec7086f849628cd0dd39343c9b4dce88a60d",
+  "pdf_bytes": 377997,
+  "pages": 5,
+  "extractable_characters_by_page": [
+    1476,
+    1543,
+    1773,
+    1621,
+    360
+  ],
+  "link_annotations": 58,
+  "visual_review": {
+    "render_tool": "pdftoppm -scale-to 1400 -png",
+    "pages_inspected": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "result": "Chinese text, tables, repeated table header, commands, links and page footers readable; no clipping or overlap seen."
+  },
+  "local_markdown_links_checked": 154,
+  "current_code_still_matches_verification": true,
+  "historical_core_and_weekend_results_unchanged": true,
+  "student_review_forms_unchanged": true,
+  "limitations": "Not a student authorship or independent-review certification. PDF was rendered with Poppler, not tested in desktop Adobe or PowerPoint."
+}

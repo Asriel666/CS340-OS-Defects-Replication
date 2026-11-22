@@ -2,19 +2,23 @@
 
 **提交人：1230036051 GUO HAOXUAN** · 检查日期：2026-11-06；2026-11-07 增补 Figures 2/3 分箱约定敏感性分析
 
-**2026-11-14 更新与汇报：1230037310 钟峻瀚**。保留仓库现有提交人信息；本轮由 Codex 协助分析、实现和制作材料，实际人工核验与共同署名由成员据实确认。
+**2026-11-22 更新与汇报：1230037310 钟峻瀚**。保留仓库现有提交人信息；本轮由 Codex 协助分析、实现和制作材料，实际人工核验与共同署名由成员据实确认。
 
 复现 [*Toward Understanding Operating System Defects*（arXiv:2608.20643v1）](https://arxiv.org/html/2608.20643v1) 的核心统计，使用作者公开的 1,500 条标签，Android、Linux、HarmonyOS 各 500 条。当前提供三个 RQ 的可运行代码、逐项对比、17 张核心图与 11 张敏感性分析图、实际运行记录、中文报告和 10 页可编辑答辩 PPT。
 
 ## 助教检查入口
 
-- [最新进展：2026-11-18 第二周入口修复、实际复跑与最小收尾清单](docs/weekly/2026-11-18.md)
+- **[个人详细进度与贡献报告：1230037310 钟峻瀚](docs/contributions/1230037310_钟峻瀚_2026-11-22.md)**、[打印版 PDF](output/pdf/1230037310_zhong_junhan_progress_2026-11-22.pdf)
+- [最新进展：2026-11-22 镜像补证、统一验证与贡献归档](docs/weekly/2026-11-22.md)、[最新验证记录](results/checkpoint_2026-11-22/verification.json)
+- [个人历史五次提交及逐文件清单](results/contributions/1230037310/commit_history.json)、[CSV](results/contributions/1230037310/commit_history.csv)
+- [4 条 HarmonyOS 补丁镜像补证：提交、父版本、文件哈希交叉检查](docs/review_evidence_followup_2026-11-22.md)
+- [2026-11-18 第二周入口修复、实际复跑与最小收尾清单](docs/weekly/2026-11-18.md)
 - [第二周入口验证：112 项测试、全新下载、离线、错误缓存拒绝](results/weekend_02/verification.json)、[本轮结果](results/weekend_02/stage_summary.json)
 - [原始论文 PDF（15 页，含来源与授权）](papers/README.md)、[中文阅读笔记与原文页码](docs/paper_reading_notes.md)
 - [2026-11-14 类别集合敏感性、补丁正文审计与答辩材料](docs/weekly/2026-11-14.md)
 - [10 页答辩 PPT](presentations/defense_2026-11-14_v2.pptx)、[逐页讲稿](presentations/speaker_notes.md)
 - [相关系数差异的候选解释：成对排除共同零类别](docs/category_policy_analysis.md)
-- [12 条补丁正文审计：8 条真实 diff、4 条登录页](docs/review_evidence_audit.md)
+- [11 月 14 日补丁正文审计：当时 8 条真实 diff、4 条登录页](docs/review_evidence_audit.md)；11 月 22 日已补齐后四条公开镜像，累计 12/12 可读，人工审核仍待完成
 - [A/B 独立待填表及说明](review_materials/blind/README.md)、[当前人工核验状态](results/human_review/status.json)
 - [2026-11-13 周五检查：Figure 4 缺口补齐分析与抽查材料](docs/weekly/2026-11-13.md)
 - [2026-11-12 同步核验、文档修正与下一步安排](docs/weekly/2026-11-12.md)
@@ -69,7 +73,7 @@ py -3.11 scripts/run_gap_analysis.py
 
 - **Figure 4(c)**：原有 **144 个口径**仅比较完整类别与“三系统全为零才排除”的类别集，Android–HarmonyOS 触发场景所得值与 0.38 的最小差为 0.2326。它们**未覆盖成对排除共同零类别**，不能据此排除所有常见口径。本轮补做三种类别规则的 27 项比较，成对排除规则为 9/9 吻合；作者实际方法仍待确认。
 - **Figure 4(d)**：把未定义的 Overall 输入显式枚举为 **42 个候选**（6 种拼接向量 × 2 系数 + 2 种逐维聚合），与原图 `-0.11 / 0.05 / -0.04` 相比最好的三对平均绝对差仍有 **0.0930**。**没有任何候选能复现**，逐行状态保持 `unconfirmed_candidate`，需作者确认输入向量、拼接方式、权重与系统对标注。
-- **Figures 2/3 证据**：已有 177 条零函数 + 7 条删失记录共 **184 行**结构化清单。其中 81 条涉及多个文件、10 条改动 ≥50 行、9 条两者兼具；这些数量不能独自解释零值。本轮进一步读取固定 12 条样本的补丁，其中 8 条取得真实 diff、4 条返回登录页。Linux 2063344 的 0 有局部依据，2044546 的 0 与函数体修改并存，计数口径需要澄清；见[正文审计](docs/review_evidence_audit.md)。没有改动作者原值或填写 A/B 人工判断。
+- **Figures 2/3 证据**：已有 177 条零函数 + 7 条删失记录共 **184 行**结构化清单。其中 81 条涉及多个文件、10 条改动 ≥50 行、9 条两者兼具；这些数量不能独自解释零值。11 月 14 日固定 12 条样本中有 8 条取得真实 diff、4 条返回登录页；11 月 22 日已从 OpenHarmony GitHub 镜像补齐后四条，累计 12/12 材料可读。新增证据支持 CVE-2023-52756 的零函数计数，并发现 CVE-2024-46740 镜像补丁 1 加 0 删与作者 `line_changes=2` 不一致。原 [Linux/Android 计数疑点](docs/review_evidence_audit.md)与[本轮补证](docs/review_evidence_followup_2026-11-22.md)分别保留；未改作者原值或填写 A/B 人工判断。
 
 产物在 `results/gap_analysis/`：三个 CSV、机器可读汇总与环境/校验记录。详见[方法附录](docs/methods_appendix.md)。
 
@@ -84,6 +88,9 @@ py -3.11 scripts/run_category_policy.py --runs 3 --offline --cross-check-scipy
 
 # 联网读取 12 条补丁正文；原始响应仅缓存在 work/，不执行补丁。
 py -3.11 scripts/audit_review_evidence.py
+
+# 只读核对四条 HarmonyOS 原 fork 的公开镜像、补丁及父/当前文件。
+py -3.11 scripts/check_review_mirrors.py --output-dir work/mirror_recheck
 
 # 生成分离作者答案的待填审核表；已有文件不会被覆盖。
 py -3.11 scripts/manage_review.py prepare
@@ -117,10 +124,12 @@ py -3.11 scripts/run_stage.py --analysis rq2 --runs 3 --offline
 # 离线单元测试。
 py -3.11 -m unittest discover -s tests -v
 
-# 自动复制源码到临时新目录，实际验证首次下载、离线与各入口。
-# 需要联网；应在完成上面的完整含图运行之后执行。
-py -3.11 scripts/verify_reproduction.py
+# 自动复制源码到临时新目录，对照仓库已保存的结果实际验证全部入口。
+# 需联网；保留历史结果，新版本源码差异逐文件记录，输入/基准/数值严格检查。
+py -3.11 scripts/verify_reproduction.py --allow-source-changes --output-dir results/checkpoint_2026-11-22
 ```
+
+`--allow-source-changes` 仅允许当前代码与历史 `environment.json` 的源码快照不同；临时副本必须等于当前源码，参考基准、固定输入摘要和全部历史数值仍须一致。省略此参数时，历史源码摘要也必须完全吻合。新记录保存在独立目录，历史验证文件保持原样。
 
 macOS/Linux 将 `py -3.11` 换为 `python3.11`，通过系统包管理器安装 Poppler。首次下载需要网络；`--offline` 在没有缓存时明确失败。旧 `scripts/setup_venv.sh` 是历史可选辅助脚本，本次不使用。
 
@@ -145,6 +154,8 @@ py -3.11 run_weekend_02.py --offline --no-plots --output-dir work/week2_check
 
 默认输出 `results/weekend_02/`，连续实际计算三次，覆盖 Table II 的 114 个值及描述性修复规模分布，含 7 张图。`--output-dir` 的相对路径以调用者当前工作目录为准，`--runs` 不得小于 3。核心 RQ1/RQ2/RQ3 仍使用上方 `scripts/run_stage.py --analysis all` 入口。
 
+11 月 22 日新增写入前保护：拒绝源码、核心结果、根目录历史产物、其他分析标识或未标识的非空目录；使用新空目录或本入口自己标识的结果目录即可。
+
 原根目录 `weekend_02/` 保留为历史产物；其输入摘要对应已校验原文件额外增加一个末尾 LF。本轮新结果使用正确固定摘要，114 个 Table II 值与原产物及核心结果全部一致。该入口的修复规模使用自定义分箱，不作 Figures 2/3 精确比较；原图逐柱敏感性分析仍见 `results/repair_size/`。
 
 本轮 [112 项测试及实际运行检查](results/weekend_02/verification.json)通过：含图离线、新目录空缓存联网、外部工作目录离线、错误摘要拒绝。成功场景均进行了三次实际计算。验证由 Codex 自动执行，不能代替另一成员亲自复跑或两人独立标签审核。
@@ -159,7 +170,7 @@ py -3.11 run_weekend_02.py --offline --no-plots --output-dir work/week2_check
 
 早期摘要错误来自额外补入末尾换行，本项目已更正为固定源文件的真实摘要并保持严格校验。缓存损坏时先保留备份，再移走旧缓存重新下载；不要修改原始字节来凑摘要。
 
-11 月 14 日的 109 项测试全部通过，覆盖输入摘要、重复 ID、未知标签、多标签分母、联合表边际、平均秩、参考数组缺项、分箱边界、类别集合、补丁登录页假阳性及人工表保护等，日志见[当时验证记录](results/full/verification.json)。11 月 18 日增加第二周入口的 3 项回归测试，当前共 112 项通过，见[最新记录](results/weekend_02/verification.json)。原新目录验证运行六种核心场景及类别集合分析，每种三次，并验证从原抽样生成空白 A/B 表与其待审核状态；所有数值与提交产物一致。全量三次运行的 561 项统计标准差均为零。这验证执行稳定性，不代表原始标注正确或真人独立复跑已完成。
+11 月 14 日的 109 项测试全部通过，覆盖输入摘要、重复 ID、未知标签、多标签分母、联合表边际、平均秩、参考数组缺项、分箱边界、类别集合、补丁登录页假阳性及人工表保护等，日志见[当时验证记录](results/full/verification.json)。11 月 18 日为 [112 项测试](results/weekend_02/verification.json)；11 月 22 日新增输出保护、验证快照、补丁身份与贡献提取回归，最新数量和完整日志见[本次记录](results/checkpoint_2026-11-22/verification.json)。统一验证保留六种核心场景及类别集合分析，每种三次，并检查空白 A/B 表待审核状态；新增第二周首次下载、外部目录离线三次计算和错误缓存拒绝。原全量三次运行的 561 项统计标准差均为零。这验证执行稳定性，不代表原始标注正确或真人独立复跑已完成。
 
 `data/` 原始缓存、派生数据与旧模板不提交 Git；本轮公开的空白 A/B 材料在 `review_materials/`。原数据异常保留在[数据审计记录](results/full/data_validation.json)中，不为匹配论文静默修正。旧 `results/rq1/` 和 `results/weekend_01/` 保留阶段历史，**本次核心证据以 `results/full/` 为准**。
 
@@ -170,9 +181,10 @@ py -3.11 run_weekend_02.py --offline --no-plots --output-dir work/week2_check
 - `tests/`、`scripts/verify_reproduction.py`：单元测试与新目录复跑。
 - `results/full/`：核心结果与验证；`results/repair_size/`：分箱敏感性；`results/gap_analysis/`：旧候选与异常清单；`results/category_policy/`：三类规则比较；`results/review_evidence/`：正文审计；`results/human_review/`：人工填写状态。
 - `presentations/`：10 页可编辑 PPT、逐页讲稿与制作说明。
-- `docs/`：报告、差异与方法附录。
+- `results/checkpoint_2026-11-22/`：当前版本统一验证；`results/review_evidence_followup/`：四条镜像补证；`results/contributions/1230037310/`：固定基线的个人历史提交清单。
+- `docs/`：报告、差异与方法附录；`docs/contributions/` 与 `output/pdf/`：个人详细进度报告及打印版。
 
-未完成项：**作者方法确认**——Figures 2/3 的分箱脚本、Figure 4(c) 是否按系统对排除共同零类别、Figure 4(d) 的 Overall 定义和系统对标注；[具体询问草稿](docs/author_questions.md)已写好但未发送。**人工与证据核验**——12 条双人独立标签抽查、4 条 Gitee 原补丁的可访问证据、184 条异常记录的进一步核实，以及真实成员按 README 独立复跑和答辩演练。10 页 PPT 与讲稿已完成，未把材料生成记作人工审核或演练。
+未完成项：**作者方法确认**——Figures 2/3 的分箱脚本、Figure 4(c) 是否按系统对排除共同零类别、Figure 4(d) 的 Overall 定义和系统对标注；[具体询问草稿](docs/author_questions.md)已写好但未发送。**人工与证据核验**——12 条双人独立标签抽查、184 条异常记录的进一步核实，以及真实成员按 README 独立复跑和答辩演练。四条 Gitee 原地址仍需登录，但公开镜像补证已完成，其中一条保留原短 SHA 的身份限制。10 页 PPT 为 11 月 14 日版本，新增证据见本次报告；未把材料生成记作人工审核或演练。
 
 结论是**作者发布标签的核心统计得到重算检验；一项相关系数差异可由类别集合选择解释，但作者实际方法尚待确认**。Linux 是 Launchpad/Ubuntu 生态样本，不是纯内核样本；不同来源的比例不能直接用于系统质量排名。
 

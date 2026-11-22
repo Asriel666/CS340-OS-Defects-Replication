@@ -26,6 +26,31 @@ LINE_BINS = ('0', '1-10', '11-50', '51-100', '101-500', '501+')
 COUNT_BINS = ('0', '1', '2', '3', '4-9', '10+')
 
 
+def validate_output_directory(path, root=ROOT):
+    """Resolve and preflight an output location without writing or fetching data."""
+    root, path = Path(root).resolve(), Path(path).resolve()
+    protected = ('src', 'scripts', 'tests', 'reference', 'data', '.git', '.agents', '.codex',
+                 'docs', 'papers', 'presentations', 'review_materials', 'weekend_02', 'results/full')
+    if path == root or any(path == root / name or (root / name) in path.parents for name in protected):
+        raise ValueError('Output directory is a protected project or historical path: ' + str(path))
+    # An empty subdirectory inside another analysis is still not our output area.
+    for ancestor in (path, *path.parents):
+        marker = ancestor / 'stage_summary.json'
+        if marker.is_file():
+            try:
+                previous = json.loads(marker.read_text(encoding='utf-8'))
+            except (ValueError, OSError) as error:
+                raise ValueError('Existing output marker is unreadable: ' + str(marker)) from error
+            if not isinstance(previous, dict) or previous.get('analysis') != 'weekend_02':
+                raise ValueError('Output directory belongs to another analysis: ' + str(ancestor))
+    if path.exists():
+        if not path.is_dir():
+            raise ValueError('Output path must be a directory: ' + str(path))
+        if any(path.iterdir()) and not (path / 'stage_summary.json').is_file():
+            raise ValueError('Nonempty output directory lacks a Week 2 marker; choose a new directory: ' + str(path))
+    return path
+
+
 def size_bin(value, field):
     if field == 'line_changes':
         for limit, label in zip((0, 10, 50, 100, 500), LINE_BINS):
@@ -90,13 +115,15 @@ def main():
     args = parser.parse_args()
     if args.runs < 3:
         parser.error('--runs must be at least 3')
+    stage_dir = validate_output_directory(args.output_dir if args.output_dir is not None else ROOT / 'results/weekend_02')
     source = ROOT / 'data/raw/index.html'
     reference_path = ROOT / 'paper_baselines_weekend_02.json'
     reference = json.loads(reference_path.read_text(encoding='utf-8'))
     validate_reference(reference, list(reference['dimensions']))
     provenance = fetch_source(source, offline=args.offline)
     provenance['source_path'] = source.relative_to(ROOT).as_posix()
-    stage_dir = args.output_dir.resolve() if args.output_dir is not None else ROOT / 'results/weekend_02'
+    stage_dir.mkdir(parents=True, exist_ok=True)
+    write_json(stage_dir / 'stage_summary.json', {'analysis': 'weekend_02', 'status': 'running', 'runs': args.runs})
     digests = set()
     for index in range(1, args.runs + 1):
         started = datetime.now(timezone.utc).isoformat(timespec='seconds')

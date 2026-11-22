@@ -26,6 +26,8 @@ sys.path.insert(0, str(ROOT / "src"))
 from osdefects import data
 from osdefects.common import OS_ORDER, semantic_digest
 
+validate_output_directory = runpy.run_path(str(ENTRY))["validate_output_directory"]
+
 
 def fixture_records():
     records = []
@@ -109,6 +111,72 @@ class Weekend02EntryTests(unittest.TestCase):
             self.assertEqual(completed.returncode, 2)
             self.assertIn("at least 3", completed.stderr)
             self.assertFalse(list(Path(directory).iterdir()))
+
+    def test_output_guard_accepts_new_empty_and_own_output_directories(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            new = root / "new"
+            empty = root / "empty"
+            empty.mkdir()
+            own = root / "own"
+            own.mkdir()
+            marker = own / "stage_summary.json"
+            marker.write_text('{"analysis":"weekend_02","status":"running"}', encoding="utf-8")
+            sentinel = own / "notes.txt"
+            sentinel.write_bytes(b"student notes")
+            for target in (new, empty, own):
+                self.assertEqual(validate_output_directory(target, root), target.resolve())
+            self.assertFalse(new.exists())
+            self.assertEqual(sentinel.read_bytes(), b"student notes")
+
+    def test_output_guard_rejects_nonempty_unknown_and_incompatible_markers(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for index, content in enumerate((None, "not json", "[]", '{"analysis":"all"}')):
+                with self.subTest(marker=content):
+                    target = root / str(index)
+                    target.mkdir()
+                    (target / "keep.txt").write_bytes(b"original content")
+                    if content is not None:
+                        (target / "stage_summary.json").write_text(content, encoding="utf-8")
+                    original = {p.name: p.read_bytes() for p in target.iterdir()}
+                    with self.assertRaises(ValueError):
+                        validate_output_directory(target, root)
+                    self.assertEqual({p.name: p.read_bytes() for p in target.iterdir()}, original)
+            file_target = root / "file.txt"
+            file_target.write_bytes(b"original file")
+            with self.assertRaisesRegex(ValueError, "directory"):
+                validate_output_directory(file_target, root)
+            self.assertEqual(file_target.read_bytes(), b"original file")
+
+    def test_output_guard_protects_sources_history_core_and_nested_other_results(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for relative in (".", "src", "src/new", "scripts/new", "tests/new", "reference/new",
+                             "data/new", "docs/new", "weekend_02", "weekend_02/new", "results/full",
+                             "results/full/new"):
+                with self.subTest(path=relative), self.assertRaisesRegex(ValueError, "protected"):
+                    validate_output_directory(root / relative, root)
+            other = root / "results/other"
+            other.mkdir(parents=True)
+            (other / "stage_summary.json").write_text('{"analysis":"rq1"}', encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "another analysis"):
+                validate_output_directory(other / "empty/new", root)
+            self.assertFalse((other / "empty").exists())
+
+    def test_real_entry_rejects_unknown_output_before_fetch_or_overwrite(self):
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "existing"
+            output.mkdir()
+            sentinel = output / "results.json"
+            sentinel.write_bytes(b"valuable previous analysis")
+            invocation = [str(ENTRY), "--offline", "--no-plots", "--output-dir", str(output)]
+            with patch.object(sys, "argv", invocation), patch.object(data, "fetch_source") as fetch:
+                with self.assertRaisesRegex(ValueError, "lacks a Week 2 marker"):
+                    runpy.run_path(str(ENTRY), run_name="__main__")
+            fetch.assert_not_called()
+            self.assertEqual(list(output.iterdir()), [sentinel])
+            self.assertEqual(sentinel.read_bytes(), b"valuable previous analysis")
 
 
 if __name__ == "__main__":

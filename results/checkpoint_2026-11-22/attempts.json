@@ -1,0 +1,22 @@
+{
+  "command": ["py", "-3.11", "scripts/verify_reproduction.py", "--allow-source-changes", "--output-dir", "results/checkpoint_2026-11-22"],
+  "actor": "Codex automated execution; not an independent student rerun",
+  "attempts": [
+    {
+      "sequence": 1,
+      "exit_code": 1,
+      "status": "interrupted_by_download_error",
+      "failed_case": "weekend_02_fresh_download",
+      "error": "urllib.error.URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>",
+      "note": "The first full attempt stopped on the second clean repository's first download. It did not produce a passed verification report. This is a concise transcription of the observed tool output, not a retained full stderr log."
+    },
+    {
+      "sequence": 2,
+      "exit_code": 0,
+      "status": "passed",
+      "verified_at_utc": "2026-11-22T06:23:06+00:00",
+      "report": "verification.json",
+      "note": "Entire verification rerun from new temporary copies, with no intervening code, input, reference or TLS-setting changes."
+    }
+  ]
+}

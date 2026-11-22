@@ -1,0 +1,560 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-11-22T06:17:04.630342+00:00",
+  "audit_actor": "AI assistant; not a student independent review",
+  "repository": {
+    "full_name": "openharmony/kernel_linux_5.10",
+    "html_url": "https://github.com/openharmony/kernel_linux_5.10",
+    "owner_login": "openharmony",
+    "source": {
+      "label": "repository_api",
+      "url": "https://api.github.com/repos/openharmony/kernel_linux_5.10",
+      "retrieved_utc": "2026-11-22T06:17:02.518589+00:00",
+      "http_status": 200,
+      "final_url": "https://api.github.com/repos/openharmony/kernel_linux_5.10",
+      "content_type": "application/json; charset=utf-8",
+      "sha256": "2874bba051003e62d31e9dd578b196255a071e19f6bd92f379965bbdb40e9def",
+      "bytes": 6691
+    }
+  },
+  "summary": {
+    "samples": 4,
+    "verified_public_patches": 4,
+    "full_original_sha": 3,
+    "original_prefix_resolved": 1
+  },
+  "records": [
+    {
+      "os": "HarmonyOS",
+      "bug_id": "CVE-2024-39475",
+      "original_url": "https://gitee.com/openharmony/kernel_linux_5.10/commit/352581ba396aca7d9ac584a5faf7a1e917195130.patch",
+      "requested_sha": "352581ba396aca7d9ac584a5faf7a1e917195130",
+      "status": "verified_public_patch",
+      "sources": [
+        {
+          "label": "original",
+          "url": "https://gitee.com/openharmony/kernel_linux_5.10/commit/352581ba396aca7d9ac584a5faf7a1e917195130.patch",
+          "retrieved_utc": "2026-11-22T06:16:54.471947+00:00",
+          "http_status": 200,
+          "final_url": "https://gitee.com/login?redirect_to_url=%2Fopenharmony%2Fkernel_linux_5.10%2Fcommit%2F352581ba396aca7d9ac584a5faf7a1e917195130.patch",
+          "content_type": "text/html; charset=utf-8",
+          "sha256": "3c26d5683606263158b2b34273c80e4cae16c4f7aa9cb0a9eb8e2a4f8bfcbfe9",
+          "bytes": 25493
+        },
+        {
+          "label": "commit_api",
+          "url": "https://api.github.com/repos/openharmony/kernel_linux_5.10/commits/352581ba396aca7d9ac584a5faf7a1e917195130",
+          "retrieved_utc": "2026-11-22T06:16:56.478119+00:00",
+          "http_status": 200,
+          "final_url": "https://api.github.com/repos/openharmony/kernel_linux_5.10/commits/352581ba396aca7d9ac584a5faf7a1e917195130",
+          "content_type": "application/json; charset=utf-8",
+          "sha256": "008d8bcd079e92ce927bacde09a8a43ad9f7ccd1a47619fecc5707db657a8874",
+          "bytes": 4479
+        },
+        {
+          "label": "patch",
+          "url": "https://github.com/openharmony/kernel_linux_5.10/commit/352581ba396aca7d9ac584a5faf7a1e917195130.patch",
+          "retrieved_utc": "2026-11-22T06:16:57.582007+00:00",
+          "http_status": 200,
+          "final_url": "https://github.com/openharmony/kernel_linux_5.10/commit/352581ba396aca7d9ac584a5faf7a1e917195130.patch",
+          "content_type": "text/plain; charset=utf-8",
+          "sha256": "43d2ac0bf6b3b23a11494c53388908eeb1e598ee0dfe51f9af57be64ad99e7fe",
+          "bytes": 1810
+        },
+        {
+          "label": "file_0_current",
+          "url": "https://raw.githubusercontent.com/openharmony/kernel_linux_5.10/352581ba396aca7d9ac584a5faf7a1e917195130/drivers/video/fbdev/savage/savagefb_driver.c",
+          "retrieved_utc": "2026-11-22T06:16:58.802511+00:00",
+          "http_status": 200,
+          "final_url": "https://raw.githubusercontent.com/openharmony/kernel_linux_5.10/352581ba396aca7d9ac584a5faf7a1e917195130/drivers/video/fbdev/savage/savagefb_driver.c",
+          "content_type": "text/plain; charset=utf-8",
+          "sha256": "223550932db1971873a618db10159bb6886c314457a61d382515f4d1f7db808c",
+          "bytes": 66315
+        },
+        {
+          "label": "file_0_parent",
+          "url": "https://raw.githubusercontent.com/openharmony/kernel_linux_5.10/076cf87c1aaa46da90a2789c03de07270c6299e9/drivers/video/fbdev/savage/savagefb_driver.c",
+          "retrieved_utc": "2026-11-22T06:17:00.230189+00:00",
+          "http_status": 200,
+          "final_url": "https://raw.githubusercontent.com/openharmony/kernel_linux_5.10/076cf87c1aaa46da90a2789c03de07270c6299e9/drivers/video/fbdev/savage/savagefb_driver.c",
+          "content_type": "text/plain; charset=utf-8",
+          "sha256": "478924a9f48c41ff71ac931573fe1c02ff493d8ce84c11949d2ee58becaecc4d",
+          "bytes": 66283
+        }
+      ],
+      "original_access": "login_html",
+      "resolved_sha": "352581ba396aca7d9ac584a5faf7a1e917195130",
+      "parents": [
+        "076cf87c1aaa46da90a2789c03de07270c6299e9"
+      ],
+      "tree_sha": "8fef18321106e1b530c17c0896753084923be2a3",
+      "commit_title": "fbdev: savage: Handle err return when savagefb_check_var failed",
+      "commit_mentions_bug": true,
+      "api_stats": {
+        "total": 5,
+        "additions": 4,
+        "deletions": 1
+      },
+      "mirror_url": "https://github.com/openharmony/kernel_linux_5.10/commit/352581ba396aca7d9ac584a5faf7a1e917195130",
+      "mirror_patch_url": "https://github.com/openharmony/kernel_linux_5.10/commit/352581ba396aca7d9ac584a5faf7a1e917195130.patch",
+      "patch": {
+        "content_kind": "git_patch",
+        "from_sha": "352581ba396aca7d9ac584a5faf7a1e917195130",
+        "files": [
+          "drivers/video/fbdev/savage/savagefb_driver.c"
+        ],
+        "old_files": [
+          "drivers/video/fbdev/savage/savagefb_driver.c"
+        ],
+        "indices": [
+          [
+            "0ac750cc5ea1",
+            "0c542f92afcd"
+          ]
+        ],
+        "hunks": 1,
+        "additions": 4,
+        "deletions": 1
+      },
+      "author_data": {
+        "involved_functions": "1",
+        "modified_files": "1",
+        "line_changes": "5"
+      },
+      "files": [
+        {
+          "filename": "drivers/video/fbdev/savage/savagefb_driver.c",
+          "sha": "0c542f92afcde12980c244f50df5f12f6ed79988",
+          "status": "modified",
+          "additions": 4,
+          "deletions": 1,
+          "changes": 5
+        }
+      ],
+      "file_blob_checks": [
+        {
+          "filename": "drivers/video/fbdev/savage/savagefb_driver.c",
+          "current_git_blob_sha": "0c542f92afcde12980c244f50df5f12f6ed79988",
+          "parent_git_blob_sha": "0ac750cc5ea13686529bcfbc945c02cd3a38d77b",
+          "patch_old_blob_prefix": "0ac750cc5ea1",
+          "patch_new_blob_prefix": "0c542f92afcd",
+          "current_sha_matches_api": true,
+          "current_sha_matches_patch": true,
+          "parent_sha_matches_patch": true
+        }
+      ],
+      "identity_level": "full_original_sha",
+      "checks": {
+        "valid_requested_sha": true,
+        "requested_sha_matches": true,
+        "resolved_full_sha": true,
+        "single_valid_parent": true,
+        "patch_sha_matches": true,
+        "substantive_diff": true,
+        "file_list_matches": true,
+        "line_stats_match": true,
+        "file_blobs_verified": true
+      },
+      "prefix_limitation": null
+    },
+    {
+      "os": "HarmonyOS",
+      "bug_id": "CVE-2024-46740",
+      "original_url": "https://gitee.com/openharmony/kernel_linux_5.10/commit/60351db082d8.patch",
+      "requested_sha": "60351db082d8",
+      "status": "verified_public_patch",
+      "sources": [
+        {
+          "label": "original",
+          "url": "https://gitee.com/openharmony/kernel_linux_5.10/commit/60351db082d8.patch",
+          "retrieved_utc": "2026-11-22T06:16:54.472947+00:00",
+          "http_status": 200,
+          "final_url": "https://gitee.com/login?redirect_to_url=%2Fopenharmony%2Fkernel_linux_5.10%2Fcommit%2F60351db082d8.patch",
+          "content_type": "text/html; charset=utf-8",
+          "sha256": "da44fa23e98ba0343dd8dbc4134488e014ec7a5479e3a24ff40444bc11a8f318",
+          "bytes": 25308
+        },
+        {
+          "label": "commit_api",
+          "url": "https://api.github.com/repos/openharmony/kernel_linux_5.10/commits/60351db082d8",
+          "retrieved_utc": "2026-11-22T06:16:56.561425+00:00",
+          "http_status": 200,
+          "final_url": "https://api.github.com/repos/openharmony/kernel_linux_5.10/commits/60351db082d8",
+          "content_type": "application/json; charset=utf-8",
+          "sha256": "6d065963954b66b07946236c5bdf519bb637a5b21dac7b0436d42e4f8473cd9f",
+          "bytes": 4897
+        },
+        {
+          "label": "patch",
+          "url": "https://github.com/openharmony/kernel_linux_5.10/commit/60351db082d82f1f673b5e2ab5e9366a3bb98c1b.patch",
+          "retrieved_utc": "2026-11-22T06:16:57.727975+00:00",
+          "http_status": 200,
+          "final_url": "https://github.com/openharmony/kernel_linux_5.10/commit/60351db082d82f1f673b5e2ab5e9366a3bb98c1b.patch",
+          "content_type": "text/plain; charset=utf-8",
+          "sha256": "1682449f4cbf7696af64812732724d54a1539a837068ffc602cc7a2b3e7f91ff",
+          "bytes": 3115
+        },
+        {
+          "label": "file_0_current",
+          "url": "https://raw.githubusercontent.com/openharmony/kernel_linux_5.10/60351db082d82f1f673b5e2ab5e9366a3bb98c1b/drivers/android/binder.c",
+          "retrieved_utc": "2026-11-22T06:16:58.856895+00:00",
+          "http_status": 200,
+          "final_url": "https://raw.githubusercontent.com/openharmony/kernel_linux_5.10/60351db082d82f1f673b5e2ab5e9366a3bb98c1b/drivers/android/binder.c",
+          "content_type": "text/plain; charset=utf-8",
+          "sha256": "6cc34061f2a94efcd03d19c6cb9fb292c830e8dc7dbbc33e2eae6bc10404545c",
+          "bytes": 201530
+        },
+        {
+          "label": "file_0_parent",
+          "url": "https://raw.githubusercontent.com/openharmony/kernel_linux_5.10/e6c68869d6fe63f33d2762dce5b5b953a683cad1/drivers/android/binder.c",
+          "retrieved_utc": "2026-11-22T06:17:00.815548+00:00",
+          "http_status": 200,
+          "final_url": "https://raw.githubusercontent.com/openharmony/kernel_linux_5.10/e6c68869d6fe63f33d2762dce5b5b953a683cad1/drivers/android/binder.c",
+          "content_type": "text/plain; charset=utf-8",
+          "sha256": "f1155fc0ee6159c12a451c52062dcfa9f67f8dd1c4c2aaeea39559a5acf465bd",
+          "bytes": 201493
+        }
+      ],
+      "original_access": "login_html",
+      "resolved_sha": "60351db082d82f1f673b5e2ab5e9366a3bb98c1b",
+      "parents": [
+        "e6c68869d6fe63f33d2762dce5b5b953a683cad1"
+      ],
+      "tree_sha": "bd7f976f264f4ac96c0b8929f0e0679f17b88dae",
+      "commit_title": "binder: fix UAF caused by offsets overwrite",
+      "commit_mentions_bug": true,
+      "api_stats": {
+        "total": 1,
+        "additions": 1,
+        "deletions": 0
+      },
+      "mirror_url": "https://github.com/openharmony/kernel_linux_5.10/commit/60351db082d82f1f673b5e2ab5e9366a3bb98c1b",
+      "mirror_patch_url": "https://github.com/openharmony/kernel_linux_5.10/commit/60351db082d82f1f673b5e2ab5e9366a3bb98c1b.patch",
+      "patch": {
+        "content_kind": "git_patch",
+        "from_sha": "60351db082d82f1f673b5e2ab5e9366a3bb98c1b",
+        "files": [
+          "drivers/android/binder.c"
+        ],
+        "old_files": [
+          "drivers/android/binder.c"
+        ],
+        "indices": [
+          [
+            "76f9d5d51310",
+            "dc56dbb25074"
+          ]
+        ],
+        "hunks": 1,
+        "additions": 1,
+        "deletions": 0
+      },
+      "author_data": {
+        "involved_functions": "1",
+        "modified_files": "1",
+        "line_changes": "2"
+      },
+      "files": [
+        {
+          "filename": "drivers/android/binder.c",
+          "sha": "dc56dbb250747ed3204a835a8a5c617eda7b5a03",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1
+        }
+      ],
+      "file_blob_checks": [
+        {
+          "filename": "drivers/android/binder.c",
+          "current_git_blob_sha": "dc56dbb250747ed3204a835a8a5c617eda7b5a03",
+          "parent_git_blob_sha": "76f9d5d51310cb5443e19051949a43f1ccd6d933",
+          "patch_old_blob_prefix": "76f9d5d51310",
+          "patch_new_blob_prefix": "dc56dbb25074",
+          "current_sha_matches_api": true,
+          "current_sha_matches_patch": true,
+          "parent_sha_matches_patch": true
+        }
+      ],
+      "identity_level": "original_prefix_resolved",
+      "checks": {
+        "valid_requested_sha": true,
+        "requested_sha_matches": true,
+        "resolved_full_sha": true,
+        "single_valid_parent": true,
+        "patch_sha_matches": true,
+        "substantive_diff": true,
+        "file_list_matches": true,
+        "line_stats_match": true,
+        "file_blobs_verified": true
+      },
+      "prefix_limitation": "Original link contains only 12 SHA characters; GitHub resolves this prefix in this repository. The original Gitee response still does not supply its full SHA."
+    },
+    {
+      "os": "HarmonyOS",
+      "bug_id": "CVE-2023-52756",
+      "original_url": "https://gitee.com/openharmony/kernel_linux_5.10/commit/57898356796547b947e4d3fe59e13ed11e232773.patch",
+      "requested_sha": "57898356796547b947e4d3fe59e13ed11e232773",
+      "status": "verified_public_patch",
+      "sources": [
+        {
+          "label": "original",
+          "url": "https://gitee.com/openharmony/kernel_linux_5.10/commit/57898356796547b947e4d3fe59e13ed11e232773.patch",
+          "retrieved_utc": "2026-11-22T06:16:54.475587+00:00",
+          "http_status": 200,
+          "final_url": "https://gitee.com/login?redirect_to_url=%2Fopenharmony%2Fkernel_linux_5.10%2Fcommit%2F57898356796547b947e4d3fe59e13ed11e232773.patch",
+          "content_type": "text/html; charset=utf-8",
+          "sha256": "78ec2ca68a6c9fc777b1716c96eef97dc9298f128a8c510fa08b05cc61aa9c2c",
+          "bytes": 25529
+        },
+        {
+          "label": "commit_api",
+          "url": "https://api.github.com/repos/openharmony/kernel_linux_5.10/commits/57898356796547b947e4d3fe59e13ed11e232773",
+          "retrieved_utc": "2026-11-22T06:16:56.561425+00:00",
+          "http_status": 200,
+          "final_url": "https://api.github.com/repos/openharmony/kernel_linux_5.10/commits/57898356796547b947e4d3fe59e13ed11e232773",
+          "content_type": "application/json; charset=utf-8",
+          "sha256": "c257be49e0603574c2c3d51f2e507565b60b72a8ab991f4089fb2585e21e0c5b",
+          "bytes": 3262
+        },
+        {
+          "label": "patch",
+          "url": "https://github.com/openharmony/kernel_linux_5.10/commit/57898356796547b947e4d3fe59e13ed11e232773.patch",
+          "retrieved_utc": "2026-11-22T06:16:57.772802+00:00",
+          "http_status": 200,
+          "final_url": "https://github.com/openharmony/kernel_linux_5.10/commit/57898356796547b947e4d3fe59e13ed11e232773.patch",
+          "content_type": "text/plain; charset=utf-8",
+          "sha256": "51b066600d550dd560986a148c6e31f0e2237adc9e9a3a1938fd46adb823bec1",
+          "bytes": 1641
+        },
+        {
+          "label": "file_0_current",
+          "url": "https://raw.githubusercontent.com/openharmony/kernel_linux_5.10/57898356796547b947e4d3fe59e13ed11e232773/include/linux/pwm.h",
+          "retrieved_utc": "2026-11-22T06:16:58.930411+00:00",
+          "http_status": 200,
+          "final_url": "https://raw.githubusercontent.com/openharmony/kernel_linux_5.10/57898356796547b947e4d3fe59e13ed11e232773/include/linux/pwm.h",
+          "content_type": "text/plain; charset=utf-8",
+          "sha256": "6da2498b05cab6ab09ba2ffb6c4164fb30e181bb360f5273ccee4a479a595262",
+          "bytes": 16312
+        },
+        {
+          "label": "file_0_parent",
+          "url": "https://raw.githubusercontent.com/openharmony/kernel_linux_5.10/6dda35970af7f1bf09fa2a7398ac1f9a7ec9392e/include/linux/pwm.h",
+          "retrieved_utc": "2026-11-22T06:17:00.127004+00:00",
+          "http_status": 200,
+          "final_url": "https://raw.githubusercontent.com/openharmony/kernel_linux_5.10/6dda35970af7f1bf09fa2a7398ac1f9a7ec9392e/include/linux/pwm.h",
+          "content_type": "text/plain; charset=utf-8",
+          "sha256": "ef41a2a2548f4c8ed2788b5f38b32a809a1ef12ce659135a4b7e35cc12d300c9",
+          "bytes": 16322
+        }
+      ],
+      "original_access": "login_html",
+      "resolved_sha": "57898356796547b947e4d3fe59e13ed11e232773",
+      "parents": [
+        "6dda35970af7f1bf09fa2a7398ac1f9a7ec9392e"
+      ],
+      "tree_sha": "c472a008e9f5df2b927171539a5bceb55e57ab9b",
+      "commit_title": "pwm: Fix double shift bug",
+      "commit_mentions_bug": true,
+      "api_stats": {
+        "total": 4,
+        "additions": 2,
+        "deletions": 2
+      },
+      "mirror_url": "https://github.com/openharmony/kernel_linux_5.10/commit/57898356796547b947e4d3fe59e13ed11e232773",
+      "mirror_patch_url": "https://github.com/openharmony/kernel_linux_5.10/commit/57898356796547b947e4d3fe59e13ed11e232773.patch",
+      "patch": {
+        "content_kind": "git_patch",
+        "from_sha": "57898356796547b947e4d3fe59e13ed11e232773",
+        "files": [
+          "include/linux/pwm.h"
+        ],
+        "old_files": [
+          "include/linux/pwm.h"
+        ],
+        "indices": [
+          [
+            "a13ff383fa1d",
+            "c0cf6613373f"
+          ]
+        ],
+        "hunks": 1,
+        "additions": 2,
+        "deletions": 2
+      },
+      "author_data": {
+        "involved_functions": "0",
+        "modified_files": "1",
+        "line_changes": "4"
+      },
+      "files": [
+        {
+          "filename": "include/linux/pwm.h",
+          "sha": "c0cf6613373f9ed564f92554b589fe4b3f54674e",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2,
+          "changes": 4
+        }
+      ],
+      "file_blob_checks": [
+        {
+          "filename": "include/linux/pwm.h",
+          "current_git_blob_sha": "c0cf6613373f9ed564f92554b589fe4b3f54674e",
+          "parent_git_blob_sha": "a13ff383fa1d55c5d5f68a99beae3061bb2ff758",
+          "patch_old_blob_prefix": "a13ff383fa1d",
+          "patch_new_blob_prefix": "c0cf6613373f",
+          "current_sha_matches_api": true,
+          "current_sha_matches_patch": true,
+          "parent_sha_matches_patch": true
+        }
+      ],
+      "identity_level": "full_original_sha",
+      "checks": {
+        "valid_requested_sha": true,
+        "requested_sha_matches": true,
+        "resolved_full_sha": true,
+        "single_valid_parent": true,
+        "patch_sha_matches": true,
+        "substantive_diff": true,
+        "file_list_matches": true,
+        "line_stats_match": true,
+        "file_blobs_verified": true
+      },
+      "prefix_limitation": null
+    },
+    {
+      "os": "HarmonyOS",
+      "bug_id": "CVE-2024-43882",
+      "original_url": "https://gitee.com/openharmony/kernel_linux_5.10/commit/20623a6b55297a37ba5b348450b7b369508ae0c3.patch",
+      "requested_sha": "20623a6b55297a37ba5b348450b7b369508ae0c3",
+      "status": "verified_public_patch",
+      "sources": [
+        {
+          "label": "original",
+          "url": "https://gitee.com/openharmony/kernel_linux_5.10/commit/20623a6b55297a37ba5b348450b7b369508ae0c3.patch",
+          "retrieved_utc": "2026-11-22T06:16:54.475587+00:00",
+          "http_status": 200,
+          "final_url": "https://gitee.com/login?redirect_to_url=%2Fopenharmony%2Fkernel_linux_5.10%2Fcommit%2F20623a6b55297a37ba5b348450b7b369508ae0c3.patch",
+          "content_type": "text/html; charset=utf-8",
+          "sha256": "20349c1b830ca18f5f08c9babfd085363a17c923fb364524e85bf587fc890de7",
+          "bytes": 25402
+        },
+        {
+          "label": "commit_api",
+          "url": "https://api.github.com/repos/openharmony/kernel_linux_5.10/commits/20623a6b55297a37ba5b348450b7b369508ae0c3",
+          "retrieved_utc": "2026-11-22T06:16:56.312634+00:00",
+          "http_status": 200,
+          "final_url": "https://api.github.com/repos/openharmony/kernel_linux_5.10/commits/20623a6b55297a37ba5b348450b7b369508ae0c3",
+          "content_type": "application/json; charset=utf-8",
+          "sha256": "5aeefc468796a60cbe736a0afe0fa5c4c332bffd336698bdcef7e91906173c6f",
+          "bytes": 6634
+        },
+        {
+          "label": "patch",
+          "url": "https://github.com/openharmony/kernel_linux_5.10/commit/20623a6b55297a37ba5b348450b7b369508ae0c3.patch",
+          "retrieved_utc": "2026-11-22T06:16:57.436574+00:00",
+          "http_status": 200,
+          "final_url": "https://github.com/openharmony/kernel_linux_5.10/commit/20623a6b55297a37ba5b348450b7b369508ae0c3.patch",
+          "content_type": "text/plain; charset=utf-8",
+          "sha256": "9439d32def184113468a02bdcadededb406400947f1afd9e68e083692b7f955a",
+          "bytes": 3951
+        },
+        {
+          "label": "file_0_current",
+          "url": "https://raw.githubusercontent.com/openharmony/kernel_linux_5.10/20623a6b55297a37ba5b348450b7b369508ae0c3/fs/exec.c",
+          "retrieved_utc": "2026-11-22T06:16:58.566115+00:00",
+          "http_status": 200,
+          "final_url": "https://raw.githubusercontent.com/openharmony/kernel_linux_5.10/20623a6b55297a37ba5b348450b7b369508ae0c3/fs/exec.c",
+          "content_type": "text/plain; charset=utf-8",
+          "sha256": "99556f061caf3b15db45c8fc5650784f5984d428c6cc31aec45b8bb8f93004f6",
+          "bytes": 51701
+        },
+        {
+          "label": "file_0_parent",
+          "url": "https://raw.githubusercontent.com/openharmony/kernel_linux_5.10/78aa7320da02c0a6a9f7ffeb5bbf8c8de3a983fa/fs/exec.c",
+          "retrieved_utc": "2026-11-22T06:17:00.039931+00:00",
+          "http_status": 200,
+          "final_url": "https://raw.githubusercontent.com/openharmony/kernel_linux_5.10/78aa7320da02c0a6a9f7ffeb5bbf8c8de3a983fa/fs/exec.c",
+          "content_type": "text/plain; charset=utf-8",
+          "sha256": "fde71a304ae94bd63b68a6809d236f084aee55f9b3b5c547b549d8bc6820dbb2",
+          "bytes": 51558
+        }
+      ],
+      "original_access": "login_html",
+      "resolved_sha": "20623a6b55297a37ba5b348450b7b369508ae0c3",
+      "parents": [
+        "78aa7320da02c0a6a9f7ffeb5bbf8c8de3a983fa"
+      ],
+      "tree_sha": "71d904158a3a2a266856eb9ffa8a863cebf2d537",
+      "commit_title": "exec: Fix ToCToU between perm check and set-uid/gid usage",
+      "commit_mentions_bug": true,
+      "api_stats": {
+        "total": 8,
+        "additions": 7,
+        "deletions": 1
+      },
+      "mirror_url": "https://github.com/openharmony/kernel_linux_5.10/commit/20623a6b55297a37ba5b348450b7b369508ae0c3",
+      "mirror_patch_url": "https://github.com/openharmony/kernel_linux_5.10/commit/20623a6b55297a37ba5b348450b7b369508ae0c3.patch",
+      "patch": {
+        "content_kind": "git_patch",
+        "from_sha": "20623a6b55297a37ba5b348450b7b369508ae0c3",
+        "files": [
+          "fs/exec.c"
+        ],
+        "old_files": [
+          "fs/exec.c"
+        ],
+        "indices": [
+          [
+            "3a65f7846d81",
+            "df0afde1cc1f"
+          ]
+        ],
+        "hunks": 2,
+        "additions": 7,
+        "deletions": 1
+      },
+      "author_data": {
+        "involved_functions": "1",
+        "modified_files": "1",
+        "line_changes": "8"
+      },
+      "files": [
+        {
+          "filename": "fs/exec.c",
+          "sha": "df0afde1cc1f473ac6f03aa84c766568bc3d6031",
+          "status": "modified",
+          "additions": 7,
+          "deletions": 1,
+          "changes": 8
+        }
+      ],
+      "file_blob_checks": [
+        {
+          "filename": "fs/exec.c",
+          "current_git_blob_sha": "df0afde1cc1f473ac6f03aa84c766568bc3d6031",
+          "parent_git_blob_sha": "3a65f7846d81af0f5ca19516e89edf09d6e3ecfb",
+          "patch_old_blob_prefix": "3a65f7846d81",
+          "patch_new_blob_prefix": "df0afde1cc1f",
+          "current_sha_matches_api": true,
+          "current_sha_matches_patch": true,
+          "parent_sha_matches_patch": true
+        }
+      ],
+      "identity_level": "full_original_sha",
+      "checks": {
+        "valid_requested_sha": true,
+        "requested_sha_matches": true,
+        "resolved_full_sha": true,
+        "single_valid_parent": true,
+        "patch_sha_matches": true,
+        "substantive_diff": true,
+        "file_list_matches": true,
+        "line_stats_match": true,
+        "file_blobs_verified": true
+      },
+      "prefix_limitation": null
+    }
+  ]
+}
