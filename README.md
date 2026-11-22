@@ -8,7 +8,8 @@
 
 ## 助教检查入口
 
-- **[个人详细进度与贡献报告：1230037310 钟峻瀚](docs/contributions/1230037310_钟峻瀚_2026-11-22.md)**、[打印版 PDF](output/pdf/1230037310_zhong_junhan_progress_2026-11-22.pdf)
+- **[Personal Contributions and Progress Report by Zhong Junhan (1230037310)](docs/contributions/1230037310_Zhong_Junhan_Progress_Report_2026-11-22_EN.md)**、**[English PDF](output/pdf/1230037310_zhong_junhan_progress_2026-11-22_EN.pdf)**
+- [中文报告存档](docs/contributions/1230037310_钟峻瀚_2026-11-22.md)、[中文 PDF](output/pdf/1230037310_zhong_junhan_progress_2026-11-22.pdf)
 - [最新进展：2026-11-22 镜像补证、统一验证与贡献归档](docs/weekly/2026-11-22.md)、[最新验证记录](results/checkpoint_2026-11-22/verification.json)
 - [个人历史五次提交及逐文件清单](results/contributions/1230037310/commit_history.json)、[CSV](results/contributions/1230037310/commit_history.csv)
 - [4 条 HarmonyOS 补丁镜像补证：提交、父版本、文件哈希交叉检查](docs/review_evidence_followup_2026-11-22.md)
@@ -183,6 +184,8 @@ py -3.11 run_weekend_02.py --offline --no-plots --output-dir work/week2_check
 - `presentations/`：10 页可编辑 PPT、逐页讲稿与制作说明。
 - `results/checkpoint_2026-11-22/`：当前版本统一验证；`results/review_evidence_followup/`：四条镜像补证；`results/contributions/1230037310/`：固定基线的个人历史提交清单。
 - `docs/`：报告、差异与方法附录；`docs/contributions/` 与 `output/pdf/`：个人详细进度报告及打印版。
+
+个人报告以英文版为优先检查入口，标题、作者栏和每页页脚均标明 **Zhong Junhan (1230037310)**。执行 `py -3.11 scripts/build_progress_report.py --language en` 可从英文 Markdown 重建英文 PDF；不带语言参数时仍生成中文存档版。英文版引用 11 月 22 日已通过的计算验证，本次翻译与排版不另计实验或人工审核。
 
 未完成项：**作者方法确认**——Figures 2/3 的分箱脚本、Figure 4(c) 是否按系统对排除共同零类别、Figure 4(d) 的 Overall 定义和系统对标注；[具体询问草稿](docs/author_questions.md)已写好但未发送。**人工与证据核验**——12 条双人独立标签抽查、184 条异常记录的进一步核实，以及真实成员按 README 独立复跑和答辩演练。四条 Gitee 原地址仍需登录，但公开镜像补证已完成，其中一条保留原短 SHA 的身份限制。10 页 PPT 为 11 月 14 日版本，新增证据见本次报告；未把材料生成记作人工审核或演练。
 

@@ -1,4 +1,4 @@
-"""Render the personal progress Markdown as a searchable, linked Chinese PDF."""
+"""Render the personal progress Markdown as a searchable English or Chinese PDF."""
 import argparse
 from html import escape
 from pathlib import Path
@@ -15,24 +15,33 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, Tabl
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_SOURCE = ROOT/'docs/contributions/1230037310_钟峻瀚_2026-11-22.md'
 DEFAULT_OUTPUT = ROOT/'output/pdf/1230037310_zhong_junhan_progress_2026-11-22.pdf'
+ENGLISH_SOURCE = ROOT/'docs/contributions/1230037310_Zhong_Junhan_Progress_Report_2026-11-22_EN.md'
+ENGLISH_OUTPUT = ROOT/'output/pdf/1230037310_zhong_junhan_progress_2026-11-22_EN.pdf'
 BLUE = colors.HexColor('#153D66')
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--source', type=Path, default=DEFAULT_SOURCE)
-    parser.add_argument('--output', type=Path, default=DEFAULT_OUTPUT)
-    parser.add_argument('--font', type=Path, default=Path('C:/Windows/Fonts/msyh.ttc'))
-    parser.add_argument('--bold-font', type=Path, default=Path('C:/Windows/Fonts/msyhbd.ttc'))
+    parser.add_argument('--language', choices=('zh', 'en'), default='zh',
+                        help='Select document defaults, typography, header, footer and metadata.')
+    parser.add_argument('--source', type=Path)
+    parser.add_argument('--output', type=Path)
+    parser.add_argument('--font', type=Path)
+    parser.add_argument('--bold-font', type=Path)
     args = parser.parse_args()
+    english = args.language == 'en'
+    args.source = args.source or (ENGLISH_SOURCE if english else DEFAULT_SOURCE)
+    args.output = args.output or (ENGLISH_OUTPUT if english else DEFAULT_OUTPUT)
+    args.font = args.font or Path('C:/Windows/Fonts/arial.ttf' if english else 'C:/Windows/Fonts/msyh.ttc')
+    args.bold_font = args.bold_font or Path('C:/Windows/Fonts/arialbd.ttf' if english else 'C:/Windows/Fonts/msyhbd.ttc')
     if not args.font.is_file():
-        parser.error('A Chinese TrueType font is required; supply --font and optionally --bold-font.')
+        parser.error('A suitable TrueType font is required; supply --font and optionally --bold-font.')
     pdfmetrics.registerFont(TTFont('ReportCJK', str(args.font), subfontIndex=0))
     pdfmetrics.registerFont(TTFont('ReportCJKBold', str(args.bold_font if args.bold_font.is_file() else args.font), subfontIndex=0))
     pdfmetrics.registerFontFamily('ReportCJK', normal='ReportCJK', bold='ReportCJKBold', italic='ReportCJK', boldItalic='ReportCJKBold')
     styles = getSampleStyleSheet()
     styles.add(ParagraphStyle(name='BodyCJK', fontName='ReportCJK', fontSize=9.5, leading=15,
-                              spaceAfter=6, wordWrap='CJK', textColor=colors.HexColor('#263442')))
+                              spaceAfter=6, wordWrap=None if english else 'CJK', textColor=colors.HexColor('#263442')))
     styles.add(ParagraphStyle(name='TitleCJK', parent=styles['BodyCJK'], fontName='ReportCJKBold',
                               fontSize=20, leading=28, textColor=BLUE, spaceAfter=16, keepWithNext=True))
     styles.add(ParagraphStyle(name='SectionCJK', parent=styles['BodyCJK'], fontName='ReportCJKBold',
@@ -56,6 +65,7 @@ def main():
         pieces.append(escape(value[last:]))
         result = ''.join(pieces)
         result = re.sub(r'\*\*(.+?)\*\*', r'<b>\1</b>', result)
+        result = re.sub(r'(?<!\*)\*([^*]+)\*(?!\*)', r'<i>\1</i>', result)
         result = re.sub(r'`([^`]+)`', r'<font color="#435A70">\1</font>', result)
         # Use ordinary hyphens in the print edition for predictable font coverage.
         return result.replace('\u2011', '-').replace('\u2013', '-').replace('\u2014', '-')
@@ -85,7 +95,7 @@ def main():
             width = 174*mm
             n = len(rows[0])
             weights = {2:[0.28,0.72],3:[0.22,0.30,0.48],4:[0.17,0.19,0.28,0.36],5:[0.14,0.16,0.22,0.24,0.24]}.get(n,[1/n]*n)
-            if n == 4 and rows[0][-1] == '改动文件数':
+            if n == 4 and rows[0][-1] in ('改动文件数', 'Files changed'):
                 weights = [0.16, 0.40, 0.32, 0.12]
             data = [[Paragraph(inline(cell), styles['CellCJK']) for cell in row] for row in rows]
             table = Table(data, colWidths=[width*w for w in weights], repeatRows=1, hAlign='LEFT')
@@ -119,15 +129,16 @@ def main():
         canvas.line(18*mm, 282*mm, 192*mm, 282*mm)
         canvas.setFont('ReportCJK', 8)
         canvas.setFillColor(colors.HexColor('#607386'))
-        canvas.drawString(18*mm, 285*mm, 'CS340 | 操作系统缺陷论文复现')
-        canvas.drawString(18*mm, 13*mm, '1230037310 钟峻瀚 | 2026-11-22')
+        canvas.drawString(18*mm, 285*mm, 'CS340 | Operating System Defects Replication' if english else 'CS340 | 操作系统缺陷论文复现')
+        canvas.drawString(18*mm, 13*mm, 'Zhong Junhan | 1230037310 | 2026-11-22' if english else '1230037310 钟峻瀚 | 2026-11-22')
         canvas.drawRightString(192*mm, 13*mm, str(doc.page))
         canvas.restoreState()
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     doc = SimpleDocTemplate(str(args.output), pagesize=(210*mm,297*mm),
                             leftMargin=18*mm, rightMargin=18*mm, topMargin=23*mm, bottomMargin=23*mm,
-                            title='论文复现个人进度与贡献报告', author='1230037310 钟峻瀚',
+                            title='Personal Contributions and Progress Report by Zhong Junhan (1230037310)' if english else '论文复现个人进度与贡献报告',
+                            author='Zhong Junhan (1230037310)' if english else '1230037310 钟峻瀚',
                             subject='Progress, contribution evidence, reproducibility checks, and remaining work')
     doc.build(story, onFirstPage=page, onLaterPages=page)
     print(str(args.output))

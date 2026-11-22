@@ -1,0 +1,40 @@
+{
+  "validated_at_utc": "2026-11-22T06:37:38+00:00",
+  "edition": "English",
+  "title": "Personal Contributions and Progress Report by Zhong Junhan (1230037310)",
+  "author": "Zhong Junhan (1230037310)",
+  "source_markdown": "docs/contributions/1230037310_Zhong_Junhan_Progress_Report_2026-11-22_EN.md",
+  "source_sha256": "566115b8d749ad3c12b6c78f6758bab39c1e5472d2635a95b6813ed24061c317",
+  "pdf": "output/pdf/1230037310_zhong_junhan_progress_2026-11-22_EN.pdf",
+  "pdf_sha256": "05edb35a2cb3d266634be75cb6ac3249d445dbd2b498f101db7d78f1818f6a45",
+  "pdf_bytes": 108438,
+  "renderer_sha256": "31058d70fff0481a87937f4d937174e17d50fae325cf80dd6f2946c9c18f53cf",
+  "pages": 6,
+  "extractable_characters_by_page": [
+    2845,
+    2982,
+    4023,
+    3224,
+    3719,
+    1992
+  ],
+  "link_annotations": 58,
+  "local_links_checked": 105,
+  "chinese_default_compatibility": "Rebuilt to work/; all five pages have identical extracted text to the archived Chinese PDF.",
+  "visual_review": {
+    "renderer": "Poppler pdftoppm",
+    "pages_inspected": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "result": "Title, author, table cells, commands, page breaks and English footers checked; no clipping or overlap seen."
+  },
+  "computational_evidence_commit": "d0c43ca6919c459103329fb31fa94d7b422448a6",
+  "computational_evidence": "results/checkpoint_2026-11-22/verification.json",
+  "revision_scope": "English translation, author attribution in the title, PDF rendering and navigation. Existing computational checkpoint retained; no new numerical experiment or student manual review claimed.",
+  "analysis_code_references_and_tests_unchanged": true
+}
