@@ -1,0 +1,59 @@
+{
+  "analysis": "Joint defect distributions",
+  "metric": "joint defect percentage",
+  "denominator_per_os": 500,
+  "compared_cells": 438,
+  "matched_cells": 438,
+  "max_absolute_gap_pp": 0.0,
+  "runs": 3,
+  "identical_result_hashes": true,
+  "all_repeated_sd_zero": true,
+  "lineage_rows": 4500,
+  "tables": {
+    "table_iii": {
+      "row_dimension": "os_layer",
+      "column_dimension": "affected_function",
+      "compared_cells": 144,
+      "matched_cells": 144,
+      "max_absolute_gap_pp": 0.0,
+      "marginals_match_table_ii": true,
+      "verdict": "supported",
+      "title": "OS layer and affected function",
+      "comparison_file": "layer_function/comparison.csv"
+    },
+    "table_iv": {
+      "row_dimension": "os_layer",
+      "column_dimension": "trigger_scenario",
+      "compared_cells": 126,
+      "matched_cells": 126,
+      "max_absolute_gap_pp": 0.0,
+      "marginals_match_table_ii": true,
+      "verdict": "supported",
+      "title": "OS layer and trigger scenario",
+      "comparison_file": "layer_trigger/comparison.csv"
+    },
+    "table_v": {
+      "row_dimension": "affected_function",
+      "column_dimension": "trigger_scenario",
+      "compared_cells": 168,
+      "matched_cells": 168,
+      "max_absolute_gap_pp": 0.0,
+      "marginals_match_table_ii": true,
+      "verdict": "supported",
+      "title": "Affected function and trigger scenario",
+      "comparison_file": "function_trigger/comparison.csv"
+    }
+  },
+  "figures": [
+    "layer_function/Android.png",
+    "layer_function/Linux.png",
+    "layer_function/HarmonyOS.png",
+    "layer_trigger/Android.png",
+    "layer_trigger/Linux.png",
+    "layer_trigger/HarmonyOS.png",
+    "function_trigger/Android.png",
+    "function_trigger/Linux.png",
+    "function_trigger/HarmonyOS.png"
+  ],
+  "scope": "Joint-distribution statistics computed from author-released labels."
+}

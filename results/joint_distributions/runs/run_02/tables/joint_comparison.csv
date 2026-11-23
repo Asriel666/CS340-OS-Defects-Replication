@@ -1,0 +1,439 @@
+table,os,n,row_category,column_category,count,paper_percent,ours_percent,signed_gap_pp,absolute_gap_pp,relative_gap_percent,matches_published_precision
+table_iii,Android,500,Application,Com/Adp,3,0.6,0.6,0.0,0.0,0.0,True
+table_iii,Android,500,Application,Dev/Drv,1,0.2,0.2,0.0,0.0,0.0,True
+table_iii,Android,500,Application,Gra/Ren,6,1.2,1.2,0.0,0.0,0.0,True
+table_iii,Android,500,Application,Mem/Res Mng,0,0,0.0,0.0,0.0,,True
+table_iii,Android,500,Application,Net/Com,0,0,0.0,0.0,0.0,,True
+table_iii,Android,500,Application,Pro/Tas Sch,3,0.6,0.6,0.0,0.0,0.0,True
+table_iii,Android,500,Application,Sec/Perm,68,13.6,13.6,0.0,0.0,0.0,True
+table_iii,Android,500,Application,Sto Mng,2,0.4,0.4,0.0,0.0,0.0,True
+table_iii,Android,500,Framework,Com/Adp,5,1,1.0,0.0,0.0,0.0,True
+table_iii,Android,500,Framework,Dev/Drv,3,0.6,0.6,0.0,0.0,0.0,True
+table_iii,Android,500,Framework,Gra/Ren,9,1.8,1.8,0.0,0.0,0.0,True
+table_iii,Android,500,Framework,Mem/Res Mng,4,0.8,0.8,0.0,0.0,0.0,True
+table_iii,Android,500,Framework,Net/Com,3,0.6,0.6,0.0,0.0,0.0,True
+table_iii,Android,500,Framework,Pro/Tas Sch,2,0.4,0.4,0.0,0.0,0.0,True
+table_iii,Android,500,Framework,Sec/Perm,61,12.2,12.2,0.0,0.0,0.0,True
+table_iii,Android,500,Framework,Sto Mng,3,0.6,0.6,0.0,0.0,0.0,True
+table_iii,Android,500,Kernel,Com/Adp,1,0.2,0.2,0.0,0.0,0.0,True
+table_iii,Android,500,Kernel,Dev/Drv,8,1.6,1.6,0.0,0.0,0.0,True
+table_iii,Android,500,Kernel,Gra/Ren,0,0,0.0,0.0,0.0,,True
+table_iii,Android,500,Kernel,Mem/Res Mng,10,2,2.0,0.0,0.0,0.0,True
+table_iii,Android,500,Kernel,Net/Com,4,0.8,0.8,0.0,0.0,0.0,True
+table_iii,Android,500,Kernel,Pro/Tas Sch,0,0,0.0,0.0,0.0,,True
+table_iii,Android,500,Kernel,Sec/Perm,7,1.4,1.4,0.0,0.0,0.0,True
+table_iii,Android,500,Kernel,Sto Mng,0,0,0.0,0.0,0.0,,True
+table_iii,Android,500,RuntimeVM,Com/Adp,0,0,0.0,0.0,0.0,,True
+table_iii,Android,500,RuntimeVM,Dev/Drv,0,0,0.0,0.0,0.0,,True
+table_iii,Android,500,RuntimeVM,Gra/Ren,0,0,0.0,0.0,0.0,,True
+table_iii,Android,500,RuntimeVM,Mem/Res Mng,0,0,0.0,0.0,0.0,,True
+table_iii,Android,500,RuntimeVM,Net/Com,0,0,0.0,0.0,0.0,,True
+table_iii,Android,500,RuntimeVM,Pro/Tas Sch,0,0,0.0,0.0,0.0,,True
+table_iii,Android,500,RuntimeVM,Sec/Perm,2,0.4,0.4,0.0,0.0,0.0,True
+table_iii,Android,500,RuntimeVM,Sto Mng,0,0,0.0,0.0,0.0,,True
+table_iii,Android,500,SystemLib,Com/Adp,2,0.4,0.4,0.0,0.0,0.0,True
+table_iii,Android,500,SystemLib,Dev/Drv,21,4.2,4.2,0.0,0.0,0.0,True
+table_iii,Android,500,SystemLib,Gra/Ren,11,2.2,2.2,0.0,0.0,0.0,True
+table_iii,Android,500,SystemLib,Mem/Res Mng,38,7.6,7.6,0.0,0.0,0.0,True
+table_iii,Android,500,SystemLib,Net/Com,6,1.2,1.2,0.0,0.0,0.0,True
+table_iii,Android,500,SystemLib,Pro/Tas Sch,1,0.2,0.2,0.0,0.0,0.0,True
+table_iii,Android,500,SystemLib,Sec/Perm,19,3.8,3.8,0.0,0.0,0.0,True
+table_iii,Android,500,SystemLib,Sto Mng,3,0.6,0.6,0.0,0.0,0.0,True
+table_iii,Android,500,SystemService,Com/Adp,4,0.8,0.8,0.0,0.0,0.0,True
+table_iii,Android,500,SystemService,Dev/Drv,3,0.6,0.6,0.0,0.0,0.0,True
+table_iii,Android,500,SystemService,Gra/Ren,3,0.6,0.6,0.0,0.0,0.0,True
+table_iii,Android,500,SystemService,Mem/Res Mng,10,2,2.0,0.0,0.0,0.0,True
+table_iii,Android,500,SystemService,Net/Com,3,0.6,0.6,0.0,0.0,0.0,True
+table_iii,Android,500,SystemService,Pro/Tas Sch,18,3.6,3.6,0.0,0.0,0.0,True
+table_iii,Android,500,SystemService,Sec/Perm,143,28.6,28.6,0.0,0.0,0.0,True
+table_iii,Android,500,SystemService,Sto Mng,10,2,2.0,0.0,0.0,0.0,True
+table_iii,Linux,500,Application,Com/Adp,128,25.6,25.6,0.0,0.0,0.0,True
+table_iii,Linux,500,Application,Dev/Drv,23,4.6,4.6,0.0,0.0,0.0,True
+table_iii,Linux,500,Application,Gra/Ren,15,3,3.0,0.0,0.0,0.0,True
+table_iii,Linux,500,Application,Mem/Res Mng,8,1.6,1.6,0.0,0.0,0.0,True
+table_iii,Linux,500,Application,Net/Com,22,4.4,4.4,0.0,0.0,0.0,True
+table_iii,Linux,500,Application,Pro/Tas Sch,11,2.2,2.2,0.0,0.0,0.0,True
+table_iii,Linux,500,Application,Sec/Perm,49,9.8,9.8,0.0,0.0,0.0,True
+table_iii,Linux,500,Application,Sto Mng,15,3,3.0,0.0,0.0,0.0,True
+table_iii,Linux,500,Framework,Com/Adp,4,0.8,0.8,0.0,0.0,0.0,True
+table_iii,Linux,500,Framework,Dev/Drv,1,0.2,0.2,0.0,0.0,0.0,True
+table_iii,Linux,500,Framework,Gra/Ren,12,2.4,2.4,0.0,0.0,0.0,True
+table_iii,Linux,500,Framework,Mem/Res Mng,0,0,0.0,0.0,0.0,,True
+table_iii,Linux,500,Framework,Net/Com,0,0,0.0,0.0,0.0,,True
+table_iii,Linux,500,Framework,Pro/Tas Sch,0,0,0.0,0.0,0.0,,True
+table_iii,Linux,500,Framework,Sec/Perm,1,0.2,0.2,0.0,0.0,0.0,True
+table_iii,Linux,500,Framework,Sto Mng,0,0,0.0,0.0,0.0,,True
+table_iii,Linux,500,Kernel,Com/Adp,26,5.2,5.2,0.0,0.0,0.0,True
+table_iii,Linux,500,Kernel,Dev/Drv,34,6.8,6.8,0.0,0.0,0.0,True
+table_iii,Linux,500,Kernel,Gra/Ren,5,1,1.0,0.0,0.0,0.0,True
+table_iii,Linux,500,Kernel,Mem/Res Mng,0,0,0.0,0.0,0.0,,True
+table_iii,Linux,500,Kernel,Net/Com,2,0.4,0.4,0.0,0.0,0.0,True
+table_iii,Linux,500,Kernel,Pro/Tas Sch,0,0,0.0,0.0,0.0,,True
+table_iii,Linux,500,Kernel,Sec/Perm,2,0.4,0.4,0.0,0.0,0.0,True
+table_iii,Linux,500,Kernel,Sto Mng,10,2,2.0,0.0,0.0,0.0,True
+table_iii,Linux,500,RuntimeVM,Com/Adp,0,0,0.0,0.0,0.0,,True
+table_iii,Linux,500,RuntimeVM,Dev/Drv,0,0,0.0,0.0,0.0,,True
+table_iii,Linux,500,RuntimeVM,Gra/Ren,0,0,0.0,0.0,0.0,,True
+table_iii,Linux,500,RuntimeVM,Mem/Res Mng,0,0,0.0,0.0,0.0,,True
+table_iii,Linux,500,RuntimeVM,Net/Com,0,0,0.0,0.0,0.0,,True
+table_iii,Linux,500,RuntimeVM,Pro/Tas Sch,1,0.2,0.2,0.0,0.0,0.0,True
+table_iii,Linux,500,RuntimeVM,Sec/Perm,0,0,0.0,0.0,0.0,,True
+table_iii,Linux,500,RuntimeVM,Sto Mng,0,0,0.0,0.0,0.0,,True
+table_iii,Linux,500,SystemLib,Com/Adp,41,8.2,8.2,0.0,0.0,0.0,True
+table_iii,Linux,500,SystemLib,Dev/Drv,14,2.8,2.8,0.0,0.0,0.0,True
+table_iii,Linux,500,SystemLib,Gra/Ren,3,0.6,0.6,0.0,0.0,0.0,True
+table_iii,Linux,500,SystemLib,Mem/Res Mng,1,0.2,0.2,0.0,0.0,0.0,True
+table_iii,Linux,500,SystemLib,Net/Com,6,1.2,1.2,0.0,0.0,0.0,True
+table_iii,Linux,500,SystemLib,Pro/Tas Sch,4,0.8,0.8,0.0,0.0,0.0,True
+table_iii,Linux,500,SystemLib,Sec/Perm,12,2.4,2.4,0.0,0.0,0.0,True
+table_iii,Linux,500,SystemLib,Sto Mng,13,2.6,2.6,0.0,0.0,0.0,True
+table_iii,Linux,500,SystemService,Com/Adp,7,1.4,1.4,0.0,0.0,0.0,True
+table_iii,Linux,500,SystemService,Dev/Drv,14,2.8,2.8,0.0,0.0,0.0,True
+table_iii,Linux,500,SystemService,Gra/Ren,0,0,0.0,0.0,0.0,,True
+table_iii,Linux,500,SystemService,Mem/Res Mng,1,0.2,0.2,0.0,0.0,0.0,True
+table_iii,Linux,500,SystemService,Net/Com,3,0.6,0.6,0.0,0.0,0.0,True
+table_iii,Linux,500,SystemService,Pro/Tas Sch,2,0.4,0.4,0.0,0.0,0.0,True
+table_iii,Linux,500,SystemService,Sec/Perm,6,1.2,1.2,0.0,0.0,0.0,True
+table_iii,Linux,500,SystemService,Sto Mng,4,0.8,0.8,0.0,0.0,0.0,True
+table_iii,HarmonyOS,500,Application,Com/Adp,0,0,0.0,0.0,0.0,,True
+table_iii,HarmonyOS,500,Application,Dev/Drv,0,0,0.0,0.0,0.0,,True
+table_iii,HarmonyOS,500,Application,Gra/Ren,4,0.8,0.8,0.0,0.0,0.0,True
+table_iii,HarmonyOS,500,Application,Mem/Res Mng,3,0.6,0.6,0.0,0.0,0.0,True
+table_iii,HarmonyOS,500,Application,Net/Com,1,0.2,0.2,0.0,0.0,0.0,True
+table_iii,HarmonyOS,500,Application,Pro/Tas Sch,4,0.8,0.8,0.0,0.0,0.0,True
+table_iii,HarmonyOS,500,Application,Sec/Perm,11,2.2,2.2,0.0,0.0,0.0,True
+table_iii,HarmonyOS,500,Application,Sto Mng,2,0.4,0.4,0.0,0.0,0.0,True
+table_iii,HarmonyOS,500,Framework,Com/Adp,1,0.2,0.2,0.0,0.0,0.0,True
+table_iii,HarmonyOS,500,Framework,Dev/Drv,0,0,0.0,0.0,0.0,,True
+table_iii,HarmonyOS,500,Framework,Gra/Ren,6,1.2,1.2,0.0,0.0,0.0,True
+table_iii,HarmonyOS,500,Framework,Mem/Res Mng,2,0.4,0.4,0.0,0.0,0.0,True
+table_iii,HarmonyOS,500,Framework,Net/Com,2,0.4,0.4,0.0,0.0,0.0,True
+table_iii,HarmonyOS,500,Framework,Pro/Tas Sch,0,0,0.0,0.0,0.0,,True
+table_iii,HarmonyOS,500,Framework,Sec/Perm,3,0.6,0.6,0.0,0.0,0.0,True
+table_iii,HarmonyOS,500,Framework,Sto Mng,0,0,0.0,0.0,0.0,,True
+table_iii,HarmonyOS,500,Kernel,Com/Adp,7,1.4,1.4,0.0,0.0,0.0,True
+table_iii,HarmonyOS,500,Kernel,Dev/Drv,68,13.6,13.6,0.0,0.0,0.0,True
+table_iii,HarmonyOS,500,Kernel,Gra/Ren,5,1,1.0,0.0,0.0,0.0,True
+table_iii,HarmonyOS,500,Kernel,Mem/Res Mng,57,11.4,11.4,0.0,0.0,0.0,True
+table_iii,HarmonyOS,500,Kernel,Net/Com,91,18.2,18.2,0.0,0.0,0.0,True
+table_iii,HarmonyOS,500,Kernel,Pro/Tas Sch,24,4.8,4.8,0.0,0.0,0.0,True
+table_iii,HarmonyOS,500,Kernel,Sec/Perm,41,8.2,8.2,0.0,0.0,0.0,True
+table_iii,HarmonyOS,500,Kernel,Sto Mng,66,13.2,13.2,0.0,0.0,0.0,True
+table_iii,HarmonyOS,500,RuntimeVM,Com/Adp,2,0.4,0.4,0.0,0.0,0.0,True
+table_iii,HarmonyOS,500,RuntimeVM,Dev/Drv,0,0,0.0,0.0,0.0,,True
+table_iii,HarmonyOS,500,RuntimeVM,Gra/Ren,0,0,0.0,0.0,0.0,,True
+table_iii,HarmonyOS,500,RuntimeVM,Mem/Res Mng,42,8.4,8.4,0.0,0.0,0.0,True
+table_iii,HarmonyOS,500,RuntimeVM,Net/Com,0,0,0.0,0.0,0.0,,True
+table_iii,HarmonyOS,500,RuntimeVM,Pro/Tas Sch,0,0,0.0,0.0,0.0,,True
+table_iii,HarmonyOS,500,RuntimeVM,Sec/Perm,0,0,0.0,0.0,0.0,,True
+table_iii,HarmonyOS,500,RuntimeVM,Sto Mng,0,0,0.0,0.0,0.0,,True
+table_iii,HarmonyOS,500,SystemLib,Com/Adp,0,0,0.0,0.0,0.0,,True
+table_iii,HarmonyOS,500,SystemLib,Dev/Drv,0,0,0.0,0.0,0.0,,True
+table_iii,HarmonyOS,500,SystemLib,Gra/Ren,3,0.6,0.6,0.0,0.0,0.0,True
+table_iii,HarmonyOS,500,SystemLib,Mem/Res Mng,8,1.6,1.6,0.0,0.0,0.0,True
+table_iii,HarmonyOS,500,SystemLib,Net/Com,2,0.4,0.4,0.0,0.0,0.0,True
+table_iii,HarmonyOS,500,SystemLib,Pro/Tas Sch,0,0,0.0,0.0,0.0,,True
+table_iii,HarmonyOS,500,SystemLib,Sec/Perm,21,4.2,4.2,0.0,0.0,0.0,True
+table_iii,HarmonyOS,500,SystemLib,Sto Mng,0,0,0.0,0.0,0.0,,True
+table_iii,HarmonyOS,500,SystemService,Com/Adp,2,0.4,0.4,0.0,0.0,0.0,True
+table_iii,HarmonyOS,500,SystemService,Dev/Drv,0,0,0.0,0.0,0.0,,True
+table_iii,HarmonyOS,500,SystemService,Gra/Ren,1,0.2,0.2,0.0,0.0,0.0,True
+table_iii,HarmonyOS,500,SystemService,Mem/Res Mng,2,0.4,0.4,0.0,0.0,0.0,True
+table_iii,HarmonyOS,500,SystemService,Net/Com,4,0.8,0.8,0.0,0.0,0.0,True
+table_iii,HarmonyOS,500,SystemService,Pro/Tas Sch,0,0,0.0,0.0,0.0,,True
+table_iii,HarmonyOS,500,SystemService,Sec/Perm,14,2.8,2.8,0.0,0.0,0.0,True
+table_iii,HarmonyOS,500,SystemService,Sto Mng,1,0.2,0.2,0.0,0.0,0.0,True
+table_iv,Android,500,Application,Bor Con,12,2.4,2.4,0.0,0.0,0.0,True
+table_iv,Android,500,Application,Con/Mul Thr,2,0.4,0.4,0.0,0.0,0.0,True
+table_iv,Android,500,Application,Env Dep,2,0.4,0.4,0.0,0.0,0.0,True
+table_iv,Android,500,Application,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_iv,Android,500,Application,Per/Ide Dep,41,8.2,8.2,0.0,0.0,0.0,True
+table_iv,Android,500,Application,Reg Ope,8,1.6,1.6,0.0,0.0,0.0,True
+table_iv,Android,500,Application,Sta Dep,18,3.6,3.6,0.0,0.0,0.0,True
+table_iv,Android,500,Framework,Bor Con,27,5.4,5.4,0.0,0.0,0.0,True
+table_iv,Android,500,Framework,Con/Mul Thr,0,0,0.0,0.0,0.0,,True
+table_iv,Android,500,Framework,Env Dep,0,0,0.0,0.0,0.0,,True
+table_iv,Android,500,Framework,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_iv,Android,500,Framework,Per/Ide Dep,34,6.8,6.8,0.0,0.0,0.0,True
+table_iv,Android,500,Framework,Reg Ope,14,2.8,2.8,0.0,0.0,0.0,True
+table_iv,Android,500,Framework,Sta Dep,15,3,3.0,0.0,0.0,0.0,True
+table_iv,Android,500,Kernel,Bor Con,16,3.2,3.2,0.0,0.0,0.0,True
+table_iv,Android,500,Kernel,Con/Mul Thr,7,1.4,1.4,0.0,0.0,0.0,True
+table_iv,Android,500,Kernel,Env Dep,0,0,0.0,0.0,0.0,,True
+table_iv,Android,500,Kernel,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_iv,Android,500,Kernel,Per/Ide Dep,0,0,0.0,0.0,0.0,,True
+table_iv,Android,500,Kernel,Reg Ope,3,0.6,0.6,0.0,0.0,0.0,True
+table_iv,Android,500,Kernel,Sta Dep,4,0.8,0.8,0.0,0.0,0.0,True
+table_iv,Android,500,RuntimeVM,Bor Con,0,0,0.0,0.0,0.0,,True
+table_iv,Android,500,RuntimeVM,Con/Mul Thr,0,0,0.0,0.0,0.0,,True
+table_iv,Android,500,RuntimeVM,Env Dep,0,0,0.0,0.0,0.0,,True
+table_iv,Android,500,RuntimeVM,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_iv,Android,500,RuntimeVM,Per/Ide Dep,0,0,0.0,0.0,0.0,,True
+table_iv,Android,500,RuntimeVM,Reg Ope,2,0.4,0.4,0.0,0.0,0.0,True
+table_iv,Android,500,RuntimeVM,Sta Dep,0,0,0.0,0.0,0.0,,True
+table_iv,Android,500,SystemLib,Bor Con,67,13.4,13.4,0.0,0.0,0.0,True
+table_iv,Android,500,SystemLib,Con/Mul Thr,20,4,4.0,0.0,0.0,0.0,True
+table_iv,Android,500,SystemLib,Env Dep,0,0,0.0,0.0,0.0,,True
+table_iv,Android,500,SystemLib,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_iv,Android,500,SystemLib,Per/Ide Dep,1,0.2,0.2,0.0,0.0,0.0,True
+table_iv,Android,500,SystemLib,Reg Ope,8,1.6,1.6,0.0,0.0,0.0,True
+table_iv,Android,500,SystemLib,Sta Dep,5,1,1.0,0.0,0.0,0.0,True
+table_iv,Android,500,SystemService,Bor Con,63,12.6,12.6,0.0,0.0,0.0,True
+table_iv,Android,500,SystemService,Con/Mul Thr,7,1.4,1.4,0.0,0.0,0.0,True
+table_iv,Android,500,SystemService,Env Dep,3,0.6,0.6,0.0,0.0,0.0,True
+table_iv,Android,500,SystemService,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_iv,Android,500,SystemService,Per/Ide Dep,80,16,16.0,0.0,0.0,0.0,True
+table_iv,Android,500,SystemService,Reg Ope,9,1.8,1.8,0.0,0.0,0.0,True
+table_iv,Android,500,SystemService,Sta Dep,32,6.4,6.4,0.0,0.0,0.0,True
+table_iv,Linux,500,Application,Bor Con,63,12.6,12.6,0.0,0.0,0.0,True
+table_iv,Linux,500,Application,Con/Mul Thr,5,1,1.0,0.0,0.0,0.0,True
+table_iv,Linux,500,Application,Env Dep,149,29.8,29.8,0.0,0.0,0.0,True
+table_iv,Linux,500,Application,Mul/Loc Dep,1,0.2,0.2,0.0,0.0,0.0,True
+table_iv,Linux,500,Application,Per/Ide Dep,7,1.4,1.4,0.0,0.0,0.0,True
+table_iv,Linux,500,Application,Reg Ope,33,6.6,6.6,0.0,0.0,0.0,True
+table_iv,Linux,500,Application,Sta Dep,13,2.6,2.6,0.0,0.0,0.0,True
+table_iv,Linux,500,Framework,Bor Con,0,0,0.0,0.0,0.0,,True
+table_iv,Linux,500,Framework,Con/Mul Thr,3,0.6,0.6,0.0,0.0,0.0,True
+table_iv,Linux,500,Framework,Env Dep,9,1.8,1.8,0.0,0.0,0.0,True
+table_iv,Linux,500,Framework,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_iv,Linux,500,Framework,Per/Ide Dep,0,0,0.0,0.0,0.0,,True
+table_iv,Linux,500,Framework,Reg Ope,2,0.4,0.4,0.0,0.0,0.0,True
+table_iv,Linux,500,Framework,Sta Dep,4,0.8,0.8,0.0,0.0,0.0,True
+table_iv,Linux,500,Kernel,Bor Con,3,0.6,0.6,0.0,0.0,0.0,True
+table_iv,Linux,500,Kernel,Con/Mul Thr,2,0.4,0.4,0.0,0.0,0.0,True
+table_iv,Linux,500,Kernel,Env Dep,70,14,14.0,0.0,0.0,0.0,True
+table_iv,Linux,500,Kernel,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_iv,Linux,500,Kernel,Per/Ide Dep,0,0,0.0,0.0,0.0,,True
+table_iv,Linux,500,Kernel,Reg Ope,3,0.6,0.6,0.0,0.0,0.0,True
+table_iv,Linux,500,Kernel,Sta Dep,1,0.2,0.2,0.0,0.0,0.0,True
+table_iv,Linux,500,RuntimeVM,Bor Con,0,0,0.0,0.0,0.0,,True
+table_iv,Linux,500,RuntimeVM,Con/Mul Thr,0,0,0.0,0.0,0.0,,True
+table_iv,Linux,500,RuntimeVM,Env Dep,0,0,0.0,0.0,0.0,,True
+table_iv,Linux,500,RuntimeVM,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_iv,Linux,500,RuntimeVM,Per/Ide Dep,0,0,0.0,0.0,0.0,,True
+table_iv,Linux,500,RuntimeVM,Reg Ope,1,0.2,0.2,0.0,0.0,0.0,True
+table_iv,Linux,500,RuntimeVM,Sta Dep,0,0,0.0,0.0,0.0,,True
+table_iv,Linux,500,SystemLib,Bor Con,18,3.6,3.6,0.0,0.0,0.0,True
+table_iv,Linux,500,SystemLib,Con/Mul Thr,4,0.8,0.8,0.0,0.0,0.0,True
+table_iv,Linux,500,SystemLib,Env Dep,63,12.6,12.6,0.0,0.0,0.0,True
+table_iv,Linux,500,SystemLib,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_iv,Linux,500,SystemLib,Per/Ide Dep,0,0,0.0,0.0,0.0,,True
+table_iv,Linux,500,SystemLib,Reg Ope,3,0.6,0.6,0.0,0.0,0.0,True
+table_iv,Linux,500,SystemLib,Sta Dep,6,1.2,1.2,0.0,0.0,0.0,True
+table_iv,Linux,500,SystemService,Bor Con,11,2.2,2.2,0.0,0.0,0.0,True
+table_iv,Linux,500,SystemService,Con/Mul Thr,1,0.2,0.2,0.0,0.0,0.0,True
+table_iv,Linux,500,SystemService,Env Dep,19,3.8,3.8,0.0,0.0,0.0,True
+table_iv,Linux,500,SystemService,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_iv,Linux,500,SystemService,Per/Ide Dep,1,0.2,0.2,0.0,0.0,0.0,True
+table_iv,Linux,500,SystemService,Reg Ope,3,0.6,0.6,0.0,0.0,0.0,True
+table_iv,Linux,500,SystemService,Sta Dep,2,0.4,0.4,0.0,0.0,0.0,True
+table_iv,HarmonyOS,500,Application,Bor Con,8,1.6,1.6,0.0,0.0,0.0,True
+table_iv,HarmonyOS,500,Application,Con/Mul Thr,5,1,1.0,0.0,0.0,0.0,True
+table_iv,HarmonyOS,500,Application,Env Dep,0,0,0.0,0.0,0.0,,True
+table_iv,HarmonyOS,500,Application,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_iv,HarmonyOS,500,Application,Per/Ide Dep,0,0,0.0,0.0,0.0,,True
+table_iv,HarmonyOS,500,Application,Reg Ope,7,1.4,1.4,0.0,0.0,0.0,True
+table_iv,HarmonyOS,500,Application,Sta Dep,5,1,1.0,0.0,0.0,0.0,True
+table_iv,HarmonyOS,500,Framework,Bor Con,5,1,1.0,0.0,0.0,0.0,True
+table_iv,HarmonyOS,500,Framework,Con/Mul Thr,5,1,1.0,0.0,0.0,0.0,True
+table_iv,HarmonyOS,500,Framework,Env Dep,0,0,0.0,0.0,0.0,,True
+table_iv,HarmonyOS,500,Framework,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_iv,HarmonyOS,500,Framework,Per/Ide Dep,0,0,0.0,0.0,0.0,,True
+table_iv,HarmonyOS,500,Framework,Reg Ope,4,0.8,0.8,0.0,0.0,0.0,True
+table_iv,HarmonyOS,500,Framework,Sta Dep,0,0,0.0,0.0,0.0,,True
+table_iv,HarmonyOS,500,Kernel,Bor Con,198,39.6,39.6,0.0,0.0,0.0,True
+table_iv,HarmonyOS,500,Kernel,Con/Mul Thr,97,19.4,19.4,0.0,0.0,0.0,True
+table_iv,HarmonyOS,500,Kernel,Env Dep,13,2.6,2.6,0.0,0.0,0.0,True
+table_iv,HarmonyOS,500,Kernel,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_iv,HarmonyOS,500,Kernel,Per/Ide Dep,2,0.4,0.4,0.0,0.0,0.0,True
+table_iv,HarmonyOS,500,Kernel,Reg Ope,17,3.4,3.4,0.0,0.0,0.0,True
+table_iv,HarmonyOS,500,Kernel,Sta Dep,32,6.4,6.4,0.0,0.0,0.0,True
+table_iv,HarmonyOS,500,RuntimeVM,Bor Con,27,5.4,5.4,0.0,0.0,0.0,True
+table_iv,HarmonyOS,500,RuntimeVM,Con/Mul Thr,2,0.4,0.4,0.0,0.0,0.0,True
+table_iv,HarmonyOS,500,RuntimeVM,Env Dep,0,0,0.0,0.0,0.0,,True
+table_iv,HarmonyOS,500,RuntimeVM,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_iv,HarmonyOS,500,RuntimeVM,Per/Ide Dep,0,0,0.0,0.0,0.0,,True
+table_iv,HarmonyOS,500,RuntimeVM,Reg Ope,4,0.8,0.8,0.0,0.0,0.0,True
+table_iv,HarmonyOS,500,RuntimeVM,Sta Dep,11,2.2,2.2,0.0,0.0,0.0,True
+table_iv,HarmonyOS,500,SystemLib,Bor Con,20,4,4.0,0.0,0.0,0.0,True
+table_iv,HarmonyOS,500,SystemLib,Con/Mul Thr,6,1.2,1.2,0.0,0.0,0.0,True
+table_iv,HarmonyOS,500,SystemLib,Env Dep,1,0.2,0.2,0.0,0.0,0.0,True
+table_iv,HarmonyOS,500,SystemLib,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_iv,HarmonyOS,500,SystemLib,Per/Ide Dep,0,0,0.0,0.0,0.0,,True
+table_iv,HarmonyOS,500,SystemLib,Reg Ope,1,0.2,0.2,0.0,0.0,0.0,True
+table_iv,HarmonyOS,500,SystemLib,Sta Dep,6,1.2,1.2,0.0,0.0,0.0,True
+table_iv,HarmonyOS,500,SystemService,Bor Con,5,1,1.0,0.0,0.0,0.0,True
+table_iv,HarmonyOS,500,SystemService,Con/Mul Thr,5,1,1.0,0.0,0.0,0.0,True
+table_iv,HarmonyOS,500,SystemService,Env Dep,0,0,0.0,0.0,0.0,,True
+table_iv,HarmonyOS,500,SystemService,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_iv,HarmonyOS,500,SystemService,Per/Ide Dep,12,2.4,2.4,0.0,0.0,0.0,True
+table_iv,HarmonyOS,500,SystemService,Reg Ope,0,0,0.0,0.0,0.0,,True
+table_iv,HarmonyOS,500,SystemService,Sta Dep,2,0.4,0.4,0.0,0.0,0.0,True
+table_v,Android,500,Com/Adp,Bor Con,7,1.4,1.4,0.0,0.0,0.0,True
+table_v,Android,500,Com/Adp,Con/Mul Thr,0,0,0.0,0.0,0.0,,True
+table_v,Android,500,Com/Adp,Env Dep,1,0.2,0.2,0.0,0.0,0.0,True
+table_v,Android,500,Com/Adp,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_v,Android,500,Com/Adp,Per/Ide Dep,0,0,0.0,0.0,0.0,,True
+table_v,Android,500,Com/Adp,Reg Ope,1,0.2,0.2,0.0,0.0,0.0,True
+table_v,Android,500,Com/Adp,Sta Dep,6,1.2,1.2,0.0,0.0,0.0,True
+table_v,Android,500,Dev/Drv,Bor Con,27,5.4,5.4,0.0,0.0,0.0,True
+table_v,Android,500,Dev/Drv,Con/Mul Thr,4,0.8,0.8,0.0,0.0,0.0,True
+table_v,Android,500,Dev/Drv,Env Dep,0,0,0.0,0.0,0.0,,True
+table_v,Android,500,Dev/Drv,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_v,Android,500,Dev/Drv,Per/Ide Dep,0,0,0.0,0.0,0.0,,True
+table_v,Android,500,Dev/Drv,Reg Ope,3,0.6,0.6,0.0,0.0,0.0,True
+table_v,Android,500,Dev/Drv,Sta Dep,2,0.4,0.4,0.0,0.0,0.0,True
+table_v,Android,500,Gra/Ren,Bor Con,10,2,2.0,0.0,0.0,0.0,True
+table_v,Android,500,Gra/Ren,Con/Mul Thr,2,0.4,0.4,0.0,0.0,0.0,True
+table_v,Android,500,Gra/Ren,Env Dep,1,0.2,0.2,0.0,0.0,0.0,True
+table_v,Android,500,Gra/Ren,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_v,Android,500,Gra/Ren,Per/Ide Dep,0,0,0.0,0.0,0.0,,True
+table_v,Android,500,Gra/Ren,Reg Ope,4,0.8,0.8,0.0,0.0,0.0,True
+table_v,Android,500,Gra/Ren,Sta Dep,12,2.4,2.4,0.0,0.0,0.0,True
+table_v,Android,500,Mem/Res Mng,Bor Con,36,7.2,7.2,0.0,0.0,0.0,True
+table_v,Android,500,Mem/Res Mng,Con/Mul Thr,23,4.6,4.6,0.0,0.0,0.0,True
+table_v,Android,500,Mem/Res Mng,Env Dep,0,0,0.0,0.0,0.0,,True
+table_v,Android,500,Mem/Res Mng,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_v,Android,500,Mem/Res Mng,Per/Ide Dep,0,0,0.0,0.0,0.0,,True
+table_v,Android,500,Mem/Res Mng,Reg Ope,1,0.2,0.2,0.0,0.0,0.0,True
+table_v,Android,500,Mem/Res Mng,Sta Dep,2,0.4,0.4,0.0,0.0,0.0,True
+table_v,Android,500,Net/Com,Bor Con,9,1.8,1.8,0.0,0.0,0.0,True
+table_v,Android,500,Net/Com,Con/Mul Thr,1,0.2,0.2,0.0,0.0,0.0,True
+table_v,Android,500,Net/Com,Env Dep,0,0,0.0,0.0,0.0,,True
+table_v,Android,500,Net/Com,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_v,Android,500,Net/Com,Per/Ide Dep,2,0.4,0.4,0.0,0.0,0.0,True
+table_v,Android,500,Net/Com,Reg Ope,2,0.4,0.4,0.0,0.0,0.0,True
+table_v,Android,500,Net/Com,Sta Dep,2,0.4,0.4,0.0,0.0,0.0,True
+table_v,Android,500,Pro/Tas Sch,Bor Con,5,1,1.0,0.0,0.0,0.0,True
+table_v,Android,500,Pro/Tas Sch,Con/Mul Thr,4,0.8,0.8,0.0,0.0,0.0,True
+table_v,Android,500,Pro/Tas Sch,Env Dep,1,0.2,0.2,0.0,0.0,0.0,True
+table_v,Android,500,Pro/Tas Sch,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_v,Android,500,Pro/Tas Sch,Per/Ide Dep,1,0.2,0.2,0.0,0.0,0.0,True
+table_v,Android,500,Pro/Tas Sch,Reg Ope,5,1,1.0,0.0,0.0,0.0,True
+table_v,Android,500,Pro/Tas Sch,Sta Dep,8,1.6,1.6,0.0,0.0,0.0,True
+table_v,Android,500,Sec/Perm,Bor Con,82,16.4,16.4,0.0,0.0,0.0,True
+table_v,Android,500,Sec/Perm,Con/Mul Thr,2,0.4,0.4,0.0,0.0,0.0,True
+table_v,Android,500,Sec/Perm,Env Dep,2,0.4,0.4,0.0,0.0,0.0,True
+table_v,Android,500,Sec/Perm,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_v,Android,500,Sec/Perm,Per/Ide Dep,150,30,30.0,0.0,0.0,0.0,True
+table_v,Android,500,Sec/Perm,Reg Ope,24,4.8,4.8,0.0,0.0,0.0,True
+table_v,Android,500,Sec/Perm,Sta Dep,40,8,8.0,0.0,0.0,0.0,True
+table_v,Android,500,Sto Mng,Bor Con,9,1.8,1.8,0.0,0.0,0.0,True
+table_v,Android,500,Sto Mng,Con/Mul Thr,0,0,0.0,0.0,0.0,,True
+table_v,Android,500,Sto Mng,Env Dep,0,0,0.0,0.0,0.0,,True
+table_v,Android,500,Sto Mng,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_v,Android,500,Sto Mng,Per/Ide Dep,3,0.6,0.6,0.0,0.0,0.0,True
+table_v,Android,500,Sto Mng,Reg Ope,4,0.8,0.8,0.0,0.0,0.0,True
+table_v,Android,500,Sto Mng,Sta Dep,2,0.4,0.4,0.0,0.0,0.0,True
+table_v,Linux,500,Com/Adp,Bor Con,9,1.8,1.8,0.0,0.0,0.0,True
+table_v,Linux,500,Com/Adp,Con/Mul Thr,1,0.2,0.2,0.0,0.0,0.0,True
+table_v,Linux,500,Com/Adp,Env Dep,179,35.8,35.8,0.0,0.0,0.0,True
+table_v,Linux,500,Com/Adp,Mul/Loc Dep,1,0.2,0.2,0.0,0.0,0.0,True
+table_v,Linux,500,Com/Adp,Per/Ide Dep,0,0,0.0,0.0,0.0,,True
+table_v,Linux,500,Com/Adp,Reg Ope,8,1.6,1.6,0.0,0.0,0.0,True
+table_v,Linux,500,Com/Adp,Sta Dep,8,1.6,1.6,0.0,0.0,0.0,True
+table_v,Linux,500,Dev/Drv,Bor Con,8,1.6,1.6,0.0,0.0,0.0,True
+table_v,Linux,500,Dev/Drv,Con/Mul Thr,1,0.2,0.2,0.0,0.0,0.0,True
+table_v,Linux,500,Dev/Drv,Env Dep,66,13.2,13.2,0.0,0.0,0.0,True
+table_v,Linux,500,Dev/Drv,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_v,Linux,500,Dev/Drv,Per/Ide Dep,0,0,0.0,0.0,0.0,,True
+table_v,Linux,500,Dev/Drv,Reg Ope,8,1.6,1.6,0.0,0.0,0.0,True
+table_v,Linux,500,Dev/Drv,Sta Dep,3,0.6,0.6,0.0,0.0,0.0,True
+table_v,Linux,500,Gra/Ren,Bor Con,8,1.6,1.6,0.0,0.0,0.0,True
+table_v,Linux,500,Gra/Ren,Con/Mul Thr,4,0.8,0.8,0.0,0.0,0.0,True
+table_v,Linux,500,Gra/Ren,Env Dep,14,2.8,2.8,0.0,0.0,0.0,True
+table_v,Linux,500,Gra/Ren,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_v,Linux,500,Gra/Ren,Per/Ide Dep,0,0,0.0,0.0,0.0,,True
+table_v,Linux,500,Gra/Ren,Reg Ope,5,1,1.0,0.0,0.0,0.0,True
+table_v,Linux,500,Gra/Ren,Sta Dep,4,0.8,0.8,0.0,0.0,0.0,True
+table_v,Linux,500,Mem/Res Mng,Bor Con,6,1.2,1.2,0.0,0.0,0.0,True
+table_v,Linux,500,Mem/Res Mng,Con/Mul Thr,1,0.2,0.2,0.0,0.0,0.0,True
+table_v,Linux,500,Mem/Res Mng,Env Dep,0,0,0.0,0.0,0.0,,True
+table_v,Linux,500,Mem/Res Mng,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_v,Linux,500,Mem/Res Mng,Per/Ide Dep,0,0,0.0,0.0,0.0,,True
+table_v,Linux,500,Mem/Res Mng,Reg Ope,2,0.4,0.4,0.0,0.0,0.0,True
+table_v,Linux,500,Mem/Res Mng,Sta Dep,1,0.2,0.2,0.0,0.0,0.0,True
+table_v,Linux,500,Net/Com,Bor Con,9,1.8,1.8,0.0,0.0,0.0,True
+table_v,Linux,500,Net/Com,Con/Mul Thr,1,0.2,0.2,0.0,0.0,0.0,True
+table_v,Linux,500,Net/Com,Env Dep,13,2.6,2.6,0.0,0.0,0.0,True
+table_v,Linux,500,Net/Com,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_v,Linux,500,Net/Com,Per/Ide Dep,0,0,0.0,0.0,0.0,,True
+table_v,Linux,500,Net/Com,Reg Ope,4,0.8,0.8,0.0,0.0,0.0,True
+table_v,Linux,500,Net/Com,Sta Dep,6,1.2,1.2,0.0,0.0,0.0,True
+table_v,Linux,500,Pro/Tas Sch,Bor Con,4,0.8,0.8,0.0,0.0,0.0,True
+table_v,Linux,500,Pro/Tas Sch,Con/Mul Thr,2,0.4,0.4,0.0,0.0,0.0,True
+table_v,Linux,500,Pro/Tas Sch,Env Dep,7,1.4,1.4,0.0,0.0,0.0,True
+table_v,Linux,500,Pro/Tas Sch,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_v,Linux,500,Pro/Tas Sch,Per/Ide Dep,0,0,0.0,0.0,0.0,,True
+table_v,Linux,500,Pro/Tas Sch,Reg Ope,5,1,1.0,0.0,0.0,0.0,True
+table_v,Linux,500,Pro/Tas Sch,Sta Dep,0,0,0.0,0.0,0.0,,True
+table_v,Linux,500,Sec/Perm,Bor Con,29,5.8,5.8,0.0,0.0,0.0,True
+table_v,Linux,500,Sec/Perm,Con/Mul Thr,1,0.2,0.2,0.0,0.0,0.0,True
+table_v,Linux,500,Sec/Perm,Env Dep,20,4,4.0,0.0,0.0,0.0,True
+table_v,Linux,500,Sec/Perm,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_v,Linux,500,Sec/Perm,Per/Ide Dep,8,1.6,1.6,0.0,0.0,0.0,True
+table_v,Linux,500,Sec/Perm,Reg Ope,11,2.2,2.2,0.0,0.0,0.0,True
+table_v,Linux,500,Sec/Perm,Sta Dep,1,0.2,0.2,0.0,0.0,0.0,True
+table_v,Linux,500,Sto Mng,Bor Con,22,4.4,4.4,0.0,0.0,0.0,True
+table_v,Linux,500,Sto Mng,Con/Mul Thr,4,0.8,0.8,0.0,0.0,0.0,True
+table_v,Linux,500,Sto Mng,Env Dep,11,2.2,2.2,0.0,0.0,0.0,True
+table_v,Linux,500,Sto Mng,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_v,Linux,500,Sto Mng,Per/Ide Dep,0,0,0.0,0.0,0.0,,True
+table_v,Linux,500,Sto Mng,Reg Ope,2,0.4,0.4,0.0,0.0,0.0,True
+table_v,Linux,500,Sto Mng,Sta Dep,3,0.6,0.6,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Com/Adp,Bor Con,7,1.4,1.4,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Com/Adp,Con/Mul Thr,1,0.2,0.2,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Com/Adp,Env Dep,2,0.4,0.4,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Com/Adp,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_v,HarmonyOS,500,Com/Adp,Per/Ide Dep,0,0,0.0,0.0,0.0,,True
+table_v,HarmonyOS,500,Com/Adp,Reg Ope,1,0.2,0.2,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Com/Adp,Sta Dep,1,0.2,0.2,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Dev/Drv,Bor Con,38,7.6,7.6,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Dev/Drv,Con/Mul Thr,18,3.6,3.6,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Dev/Drv,Env Dep,2,0.4,0.4,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Dev/Drv,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_v,HarmonyOS,500,Dev/Drv,Per/Ide Dep,0,0,0.0,0.0,0.0,,True
+table_v,HarmonyOS,500,Dev/Drv,Reg Ope,2,0.4,0.4,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Dev/Drv,Sta Dep,8,1.6,1.6,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Gra/Ren,Bor Con,5,1,1.0,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Gra/Ren,Con/Mul Thr,10,2,2.0,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Gra/Ren,Env Dep,1,0.2,0.2,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Gra/Ren,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_v,HarmonyOS,500,Gra/Ren,Per/Ide Dep,0,0,0.0,0.0,0.0,,True
+table_v,HarmonyOS,500,Gra/Ren,Reg Ope,1,0.2,0.2,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Gra/Ren,Sta Dep,2,0.4,0.4,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Mem/Res Mng,Bor Con,72,14.4,14.4,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Mem/Res Mng,Con/Mul Thr,18,3.6,3.6,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Mem/Res Mng,Env Dep,2,0.4,0.4,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Mem/Res Mng,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_v,HarmonyOS,500,Mem/Res Mng,Per/Ide Dep,0,0,0.0,0.0,0.0,,True
+table_v,HarmonyOS,500,Mem/Res Mng,Reg Ope,6,1.2,1.2,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Mem/Res Mng,Sta Dep,16,3.2,3.2,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Net/Com,Bor Con,50,10,10.0,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Net/Com,Con/Mul Thr,32,6.4,6.4,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Net/Com,Env Dep,3,0.6,0.6,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Net/Com,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_v,HarmonyOS,500,Net/Com,Per/Ide Dep,0,0,0.0,0.0,0.0,,True
+table_v,HarmonyOS,500,Net/Com,Reg Ope,7,1.4,1.4,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Net/Com,Sta Dep,8,1.6,1.6,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Pro/Tas Sch,Bor Con,7,1.4,1.4,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Pro/Tas Sch,Con/Mul Thr,13,2.6,2.6,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Pro/Tas Sch,Env Dep,1,0.2,0.2,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Pro/Tas Sch,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_v,HarmonyOS,500,Pro/Tas Sch,Per/Ide Dep,0,0,0.0,0.0,0.0,,True
+table_v,HarmonyOS,500,Pro/Tas Sch,Reg Ope,3,0.6,0.6,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Pro/Tas Sch,Sta Dep,4,0.8,0.8,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Sec/Perm,Bor Con,49,9.8,9.8,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Sec/Perm,Con/Mul Thr,9,1.8,1.8,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Sec/Perm,Env Dep,0,0,0.0,0.0,0.0,,True
+table_v,HarmonyOS,500,Sec/Perm,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_v,HarmonyOS,500,Sec/Perm,Per/Ide Dep,14,2.8,2.8,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Sec/Perm,Reg Ope,11,2.2,2.2,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Sec/Perm,Sta Dep,7,1.4,1.4,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Sto Mng,Bor Con,35,7,7.0,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Sto Mng,Con/Mul Thr,19,3.8,3.8,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Sto Mng,Env Dep,3,0.6,0.6,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Sto Mng,Mul/Loc Dep,0,0,0.0,0.0,0.0,,True
+table_v,HarmonyOS,500,Sto Mng,Per/Ide Dep,0,0,0.0,0.0,0.0,,True
+table_v,HarmonyOS,500,Sto Mng,Reg Ope,2,0.4,0.4,0.0,0.0,0.0,True
+table_v,HarmonyOS,500,Sto Mng,Sta Dep,10,2,2.0,0.0,0.0,0.0,True
