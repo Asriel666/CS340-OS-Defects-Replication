@@ -1,0 +1,310 @@
+{
+  "schema_version": 1,
+  "paper": {
+    "title": "Toward Understanding Operating System Defects",
+    "arxiv_id": "2608.20643v1",
+    "version_date": "2026-08-21"
+  },
+  "sources": {
+    "abstract": "https://arxiv.org/abs/2608.20643v1",
+    "html": "https://arxiv.org/html/2608.20643v1",
+    "pdf": "https://arxiv.org/pdf/2608.20643v1",
+    "author_data": "https://zuohongyao.github.io/"
+  },
+  "dataset": {
+    "per_os_n": 500,
+    "total_n": 1500,
+    "table_i": {
+      "Linux": {
+        "time_range": [
+          "2023-04",
+          "2025-06"
+        ],
+        "initial_bug_reports": 32249,
+        "final_bugs": 500
+      },
+      "HarmonyOS": {
+        "time_range": [
+          "2023-05",
+          "2025-06"
+        ],
+        "initial_bug_reports": 712,
+        "final_bugs": 500
+      },
+      "Android": {
+        "time_range": [
+          "2023-05",
+          "2025-12"
+        ],
+        "initial_bug_reports": 1750,
+        "final_bugs": 500
+      }
+    },
+    "selection": [
+      "Deduplicate by defect ID",
+      "Exclude reports without open-source patch diffs",
+      "Exclude fixes exceeding 500 changed lines",
+      "Split combined reports into individual defects for HarmonyOS/Linux",
+      "Select latest 500 valid instances per OS"
+    ],
+    "sources_by_os": {
+      "Android": "Android Security Bulletins",
+      "Linux": "Launchpad, status Fix Released, newest first; Ubuntu ecosystem, not kernel-only",
+      "HarmonyOS": "OpenHarmony Gitee security disclosures"
+    }
+  },
+  "dimensions": {
+    "os_layer": {
+      "categories": [
+        "Kernel",
+        "SystemLib",
+        "RuntimeVM",
+        "Framework",
+        "SystemService",
+        "Application"
+      ],
+      "multilabel": false,
+      "table_ii_percent": {
+        "Android": [
+          6,
+          20.2,
+          0.4,
+          18,
+          38.8,
+          16.6
+        ],
+        "Linux": [
+          15.8,
+          18.8,
+          0.2,
+          3.6,
+          7.4,
+          54.2
+        ],
+        "HarmonyOS": [
+          71.8,
+          6.8,
+          8.8,
+          2.8,
+          4.8,
+          5
+        ]
+      },
+      "denominator": "All 500 defect instances of the corresponding OS; not the number of code labels.",
+      "source": "Table II, printed page 9",
+      "paper_labels": [
+        "Kernel",
+        "SystemLib",
+        "RuntimeVM",
+        "Framework",
+        "SystemService",
+        "Application"
+      ]
+    },
+    "affected_function": {
+      "categories": [
+        "Mem/Res Mng",
+        "Pro/Tas Sch",
+        "Sto Mng",
+        "Dev/Drv",
+        "Net/Com",
+        "Com/Adp",
+        "Sec/Perm",
+        "Gra/Ren"
+      ],
+      "multilabel": false,
+      "table_ii_percent": {
+        "Android": [
+          12.4,
+          4.8,
+          3.6,
+          7.2,
+          3.2,
+          3,
+          60,
+          5.8
+        ],
+        "Linux": [
+          2,
+          3.6,
+          8.4,
+          17.2,
+          6.6,
+          41.2,
+          14,
+          7
+        ],
+        "HarmonyOS": [
+          22.8,
+          5.6,
+          13.8,
+          13.6,
+          20,
+          2.4,
+          18,
+          3.8
+        ]
+      },
+      "denominator": "All 500 defect instances of the corresponding OS; not the number of code labels.",
+      "source": "Table II, printed page 9",
+      "paper_labels": [
+        "Mem/Res Mng",
+        "Pro/Tas Sch",
+        "Sto Mng",
+        "Dev/Drv",
+        "Net/Com",
+        "Com/Adp",
+        "Sec/Perm",
+        "Gra/Ren"
+      ]
+    },
+    "trigger_scenario": {
+      "categories": [
+        "Per/Ide Dep",
+        "Reg Ope",
+        "Bor Con",
+        "Con/Mul Thr",
+        "Sta Dep",
+        "Env Dep",
+        "Mul/Loc Dep"
+      ],
+      "multilabel": false,
+      "table_ii_percent": {
+        "Android": [
+          31.2,
+          8.8,
+          37,
+          7.2,
+          14.8,
+          1,
+          0
+        ],
+        "Linux": [
+          1.6,
+          9,
+          19,
+          3,
+          5.2,
+          62,
+          0.2
+        ],
+        "HarmonyOS": [
+          2.8,
+          6.6,
+          52.6,
+          24,
+          11.2,
+          2.8,
+          0
+        ]
+      },
+      "denominator": "All 500 defect instances of the corresponding OS; not the number of code labels.",
+      "source": "Table II, printed page 9",
+      "paper_labels": [
+        "Per/Ide Dep",
+        "Reg Ope",
+        "Bor Con",
+        "Con/Mul Thr",
+        "Sta Dep",
+        "Env Dep",
+        "Mul/Loc Dep"
+      ]
+    }
+  },
+  "rq3": {
+    "figures": {
+      "figure_4": {
+        "os_order": [
+          "Android",
+          "HarmonyOS",
+          "Linux"
+        ],
+        "source": "Figure 4, printed page 12; numerical annotations read from official PDF text",
+        "panels": {
+          "os_layer": {
+            "matrix": [
+              [
+                1,
+                -0.66,
+                0.26
+              ],
+              [
+                -0.66,
+                1,
+                0.09
+              ],
+              [
+                0.26,
+                0.09,
+                1
+              ]
+            ],
+            "input": "Six per-OS layer category counts or percentages aligned by category"
+          },
+          "affected_function": {
+            "matrix": [
+              [
+                1,
+                0.43,
+                -0.19
+              ],
+              [
+                0.43,
+                1,
+                -0.52
+              ],
+              [
+                -0.19,
+                -0.52,
+                1
+              ]
+            ],
+            "input": "Eight per-OS affected-function category counts or percentages aligned by category"
+          },
+          "trigger_scenario": {
+            "matrix": [
+              [
+                1,
+                0.38,
+                0.21
+              ],
+              [
+                0.38,
+                1,
+                0.41
+              ],
+              [
+                0.21,
+                0.41,
+                1
+              ]
+            ],
+            "input": "Seven per-OS trigger-scenario category counts or percentages aligned by category"
+          },
+          "overall": {
+            "matrix": [
+              [
+                1,
+                -0.11,
+                0.05
+              ],
+              [
+                -0.11,
+                1,
+                -0.04
+              ],
+              [
+                0.05,
+                -0.04,
+                1
+              ]
+            ],
+            "construction_status": "not_specified",
+            "input": null,
+            "caveat": "Figure values retained. Section IV-C prose calls -0.11 the Linux-Android pair, whereas Figure 4d labels it HarmonyOS-Android. No overall-vector construction is specified; do not claim an exact overall reproduction by assuming marginal concatenation."
+          }
+        }
+      }
+    }
+  }
+}

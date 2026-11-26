@@ -1,0 +1,28 @@
+{
+  "stage": 4,
+  "run": 2,
+  "started_at_utc": "2026-11-26T01:44:13+00:00",
+  "elapsed_seconds": 0.2941887079996377,
+  "records_per_os": {
+    "Android": 500,
+    "Linux": 500,
+    "HarmonyOS": 500
+  },
+  "source_sha256_lf": "c617aa2478fea265b61c6b18ac158234ad1f2f4c4b3d0c8abbb7760f75e26a56",
+  "matched_pairs_all_categories": 8,
+  "matched_pairs_joint_zero_excluded": 9,
+  "semantic_result_sha256": "02439a341556e3d0dd52015a9e4e87ebf47c03f1d32258ac98106fe60bede5d3",
+  "result_tables_sha256": {
+    "extension_overall_summary.csv": "c7af0914bb45d841933bbdf48973a536a3ee12095655e3f9e88351afcef1497c",
+    "extension_summary.csv": "daa4e38431a6fdec79be6a037db6ee4a9466ad67a14d9f1337689d2f494160e4",
+    "extension_summary.json": "504fce47f85de54b81df57d636b2231dc6eaff254d550192eecb907855f53ca2",
+    "extension_trials.csv": "4bd3928beae3bd21c4796bfed07b8650639dfb6b14e71b5b837ac78125c81741",
+    "similarity_comparison.csv": "1da8328a7f5ce31b2b1faa07193ff9828603ecde74f12c091354e72fc40c01db",
+    "similarity_rank_inputs.csv": "d37992921978e85b08606442596ccf7d984df72563201e8b66fb5c1188072bef",
+    "similarity_summary.json": "681198610d343bed771423ae43c0a38ed7a518d26bb7fa0efd95d78237f6351e",
+    "similarity_zero_category_check.csv": "0b20a5eb2144e748aded4aaf262f6a429a78abd36060d386bda684f28f3756e7",
+    "similarity_zero_category_check.json": "c88d8dbee6e64e5b2aceeabe66a249f101cb426d66249cfe32f18efdcb8d5482"
+  },
+  "environment_file": "../../environment.json",
+  "status": "success"
+}

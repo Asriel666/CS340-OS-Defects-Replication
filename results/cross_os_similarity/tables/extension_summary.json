@@ -1,0 +1,462 @@
+{
+  "factor_changed": "Sample size per OS",
+  "sizes": [
+    50,
+    100,
+    250,
+    500
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "sampling": "Without replacement, independently within each OS; fixed seeds and fixed released labels.",
+  "fixed": [
+    "source commit",
+    "taxonomy",
+    "OS composition (equal per-OS sample size)",
+    "analysis code",
+    "hardware and software"
+  ],
+  "limitation": "Internal robustness conditional on the released corpus; does not test external representativeness or annotation correctness.",
+  "aggregates": [
+    {
+      "os": "Android",
+      "dimension": "os_layer",
+      "sample_size": 50,
+      "trials": 30,
+      "tv_mean": 0.10146666666666665,
+      "tv_sd": 0.040041128281093526,
+      "dominant_retention_rate": 0.9666666666666667
+    },
+    {
+      "os": "Android",
+      "dimension": "affected_function",
+      "sample_size": 50,
+      "trials": 30,
+      "tv_mean": 0.10946666666666667,
+      "tv_sd": 0.03597674855766719,
+      "dominant_retention_rate": 1
+    },
+    {
+      "os": "Android",
+      "dimension": "trigger_scenario",
+      "sample_size": 50,
+      "trials": 30,
+      "tv_mean": 0.10866666666666666,
+      "tv_sd": 0.035542430527695935,
+      "dominant_retention_rate": 0.8
+    },
+    {
+      "os": "Android",
+      "dimension": "os_layer",
+      "sample_size": 100,
+      "trials": 30,
+      "tv_mean": 0.07193333333333334,
+      "tv_sd": 0.02023641874636322,
+      "dominant_retention_rate": 1
+    },
+    {
+      "os": "Android",
+      "dimension": "affected_function",
+      "sample_size": 100,
+      "trials": 30,
+      "tv_mean": 0.06453333333333333,
+      "tv_sd": 0.027022000402396665,
+      "dominant_retention_rate": 1
+    },
+    {
+      "os": "Android",
+      "dimension": "trigger_scenario",
+      "sample_size": 100,
+      "trials": 30,
+      "tv_mean": 0.06453333333333333,
+      "tv_sd": 0.02190848258541431,
+      "dominant_retention_rate": 0.7333333333333333
+    },
+    {
+      "os": "Android",
+      "dimension": "os_layer",
+      "sample_size": 250,
+      "trials": 30,
+      "tv_mean": 0.03266666666666666,
+      "tv_sd": 0.014765601528747377,
+      "dominant_retention_rate": 1
+    },
+    {
+      "os": "Android",
+      "dimension": "affected_function",
+      "sample_size": 250,
+      "trials": 30,
+      "tv_mean": 0.03473333333333333,
+      "tv_sd": 0.012795293675015234,
+      "dominant_retention_rate": 1
+    },
+    {
+      "os": "Android",
+      "dimension": "trigger_scenario",
+      "sample_size": 250,
+      "trials": 30,
+      "tv_mean": 0.03493333333333333,
+      "tv_sd": 0.011881406317938718,
+      "dominant_retention_rate": 0.9666666666666667
+    },
+    {
+      "os": "Android",
+      "dimension": "os_layer",
+      "sample_size": 500,
+      "trials": 30,
+      "tv_mean": 0.0,
+      "tv_sd": 0.0,
+      "dominant_retention_rate": 1
+    },
+    {
+      "os": "Android",
+      "dimension": "affected_function",
+      "sample_size": 500,
+      "trials": 30,
+      "tv_mean": 0.0,
+      "tv_sd": 0.0,
+      "dominant_retention_rate": 1
+    },
+    {
+      "os": "Android",
+      "dimension": "trigger_scenario",
+      "sample_size": 500,
+      "trials": 30,
+      "tv_mean": 0.0,
+      "tv_sd": 0.0,
+      "dominant_retention_rate": 1
+    },
+    {
+      "os": "Linux",
+      "dimension": "os_layer",
+      "sample_size": 50,
+      "trials": 30,
+      "tv_mean": 0.10086666666666666,
+      "tv_sd": 0.039000206306557185,
+      "dominant_retention_rate": 1
+    },
+    {
+      "os": "Linux",
+      "dimension": "affected_function",
+      "sample_size": 50,
+      "trials": 30,
+      "tv_mean": 0.13326666666666667,
+      "tv_sd": 0.04166362287732991,
+      "dominant_retention_rate": 0.9666666666666667
+    },
+    {
+      "os": "Linux",
+      "dimension": "trigger_scenario",
+      "sample_size": 50,
+      "trials": 30,
+      "tv_mean": 0.0912,
+      "tv_sd": 0.0472165955629133,
+      "dominant_retention_rate": 1
+    },
+    {
+      "os": "Linux",
+      "dimension": "os_layer",
+      "sample_size": 100,
+      "trials": 30,
+      "tv_mean": 0.06073333333333334,
+      "tv_sd": 0.027705263203864395,
+      "dominant_retention_rate": 1
+    },
+    {
+      "os": "Linux",
+      "dimension": "affected_function",
+      "sample_size": 100,
+      "trials": 30,
+      "tv_mean": 0.08713333333333333,
+      "tv_sd": 0.026270126383972442,
+      "dominant_retention_rate": 1
+    },
+    {
+      "os": "Linux",
+      "dimension": "trigger_scenario",
+      "sample_size": 100,
+      "trials": 30,
+      "tv_mean": 0.06340000000000001,
+      "tv_sd": 0.03168443542618145,
+      "dominant_retention_rate": 1
+    },
+    {
+      "os": "Linux",
+      "dimension": "os_layer",
+      "sample_size": 250,
+      "trials": 30,
+      "tv_mean": 0.029999999999999995,
+      "tv_sd": 0.009641862747487087,
+      "dominant_retention_rate": 1
+    },
+    {
+      "os": "Linux",
+      "dimension": "affected_function",
+      "sample_size": 250,
+      "trials": 30,
+      "tv_mean": 0.042,
+      "tv_sd": 0.01395559460179519,
+      "dominant_retention_rate": 1
+    },
+    {
+      "os": "Linux",
+      "dimension": "trigger_scenario",
+      "sample_size": 250,
+      "trials": 30,
+      "tv_mean": 0.0318,
+      "tv_sd": 0.009531797963332684,
+      "dominant_retention_rate": 1
+    },
+    {
+      "os": "Linux",
+      "dimension": "os_layer",
+      "sample_size": 500,
+      "trials": 30,
+      "tv_mean": 0.0,
+      "tv_sd": 0.0,
+      "dominant_retention_rate": 1
+    },
+    {
+      "os": "Linux",
+      "dimension": "affected_function",
+      "sample_size": 500,
+      "trials": 30,
+      "tv_mean": 0.0,
+      "tv_sd": 0.0,
+      "dominant_retention_rate": 1
+    },
+    {
+      "os": "Linux",
+      "dimension": "trigger_scenario",
+      "sample_size": 500,
+      "trials": 30,
+      "tv_mean": 0.0,
+      "tv_sd": 0.0,
+      "dominant_retention_rate": 1
+    },
+    {
+      "os": "HarmonyOS",
+      "dimension": "os_layer",
+      "sample_size": 50,
+      "trials": 30,
+      "tv_mean": 0.0956,
+      "tv_sd": 0.039766213349248264,
+      "dominant_retention_rate": 1
+    },
+    {
+      "os": "HarmonyOS",
+      "dimension": "affected_function",
+      "sample_size": 50,
+      "trials": 30,
+      "tv_mean": 0.13653333333333334,
+      "tv_sd": 0.030521595896872006,
+      "dominant_retention_rate": 0.4666666666666667
+    },
+    {
+      "os": "HarmonyOS",
+      "dimension": "trigger_scenario",
+      "sample_size": 50,
+      "trials": 30,
+      "tv_mean": 0.09573333333333334,
+      "tv_sd": 0.04090606002937019,
+      "dominant_retention_rate": 0.9666666666666667
+    },
+    {
+      "os": "HarmonyOS",
+      "dimension": "os_layer",
+      "sample_size": 100,
+      "trials": 30,
+      "tv_mean": 0.05380000000000001,
+      "tv_sd": 0.025876896898651667,
+      "dominant_retention_rate": 1
+    },
+    {
+      "os": "HarmonyOS",
+      "dimension": "affected_function",
+      "sample_size": 100,
+      "trials": 30,
+      "tv_mean": 0.09746666666666666,
+      "tv_sd": 0.027250730244354458,
+      "dominant_retention_rate": 0.6666666666666666
+    },
+    {
+      "os": "HarmonyOS",
+      "dimension": "trigger_scenario",
+      "sample_size": 100,
+      "trials": 30,
+      "tv_mean": 0.06653333333333333,
+      "tv_sd": 0.030399334535971097,
+      "dominant_retention_rate": 1
+    },
+    {
+      "os": "HarmonyOS",
+      "dimension": "os_layer",
+      "sample_size": 250,
+      "trials": 30,
+      "tv_mean": 0.03226666666666667,
+      "tv_sd": 0.012337029579707382,
+      "dominant_retention_rate": 1
+    },
+    {
+      "os": "HarmonyOS",
+      "dimension": "affected_function",
+      "sample_size": 250,
+      "trials": 30,
+      "tv_mean": 0.04393333333333334,
+      "tv_sd": 0.011524885617902986,
+      "dominant_retention_rate": 0.8
+    },
+    {
+      "os": "HarmonyOS",
+      "dimension": "trigger_scenario",
+      "sample_size": 250,
+      "trials": 30,
+      "tv_mean": 0.033533333333333325,
+      "tv_sd": 0.01303240876280818,
+      "dominant_retention_rate": 1
+    },
+    {
+      "os": "HarmonyOS",
+      "dimension": "os_layer",
+      "sample_size": 500,
+      "trials": 30,
+      "tv_mean": 0.0,
+      "tv_sd": 0.0,
+      "dominant_retention_rate": 1
+    },
+    {
+      "os": "HarmonyOS",
+      "dimension": "affected_function",
+      "sample_size": 500,
+      "trials": 30,
+      "tv_mean": 0.0,
+      "tv_sd": 0.0,
+      "dominant_retention_rate": 1
+    },
+    {
+      "os": "HarmonyOS",
+      "dimension": "trigger_scenario",
+      "sample_size": 500,
+      "trials": 30,
+      "tv_mean": 0.0,
+      "tv_sd": 0.0,
+      "dominant_retention_rate": 1
+    }
+  ],
+  "overall_aggregates": [
+    {
+      "os": "Android",
+      "sample_size": 50,
+      "trials": 30,
+      "tv_mean_across_dimensions": 0.10653333333333333,
+      "tv_sd_across_seeds": 0.023413262115986256
+    },
+    {
+      "os": "Android",
+      "sample_size": 100,
+      "trials": 30,
+      "tv_mean_across_dimensions": 0.06699999999999999,
+      "tv_sd_across_seeds": 0.013319245430975981
+    },
+    {
+      "os": "Android",
+      "sample_size": 250,
+      "trials": 30,
+      "tv_mean_across_dimensions": 0.03411111111111111,
+      "tv_sd_across_seeds": 0.006361000266731549
+    },
+    {
+      "os": "Android",
+      "sample_size": 500,
+      "trials": 30,
+      "tv_mean_across_dimensions": 0.0,
+      "tv_sd_across_seeds": 0.0
+    },
+    {
+      "os": "Linux",
+      "sample_size": 50,
+      "trials": 30,
+      "tv_mean_across_dimensions": 0.10844444444444445,
+      "tv_sd_across_seeds": 0.027021395429980985
+    },
+    {
+      "os": "Linux",
+      "sample_size": 100,
+      "trials": 30,
+      "tv_mean_across_dimensions": 0.07042222222222222,
+      "tv_sd_across_seeds": 0.01586097003245294
+    },
+    {
+      "os": "Linux",
+      "sample_size": 250,
+      "trials": 30,
+      "tv_mean_across_dimensions": 0.0346,
+      "tv_sd_across_seeds": 0.006560884904337931
+    },
+    {
+      "os": "Linux",
+      "sample_size": 500,
+      "trials": 30,
+      "tv_mean_across_dimensions": 0.0,
+      "tv_sd_across_seeds": 0.0
+    },
+    {
+      "os": "HarmonyOS",
+      "sample_size": 50,
+      "trials": 30,
+      "tv_mean_across_dimensions": 0.1092888888888889,
+      "tv_sd_across_seeds": 0.02044855863984058
+    },
+    {
+      "os": "HarmonyOS",
+      "sample_size": 100,
+      "trials": 30,
+      "tv_mean_across_dimensions": 0.0726,
+      "tv_sd_across_seeds": 0.019011067556956727
+    },
+    {
+      "os": "HarmonyOS",
+      "sample_size": 250,
+      "trials": 30,
+      "tv_mean_across_dimensions": 0.03657777777777778,
+      "tv_sd_across_seeds": 0.00808144999191995
+    },
+    {
+      "os": "HarmonyOS",
+      "sample_size": 500,
+      "trials": 30,
+      "tv_mean_across_dimensions": 0.0,
+      "tv_sd_across_seeds": 0.0
+    }
+  ]
+}

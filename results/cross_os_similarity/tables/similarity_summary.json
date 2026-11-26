@@ -1,0 +1,622 @@
+{
+  "metric": "Spearman rank correlation; average ranks for ties",
+  "tolerance_rho": 0.005,
+  "comparable_pairs": 9,
+  "matched_pairs": 8,
+  "dimensions": {
+    "os_layer": {
+      "categories": [
+        "Kernel",
+        "SystemLib",
+        "RuntimeVM",
+        "Framework",
+        "SystemService",
+        "Application"
+      ],
+      "vectors": {
+        "Android": [
+          30,
+          101,
+          2,
+          90,
+          194,
+          83
+        ],
+        "Linux": [
+          79,
+          94,
+          1,
+          18,
+          37,
+          271
+        ],
+        "HarmonyOS": [
+          359,
+          34,
+          44,
+          14,
+          24,
+          25
+        ]
+      },
+      "os_order": [
+        "Android",
+        "Linux",
+        "HarmonyOS"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.2571428571428571,
+          -0.6571428571428571
+        ],
+        [
+          0.2571428571428571,
+          1.0,
+          0.08571428571428572
+        ],
+        [
+          -0.6571428571428571,
+          0.08571428571428572,
+          1.0
+        ]
+      ],
+      "matched_pairs": 3,
+      "pairs": 3,
+      "verdict": "supported"
+    },
+    "affected_function": {
+      "categories": [
+        "Mem/Res Mng",
+        "Pro/Tas Sch",
+        "Sto Mng",
+        "Dev/Drv",
+        "Net/Com",
+        "Com/Adp",
+        "Sec/Perm",
+        "Gra/Ren"
+      ],
+      "vectors": {
+        "Android": [
+          62,
+          24,
+          18,
+          36,
+          16,
+          15,
+          300,
+          29
+        ],
+        "Linux": [
+          10,
+          18,
+          42,
+          86,
+          33,
+          206,
+          70,
+          35
+        ],
+        "HarmonyOS": [
+          114,
+          28,
+          69,
+          68,
+          100,
+          12,
+          90,
+          19
+        ]
+      },
+      "os_order": [
+        "Android",
+        "Linux",
+        "HarmonyOS"
+      ],
+      "matrix": [
+        [
+          1.0,
+          -0.19047619047619047,
+          0.42857142857142855
+        ],
+        [
+          -0.19047619047619047,
+          1.0,
+          -0.5238095238095238
+        ],
+        [
+          0.42857142857142855,
+          -0.5238095238095238,
+          1.0
+        ]
+      ],
+      "matched_pairs": 3,
+      "pairs": 3,
+      "verdict": "supported"
+    },
+    "trigger_scenario": {
+      "categories": [
+        "Per/Ide Dep",
+        "Reg Ope",
+        "Bor Con",
+        "Con/Mul Thr",
+        "Sta Dep",
+        "Env Dep",
+        "Mul/Loc Dep"
+      ],
+      "vectors": {
+        "Android": [
+          156,
+          44,
+          185,
+          36,
+          74,
+          5,
+          0
+        ],
+        "Linux": [
+          8,
+          45,
+          95,
+          15,
+          26,
+          310,
+          1
+        ],
+        "HarmonyOS": [
+          14,
+          33,
+          263,
+          120,
+          56,
+          14,
+          0
+        ]
+      },
+      "os_order": [
+        "Android",
+        "Linux",
+        "HarmonyOS"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.21428571428571427,
+          0.6126374746329801
+        ],
+        [
+          0.21428571428571427,
+          1.0,
+          0.41443123283995714
+        ],
+        [
+          0.6126374746329801,
+          0.41443123283995714,
+          1.0
+        ]
+      ],
+      "matched_pairs": 2,
+      "pairs": 3,
+      "verdict": "partially supported"
+    },
+    "overall": {
+      "construction_status": "not specified by paper",
+      "verdict": "inconclusive",
+      "candidate_definition": "Concatenate OS-layer, affected-function and trigger-scenario category counts (6+8+7=21 values) in Table II order, then Spearman correlate.",
+      "candidate_os_order": [
+        "Android",
+        "Linux",
+        "HarmonyOS"
+      ],
+      "candidate_vectors": {
+        "Android": [
+          30,
+          101,
+          2,
+          90,
+          194,
+          83,
+          62,
+          24,
+          18,
+          36,
+          16,
+          15,
+          300,
+          29,
+          156,
+          44,
+          185,
+          36,
+          74,
+          5,
+          0
+        ],
+        "Linux": [
+          79,
+          94,
+          1,
+          18,
+          37,
+          271,
+          10,
+          18,
+          42,
+          86,
+          33,
+          206,
+          70,
+          35,
+          8,
+          45,
+          95,
+          15,
+          26,
+          310,
+          1
+        ],
+        "HarmonyOS": [
+          359,
+          34,
+          44,
+          14,
+          24,
+          25,
+          114,
+          28,
+          69,
+          68,
+          100,
+          12,
+          90,
+          19,
+          14,
+          33,
+          263,
+          120,
+          56,
+          14,
+          0
+        ]
+      },
+      "candidate_matrix": [
+        [
+          1.0,
+          0.1605459948287529,
+          0.20878058716508596
+        ],
+        [
+          0.1605459948287529,
+          1.0,
+          0.04944698509144641
+        ],
+        [
+          0.20878058716508596,
+          0.04944698509144641,
+          1.0
+        ]
+      ],
+      "caution": "The candidate is a disclosed analytical choice, not evidence that Fig. 4d was exactly reproduced. Figure/prose pair labels disagree for the -0.11 value.",
+      "comparisons": [
+        {
+          "dimension": "overall_concatenation_candidate",
+          "os_a": "Android",
+          "os_b": "Linux",
+          "paper_rho_rounded": 0.05,
+          "ours_rho": 0.1605459948287529,
+          "signed_gap": 0.1105459948287529,
+          "absolute_gap": 0.1105459948287529,
+          "matches_published_precision": null,
+          "status": "not a verified reconstruction; paper omits overall construction"
+        },
+        {
+          "dimension": "overall_concatenation_candidate",
+          "os_a": "Android",
+          "os_b": "HarmonyOS",
+          "paper_rho_rounded": -0.11,
+          "ours_rho": 0.20878058716508596,
+          "signed_gap": 0.31878058716508595,
+          "absolute_gap": 0.31878058716508595,
+          "matches_published_precision": null,
+          "status": "not a verified reconstruction; paper omits overall construction"
+        },
+        {
+          "dimension": "overall_concatenation_candidate",
+          "os_a": "Linux",
+          "os_b": "HarmonyOS",
+          "paper_rho_rounded": -0.04,
+          "ours_rho": 0.04944698509144641,
+          "signed_gap": 0.08944698509144641,
+          "absolute_gap": 0.08944698509144641,
+          "matches_published_precision": null,
+          "status": "not a verified reconstruction; paper omits overall construction"
+        }
+      ]
+    }
+  },
+  "zero_category_sensitivity": {
+    "factor_changed": "Treatment of categories with zero counts in both members of each OS pair",
+    "default_policy": "Retain all taxonomy categories, including jointly zero categories.",
+    "alternative_policy": "Remove a category for a pair only when both systems have count zero; keep all other methods and inputs fixed.",
+    "matched_pairs": 9,
+    "comparable_pairs": 9,
+    "checks": [
+      {
+        "dimension": "os_layer",
+        "os_a": "Android",
+        "os_b": "Linux",
+        "paper_rho_rounded": 0.26,
+        "all_categories_rho": 0.2571428571428571,
+        "rho_from_published_table_ii": 0.2571428571428571,
+        "all_categories_count": 6,
+        "excluded_categories": "",
+        "retained_categories_count": 6,
+        "joint_zeros_excluded_rho": 0.2571428571428571,
+        "joint_zeros_excluded_matches_2dp": true,
+        "interpretation": "Controlled alternative; original paper does not specify treatment of jointly absent categories."
+      },
+      {
+        "dimension": "os_layer",
+        "os_a": "Android",
+        "os_b": "HarmonyOS",
+        "paper_rho_rounded": -0.66,
+        "all_categories_rho": -0.6571428571428571,
+        "rho_from_published_table_ii": -0.6571428571428571,
+        "all_categories_count": 6,
+        "excluded_categories": "",
+        "retained_categories_count": 6,
+        "joint_zeros_excluded_rho": -0.6571428571428571,
+        "joint_zeros_excluded_matches_2dp": true,
+        "interpretation": "Controlled alternative; original paper does not specify treatment of jointly absent categories."
+      },
+      {
+        "dimension": "os_layer",
+        "os_a": "Linux",
+        "os_b": "HarmonyOS",
+        "paper_rho_rounded": 0.09,
+        "all_categories_rho": 0.08571428571428572,
+        "rho_from_published_table_ii": 0.08571428571428572,
+        "all_categories_count": 6,
+        "excluded_categories": "",
+        "retained_categories_count": 6,
+        "joint_zeros_excluded_rho": 0.08571428571428572,
+        "joint_zeros_excluded_matches_2dp": true,
+        "interpretation": "Controlled alternative; original paper does not specify treatment of jointly absent categories."
+      },
+      {
+        "dimension": "affected_function",
+        "os_a": "Android",
+        "os_b": "Linux",
+        "paper_rho_rounded": -0.19,
+        "all_categories_rho": -0.19047619047619047,
+        "rho_from_published_table_ii": -0.19047619047619047,
+        "all_categories_count": 8,
+        "excluded_categories": "",
+        "retained_categories_count": 8,
+        "joint_zeros_excluded_rho": -0.19047619047619047,
+        "joint_zeros_excluded_matches_2dp": true,
+        "interpretation": "Controlled alternative; original paper does not specify treatment of jointly absent categories."
+      },
+      {
+        "dimension": "affected_function",
+        "os_a": "Android",
+        "os_b": "HarmonyOS",
+        "paper_rho_rounded": 0.43,
+        "all_categories_rho": 0.42857142857142855,
+        "rho_from_published_table_ii": 0.42857142857142855,
+        "all_categories_count": 8,
+        "excluded_categories": "",
+        "retained_categories_count": 8,
+        "joint_zeros_excluded_rho": 0.42857142857142855,
+        "joint_zeros_excluded_matches_2dp": true,
+        "interpretation": "Controlled alternative; original paper does not specify treatment of jointly absent categories."
+      },
+      {
+        "dimension": "affected_function",
+        "os_a": "Linux",
+        "os_b": "HarmonyOS",
+        "paper_rho_rounded": -0.52,
+        "all_categories_rho": -0.5238095238095238,
+        "rho_from_published_table_ii": -0.5238095238095238,
+        "all_categories_count": 8,
+        "excluded_categories": "",
+        "retained_categories_count": 8,
+        "joint_zeros_excluded_rho": -0.5238095238095238,
+        "joint_zeros_excluded_matches_2dp": true,
+        "interpretation": "Controlled alternative; original paper does not specify treatment of jointly absent categories."
+      },
+      {
+        "dimension": "trigger_scenario",
+        "os_a": "Android",
+        "os_b": "Linux",
+        "paper_rho_rounded": 0.21,
+        "all_categories_rho": 0.21428571428571427,
+        "rho_from_published_table_ii": 0.21428571428571427,
+        "all_categories_count": 7,
+        "excluded_categories": "",
+        "retained_categories_count": 7,
+        "joint_zeros_excluded_rho": 0.21428571428571427,
+        "joint_zeros_excluded_matches_2dp": true,
+        "interpretation": "Controlled alternative; original paper does not specify treatment of jointly absent categories."
+      },
+      {
+        "dimension": "trigger_scenario",
+        "os_a": "Android",
+        "os_b": "HarmonyOS",
+        "paper_rho_rounded": 0.38,
+        "all_categories_rho": 0.6126374746329801,
+        "rho_from_published_table_ii": 0.6126374746329801,
+        "all_categories_count": 7,
+        "excluded_categories": "Mul/Loc Dep",
+        "retained_categories_count": 6,
+        "joint_zeros_excluded_rho": 0.3768511731740915,
+        "joint_zeros_excluded_matches_2dp": true,
+        "interpretation": "Controlled alternative; original paper does not specify treatment of jointly absent categories."
+      },
+      {
+        "dimension": "trigger_scenario",
+        "os_a": "Linux",
+        "os_b": "HarmonyOS",
+        "paper_rho_rounded": 0.41,
+        "all_categories_rho": 0.41443123283995714,
+        "rho_from_published_table_ii": 0.41443123283995714,
+        "all_categories_count": 7,
+        "excluded_categories": "",
+        "retained_categories_count": 7,
+        "joint_zeros_excluded_rho": 0.41443123283995714,
+        "joint_zeros_excluded_matches_2dp": true,
+        "interpretation": "Controlled alternative; original paper does not specify treatment of jointly absent categories."
+      }
+    ],
+    "interpretation": "An exact rounded match under an inferred convention is evidence of a plausible explanation, not proof that the authors used that convention."
+  },
+  "controlled_zero_category_check": {
+    "factor_changed": "Treatment of categories with zero counts in both members of each OS pair",
+    "default_policy": "Retain all taxonomy categories, including jointly zero categories.",
+    "alternative_policy": "Remove a category for a pair only when both systems have count zero; keep all other methods and inputs fixed.",
+    "matched_pairs": 9,
+    "comparable_pairs": 9,
+    "checks": [
+      {
+        "dimension": "os_layer",
+        "os_a": "Android",
+        "os_b": "Linux",
+        "paper_rho_rounded": 0.26,
+        "all_categories_rho": 0.2571428571428571,
+        "rho_from_published_table_ii": 0.2571428571428571,
+        "all_categories_count": 6,
+        "excluded_categories": "",
+        "retained_categories_count": 6,
+        "joint_zeros_excluded_rho": 0.2571428571428571,
+        "joint_zeros_excluded_matches_2dp": true,
+        "interpretation": "Controlled alternative; original paper does not specify treatment of jointly absent categories."
+      },
+      {
+        "dimension": "os_layer",
+        "os_a": "Android",
+        "os_b": "HarmonyOS",
+        "paper_rho_rounded": -0.66,
+        "all_categories_rho": -0.6571428571428571,
+        "rho_from_published_table_ii": -0.6571428571428571,
+        "all_categories_count": 6,
+        "excluded_categories": "",
+        "retained_categories_count": 6,
+        "joint_zeros_excluded_rho": -0.6571428571428571,
+        "joint_zeros_excluded_matches_2dp": true,
+        "interpretation": "Controlled alternative; original paper does not specify treatment of jointly absent categories."
+      },
+      {
+        "dimension": "os_layer",
+        "os_a": "Linux",
+        "os_b": "HarmonyOS",
+        "paper_rho_rounded": 0.09,
+        "all_categories_rho": 0.08571428571428572,
+        "rho_from_published_table_ii": 0.08571428571428572,
+        "all_categories_count": 6,
+        "excluded_categories": "",
+        "retained_categories_count": 6,
+        "joint_zeros_excluded_rho": 0.08571428571428572,
+        "joint_zeros_excluded_matches_2dp": true,
+        "interpretation": "Controlled alternative; original paper does not specify treatment of jointly absent categories."
+      },
+      {
+        "dimension": "affected_function",
+        "os_a": "Android",
+        "os_b": "Linux",
+        "paper_rho_rounded": -0.19,
+        "all_categories_rho": -0.19047619047619047,
+        "rho_from_published_table_ii": -0.19047619047619047,
+        "all_categories_count": 8,
+        "excluded_categories": "",
+        "retained_categories_count": 8,
+        "joint_zeros_excluded_rho": -0.19047619047619047,
+        "joint_zeros_excluded_matches_2dp": true,
+        "interpretation": "Controlled alternative; original paper does not specify treatment of jointly absent categories."
+      },
+      {
+        "dimension": "affected_function",
+        "os_a": "Android",
+        "os_b": "HarmonyOS",
+        "paper_rho_rounded": 0.43,
+        "all_categories_rho": 0.42857142857142855,
+        "rho_from_published_table_ii": 0.42857142857142855,
+        "all_categories_count": 8,
+        "excluded_categories": "",
+        "retained_categories_count": 8,
+        "joint_zeros_excluded_rho": 0.42857142857142855,
+        "joint_zeros_excluded_matches_2dp": true,
+        "interpretation": "Controlled alternative; original paper does not specify treatment of jointly absent categories."
+      },
+      {
+        "dimension": "affected_function",
+        "os_a": "Linux",
+        "os_b": "HarmonyOS",
+        "paper_rho_rounded": -0.52,
+        "all_categories_rho": -0.5238095238095238,
+        "rho_from_published_table_ii": -0.5238095238095238,
+        "all_categories_count": 8,
+        "excluded_categories": "",
+        "retained_categories_count": 8,
+        "joint_zeros_excluded_rho": -0.5238095238095238,
+        "joint_zeros_excluded_matches_2dp": true,
+        "interpretation": "Controlled alternative; original paper does not specify treatment of jointly absent categories."
+      },
+      {
+        "dimension": "trigger_scenario",
+        "os_a": "Android",
+        "os_b": "Linux",
+        "paper_rho_rounded": 0.21,
+        "all_categories_rho": 0.21428571428571427,
+        "rho_from_published_table_ii": 0.21428571428571427,
+        "all_categories_count": 7,
+        "excluded_categories": "",
+        "retained_categories_count": 7,
+        "joint_zeros_excluded_rho": 0.21428571428571427,
+        "joint_zeros_excluded_matches_2dp": true,
+        "interpretation": "Controlled alternative; original paper does not specify treatment of jointly absent categories."
+      },
+      {
+        "dimension": "trigger_scenario",
+        "os_a": "Android",
+        "os_b": "HarmonyOS",
+        "paper_rho_rounded": 0.38,
+        "all_categories_rho": 0.6126374746329801,
+        "rho_from_published_table_ii": 0.6126374746329801,
+        "all_categories_count": 7,
+        "excluded_categories": "Mul/Loc Dep",
+        "retained_categories_count": 6,
+        "joint_zeros_excluded_rho": 0.3768511731740915,
+        "joint_zeros_excluded_matches_2dp": true,
+        "interpretation": "Controlled alternative; original paper does not specify treatment of jointly absent categories."
+      },
+      {
+        "dimension": "trigger_scenario",
+        "os_a": "Linux",
+        "os_b": "HarmonyOS",
+        "paper_rho_rounded": 0.41,
+        "all_categories_rho": 0.41443123283995714,
+        "rho_from_published_table_ii": 0.41443123283995714,
+        "all_categories_count": 7,
+        "excluded_categories": "",
+        "retained_categories_count": 7,
+        "joint_zeros_excluded_rho": 0.41443123283995714,
+        "joint_zeros_excluded_matches_2dp": true,
+        "interpretation": "Controlled alternative; original paper does not specify treatment of jointly absent categories."
+      }
+    ],
+    "interpretation": "An exact rounded match under an inferred convention is evidence of a plausible explanation, not proof that the authors used that convention."
+  },
+  "policy_matching": {
+    "all_categories": {
+      "matched_pairs": 8,
+      "comparable_pairs": 9,
+      "status": "default, fully aligned taxonomy"
+    },
+    "joint_zero_excluded": {
+      "matched_pairs": 9,
+      "comparable_pairs": 9,
+      "status": "inferred alternative convention, not author-confirmed"
+    }
+  },
+  "scope": "Author-released categorical labels, with explicit treatment of under-specified overall comparison."
+}

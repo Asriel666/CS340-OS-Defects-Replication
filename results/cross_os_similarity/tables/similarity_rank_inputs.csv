@@ -1,0 +1,64 @@
+dimension,os,category,count,average_rank
+os_layer,Android,Kernel,30,2.0
+os_layer,Android,SystemLib,101,5.0
+os_layer,Android,RuntimeVM,2,1.0
+os_layer,Android,Framework,90,4.0
+os_layer,Android,SystemService,194,6.0
+os_layer,Android,Application,83,3.0
+os_layer,Linux,Kernel,79,4.0
+os_layer,Linux,SystemLib,94,5.0
+os_layer,Linux,RuntimeVM,1,1.0
+os_layer,Linux,Framework,18,2.0
+os_layer,Linux,SystemService,37,3.0
+os_layer,Linux,Application,271,6.0
+os_layer,HarmonyOS,Kernel,359,6.0
+os_layer,HarmonyOS,SystemLib,34,4.0
+os_layer,HarmonyOS,RuntimeVM,44,5.0
+os_layer,HarmonyOS,Framework,14,1.0
+os_layer,HarmonyOS,SystemService,24,2.0
+os_layer,HarmonyOS,Application,25,3.0
+affected_function,Android,Mem/Res Mng,62,7.0
+affected_function,Android,Pro/Tas Sch,24,4.0
+affected_function,Android,Sto Mng,18,3.0
+affected_function,Android,Dev/Drv,36,6.0
+affected_function,Android,Net/Com,16,2.0
+affected_function,Android,Com/Adp,15,1.0
+affected_function,Android,Sec/Perm,300,8.0
+affected_function,Android,Gra/Ren,29,5.0
+affected_function,Linux,Mem/Res Mng,10,1.0
+affected_function,Linux,Pro/Tas Sch,18,2.0
+affected_function,Linux,Sto Mng,42,5.0
+affected_function,Linux,Dev/Drv,86,7.0
+affected_function,Linux,Net/Com,33,3.0
+affected_function,Linux,Com/Adp,206,8.0
+affected_function,Linux,Sec/Perm,70,6.0
+affected_function,Linux,Gra/Ren,35,4.0
+affected_function,HarmonyOS,Mem/Res Mng,114,8.0
+affected_function,HarmonyOS,Pro/Tas Sch,28,3.0
+affected_function,HarmonyOS,Sto Mng,69,5.0
+affected_function,HarmonyOS,Dev/Drv,68,4.0
+affected_function,HarmonyOS,Net/Com,100,7.0
+affected_function,HarmonyOS,Com/Adp,12,1.0
+affected_function,HarmonyOS,Sec/Perm,90,6.0
+affected_function,HarmonyOS,Gra/Ren,19,2.0
+trigger_scenario,Android,Per/Ide Dep,156,6.0
+trigger_scenario,Android,Reg Ope,44,4.0
+trigger_scenario,Android,Bor Con,185,7.0
+trigger_scenario,Android,Con/Mul Thr,36,3.0
+trigger_scenario,Android,Sta Dep,74,5.0
+trigger_scenario,Android,Env Dep,5,2.0
+trigger_scenario,Android,Mul/Loc Dep,0,1.0
+trigger_scenario,Linux,Per/Ide Dep,8,2.0
+trigger_scenario,Linux,Reg Ope,45,5.0
+trigger_scenario,Linux,Bor Con,95,6.0
+trigger_scenario,Linux,Con/Mul Thr,15,3.0
+trigger_scenario,Linux,Sta Dep,26,4.0
+trigger_scenario,Linux,Env Dep,310,7.0
+trigger_scenario,Linux,Mul/Loc Dep,1,1.0
+trigger_scenario,HarmonyOS,Per/Ide Dep,14,2.5
+trigger_scenario,HarmonyOS,Reg Ope,33,4.0
+trigger_scenario,HarmonyOS,Bor Con,263,7.0
+trigger_scenario,HarmonyOS,Con/Mul Thr,120,6.0
+trigger_scenario,HarmonyOS,Sta Dep,56,5.0
+trigger_scenario,HarmonyOS,Env Dep,14,2.5
+trigger_scenario,HarmonyOS,Mul/Loc Dep,0,1.0

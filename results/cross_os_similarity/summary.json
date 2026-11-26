@@ -1,0 +1,116 @@
+{
+  "stage": 4,
+  "research_question": "RQ3: Cross-OS distribution similarity",
+  "records_per_os": 500,
+  "dimensions": [
+    "os_layer",
+    "affected_function",
+    "trigger_scenario"
+  ],
+  "figures_4a_to_4c": {
+    "all_categories": {
+      "matched_pairs": 8,
+      "comparable_pairs": 9,
+      "status": "default, fully aligned taxonomy"
+    },
+    "joint_zero_excluded": {
+      "matched_pairs": 9,
+      "comparable_pairs": 9,
+      "status": "inferred alternative convention, not author-confirmed"
+    }
+  },
+  "change_when_joint_zeros_are_excluded": [
+    {
+      "dimension": "trigger_scenario",
+      "os_a": "Android",
+      "os_b": "HarmonyOS",
+      "paper_rho_rounded": 0.38,
+      "all_categories_rho": 0.6126374746329801,
+      "rho_from_published_table_ii": 0.6126374746329801,
+      "all_categories_count": 7,
+      "excluded_categories": "Mul/Loc Dep",
+      "retained_categories_count": 6,
+      "joint_zeros_excluded_rho": 0.3768511731740915,
+      "joint_zeros_excluded_matches_2dp": true,
+      "interpretation": "Controlled alternative; original paper does not specify treatment of jointly absent categories."
+    }
+  ],
+  "figure_4d": {
+    "verdict": "inconclusive",
+    "reason": "The candidate is a disclosed analytical choice, not evidence that Fig. 4d was exactly reproduced. Figure/prose pair labels disagree for the -0.11 value.",
+    "exploratory_candidate_only": "Concatenate OS-layer, affected-function and trigger-scenario category counts (6+8+7=21 values) in Table II order, then Spearman correlate."
+  },
+  "sample_size_extension": {
+    "sizes_per_os": [
+      50,
+      100,
+      250,
+      500
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "sampling": "Without replacement, independently within each OS; fixed seeds and fixed released labels.",
+    "limitation": "Internal robustness conditional on the released corpus; does not test external representativeness or annotation correctness.",
+    "trial_rows": 1080,
+    "harmonyos_affected_function_top_category": {
+      "50": {
+        "same_unique": 14,
+        "different_unique": 9,
+        "tie_in_draw": 7
+      },
+      "100": {
+        "same_unique": 20,
+        "different_unique": 9,
+        "tie_in_draw": 1
+      },
+      "250": {
+        "same_unique": 24,
+        "tie_in_draw": 1,
+        "different_unique": 5
+      },
+      "500": {
+        "same_unique": 30
+      }
+    }
+  },
+  "runs": 3,
+  "identical_result_hashes": true,
+  "semantic_result_sha256": "02439a341556e3d0dd52015a9e4e87ebf47c03f1d32258ac98106fe60bede5d3",
+  "figures": [
+    "figures/extension_sample_size.png",
+    "figures/rq3_affected_function.png",
+    "figures/rq3_os_layer.png",
+    "figures/rq3_trigger_scenario.png"
+  ],
+  "scope": "Statistics recomputed from the released labels at the pinned source commit."
+}

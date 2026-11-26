@@ -1,0 +1,13 @@
+dimension,os_a,os_b,paper_rho_rounded,ours_rho,signed_gap,absolute_gap,matches_published_precision,status
+os_layer,Android,Linux,0.26,0.2571428571428571,-0.0028571428571428914,0.0028571428571428914,True,comparable marginal distribution
+os_layer,Android,HarmonyOS,-0.66,-0.6571428571428571,0.0028571428571428914,0.0028571428571428914,True,comparable marginal distribution
+os_layer,Linux,HarmonyOS,0.09,0.08571428571428572,-0.004285714285714282,0.004285714285714282,True,comparable marginal distribution
+affected_function,Android,Linux,-0.19,-0.19047619047619047,-0.0004761904761904634,0.0004761904761904634,True,comparable marginal distribution
+affected_function,Android,HarmonyOS,0.43,0.42857142857142855,-0.0014285714285714457,0.0014285714285714457,True,comparable marginal distribution
+affected_function,Linux,HarmonyOS,-0.52,-0.5238095238095238,-0.003809523809523818,0.003809523809523818,True,comparable marginal distribution
+trigger_scenario,Android,Linux,0.21,0.21428571428571427,0.004285714285714282,0.004285714285714282,True,comparable marginal distribution
+trigger_scenario,Android,HarmonyOS,0.38,0.6126374746329801,0.23263747463298012,0.23263747463298012,False,comparable marginal distribution
+trigger_scenario,Linux,HarmonyOS,0.41,0.41443123283995714,0.0044312328399571665,0.0044312328399571665,True,comparable marginal distribution
+overall_concatenation_candidate,Android,Linux,0.05,0.1605459948287529,0.1105459948287529,0.1105459948287529,,not a verified reconstruction; paper omits overall construction
+overall_concatenation_candidate,Android,HarmonyOS,-0.11,0.20878058716508596,0.31878058716508595,0.31878058716508595,,not a verified reconstruction; paper omits overall construction
+overall_concatenation_candidate,Linux,HarmonyOS,-0.04,0.04944698509144641,0.08944698509144641,0.08944698509144641,,not a verified reconstruction; paper omits overall construction

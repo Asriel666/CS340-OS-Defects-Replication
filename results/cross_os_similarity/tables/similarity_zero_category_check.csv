@@ -1,0 +1,10 @@
+dimension,os_a,os_b,paper_rho_rounded,all_categories_rho,rho_from_published_table_ii,all_categories_count,excluded_categories,retained_categories_count,joint_zeros_excluded_rho,joint_zeros_excluded_matches_2dp,interpretation
+os_layer,Android,Linux,0.26,0.2571428571428571,0.2571428571428571,6,,6,0.2571428571428571,True,Controlled alternative; original paper does not specify treatment of jointly absent categories.
+os_layer,Android,HarmonyOS,-0.66,-0.6571428571428571,-0.6571428571428571,6,,6,-0.6571428571428571,True,Controlled alternative; original paper does not specify treatment of jointly absent categories.
+os_layer,Linux,HarmonyOS,0.09,0.08571428571428572,0.08571428571428572,6,,6,0.08571428571428572,True,Controlled alternative; original paper does not specify treatment of jointly absent categories.
+affected_function,Android,Linux,-0.19,-0.19047619047619047,-0.19047619047619047,8,,8,-0.19047619047619047,True,Controlled alternative; original paper does not specify treatment of jointly absent categories.
+affected_function,Android,HarmonyOS,0.43,0.42857142857142855,0.42857142857142855,8,,8,0.42857142857142855,True,Controlled alternative; original paper does not specify treatment of jointly absent categories.
+affected_function,Linux,HarmonyOS,-0.52,-0.5238095238095238,-0.5238095238095238,8,,8,-0.5238095238095238,True,Controlled alternative; original paper does not specify treatment of jointly absent categories.
+trigger_scenario,Android,Linux,0.21,0.21428571428571427,0.21428571428571427,7,,7,0.21428571428571427,True,Controlled alternative; original paper does not specify treatment of jointly absent categories.
+trigger_scenario,Android,HarmonyOS,0.38,0.6126374746329801,0.6126374746329801,7,Mul/Loc Dep,6,0.3768511731740915,True,Controlled alternative; original paper does not specify treatment of jointly absent categories.
+trigger_scenario,Linux,HarmonyOS,0.41,0.41443123283995714,0.41443123283995714,7,,7,0.41443123283995714,True,Controlled alternative; original paper does not specify treatment of jointly absent categories.
