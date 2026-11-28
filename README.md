@@ -23,7 +23,7 @@
 - [2026-11-14 类别集合敏感性、补丁正文审计与答辩材料](docs/weekly/2026-11-14.md)
 - [10 页答辩 PPT](presentations/defense_2026-11-14_v2.pptx)、[逐页讲稿](presentations/speaker_notes.md)
 - [相关系数差异的候选解释：成对排除共同零类别](docs/category_policy_analysis.md)
-- [11 月 14 日补丁正文审计：当时 8 条真实 diff、4 条登录页](docs/review_evidence_audit.md)；11 月 22 日已补齐后四条公开镜像，累计 12/12 可读，人工审核仍待完成
+- **[12 条补丁可读性审查已完成（11-28 确认，8+4=12/12；人工审核仍 0/12）](docs/review_evidence_readability_closure_2026-11-28.md)**；[11 月 14 日补丁正文审计：当时 8 条真实 diff、4 条登录页](docs/review_evidence_audit.md)；11 月 22 日已补齐后四条公开镜像
 - [A/B 独立待填表及说明](review_materials/blind/README.md)、[当前人工核验状态](results/human_review/status.json)
 - [2026-11-13 周五检查：Figure 4 缺口补齐分析与抽查材料](docs/weekly/2026-11-13.md)
 - [2026-11-12 同步核验、文档修正与下一步安排](docs/weekly/2026-11-12.md)
