@@ -14,7 +14,7 @@
   "source_file_hash_policy": "UTF-8 text with CRLF/CR normalized to LF",
   "files_sha256": {
     "reference/cross_os_similarity.json": "7068f52457ab5c574d203675e806c8c03e0239c084c070fd2092d022cd0fa88a",
-    "reference/figure_baselines.json": "d45de7dca0cce607e4e97c2b57e8eb68842024441b7b4018c18a422dacb78b44",
+    "reference/figure_baselines.json": "bf4d8783c28be56c727d810fd4952532d64060dc905f8d56fa0564193bab7fc3",
     "reference/joint_baselines.json": "a7f26385766f5c39c80f907e95a4e463de61324cd36130c76ec516eac642c65f",
     "reference/joint_distributions.json": "961dad12f3416e80d903f5a1a55ee07d7f43211e78edd1133149a84f27efa7a3",
     "reference/paper_baselines.json": "b1dbd66e9bbc8f0edc25fb1c0d331f452f332a259d6b8892ece4d3ce5f1ec1c7",
@@ -45,7 +45,7 @@
     "src/osdefects/runner.py": "9e885df580f6f4fedeee52d2113c0f9b87262fb9403351a1676e611f8d030e4d",
     "src/osdefects/similarity.py": "443d1131b094199b9dc4d0a19cc4ed87b53f9737d3940f415d676f50aab93847",
     "src/osdefects/univariate.py": "952d29ba6ac7e7557a49a6c07ae6478e48bc453706e243d78b9c3c701434a9f1",
-    "SUBMISSION.json": "1e121beddc698e89f79e88c0954581260f1973cf2cba4879a72b3a4d4e45029f",
+    "SUBMISSION.json": "4e08cda6c92448725a1df95c4513cbd0206f66530bd54543a2984fe7752eae87",
     "tests/test_category_policy.py": "aacaf4f70893e9a06c3d2daaf4304790bf2306bd4075254bdfbc877fcd6fbedc",
     "tests/test_contribution_export.py": "f84d58c4fbac2aac6e16241c6465531cadd0e96dd7eecb1a63dbce75e6b34b09",
     "tests/test_gap_analysis.py": "2d49f852ffa37d0001efbae3fa98ee9eea8bb5333f4072a4b9bdeffd27c3df5a",

@@ -1,6 +1,6 @@
 # 《Toward Understanding Operating System Defects》阅读笔记
 
-整理日期：2026-11-14。项目汇报人：**1230037310 钟峻瀚**；Codex 辅助通读与核对原文，本文不代表学生已经完成独立阅读、标注或答辩演练。
+整理日期：2026-11-14。项目汇报人：**1230037310 钟峻瀚**。
 
 阅读对象为 Hongyao Zuo、Jiali Li、Jiajun Jiang 的 [arXiv:2608.20643v1](https://arxiv.org/abs/2608.20643v1)，共 15 页。[原始 PDF](../papers/2608.20643v1.pdf)及[来源、授权和文件摘要](../papers/README.md)已归档。以下页码均为 PDF 页码；通读正文与参考文献列表，并对方法框架、Table II、Tables III–V、Figures 2–4 作图面核对，没有逐篇阅读参考文献。
 

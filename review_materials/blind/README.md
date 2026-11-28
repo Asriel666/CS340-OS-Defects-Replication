@@ -2,7 +2,7 @@
 
 协调人只向审核者分发本目录中的 `cases.csv`、本说明及该审核者对应的 `reviewer_A.csv` 或 `reviewer_B.csv`。判断前不要打开另一位审核者的文件、`coordinator/`、旧版审核表或其他含作者标签的材料。公开仓库无法强制隔离答案，此处通过分开发放减少提前看到答案的风险。
 
-**2026-11-22 来源补充：**同时分发 [supplemental_sources_2026-11-22.csv](supplemental_sources_2026-11-22.csv)。它提供四条 HarmonyOS 原链接的公开镜像及提交身份信息，不含作者标签或助手判断。原 `patch_url` 保留，实际采用的镜像填入 `evidence_urls`。CVE-2024-46740 原链接仅有 12 位 SHA；镜像解析为完整 SHA，但未从原 Gitee 独立获得完整值，阅读时保留这项限制。
+**2026-11-22 来源补充：**同时分发 [supplemental_sources_2026-11-22.csv](supplemental_sources_2026-11-22.csv)。它提供四条 HarmonyOS 原链接的公开镜像及提交身份信息，不含作者标签或判断。原 `patch_url` 保留，实际采用的镜像填入 `evidence_urls`。CVE-2024-46740 原链接仅有 12 位 SHA；镜像解析为完整 SHA，但未从原 Gitee 独立获得完整值，阅读时保留这项限制。
 
 每位审核者阅读 12 条样本的原始报告和补丁，独立填写三个维度，记录姓名、日期、具体证据链接与判断理由。HTTP 200 可能只是登录页，必须确认页面实际包含补丁或缺陷描述。无法取得材料、内容不足或无法判断的维度填写 `unconfirmed`，在 `notes` 中写明原因。
 

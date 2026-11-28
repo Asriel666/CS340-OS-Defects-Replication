@@ -99,7 +99,7 @@
     }
   ],
   "limitations": [
-    "Automated execution by Codex, not a student independent rerun or human annotation audit.",
+    "Automated execution; not an independent student rerun or human annotation audit.",
     "Repair bins are descriptive; this entry does not reproduce Figure 2/3 bin heights.",
     "Historical root/weekend_02 outputs are retained, not rewritten as new runs."
   ],
