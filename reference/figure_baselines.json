@@ -7,7 +7,7 @@
   },
   "provenance": {
     "kind": "transcribed_from_published_bar_labels",
-    "note": "Every bar in Figures 2 and 3 prints its exact percentage, so these baselines are transcribed values, not visual estimates of bar heights. Each series was read from the linked PNG and cross-checked for a 100% total per operating system. This file was transcribed by hand and was not derived from any recomputation; re-verify against the linked images before relying on it.",
+    "note": "Every bar in Figures 2 and 3 prints its exact percentage, so these baselines are transcribed values, not visual estimates of bar heights. Each series was read from the linked PNG and cross-checked for a 100% total per operating system. This file was written by hand with tool assistance and was not derived from any recomputation; re-verify against the linked images before relying on it.",
     "transcribed_at": "2026-11-07",
     "figure_images": {
       "figure_2": "https://arxiv.org/html/2608.20643v1/photo/group_changes.png",

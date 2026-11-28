@@ -8,7 +8,7 @@
 
 This report documents my registered contributions and the project's progress for course assessment. The historical contribution list is fixed at commit `0c949b3a326c2a7e8d6198ae949cf8bb25fe9b27`, covering work submitted through 18 November. The synchronization check at the start of the 22 November session found no subsequent team updates. The new work described in Section 7 was committed and pushed as [d0c43ca](https://github.com/Asriel666/CS340-OS-Defects-Replication/commit/d0c43ca6919c459103329fb31fa94d7b422448a6) at approximately **14:28 Beijing time on 22 November**, changing 26 files. This English version translates and revises the report; it does not represent another round of experiments.
 
-The personal contributions below are registered under my student ID and follow tasks I requested. Git records establish submitted changes and their registered identity, but do not establish hours worked or a numerical share of individual effort. No actual working hours are inferred here.
+The personal contributions below are registered under my student ID and follow tasks I requested, with Codex assistance. Codex contributed to implementation, computation, automated verification, source inspection, and documentation. These activities are distinguished from independent student annotation and execution. Git records establish submitted changes and their registered identity, but do not establish hours worked or a numerical share of individual effort. No actual working hours are inferred here.
 
 ## 1. Project Objectives and Current Results
 

@@ -1,6 +1,6 @@
 {
   "command": ["py", "-3.11", "scripts/verify_reproduction.py", "--allow-source-changes", "--output-dir", "results/checkpoint_2026-11-22"],
-  "actor": "automated execution",
+  "actor": "Codex automated execution; not an independent student rerun",
   "attempts": [
     {
       "sequence": 1,

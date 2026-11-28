@@ -3,9 +3,9 @@
   "verification_runs": 3,
   "semantic_result_sha256": "d6a5eac967c67f64e593522aef0dcb31d19311a48f3d50541756298d73cfb3d3",
   "elapsed_seconds_per_verification_run": [
-    0.3448,
-    0.3086,
-    0.3172
+    0.2891,
+    0.3253,
+    0.3058
   ],
   "source_sha256_lf": "3794ff8c39e975ff457f264cb863f6e191297614dc0273f04c09ac654962eed5",
   "status": "success",
@@ -13,5 +13,5 @@
   "invocation": [
     "scripts/run_gap_analysis.py"
   ],
-  "started_at_utc": "2026-11-28T08:36:03+00:00"
+  "started_at_utc": "2026-11-28T08:47:32+00:00"
 }

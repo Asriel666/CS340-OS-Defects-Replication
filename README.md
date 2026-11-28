@@ -2,7 +2,7 @@
 
 **提交人：1230036051 GUO HAOXUAN** · 检查日期：2026-11-06；2026-11-07 增补 Figures 2/3 分箱约定敏感性分析
 
-**2026-11-22 更新与汇报：1230037310 钟峻瀚**。保留仓库现有提交人信息；实际人工核验与共同署名由成员据实确认。
+**2026-11-22 更新与汇报：1230037310 钟峻瀚**。保留仓库现有提交人信息；本轮由 Codex 协助分析、实现和制作材料，实际人工核验与共同署名由成员据实确认。
 
 **2026-11-28 更新：1230036051 GUO HAOXUAN**。上传最终版 14 页答辩 PPT，完成 17 项数值一致性核对（17/17），并提交[个人进度报告](docs/contributions/1230036051_Guo_Haoxuan_2026-11-28.md)。
 
@@ -63,7 +63,7 @@ RQ1 前四维单标签比例合计 100%；代码元素为多标签，每类均�
 
 ```powershell
 # 复算敏感性分析（三次运行语义摘要一致；--no-plots 可跳过绘图）。
-py -3.11 scripts/run_repair_size.py
+py -3.13 scripts/run_repair_size.py
 ```
 
 输出到 `results/repair_size/`：逐柱对比 `tables/convention_comparison.csv`（含逐行论文出处）、各约定吻合汇总 `tables/config_match_summary.csv`、机器可读结果 `tables/repair_size_sensitivity.json`、数据校验与环境记录 `data_validation.json` / `environment.json`，以及 11 张对比图（8 张单约定重算图 + 3 张“论文基准 vs 两种约定”对比图）。
@@ -73,7 +73,7 @@ py -3.11 scripts/run_repair_size.py
 **以下全部是本项目新增的探索性分析，不是经验证的论文复现，不计入 561 项核心对比，也不改变任何作者原值。**
 
 ```powershell
-py -3.11 scripts/run_gap_analysis.py
+py -3.13 scripts/run_gap_analysis.py
 ```
 
 - **Figure 4(c)**：原有 **144 个口径**仅比较完整类别与“三系统全为零才排除”的类别集，Android–HarmonyOS 触发场景所得值与 0.38 的最小差为 0.2326。它们**未覆盖成对排除共同零类别**，不能据此排除所有常见口径。本轮补做三种类别规则的 27 项比较，成对排除规则为 9/9 吻合；作者实际方法仍待确认。
@@ -86,57 +86,57 @@ py -3.11 scripts/run_gap_analysis.py
 
 ```powershell
 # 类别集合敏感性：三次实际计算，输出 27 项比较与 189 行类别证据。
-py -3.11 scripts/run_category_policy.py --runs 3 --offline
+py -3.13 scripts/run_category_policy.py --runs 3 --offline
 
 # 可选：已有 SciPy 时，独立核对全部系数和平均秩。
-py -3.11 scripts/run_category_policy.py --runs 3 --offline --cross-check-scipy
+py -3.13 scripts/run_category_policy.py --runs 3 --offline --cross-check-scipy
 
 # 联网读取 12 条补丁正文；原始响应仅缓存在 work/，不执行补丁。
-py -3.11 scripts/audit_review_evidence.py
+py -3.13 scripts/audit_review_evidence.py
 
 # 只读核对四条 HarmonyOS 原 fork 的公开镜像、补丁及父/当前文件。
-py -3.11 scripts/check_review_mirrors.py --output-dir work/mirror_recheck
+py -3.13 scripts/check_review_mirrors.py --output-dir work/mirror_recheck
 
 # 生成分离作者答案的待填审核表；已有文件不会被覆盖。
-py -3.11 scripts/manage_review.py prepare
-py -3.11 scripts/manage_review.py check
+py -3.13 scripts/manage_review.py prepare
+py -3.13 scripts/manage_review.py check
 ```
 
 新审核表在 `review_materials/blind/`，作者标签单独放在 `review_materials/coordinator/`。两位成员应先各自填写再对照答案，公开仓库无法技术上保证盲审。当前 A/B 均为 **0/12**；空白或未确认字段不会计为标签一致。内容审计和自动校验都不能替代两名学生的独立判断。
 
 ## 一条命令复现
 
-使用全局 Python 3.11，无需创建虚拟环境。在仓库根目录执行：
+使用 Python 3.13，无需创建虚拟环境。在仓库根目录执行：
 
 ```powershell
-py -3.11 scripts/run_stage.py --analysis all --runs 3
+py -3.13 scripts/run_stage.py --analysis all --runs 3
 ```
 
 首次运行下载固定输入并严格校验；随后执行三次实际计算，输出 CSV、JSON、17 张 PNG、环境记录和每次运行日志到 `results/full/`。默认不会重新爬取或标注缺陷。
 
-**绘图依赖：** 本次实际使用 Python 3.11.9、ReportLab 5.1.0、Pillow 12.3.0；Poppler 的 `pdftoppm` 需在 PATH 中。缺少 Python 绘图包时执行 `py -3.11 -m pip install -r requirements.txt`；Poppler 需另行安装。数值计算与单元测试仅使用标准库，可通过 `--no-plots` 跳过绘图。
+**绘图依赖：** 本次实际使用 Python 3.13.14、ReportLab 5.1.0、Pillow 12.3.0；Poppler 的 `pdftoppm` 需在 PATH 中。缺少 Python 绘图包时执行 `py -3.13 -m pip install -r requirements.txt`；Poppler 需另行安装。数值计算与单元测试仅使用标准库，可通过 `--no-plots` 跳过绘图。
 
 ```powershell
 # 无绘图依赖也能验证全部数值，另存到新目录。
-py -3.11 scripts/run_stage.py --analysis all --runs 3 --no-plots --output-dir work/counts_only
+py -3.13 scripts/run_stage.py --analysis all --runs 3 --no-plots --output-dir work/counts_only
 
 # 有经过校验的缓存后，离线复跑并保留已提交结果。
-py -3.11 scripts/run_stage.py --analysis all --runs 3 --offline --output-dir work/offline_check
+py -3.13 scripts/run_stage.py --analysis all --runs 3 --offline --output-dir work/offline_check
 
 # 单独运行某个 RQ（rq1 / rq2 / rq3 均可）。
-py -3.11 scripts/run_stage.py --analysis rq2 --runs 3 --offline
+py -3.13 scripts/run_stage.py --analysis rq2 --runs 3 --offline
 
 # 离线单元测试。
-py -3.11 -m unittest discover -s tests -v
+py -3.13 -m unittest discover -s tests -v
 
 # 自动复制源码到临时新目录，对照仓库已保存的结果实际验证全部入口。
 # 需联网；保留历史结果，新版本源码差异逐文件记录，输入/基准/数值严格检查。
-py -3.11 scripts/verify_reproduction.py --allow-source-changes --output-dir results/checkpoint_2026-11-22
+py -3.13 scripts/verify_reproduction.py --output-dir results/checkpoint_2026-11-22
 ```
 
-`--allow-source-changes` 仅允许当前代码与历史 `environment.json` 的源码快照不同；临时副本必须等于当前源码，参考基准、固定输入摘要和全部历史数值仍须一致。省略此参数时，历史源码摘要也必须完全吻合。新记录保存在独立目录，历史验证文件保持原样。
+验证在临时新目录中复制当前源码，对照仓库已保存的结果实际运行；参考基准、固定输入摘要、源码快照与全部历史数值均严格比对。新记录保存在独立目录，历史验证文件保持原样。
 
-macOS/Linux 将 `py -3.11` 换为 `python3.11`，通过系统包管理器安装 Poppler。首次下载需要网络；`--offline` 在没有缓存时明确失败。旧 `scripts/setup_venv.sh` 是历史可选辅助脚本，本次不使用。
+macOS/Linux 将 `py -3.13` 换为 `python3.13`，通过系统包管理器安装 Poppler。首次下载需要网络；`--offline` 在没有缓存时明确失败。旧 `scripts/setup_venv.sh` 是历史可选辅助脚本，本次不使用。
 
 | 入口 | 默认输出 | 范围 |
 |---|---|---|
@@ -153,8 +153,8 @@ macOS/Linux 将 `py -3.11` 换为 `python3.11`，通过系统包管理器安装 
 11 月 15 日上传的根目录入口现已修复仓库和基准定位，支持从其他工作目录调用，沿用固定输入的严格 SHA-256 校验：
 
 ```powershell
-py -3.11 run_weekend_02.py
-py -3.11 run_weekend_02.py --offline --no-plots --output-dir work/week2_check
+py -3.13 run_weekend_02.py
+py -3.13 run_weekend_02.py --offline --no-plots --output-dir work/week2_check
 ```
 
 默认输出 `results/weekend_02/`，连续实际计算三次，覆盖 Table II 的 114 个值及描述性修复规模分布，含 7 张图。`--output-dir` 的相对路径以调用者当前工作目录为准，`--runs` 不得小于 3。核心 RQ1/RQ2/RQ3 仍使用上方 `scripts/run_stage.py --analysis all` 入口。
@@ -163,7 +163,7 @@ py -3.11 run_weekend_02.py --offline --no-plots --output-dir work/week2_check
 
 原根目录 `weekend_02/` 保留为历史产物；其输入摘要对应已校验原文件额外增加一个末尾 LF。本轮新结果使用正确固定摘要，114 个 Table II 值与原产物及核心结果全部一致。该入口的修复规模使用自定义分箱，不作 Figures 2/3 精确比较；原图逐柱敏感性分析仍见 `results/repair_size/`。
 
-本轮 [112 项测试及实际运行检查](results/weekend_02/verification.json)通过：含图离线、新目录空缓存联网、外部工作目录离线、错误摘要拒绝。成功场景均进行了三次实际计算。自动验证不能代替成员亲自复跑或独立标签审核。
+本轮 [112 项测试及实际运行检查](results/weekend_02/verification.json)通过：含图离线、新目录空缓存联网、外部工作目录离线、错误摘要拒绝。成功场景均进行了三次实际计算。验证由 Codex 自动执行，不能代替另一成员亲自复跑或两人独立标签审核。
 
 ## 输入与验证
 
@@ -189,10 +189,10 @@ py -3.11 run_weekend_02.py --offline --no-plots --output-dir work/week2_check
 - `results/checkpoint_2026-11-22/`：当前版本统一验证；`results/review_evidence_followup/`：四条镜像补证；`results/contributions/1230037310/`：固定基线的个人历史提交清单。
 - `docs/`：报告、差异与方法附录；`docs/contributions/` 与 `output/pdf/`：个人详细进度报告及打印版。
 
-个人报告以英文版为优先检查入口，标题、作者栏和每页页脚均标明 **Zhong Junhan (1230037310)**。执行 `py -3.11 scripts/build_progress_report.py --language en` 可从英文 Markdown 重建英文 PDF；不带语言参数时仍生成中文存档版。英文版引用 11 月 22 日已通过的计算验证，本次翻译与排版不另计实验或人工审核。
+个人报告以英文版为优先检查入口，标题、作者栏和每页页脚均标明 **Zhong Junhan (1230037310)**。执行 `py -3.13 scripts/build_progress_report.py --language en` 可从英文 Markdown 重建英文 PDF；不带语言参数时仍生成中文存档版。英文版引用 11 月 22 日已通过的计算验证，本次翻译与排版不另计实验或人工审核。
 
 未完成项：**作者方法确认**——Figures 2/3 的分箱脚本、Figure 4(c) 是否按系统对排除共同零类别、Figure 4(d) 的 Overall 定义和系统对标注；[具体询问草稿](docs/author_questions.md)已写好但未发送。**人工与证据核验**——12 条双人独立标签抽查（A/B 表仍 0/12）、184 条异常记录的进一步核实，以及真实成员按 README 独立复跑和答辩演练。四条 Gitee 原地址仍需登录，但公开镜像补证已完成，其中一条保留原短 SHA 的身份限制。答辩材料现已包含 **14 页最终版 PPT**（11-27）与 10 页历史版（11-14）；最终版 17 项数值断言已核对通过，但数值核对不等于人工审核或演练。
 
 结论是**作者发布标签的核心统计得到重算检验；一项相关系数差异可由类别集合选择解释，但作者实际方法尚待确认**。Linux 是 Launchpad/Ubuntu 生态样本，不是纯内核样本；不同来源的比例不能直接用于系统质量排名。
 
-源数据与标签归原作者，上游材料遵循原作者授权声明。提交人信息见 [SUBMISSION.json](SUBMISSION.json)。实际人工检查和个人贡献应据实记录。
+源数据与标签归原作者，上游材料遵循原作者授权声明。提交人信息见 [SUBMISSION.json](SUBMISSION.json)。Codex 协助实现、计算、基准核对与文档，实际人工检查和个人贡献应据实记录。
