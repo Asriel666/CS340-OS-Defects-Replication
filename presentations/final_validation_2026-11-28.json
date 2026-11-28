@@ -1,0 +1,131 @@
+{
+  "scope": "Numerical consistency audit of the 14-slide final deck against repository evidence; not human review and not a presentation rehearsal.",
+  "audited_by": "1230036051 GUO HAOXUAN (HAOXUAN-stack)",
+  "audited_at": "2026-11-28",
+  "ppt": "presentations/OS_Defects_G15_Final_2026-11-27.pptx",
+  "ppt_sha256": "afb84e8c96c8a8f5d6a85025a7e3cf4d47df8fc72c7bc53cc362da72b65a3590",
+  "slide_count": 14,
+  "check_count": 17,
+  "verified": 17,
+  "checks": [
+    {
+      "slide": "P4",
+      "claim": "Table II 114/114 match",
+      "source": "results/full/tables/table_ii.csv",
+      "value": "114/114",
+      "status": "verified"
+    },
+    {
+      "slide": "P8",
+      "claim": "552/552 distribution values matched",
+      "source": "table_ii.csv + joint_comparison.csv",
+      "value": "552",
+      "status": "verified"
+    },
+    {
+      "slide": "P6",
+      "claim": "8/9 rank correlations match",
+      "source": "results/full/tables/similarity_comparison.csv",
+      "value": "8/9",
+      "status": "verified"
+    },
+    {
+      "slide": "P6/P11",
+      "claim": "Pairwise shared-zero removal 9/9",
+      "source": "results/category_policy/tables/category_policy_comparison.csv",
+      "value": "9/9",
+      "status": "verified"
+    },
+    {
+      "slide": "P6/P11",
+      "claim": "Android-HarmonyOS trigger 0.613 -> 0.377",
+      "source": "category_policy_comparison.csv (pairwise_nonzero)",
+      "value": "0.3768511731740915",
+      "status": "verified"
+    },
+    {
+      "slide": "P6/P11",
+      "claim": "Full-category Spearman 0.6126",
+      "source": "results/full/tables/similarity_summary.json",
+      "value": "0.6126374746329801",
+      "status": "verified"
+    },
+    {
+      "slide": "P9",
+      "claim": "HarmonyOS kernel 71.8%",
+      "source": "results/full/tables/table_ii.csv",
+      "value": "71.8",
+      "status": "verified"
+    },
+    {
+      "slide": "P4",
+      "claim": "64.8%-77.6% change <30 lines",
+      "source": "results/repair_size/tables/convention_comparison.csv",
+      "value": "Android 64.8%; Linux 68.8%; HarmonyOS 77.6%",
+      "status": "verified"
+    },
+    {
+      "slide": "P4",
+      "claim": "76.8%-88.6% touch 1-3 files",
+      "source": "data/processed/records.json (recomputed from modified_files)",
+      "value": "Android 84.6%; Linux 76.8%; HarmonyOS 88.6%",
+      "status": "verified"
+    },
+    {
+      "slide": "P5",
+      "claim": "Android service x permission trigger 16.0%",
+      "source": "results/full/tables/joint_comparison.csv",
+      "value": "16.0",
+      "status": "verified"
+    },
+    {
+      "slide": "P5",
+      "claim": "Linux app x environment 29.8%",
+      "source": "results/full/tables/joint_comparison.csv",
+      "value": "29.8",
+      "status": "verified"
+    },
+    {
+      "slide": "P5",
+      "claim": "HarmonyOS kernel x boundary 39.6%",
+      "source": "results/full/tables/joint_comparison.csv",
+      "value": "39.6",
+      "status": "verified"
+    },
+    {
+      "slide": "P5",
+      "claim": "HarmonyOS kernel x concurrency 19.4%",
+      "source": "results/full/tables/joint_comparison.csv",
+      "value": "19.4",
+      "status": "verified"
+    },
+    {
+      "slide": "P12",
+      "claim": "331 + 28 = 359 vs released 349",
+      "source": "results/full/data_validation.json",
+      "value": "anomaly retained",
+      "status": "verified"
+    },
+    {
+      "slide": "P12",
+      "claim": "6 Unknown -> Undecided; 7 lower bounds",
+      "source": "results/full/data_validation.json",
+      "value": "retained",
+      "status": "verified"
+    },
+    {
+      "slide": "P1/P10",
+      "claim": "Group 15 four named presenters",
+      "source": "PPT slide 1 and 10",
+      "value": "Guo Haoxuan / Zhong Yiheng / Zhong Junhan / Gu Xuanze",
+      "status": "verified"
+    },
+    {
+      "slide": "P6",
+      "claim": "n=50: 14 lead / 9 switch / 7 tie; 53.3%; n=250: 24/30",
+      "source": "results/cross_os_similarity/summary.json (sample_size_extension.harmonyos_affected_function_top_category)",
+      "value": "n=50: 14 same / 9 different / 7 tie; (9+7)/30=53.3%; n=250: 24/30 same",
+      "status": "verified"
+    }
+  ]
+}

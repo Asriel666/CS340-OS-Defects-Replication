@@ -4,9 +4,13 @@
 
 **2026-11-22 更新与汇报：1230037310 钟峻瀚**。保留仓库现有提交人信息；本轮由 Codex 协助分析、实现和制作材料，实际人工核验与共同署名由成员据实确认。
 
-复现 [*Toward Understanding Operating System Defects*（arXiv:2608.20643v1）](https://arxiv.org/html/2608.20643v1) 的核心统计，使用作者公开的 1,500 条标签，Android、Linux、HarmonyOS 各 500 条。当前提供三个 RQ 的可运行代码、逐项对比、17 张核心图与 11 张敏感性分析图、实际运行记录、中文报告和 10 页可编辑答辩 PPT。
+**2026-11-28 更新：1230036051 GUO HAOXUAN**。上传最终版 14 页答辩 PPT，完成 17 项数值一致性核对（17/17），并提交[个人进度报告](docs/contributions/1230036051_Guo_Haoxuan_2026-11-28.md)。
+
+复现 [*Toward Understanding Operating System Defects*（arXiv:2608.20643v1）](https://arxiv.org/html/2608.20643v1) 的核心统计，使用作者公开的 1,500 条标签，Android、Linux、HarmonyOS 各 500 条。当前提供三个 RQ 的可运行代码、逐项对比、17 张核心图与 11 张敏感性分析图、实际运行记录、中文报告、10 页历史答辩稿与 **14 页最终版答辩 PPT**。
 
 ## 助教检查入口
+
+- **[最终版 14 页答辩 PPT](presentations/OS_Defects_G15_Final_2026-11-27.pptx)**、**[数值一致性审计 17/17](presentations/final_validation_2026-11-28.md)**、**[Guo Haoxuan 个人进度报告](docs/contributions/1230036051_Guo_Haoxuan_2026-11-28.md)**
 
 - **[Personal Contributions and Progress Report by Zhong Junhan (1230037310)](docs/contributions/1230037310_Zhong_Junhan_Progress_Report_2026-11-22_EN.md)**、**[English PDF](output/pdf/1230037310_zhong_junhan_progress_2026-11-22_EN.pdf)**
 - [中文报告存档](docs/contributions/1230037310_钟峻瀚_2026-11-22.md)、[中文 PDF](output/pdf/1230037310_zhong_junhan_progress_2026-11-22.pdf)
@@ -187,7 +191,7 @@ py -3.11 run_weekend_02.py --offline --no-plots --output-dir work/week2_check
 
 个人报告以英文版为优先检查入口，标题、作者栏和每页页脚均标明 **Zhong Junhan (1230037310)**。执行 `py -3.11 scripts/build_progress_report.py --language en` 可从英文 Markdown 重建英文 PDF；不带语言参数时仍生成中文存档版。英文版引用 11 月 22 日已通过的计算验证，本次翻译与排版不另计实验或人工审核。
 
-未完成项：**作者方法确认**——Figures 2/3 的分箱脚本、Figure 4(c) 是否按系统对排除共同零类别、Figure 4(d) 的 Overall 定义和系统对标注；[具体询问草稿](docs/author_questions.md)已写好但未发送。**人工与证据核验**——12 条双人独立标签抽查、184 条异常记录的进一步核实，以及真实成员按 README 独立复跑和答辩演练。四条 Gitee 原地址仍需登录，但公开镜像补证已完成，其中一条保留原短 SHA 的身份限制。10 页 PPT 为 11 月 14 日版本，新增证据见本次报告；未把材料生成记作人工审核或演练。
+未完成项：**作者方法确认**——Figures 2/3 的分箱脚本、Figure 4(c) 是否按系统对排除共同零类别、Figure 4(d) 的 Overall 定义和系统对标注；[具体询问草稿](docs/author_questions.md)已写好但未发送。**人工与证据核验**——12 条双人独立标签抽查（A/B 表仍 0/12）、184 条异常记录的进一步核实，以及真实成员按 README 独立复跑和答辩演练。四条 Gitee 原地址仍需登录，但公开镜像补证已完成，其中一条保留原短 SHA 的身份限制。答辩材料现已包含 **14 页最终版 PPT**（11-27）与 10 页历史版（11-14）；最终版 17 项数值断言已核对通过，但数值核对不等于人工审核或演练。
 
 结论是**作者发布标签的核心统计得到重算检验；一项相关系数差异可由类别集合选择解释，但作者实际方法尚待确认**。Linux 是 Launchpad/Ubuntu 生态样本，不是纯内核样本；不同来源的比例不能直接用于系统质量排名。
 
