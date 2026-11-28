@@ -1,12 +1,25 @@
 # Personal Contributions and Progress Report by Zhong Junhan (1230037310)
 
+> **Note on commit hashes (added 2026-11-28):** The repository history was rewritten on
+> 28 November to add student IDs and full names to commit messages and to record
+> co-authorship. Hash references below were updated to their current `main` equivalents.
+> Original -> current: `0c949b3a326c2a7e8d6198ae949cf8bb25fe9b27` -> `6395996d21e2ac71c6bc077473a652bed2e580e8`,
+> `d0c43ca6919c459103329fb31fa94d7b422448a6` -> `bc9f0b2d7d637cb5a900ce30f7141038fb131543`,
+> `adcaba47d05c664ed87ba32f7174b59b2cd0dc39` -> `adf53c31754fde44d6860b991c62630081b569d0`,
+> `c91ba2533908a2571e1dc0fa3611172593cd3bde` -> `d18d99ab1d3207f6a1b08e5b1b3a900660bf1d7b`,
+> `1cc01d005080d720e9c6af341a73a19011c4a854` -> `849771ff2508d8211f96403bae8384a3daf687c1`,
+> `d9a39e2aece508f23fa51c1aeb0fa2a86251599b` -> `ba84bac249de6858f465c976be4dd7c0ddd3b1ad`,
+> `0a711e399b3f93d5c9c43e6031736bfcd0e73c25` -> `974211284a7bfdb7b09575f3e07260316d08a048`.
+> Commit contents and timestamps are unchanged; only hashes and messages were adjusted.
+
+
 **Student ID: 1230037310**
 
 **Name: Zhong Junhan**
 
 **Report date: 22 November 2026**
 
-This report documents my registered contributions and the project's progress for course assessment. The historical contribution list is fixed at commit `0c949b3a326c2a7e8d6198ae949cf8bb25fe9b27`, covering work submitted through 18 November. The synchronization check at the start of the 22 November session found no subsequent team updates. The new work described in Section 7 was committed and pushed as [d0c43ca](https://github.com/Asriel666/CS340-OS-Defects-Replication/commit/d0c43ca6919c459103329fb31fa94d7b422448a6) at approximately **14:28 Beijing time on 22 November**, changing 26 files. This English version translates and revises the report; it does not represent another round of experiments.
+This report documents my registered contributions and the project's progress for course assessment. The historical contribution list is fixed at commit `6395996d21e2ac71c6bc077473a652bed2e580e8`, covering work submitted through 18 November. The synchronization check at the start of the 22 November session found no subsequent team updates. The new work described in Section 7 was committed and pushed as [bc9f0b2](https://github.com/Asriel666/CS340-OS-Defects-Replication/commit/bc9f0b2d7d637cb5a900ce30f7141038fb131543) at approximately **14:28 Beijing time on 22 November**, changing 26 files. This English version translates and revises the report; it does not represent another round of experiments.
 
 The personal contributions below are registered under my student ID and follow tasks I requested, with Codex assistance. Codex contributed to implementation, computation, automated verification, source inspection, and documentation. These activities are distinguished from independent student annotation and execution. Git records establish submitted changes and their registered identity, but do not establish hours worked or a numerical share of individual effort. No actual working hours are inferred here.
 
@@ -33,11 +46,11 @@ The following five historical commits contain `1230037310` in their messages and
 
 | Date and commit | Substantive contribution | Representative evidence | Files changed |
 |---|---|---|---:|
-| 6 Nov, [adcaba4](https://github.com/Asriel666/CS340-OS-Defects-Replication/commit/adcaba47d05c664ed87ba32f7174b59b2cd0dc39) | Added RQ2/RQ3 calculations, independent paper references, execution options, tests, results, and reporting to the existing RQ1 pipeline | [Joint analysis](../../src/osdefects/joint.py), [similarity](../../src/osdefects/similarity.py), [verification](../../scripts/verify_reproduction.py) | 72 |
-| 12 Nov, [1d6fc52](https://github.com/Asriel666/CS340-OS-Defects-Replication/commit/1d6fc524487c1810d1c6f23973f72337c63c63ce) | Synchronized team results, checked execution, narrowed binning claims, and corrected the denominator describing censored-data effects | [Weekly record](../weekly/2026-11-12.md), [methods appendix](../methods_appendix.md) | 4 |
-| 14 Nov, [1cc01d0](https://github.com/Asriel666/CS340-OS-Defects-Replication/commit/1cc01d005080d720e9c6af341a73a19011c4a854) | Added category-set sensitivity, patch-content auditing, separated review forms, presentation materials, and validation evidence | [Category analysis](../../src/osdefects/category_policy.py), [patch audit](../../scripts/audit_review_evidence.py), [review workflow](../../src/osdefects/review_workflow.py) | 65 |
-| 14 Nov, [c91ba25](https://github.com/Asriel666/CS340-OS-Defects-Replication/commit/c91ba2533908a2571e1dc0fa3611172593cd3bde) | Archived the paper, provenance and hashes, and prepared reading notes with page references | [Paper provenance](../../papers/source.json), [reading notes](../paper_reading_notes.md) | 5 |
-| 18 Nov, [0c949b3](https://github.com/Asriel666/CS340-OS-Defects-Replication/commit/0c949b3a326c2a7e8d6198ae949cf8bb25fe9b27) | Fixed Week 2 repository and reference paths; added regression tests, clean-run evidence, and a completion checklist | [Entry point](../../run_weekend_02.py), [tests](../../tests/test_weekend_02.py), [verification](../../results/weekend_02/verification.json) | 39 |
+| 6 Nov, [adf53c3](https://github.com/Asriel666/CS340-OS-Defects-Replication/commit/adf53c31754fde44d6860b991c62630081b569d0) | Added RQ2/RQ3 calculations, independent paper references, execution options, tests, results, and reporting to the existing RQ1 pipeline | [Joint analysis](../../src/osdefects/joint.py), [similarity](../../src/osdefects/similarity.py), [verification](../../scripts/verify_reproduction.py) | 72 |
+| 12 Nov, [e09247d](https://github.com/Asriel666/CS340-OS-Defects-Replication/commit/e09247dccda91534aa6adc196aae51d43e357a26) | Synchronized team results, checked execution, narrowed binning claims, and corrected the denominator describing censored-data effects | [Weekly record](../weekly/2026-11-12.md), [methods appendix](../methods_appendix.md) | 4 |
+| 14 Nov, [849771f](https://github.com/Asriel666/CS340-OS-Defects-Replication/commit/849771f2508d8211f96403bae8384a3daf687c1) | Added category-set sensitivity, patch-content auditing, separated review forms, presentation materials, and validation evidence | [Category analysis](../../src/osdefects/category_policy.py), [patch audit](../../scripts/audit_review_evidence.py), [review workflow](../../src/osdefects/review_workflow.py) | 65 |
+| 14 Nov, [d18d99a](https://github.com/Asriel666/CS340-OS-Defects-Replication/commit/d18d99ab1d3207f6a1b08e5b1b3a900660bf1d7b) | Archived the paper, provenance and hashes, and prepared reading notes with page references | [Paper provenance](../../papers/source.json), [reading notes](../paper_reading_notes.md) | 5 |
+| 18 Nov, [6395996](https://github.com/Asriel666/CS340-OS-Defects-Replication/commit/6395996d21e2ac71c6bc077473a652bed2e580e8) | Fixed Week 2 repository and reference paths; added regression tests, clean-run evidence, and a completion checklist | [Entry point](../../run_weekend_02.py), [tests](../../tests/test_weekend_02.py), [verification](../../results/weekend_02/verification.json) | 39 |
 
 File counts include generated CSV, JSON, logs, and figures; they do not measure individual effort. File links show the current repository version, while each commit page identifies the exact historical change. The 22 November commit is documented separately in Section 7 so that the five-commit historical export remains reproducible against its fixed baseline.
 
@@ -45,8 +58,8 @@ File counts include generated CSV, JSON, logs, and figures; they do not measure 
 
 My registered work builds on the team's repository. Other members' submissions remain attributed to them:
 
-- **Asriel / ZHONG YIHENG, 1240008428:** [0a711e3](https://github.com/Asriel666/CS340-OS-Defects-Replication/commit/0a711e399b3f93d5c9c43e6031736bfcd0e73c25) supplied early data extraction and OS-layer replication. [fbf0b34](https://github.com/Asriel666/CS340-OS-Defects-Replication/commit/fbf0b34452bcede130253f650429c327c3a2bb48) supplied the Week 2 entry point and historical outputs. My 18 November contribution repaired and verified that entry point.
-- **HAOXUAN-stack / GUO HAOXUAN, 1230036051:** [c6b0fcb](https://github.com/Asriel666/CS340-OS-Defects-Replication/commit/c6b0fcb69ce341e68994edfbb9d445b00d437932) added repair-size sensitivity; [16a69c1](https://github.com/Asriel666/CS340-OS-Defects-Replication/commit/16a69c15d4ed73f22b9e0cd7d50a862a1c0e91c1) added Figure 4 exploration and the 184-record anomaly checklist; [924f3f6](https://github.com/Asriel666/CS340-OS-Defects-Replication/commit/924f3f6fa0effb68477d26476544933d104243e3) prepared the initial review materials. My subsequent contributions extended the category policy, inspected patch content, and protected the review workflow.
+- **Asriel / ZHONG YIHENG, 1240008428:** [9742112](https://github.com/Asriel666/CS340-OS-Defects-Replication/commit/974211284a7bfdb7b09575f3e07260316d08a048) supplied early data extraction and OS-layer replication. [54aaffe](https://github.com/Asriel666/CS340-OS-Defects-Replication/commit/54aaffe2a5022ed90dde81edd1c913ed5fda4dec) supplied the Week 2 entry point and historical outputs. My 18 November contribution repaired and verified that entry point.
+- **HAOXUAN-stack / GUO HAOXUAN, 1230036051:** [91c1283](https://github.com/Asriel666/CS340-OS-Defects-Replication/commit/91c12836dcad7b18528d8f22bfc818f9e1add682) added repair-size sensitivity; [d16f93d](https://github.com/Asriel666/CS340-OS-Defects-Replication/commit/d16f93d15b1c8fcb1212854bb65470274baf4d89) added Figure 4 exploration and the 184-record anomaly checklist; [05d36f6](https://github.com/Asriel666/CS340-OS-Defects-Replication/commit/05d36f65b15b4fc6ad8063cc810f8c8a474e6c9a) prepared the initial review materials. My subsequent contributions extended the category policy, inspected patch content, and protected the review workflow.
 
 The existing team identity in `SUBMISSION.json` is preserved. Final joint attribution and the actual division of student work still require agreement among members.
 
@@ -106,7 +119,7 @@ The builder accepts `--font` and `--bold-font` when alternate installed fonts ar
 
 ## 7. Work Completed and Verified on 22 November
 
-Commit [d0c43ca6919c459103329fb31fa94d7b422448a6](https://github.com/Asriel666/CS340-OS-Defects-Replication/commit/d0c43ca6919c459103329fb31fa94d7b422448a6), pushed at approximately **14:28 Beijing time**, contains the following work across **26 changed files**. It is additional to the five historical commits listed in Section 2. Its recorded Git commit time is 14:28:01; push verification is a separate observation.
+Commit [bc9f0b2d7d637cb5a900ce30f7141038fb131543](https://github.com/Asriel666/CS340-OS-Defects-Replication/commit/bc9f0b2d7d637cb5a900ce30f7141038fb131543), pushed at approximately **14:28 Beijing time**, contains the following work across **26 changed files**. It is additional to the five historical commits listed in Section 2. Its recorded Git commit time is 14:28:01; push verification is a separate observation.
 
 ### 7.1 Public-Mirror Evidence for Four HarmonyOS Patches
 
