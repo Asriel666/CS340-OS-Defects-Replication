@@ -10,6 +10,7 @@
 
 ## 助教检查入口
 
+- **[2026-11-29 答辩演练安排（I11 集装箱学生研修室）与本周检查](docs/weekly/2026-11-29.md)**
 - **[最终版 14 页答辩 PPT](presentations/OS_Defects_G15_Final_2026-11-27.pptx)**、**[数值一致性审计 17/17](presentations/final_validation_2026-11-28.md)**、**[Guo Haoxuan 个人进度报告](docs/contributions/1230036051_Guo_Haoxuan_2026-11-28.md)**
 
 - **[Personal Contributions and Progress Report by Zhong Junhan (1230037310)](docs/contributions/1230037310_Zhong_Junhan_Progress_Report_2026-11-22_EN.md)**、**[English PDF](output/pdf/1230037310_zhong_junhan_progress_2026-11-22_EN.pdf)**
